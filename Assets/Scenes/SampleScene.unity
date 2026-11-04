@@ -1172,8 +1172,8 @@ CanvasGroup:
   m_GameObject: {fileID: 626338922}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &674500999
 GameObject:
@@ -1458,6 +1458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703032154}
+  - component: {fileID: 703032155}
   m_Layer: 5
   m_Name: MainMenu_Content
   m_TagString: Untagged
@@ -1487,6 +1488,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &703032155
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703032153}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &751246775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2228,7 @@ GameObject:
   - component: {fileID: 1736230370}
   - component: {fileID: 1736230369}
   - component: {fileID: 1736230368}
+  - component: {fileID: 1736230372}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2307,6 +2321,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1736230372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736230367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06adbc2010781d0e84e1e27712831f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  splashLogoGroup: {fileID: 626338924}
+  splashStudioGroup: {fileID: 1767740393}
+  mainMenuContentGroup: {fileID: 703032155}
+  logoFadeInDuration: 0.5
+  logoHoldDuration: 1.5
+  logoFadeOutDuration: 0.4
+  studioFadeInDuration: 0.5
+  studioHoldDuration: 2
+  studioFadeOutDuration: 0.4
+  studioSkippedFadeOutDuration: 0.2
+  menuFadeInDuration: 0.4
 --- !u!1 &1767740391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,8 +2392,8 @@ CanvasGroup:
   m_GameObject: {fileID: 1767740391}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &1893765395
 GameObject:
