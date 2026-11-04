@@ -680,7 +680,26 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    EmbeddedLinux: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    GameCoreScarlett: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    GameCoreXboxOne: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Kepler: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    LinuxHeadlessSimulation: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Nintendo Switch: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Nintendo Switch 2: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    PS4: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    PS5: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    QNX: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Server: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Standalone: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    VisionOS: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    WebGL: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    Windows Store Apps: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    XboxOne: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    iPhone: UNITY_MCP_READY;UNITY_MCP_DEPS_30
+    tvOS: UNITY_MCP_READY;UNITY_MCP_DEPS_30
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
