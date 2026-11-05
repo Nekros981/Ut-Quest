@@ -1,4 +1,5 @@
 #if UNITY_EDITOR
+using System.IO;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -12,11 +13,31 @@ public static class OptionsWindowBuilder
 {
     static readonly Color Gold = new Color(0.91f, 0.85f, 0.65f, 1f);
     static readonly Color TrackDark = new Color(0.18f, 0.18f, 0.2f, 1f);
-    const float SliderRowHeight = 44f;
-    const float TrackHeight = 14f;
+    const float RowHeight = 56f;
+    const float TrackHeight = 28f;
+    const float BarWidth = 380f;
+    const float LabelWidth = 240f;
+    const float LabelFontSize = 32f;
+    const float TabFontSize = 28f;
+    const float VolverFontSize = 32f;
+    const float TabHeight = 56f;
+    const float TipSize = 28f;
+    const float HandleWidth = 14f;
+    const float ToggleWidth = 72f;
+    const float ToggleHeight = 36f;
+    const string OptionsFontPath = "Assets/Fonts/PixeloidSans.ttf";
+    const string OptionsFontAssetPath = "Assets/Fonts/PixeloidSans SDF.asset";
+    const string SliderTipPath = "Assets/UI/SliderTip.png";
+    const string FallbackFontAssetPath = "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset";
+
+    static TMP_FontAsset optionsFont;
+    static Sprite sliderTipSprite;
+
     [MenuItem("UtQuest/Rebuild Options Window UI")]
     public static void Rebuild()
     {
+        optionsFont = EnsureOptionsFontAsset();
+        sliderTipSprite = EnsureSliderTipSprite();
         var mixer = AssetDatabase.LoadAssetAtPath<AudioMixer>("Assets/Audio/MainMixer.mixer");
         var inputActions = AssetDatabase.LoadAssetAtPath<InputActionAsset>(
             "Assets/Settings/InputSystem_Actions.inputactions");
@@ -79,7 +100,7 @@ public static class OptionsWindowBuilder
         tabLayout.childControlWidth = true;
         tabLayout.childControlHeight = true;
         tabLayout.childForceExpandWidth = true;
-        tabRow.GetComponent<LayoutElement>().preferredHeight = 50f;
+        tabRow.GetComponent<LayoutElement>().preferredHeight = TabHeight;
 
         var btnControles = MakeTab(templateBtn, tabRow.transform, "Btn_Controles", "CONTROLES");
         var btnAudio = MakeTab(templateBtn, tabRow.transform, "Btn_Audio", "AUDIO");
@@ -105,8 +126,8 @@ public static class OptionsWindowBuilder
 
         var btnVolver = Object.Instantiate(templateBtn, inner);
         btnVolver.name = "Btn_Volver";
-        SetButtonLabel(btnVolver, "VOLVER");
-        (btnVolver.GetComponent<LayoutElement>() ?? btnVolver.AddComponent<LayoutElement>()).preferredHeight = 56f;
+        SetButtonLabel(btnVolver, "VOLVER", VolverFontSize);
+        (btnVolver.GetComponent<LayoutElement>() ?? btnVolver.AddComponent<LayoutElement>()).preferredHeight = TabHeight;
 
         var optionsMenu = optionsWindow.GetComponent<OptionsMenu>() ?? optionsWindow.AddComponent<OptionsMenu>();
         var mainMenuContent = GameObject.Find("Canvas/MainMenu_Content");
@@ -148,16 +169,27 @@ public static class OptionsWindowBuilder
     {
         var tab = Object.Instantiate(templateBtn, parent);
         tab.name = name;
-        (tab.GetComponent<LayoutElement>() ?? tab.AddComponent<LayoutElement>()).preferredHeight = 44f;
-        SetButtonLabel(tab, label);
+        (tab.GetComponent<LayoutElement>() ?? tab.AddComponent<LayoutElement>()).preferredHeight = TabHeight;
+        SetButtonLabel(tab, label, TabFontSize);
         return tab;
     }
 
-    static void SetButtonLabel(GameObject button, string label)
+    static void SetButtonLabel(GameObject button, string label, float fontSize)
     {
         var tmp = button.GetComponentInChildren<TextMeshProUGUI>(true);
-        if (tmp != null)
-            tmp.text = label;
+        if (tmp == null)
+            return;
+
+        tmp.text = label;
+        ApplyOptionsFont(tmp, fontSize);
+    }
+
+    static void ApplyOptionsFont(TextMeshProUGUI tmp, float fontSize)
+    {
+        if (optionsFont != null)
+            tmp.font = optionsFont;
+
+        tmp.fontSize = fontSize;
     }
 
     static GameObject MakePanel(Transform parent, string name)
@@ -176,7 +208,15 @@ public static class OptionsWindowBuilder
         vlg.childControlWidth = true;
         vlg.childControlHeight = true;
         vlg.childForceExpandWidth = true;
+        vlg.childForceExpandHeight = false;
         return panel;
+    }
+
+    static void SetFixedRowHeight(LayoutElement layoutElement)
+    {
+        layoutElement.minHeight = RowHeight;
+        layoutElement.preferredHeight = RowHeight;
+        layoutElement.flexibleHeight = 0f;
     }
 
     static TextMeshProUGUI CreateTmp(Transform parent, string name, string text, float fontSize)
@@ -185,7 +225,7 @@ public static class OptionsWindowBuilder
         go.transform.SetParent(parent, false);
         var tmp = go.GetComponent<TextMeshProUGUI>();
         tmp.text = text;
-        tmp.fontSize = fontSize;
+        ApplyOptionsFont(tmp, fontSize);
         tmp.color = Color.white;
         tmp.alignment = TextAlignmentOptions.TopLeft;
         return tmp;
@@ -196,30 +236,76 @@ public static class OptionsWindowBuilder
         var row = new GameObject(label + "Row", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
         row.transform.SetParent(parent, false);
         var rowLayout = row.GetComponent<HorizontalLayoutGroup>();
-        rowLayout.spacing = 16;
+        rowLayout.spacing = 12;
         rowLayout.childAlignment = TextAnchor.MiddleLeft;
         rowLayout.childControlWidth = true;
         rowLayout.childControlHeight = true;
-        rowLayout.childForceExpandWidth = true;
-        row.GetComponent<LayoutElement>().minHeight = SliderRowHeight;
-        row.GetComponent<LayoutElement>().preferredHeight = SliderRowHeight;
+        rowLayout.childForceExpandWidth = false;
+        SetFixedRowHeight(row.GetComponent<LayoutElement>());
 
         var labelGo = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI), typeof(LayoutElement));
         labelGo.transform.SetParent(row.transform, false);
         var labelTmp = labelGo.GetComponent<TextMeshProUGUI>();
         labelTmp.text = label;
-        labelTmp.fontSize = 26;
+        ApplyOptionsFont(labelTmp, LabelFontSize);
         labelTmp.color = Color.white;
-        labelGo.GetComponent<LayoutElement>().minWidth = 180f;
-        labelGo.GetComponent<LayoutElement>().preferredWidth = 180f;
+        var labelLe = labelGo.GetComponent<LayoutElement>();
+        labelLe.minWidth = LabelWidth;
+        labelLe.preferredWidth = LabelWidth;
 
+        var barGo = new GameObject("Bar", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+        barGo.transform.SetParent(row.transform, false);
+        var barLe = barGo.GetComponent<LayoutElement>();
+        barLe.minWidth = BarWidth;
+        barLe.preferredWidth = BarWidth;
+        barLe.minHeight = RowHeight;
+        barLe.preferredHeight = RowHeight;
+        barLe.flexibleWidth = 0f;
+        var barLayout = barGo.GetComponent<HorizontalLayoutGroup>();
+        barLayout.spacing = 4;
+        barLayout.childAlignment = TextAnchor.MiddleCenter;
+        barLayout.childControlWidth = true;
+        barLayout.childControlHeight = true;
+        barLayout.childForceExpandWidth = false;
+
+        CreateBarTip(barGo.transform, "TipLeft", flipX: false);
+        var slider = CreateCompactSlider(barGo.transform, min, max, defaultValue);
+        CreateBarTip(barGo.transform, "TipRight", flipX: true);
+
+        return slider;
+    }
+
+    static void CreateBarTip(Transform parent, string name, bool flipX)
+    {
+        var tipGo = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(LayoutElement));
+        tipGo.transform.SetParent(parent, false);
+        var tipLe = tipGo.GetComponent<LayoutElement>();
+        tipLe.minWidth = TipSize;
+        tipLe.preferredWidth = TipSize;
+        tipLe.minHeight = TipSize;
+        tipLe.preferredHeight = TipSize;
+        tipLe.flexibleWidth = 0f;
+
+        var image = tipGo.GetComponent<Image>();
+        image.sprite = sliderTipSprite;
+        image.color = Gold;
+        image.raycastTarget = false;
+        image.preserveAspect = true;
+
+        if (flipX)
+            tipGo.transform.localScale = new Vector3(-1f, 1f, 1f);
+    }
+
+    static Slider CreateCompactSlider(Transform parent, float min, float max, float defaultValue)
+    {
         var sliderGo = new GameObject("Slider", typeof(RectTransform), typeof(Slider), typeof(LayoutElement));
-        sliderGo.transform.SetParent(row.transform, false);
+        sliderGo.transform.SetParent(parent, false);
         var sliderLe = sliderGo.GetComponent<LayoutElement>();
-        sliderLe.minHeight = SliderRowHeight;
-        sliderLe.preferredHeight = SliderRowHeight;
-        sliderLe.minWidth = 280f;
+        sliderLe.minHeight = TrackHeight;
+        sliderLe.preferredHeight = TrackHeight;
+        sliderLe.flexibleHeight = 0f;
         sliderLe.flexibleWidth = 1f;
+        sliderLe.minWidth = 120f;
 
         var slider = sliderGo.GetComponent<Slider>();
         slider.minValue = min;
@@ -231,32 +317,38 @@ public static class OptionsWindowBuilder
         bg.transform.SetParent(sliderGo.transform, false);
         var bgRect = bg.GetComponent<RectTransform>();
         CenterHorizontalTrack(bgRect);
-        bg.GetComponent<Image>().color = TrackDark;
+        var bgImage = bg.GetComponent<Image>();
+        bgImage.color = TrackDark;
+        bgImage.raycastTarget = true;
 
         var fillArea = new GameObject("Fill Area", typeof(RectTransform));
         fillArea.transform.SetParent(sliderGo.transform, false);
         var fillAreaRect = fillArea.GetComponent<RectTransform>();
         CenterHorizontalTrack(fillAreaRect);
-        fillAreaRect.offsetMin = new Vector2(4f, 0f);
-        fillAreaRect.offsetMax = new Vector2(-4f, 0f);
+        fillAreaRect.offsetMin = new Vector2(2f, 0f);
+        fillAreaRect.offsetMax = new Vector2(-2f, 0f);
 
         var fill = new GameObject("Fill", typeof(RectTransform), typeof(Image));
         fill.transform.SetParent(fillArea.transform, false);
         var fillRect = fill.GetComponent<RectTransform>();
         Stretch(fillRect);
         fill.GetComponent<Image>().color = Gold;
+        fill.GetComponent<Image>().raycastTarget = false;
 
         var handleArea = new GameObject("Handle Slide Area", typeof(RectTransform));
         handleArea.transform.SetParent(sliderGo.transform, false);
         var handleAreaRect = handleArea.GetComponent<RectTransform>();
-        Stretch(handleAreaRect);
-        handleAreaRect.offsetMin = new Vector2(4f, 0f);
-        handleAreaRect.offsetMax = new Vector2(-4f, 0f);
+        CenterHorizontalTrack(handleAreaRect);
+        handleAreaRect.offsetMin = new Vector2(2f, 0f);
+        handleAreaRect.offsetMax = new Vector2(-2f, 0f);
 
         var handle = new GameObject("Handle", typeof(RectTransform), typeof(Image));
         handle.transform.SetParent(handleArea.transform, false);
         var handleRect = handle.GetComponent<RectTransform>();
-        handleRect.sizeDelta = new Vector2(10f, TrackHeight + 6f);
+        handleRect.anchorMin = new Vector2(0f, 0.5f);
+        handleRect.anchorMax = new Vector2(0f, 0.5f);
+        handleRect.pivot = new Vector2(0.5f, 0.5f);
+        handleRect.sizeDelta = new Vector2(HandleWidth, 0f);
         handle.GetComponent<Image>().color = Gold;
 
         slider.fillRect = fillRect;
@@ -328,19 +420,54 @@ public static class OptionsWindowBuilder
     {
         var row = new GameObject("FullscreenRow", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
         row.transform.SetParent(parent, false);
-        row.GetComponent<LayoutElement>().minHeight = 40f;
+        var rowLayout = row.GetComponent<HorizontalLayoutGroup>();
+        rowLayout.spacing = 12;
+        rowLayout.childAlignment = TextAnchor.MiddleLeft;
+        rowLayout.childControlWidth = true;
+        rowLayout.childControlHeight = true;
+        rowLayout.childForceExpandWidth = false;
+        SetFixedRowHeight(row.GetComponent<LayoutElement>());
 
-        var labelGo = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI));
+        var labelGo = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI), typeof(LayoutElement));
         labelGo.transform.SetParent(row.transform, false);
         var labelTmp = labelGo.GetComponent<TextMeshProUGUI>();
         labelTmp.text = "PANTALLA COMPLETA";
-        labelTmp.fontSize = 26;
+        ApplyOptionsFont(labelTmp, LabelFontSize);
         labelTmp.color = Color.white;
+        var labelLe = labelGo.GetComponent<LayoutElement>();
+        labelLe.minWidth = LabelWidth;
+        labelLe.preferredWidth = LabelWidth;
 
-        var toggleGo = new GameObject("FullscreenToggle", typeof(RectTransform), typeof(Toggle), typeof(Image));
+        var toggleGo = new GameObject("FullscreenToggle", typeof(RectTransform), typeof(Toggle), typeof(Image), typeof(LayoutElement));
         toggleGo.transform.SetParent(row.transform, false);
-        toggleGo.GetComponent<Image>().color = new Color(0.25f, 0.25f, 0.25f, 1f);
-        return toggleGo.GetComponent<Toggle>();
+        var toggleLe = toggleGo.GetComponent<LayoutElement>();
+        toggleLe.minWidth = ToggleWidth;
+        toggleLe.preferredWidth = ToggleWidth;
+        toggleLe.minHeight = ToggleHeight;
+        toggleLe.preferredHeight = ToggleHeight;
+        toggleLe.flexibleWidth = 0f;
+        toggleLe.flexibleHeight = 0f;
+
+        var toggleRt = toggleGo.GetComponent<RectTransform>();
+        toggleRt.sizeDelta = new Vector2(ToggleWidth, ToggleHeight);
+
+        var bgImage = toggleGo.GetComponent<Image>();
+        bgImage.color = TrackDark;
+
+        var checkGo = new GameObject("Checkmark", typeof(RectTransform), typeof(Image));
+        checkGo.transform.SetParent(toggleGo.transform, false);
+        var checkRect = checkGo.GetComponent<RectTransform>();
+        Stretch(checkRect);
+        checkRect.offsetMin = new Vector2(4f, 4f);
+        checkRect.offsetMax = new Vector2(-4f, -4f);
+        checkGo.GetComponent<Image>().color = Gold;
+
+        var toggle = toggleGo.GetComponent<Toggle>();
+        toggle.targetGraphic = bgImage;
+        toggle.graphic = checkGo.GetComponent<Image>();
+        toggle.isOn = Screen.fullScreen;
+
+        return toggle;
     }
 
     static void Stretch(RectTransform rt)
@@ -379,6 +506,44 @@ public static class OptionsWindowBuilder
         call0.FindPropertyRelative("m_Mode").enumValueIndex = 1;
         call0.FindPropertyRelative("m_CallState").enumValueIndex = 2;
         buttonSo.ApplyModifiedPropertiesWithoutUndo();
+    }
+
+    static TMP_FontAsset EnsureOptionsFontAsset()
+    {
+        var existing = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(OptionsFontAssetPath);
+        if (existing != null)
+            return existing;
+
+        return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FallbackFontAssetPath);
+    }
+
+    static Sprite EnsureSliderTipSprite()
+    {
+        if (!File.Exists(SliderTipPath))
+            return null;
+
+        var importer = AssetImporter.GetAtPath(SliderTipPath) as TextureImporter;
+        if (importer != null)
+        {
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Single;
+            importer.filterMode = FilterMode.Point;
+            importer.mipmapEnabled = false;
+            importer.alphaIsTransparency = true;
+            importer.SaveAndReimport();
+        }
+        else
+        {
+            AssetDatabase.ImportAsset(SliderTipPath, ImportAssetOptions.ForceUpdate);
+        }
+
+        foreach (var asset in AssetDatabase.LoadAllAssetsAtPath(SliderTipPath))
+        {
+            if (asset is Sprite sprite)
+                return sprite;
+        }
+
+        return null;
     }
 }
 #endif
