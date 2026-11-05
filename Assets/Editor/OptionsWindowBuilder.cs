@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
 
 public static class OptionsWindowBuilder
@@ -30,6 +31,8 @@ public static class OptionsWindowBuilder
     const string SliderTipPath = "Assets/UI/SliderTip.png";
     const string SliderWhitePath = "Assets/UI/SliderWhite.png";
     const string FallbackFontAssetPath = "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset";
+    const string OptionsGlyphs =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 :/|.,-+()[]";
 
     static TMP_FontAsset optionsFont;
     static Sprite sliderTipSprite;
@@ -190,7 +193,11 @@ public static class OptionsWindowBuilder
     static void ApplyOptionsFont(TextMeshProUGUI tmp, float fontSize)
     {
         if (optionsFont != null)
+        {
             tmp.font = optionsFont;
+            if (optionsFont.material != null)
+                tmp.fontSharedMaterial = optionsFont.material;
+        }
 
         tmp.fontSize = fontSize;
     }
@@ -526,11 +533,61 @@ public static class OptionsWindowBuilder
 
     static TMP_FontAsset EnsureOptionsFontAsset()
     {
-        var existing = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(OptionsFontAssetPath);
-        if (existing != null)
-            return existing;
+        var fontAsset = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(OptionsFontAssetPath);
+        var sourceFont = AssetDatabase.LoadAssetAtPath<Font>(OptionsFontPath);
+        if (fontAsset == null || sourceFont == null)
+            return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FallbackFontAssetPath);
 
-        return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FallbackFontAssetPath);
+        if (fontAsset.material != null && fontAsset.atlasTexture != null && fontAsset.HasCharacters(OptionsGlyphs))
+            return fontAsset;
+
+        if (!RepairOptionsFont(fontAsset, sourceFont))
+            return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FallbackFontAssetPath);
+
+        return fontAsset;
+    }
+
+    static bool RepairOptionsFont(TMP_FontAsset target, Font sourceFont)
+    {
+        var generated = TMP_FontAsset.CreateFontAsset(
+            sourceFont, 48, 5, GlyphRenderMode.SDFAA, 1024, 1024, AtlasPopulationMode.Dynamic, false);
+        if (generated == null)
+            return false;
+
+        generated.TryAddCharacters(OptionsGlyphs, out var missing);
+        if (!string.IsNullOrEmpty(missing))
+            Debug.LogWarning("OptionsWindowBuilder: PixeloidSans sin estos caracteres: " + missing);
+
+        EditorUtility.CopySerialized(generated, target);
+        target.name = "PixeloidSans SDF";
+
+        var atlas = Object.Instantiate(generated.atlasTexture);
+        atlas.name = "PixeloidSans Atlas";
+        var material = new Material(generated.material);
+        material.name = "PixeloidSans Material";
+        material.SetTexture(ShaderUtilities.ID_MainTex, atlas);
+
+        var assetPath = AssetDatabase.GetAssetPath(target);
+        foreach (var subAsset in AssetDatabase.LoadAllAssetRepresentationsAtPath(assetPath))
+            AssetDatabase.RemoveObjectFromAsset(subAsset);
+
+        AssetDatabase.AddObjectToAsset(atlas, target);
+        AssetDatabase.AddObjectToAsset(material, target);
+
+        var serialized = new SerializedObject(target);
+        var textures = serialized.FindProperty("m_AtlasTextures");
+        textures.arraySize = 1;
+        textures.GetArrayElementAtIndex(0).objectReferenceValue = atlas;
+        serialized.FindProperty("m_Material").objectReferenceValue = material;
+        serialized.FindProperty("m_AtlasPopulationMode").enumValueIndex = (int)AtlasPopulationMode.Static;
+        serialized.FindProperty("m_IsMultiAtlasTexturesEnabled").boolValue = false;
+        serialized.ApplyModifiedPropertiesWithoutUndo();
+
+        Object.DestroyImmediate(generated);
+        target.ReadFontAssetDefinition();
+        EditorUtility.SetDirty(target);
+        AssetDatabase.SaveAssets();
+        return target.HasCharacters(OptionsGlyphs);
     }
 
     static Sprite EnsureSliderTipSprite() => EnsureUiSprite(SliderTipPath);
