@@ -28,16 +28,19 @@ public static class OptionsWindowBuilder
     const string OptionsFontPath = "Assets/Fonts/PixeloidSans.ttf";
     const string OptionsFontAssetPath = "Assets/Fonts/PixeloidSans SDF.asset";
     const string SliderTipPath = "Assets/UI/SliderTip.png";
+    const string SliderWhitePath = "Assets/UI/SliderWhite.png";
     const string FallbackFontAssetPath = "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset";
 
     static TMP_FontAsset optionsFont;
     static Sprite sliderTipSprite;
+    static Sprite sliderWhiteSprite;
 
     [MenuItem("UtQuest/Rebuild Options Window UI")]
     public static void Rebuild()
     {
         optionsFont = EnsureOptionsFontAsset();
         sliderTipSprite = EnsureSliderTipSprite();
+        sliderWhiteSprite = EnsureSliderWhiteSprite();
         var mixer = AssetDatabase.LoadAssetAtPath<AudioMixer>("Assets/Audio/MainMixer.mixer");
         var inputActions = AssetDatabase.LoadAssetAtPath<InputActionAsset>(
             "Assets/Settings/InputSystem_Actions.inputactions");
@@ -318,29 +321,25 @@ public static class OptionsWindowBuilder
         var bgRect = bg.GetComponent<RectTransform>();
         CenterHorizontalTrack(bgRect);
         var bgImage = bg.GetComponent<Image>();
-        bgImage.color = TrackDark;
-        bgImage.raycastTarget = true;
+        StyleSliderImage(bgImage, TrackDark, raycast: true);
 
         var fillArea = new GameObject("Fill Area", typeof(RectTransform));
         fillArea.transform.SetParent(sliderGo.transform, false);
         var fillAreaRect = fillArea.GetComponent<RectTransform>();
         CenterHorizontalTrack(fillAreaRect);
-        fillAreaRect.offsetMin = new Vector2(2f, 0f);
-        fillAreaRect.offsetMax = new Vector2(-2f, 0f);
+        ApplyTrackAreaInsets(fillAreaRect);
 
         var fill = new GameObject("Fill", typeof(RectTransform), typeof(Image));
         fill.transform.SetParent(fillArea.transform, false);
         var fillRect = fill.GetComponent<RectTransform>();
         Stretch(fillRect);
-        fill.GetComponent<Image>().color = Gold;
-        fill.GetComponent<Image>().raycastTarget = false;
+        StyleSliderImage(fill.GetComponent<Image>(), Gold, raycast: false);
 
         var handleArea = new GameObject("Handle Slide Area", typeof(RectTransform));
         handleArea.transform.SetParent(sliderGo.transform, false);
         var handleAreaRect = handleArea.GetComponent<RectTransform>();
         CenterHorizontalTrack(handleAreaRect);
-        handleAreaRect.offsetMin = new Vector2(2f, 0f);
-        handleAreaRect.offsetMax = new Vector2(-2f, 0f);
+        ApplyTrackAreaInsets(handleAreaRect);
 
         var handle = new GameObject("Handle", typeof(RectTransform), typeof(Image));
         handle.transform.SetParent(handleArea.transform, false);
@@ -349,13 +348,30 @@ public static class OptionsWindowBuilder
         handleRect.anchorMax = new Vector2(0f, 0.5f);
         handleRect.pivot = new Vector2(0.5f, 0.5f);
         handleRect.sizeDelta = new Vector2(HandleWidth, 0f);
-        handle.GetComponent<Image>().color = Gold;
+        var handleImage = handle.GetComponent<Image>();
+        StyleSliderImage(handleImage, Gold, raycast: true);
 
         slider.fillRect = fillRect;
         slider.handleRect = handleRect;
-        slider.targetGraphic = handle.GetComponent<Image>();
+        slider.targetGraphic = handleImage;
 
         return slider;
+    }
+
+    static void ApplyTrackAreaInsets(RectTransform rt)
+    {
+        var half = TrackHeight * 0.5f;
+        rt.offsetMin = new Vector2(2f, -half);
+        rt.offsetMax = new Vector2(-2f, half);
+    }
+
+    static void StyleSliderImage(Image image, Color color, bool raycast)
+    {
+        if (sliderWhiteSprite != null)
+            image.sprite = sliderWhiteSprite;
+
+        image.color = color;
+        image.raycastTarget = raycast;
     }
 
     static void CenterHorizontalTrack(RectTransform rt)
@@ -517,12 +533,16 @@ public static class OptionsWindowBuilder
         return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FallbackFontAssetPath);
     }
 
-    static Sprite EnsureSliderTipSprite()
+    static Sprite EnsureSliderTipSprite() => EnsureUiSprite(SliderTipPath);
+
+    static Sprite EnsureSliderWhiteSprite() => EnsureUiSprite(SliderWhitePath);
+
+    static Sprite EnsureUiSprite(string assetPath)
     {
-        if (!File.Exists(SliderTipPath))
+        if (!File.Exists(assetPath))
             return null;
 
-        var importer = AssetImporter.GetAtPath(SliderTipPath) as TextureImporter;
+        var importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
         if (importer != null)
         {
             importer.textureType = TextureImporterType.Sprite;
@@ -534,10 +554,10 @@ public static class OptionsWindowBuilder
         }
         else
         {
-            AssetDatabase.ImportAsset(SliderTipPath, ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(assetPath, ImportAssetOptions.ForceUpdate);
         }
 
-        foreach (var asset in AssetDatabase.LoadAllAssetsAtPath(SliderTipPath))
+        foreach (var asset in AssetDatabase.LoadAllAssetsAtPath(assetPath))
         {
             if (asset is Sprite sprite)
                 return sprite;
