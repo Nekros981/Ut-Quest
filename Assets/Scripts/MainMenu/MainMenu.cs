@@ -23,6 +23,9 @@ public class MainMenu : MonoBehaviour
     [Header("Menu timing (seconds)")]
     [SerializeField] float menuFadeInDuration = 0.4f;
 
+    [Header("Audio")]
+    [SerializeField] MenuBackgroundMusic menuBackgroundMusic;
+
     bool studioSkipRequested;
 
     void Start()
@@ -49,28 +52,89 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(logoHoldDuration);
         yield return FadeCanvasGroup(splashLogoGroup, 1f, 0f, logoFadeOutDuration);
 
-        studioSkipRequested = false;
-        yield return FadeCanvasGroup(splashStudioGroup, 0f, 1f, studioFadeInDuration);
-        yield return WaitForStudioHoldOrSkip();
-
-        var studioOut = studioSkipRequested ? studioSkippedFadeOutDuration : studioFadeOutDuration;
-        yield return FadeCanvasGroup(splashStudioGroup, splashStudioGroup.alpha, 0f, studioOut);
+        yield return PlayStudioSplash();
 
         yield return FadeCanvasGroup(mainMenuContentGroup, 0f, 1f, menuFadeInDuration);
         EnableInteraction(mainMenuContentGroup);
     }
 
-    IEnumerator WaitForStudioHoldOrSkip()
+    IEnumerator PlayStudioSplash()
     {
+        if (splashStudioGroup == null)
+            yield break;
+
+        var studioTotalDuration = studioFadeInDuration + studioHoldDuration + studioFadeOutDuration;
+        var musicStartTime = studioTotalDuration * 0.75f;
+        var fadeInEnd = studioFadeInDuration;
+        var holdEnd = studioFadeInDuration + studioHoldDuration;
         var elapsed = 0f;
-        while (elapsed < studioHoldDuration && !studioSkipRequested)
+        var musicStarted = false;
+        studioSkipRequested = false;
+
+        void TryStartMusic(bool force)
         {
-            if (WasScreenTapThisFrame())
+            if (musicStarted || menuBackgroundMusic == null)
+                return;
+
+            if (!force && elapsed < musicStartTime)
+                return;
+
+            musicStarted = true;
+            menuBackgroundMusic.PlayLoop();
+        }
+
+        splashStudioGroup.alpha = 0f;
+
+        while (true)
+        {
+            if (elapsed >= fadeInEnd && elapsed < holdEnd && !studioSkipRequested && WasScreenTapThisFrame())
+            {
                 studioSkipRequested = true;
+                TryStartMusic(force: true);
+            }
+
+            if (elapsed < fadeInEnd)
+            {
+                var t = studioFadeInDuration <= 0f ? 1f : elapsed / studioFadeInDuration;
+                splashStudioGroup.alpha = Mathf.Lerp(0f, 1f, t);
+            }
+            else if (elapsed < holdEnd)
+            {
+                splashStudioGroup.alpha = 1f;
+            }
+            else
+            {
+                break;
+            }
+
+            TryStartMusic(force: false);
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        if (studioSkipRequested)
+            TryStartMusic(force: true);
+
+        var fadeOutDuration = studioSkipRequested ? studioSkippedFadeOutDuration : studioFadeOutDuration;
+        var fadeOutStart = elapsed;
+        var fadeOutEnd = fadeOutStart + fadeOutDuration;
+        var fadeFrom = splashStudioGroup.alpha;
+
+        while (elapsed < fadeOutEnd)
+        {
+            TryStartMusic(force: false);
+
+            var t = fadeOutDuration <= 0f
+                ? 1f
+                : Mathf.Clamp01((elapsed - fadeOutStart) / fadeOutDuration);
+            splashStudioGroup.alpha = Mathf.Lerp(fadeFrom, 0f, t);
 
             elapsed += Time.unscaledDeltaTime;
             yield return null;
         }
+
+        splashStudioGroup.alpha = 0f;
+        TryStartMusic(force: false);
     }
 
     static bool WasScreenTapThisFrame()

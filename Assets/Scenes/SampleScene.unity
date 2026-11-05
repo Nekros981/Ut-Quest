@@ -7171,6 +7171,7 @@ MonoBehaviour:
   studioFadeOutDuration: 0.4
   studioSkippedFadeOutDuration: 0.2
   menuFadeInDuration: 0.4
+  menuBackgroundMusic: {fileID: 938726438}
 --- !u!1 &1767740391
 GameObject:
   m_ObjectHideFlags: 0

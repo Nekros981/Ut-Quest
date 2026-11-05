@@ -6,9 +6,11 @@ public class MenuBackgroundMusic : MonoBehaviour
     [SerializeField] AudioClip menuMusicClip;
     [SerializeField] AudioMixer audioMixer;
 
-    void Start()
+    AudioSource source;
+
+    void Awake()
     {
-        var source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
         if (source == null)
             source = gameObject.AddComponent<AudioSource>();
 
@@ -27,8 +29,13 @@ public class MenuBackgroundMusic : MonoBehaviour
                 }
             }
         }
+    }
 
-        if (source.clip != null && !source.isPlaying)
-            source.Play();
+    public void PlayLoop()
+    {
+        if (source == null || source.clip == null || source.isPlaying)
+            return;
+
+        source.Play();
     }
 }
