@@ -35,6 +35,8 @@ namespace CampusQuest.EditorTools
 
         const int PathCenterX = 24;
         const int PathHalfWidth = 4;
+        const int RainColumns = 8;
+        const int RainRows = 5;
 
         static readonly string[] MarkerNames =
         {
@@ -43,6 +45,19 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Pintar bosque exterior")]
         public static void PaintFromMenu() => Paint();
+
+        [MenuItem("Campus Quest/SP/Dejar 40 gotas de lluvia")]
+        public static void RebuildRain()
+        {
+            var scene = SceneManager.GetActiveScene();
+            if (scene.path != ScenePath)
+                scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+
+            EnsureRainAtmosphere();
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            Debug.Log("Campus Quest: lluvia de SP quedó en " + (RainColumns * RainRows) + " gotas.");
+        }
 
         public static void Paint()
         {
@@ -343,25 +358,14 @@ namespace CampusQuest.EditorTools
 
             EnsureRainAudio(atmosphere.transform);
 
-            var overlayRoot = cam.transform.Find("RainOverlay");
-            if (overlayRoot == null)
-            {
-                var overlayGo = new GameObject("RainOverlay");
-                Undo.RegisterCreatedObjectUndo(overlayGo, "RainOverlay");
-                overlayGo.transform.SetParent(cam.transform, false);
-                overlayGo.transform.localPosition = Vector3.zero;
-                overlayRoot = overlayGo.transform;
-            }
+            var previousOverlay = cam.transform.Find("RainOverlay");
+            if (previousOverlay != null)
+                UnityEngine.Object.DestroyImmediate(previousOverlay.gameObject);
 
-            while (overlayRoot.childCount > 0)
-                Undo.DestroyObjectImmediate(overlayRoot.GetChild(0).gameObject);
-
-            var rendererOnRoot = overlayRoot.GetComponent<SpriteRenderer>();
-            if (rendererOnRoot != null)
-                Undo.DestroyObjectImmediate(rendererOnRoot);
-            var legacyOverlay = overlayRoot.GetComponent<SpForestRainOverlay>();
-            if (legacyOverlay != null)
-                Undo.DestroyObjectImmediate(legacyOverlay);
+            var overlayGo = new GameObject("RainOverlay");
+            overlayGo.transform.SetParent(cam.transform, false);
+            overlayGo.transform.localPosition = Vector3.zero;
+            var overlayRoot = overlayGo.transform;
 
             var frames = LoadSprites(RainTexturePath)
                 .Where(s => s.name.StartsWith("rain effect_", StringComparison.Ordinal))
@@ -375,31 +379,27 @@ namespace CampusQuest.EditorTools
 
             float viewHeight = cam.orthographicSize * 2f;
             float viewWidth = viewHeight * cam.aspect;
-            float step = Mathf.Max(frames[0].bounds.size.x, frames[0].bounds.size.y, 0.45f);
-
-            int cols = Mathf.Min(60, Mathf.CeilToInt(viewWidth / step) + 2);
-            int rows = Mathf.Min(40, Mathf.CeilToInt(viewHeight / step) + 2);
-            var tileRenderers = new List<SpriteRenderer>(cols * rows);
-
+            float stepX = viewWidth / RainColumns;
+            float stepY = viewHeight / RainRows;
+            var tileRenderers = new List<SpriteRenderer>(RainColumns * RainRows);
             float originX = -viewWidth * 0.5f;
             float originY = -viewHeight * 0.5f;
 
-            for (int row = 0; row < rows; row++)
-            for (int col = 0; col < cols; col++)
+            for (int row = 0; row < RainRows; row++)
+            for (int col = 0; col < RainColumns; col++)
             {
                 var drop = new GameObject($"RainTile_{col}_{row}");
-                Undo.RegisterCreatedObjectUndo(drop, "RainTile");
                 drop.transform.SetParent(overlayRoot, false);
                 drop.transform.localPosition = new Vector3(
-                    originX + col * step + step * 0.5f,
-                    originY + row * step + step * 0.5f,
+                    originX + col * stepX + stepX * 0.5f,
+                    originY + row * stepY + stepY * 0.5f,
                     0.05f);
                 drop.transform.localScale = Vector3.one;
 
                 var sr = drop.AddComponent<SpriteRenderer>();
                 sr.sprite = frames[(col + row) % frames.Length];
                 sr.sortingOrder = 30;
-                sr.color = new Color(1f, 1f, 1f, 0.35f);
+                sr.color = new Color(1f, 1f, 1f, 0.55f);
                 tileRenderers.Add(sr);
             }
 
