@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: ae23b422694a21c4faa88c13f44a2288
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7019802895524300034
+    second: Topdown RPG 32x32 - UI HotTB & Inv_0
+  - first:
+      213: -5860967552374337248
+    second: Topdown RPG 32x32 - UI HotTB & Inv_1
+  - first:
+      213: -8808535555453369062
+    second: Topdown RPG 32x32 - UI HotTB & Inv_2
+  - first:
+      213: 1328920308482507130
+    second: Topdown RPG 32x32 - UI HotTB & Inv_3
+  - first:
+      213: -698422510704627472
+    second: Topdown RPG 32x32 - UI HotTB & Inv_4
+  - first:
+      213: -8977394455474109487
+    second: Topdown RPG 32x32 - UI HotTB & Inv_5
+  - first:
+      213: 8042644847574683436
+    second: Topdown RPG 32x32 - UI HotTB & Inv_6
+  - first:
+      213: -6188838276034996248
+    second: Topdown RPG 32x32 - UI HotTB & Inv_7
+  - first:
+      213: -5119512073151106767
+    second: Topdown RPG 32x32 - UI HotTB & Inv_8
+  - first:
+      213: -540374260546633334
+    second: Topdown RPG 32x32 - UI HotTB & Inv_9
+  - first:
+      213: 98768877784215360
+    second: Topdown RPG 32x32 - UI HotTB & Inv_10
+  - first:
+      213: -152749268954133855
+    second: Topdown RPG 32x32 - UI HotTB & Inv_11
+  - first:
+      213: -2571680639584597088
+    second: Topdown RPG 32x32 - UI HotTB & Inv_12
+  - first:
+      213: 4966583228286244445
+    second: Topdown RPG 32x32 - UI HotTB & Inv_13
+  - first:
+      213: -1951794050884802304
+    second: Topdown RPG 32x32 - UI HotTB & Inv_14
+  - first:
+      213: 7850830339823494100
+    second: Topdown RPG 32x32 - UI HotTB & Inv_15
+  - first:
+      213: 4716463225262525006
+    second: Topdown RPG 32x32 - UI HotTB & Inv_16
+  - first:
+      213: 7193180047333614721
+    second: Topdown RPG 32x32 - UI HotTB & Inv_17
+  - first:
+      213: 6929012228019277189
+    second: Topdown RPG 32x32 - UI HotTB & Inv_18
+  - first:
+      213: 5489946341422862416
+    second: Topdown RPG 32x32 - UI HotTB & Inv_19
+  - first:
+      213: 2782769032798433688
+    second: Topdown RPG 32x32 - UI HotTB & Inv_20
+  - first:
+      213: -3463005685295883152
+    second: Topdown RPG 32x32 - UI HotTB & Inv_21
+  - first:
+      213: 8294422189156670580
+    second: Topdown RPG 32x32 - UI HotTB & Inv_22
+  - first:
+      213: 8278182563705303260
+    second: Topdown RPG 32x32 - UI HotTB & Inv_23
+  - first:
+      213: -7302191414823858703
+    second: Topdown RPG 32x32 - UI HotTB & Inv_24
+  - first:
+      213: -6906469151586034837
+    second: Topdown RPG 32x32 - UI HotTB & Inv_25
+  - first:
+      213: 8001080036689122059
+    second: Topdown RPG 32x32 - UI HotTB & Inv_26
+  - first:
+      213: -5123618066153702278
+    second: Topdown RPG 32x32 - UI HotTB & Inv_27
+  - first:
+      213: 7059562332847546032
+    second: Topdown RPG 32x32 - UI HotTB & Inv_28
+  - first:
+      213: 1921425988491978948
+    second: Topdown RPG 32x32 - UI HotTB & Inv_29
+  - first:
+      213: 821165251400263216
+    second: Topdown RPG 32x32 - UI HotTB & Inv_30
+  - first:
+      213: 892641140754697268
+    second: Topdown RPG 32x32 - UI HotTB & Inv_31
+  - first:
+      213: 3624486422160443727
+    second: Topdown RPG 32x32 - UI HotTB & Inv_32
+  - first:
+      213: -1997006553944601525
+    second: Topdown RPG 32x32 - UI HotTB & Inv_33
+  - first:
+      213: -1772356188916469783
+    second: Topdown RPG 32x32 - UI HotTB & Inv_34
+  - first:
+      213: 758526417778994696
+    second: Topdown RPG 32x32 - UI HotTB & Inv_35
+  - first:
+      213: 3268264359234631184
+    second: Topdown RPG 32x32 - UI HotTB & Inv_36
+  - first:
+      213: 8798004900998751943
+    second: Topdown RPG 32x32 - UI HotTB & Inv_37
+  - first:
+      213: -28418645163695275
+    second: Topdown RPG 32x32 - UI HotTB & Inv_38
+  - first:
+      213: 1959647445333685298
+    second: Topdown RPG 32x32 - UI HotTB & Inv_39
+  - first:
+      213: 9191859164609997201
+    second: Topdown RPG 32x32 - UI HotTB & Inv_40
+  - first:
+      213: 7852441494530664248
+    second: Topdown RPG 32x32 - UI HotTB & Inv_41
+  - first:
+      213: -6963581323888806785
+    second: Topdown RPG 32x32 - UI HotTB & Inv_42
+  - first:
+      213: -2938427224758435084
+    second: Topdown RPG 32x32 - UI HotTB & Inv_43
+  - first:
+      213: -1822933746903394457
+    second: Topdown RPG 32x32 - UI HotTB & Inv_44
+  - first:
+      213: -2716416613113759626
+    second: Topdown RPG 32x32 - UI HotTB & Inv_45
+  - first:
+      213: -2769982806594713610
+    second: Topdown RPG 32x32 - UI HotTB & Inv_46
+  - first:
+      213: 7045920579402087154
+    second: Topdown RPG 32x32 - UI HotTB & Inv_47
+  - first:
+      213: -7974827396905963208
+    second: Topdown RPG 32x32 - UI HotTB & Inv_48
+  - first:
+      213: 2581000982796570318
+    second: Topdown RPG 32x32 - UI HotTB & Inv_49
+  - first:
+      213: -2562446764770415638
+    second: Topdown RPG 32x32 - UI HotTB & Inv_50
+  - first:
+      213: -100454093016642719
+    second: Topdown RPG 32x32 - UI HotTB & Inv_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2050cfc7a895b6160800000000000000
+      internalID: 7019802895524300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02113a85019a9aea0800000000000000
+      internalID: -5860967552374337248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15cdc9f49bc1c580800000000000000
+      internalID: -8808535555453369062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7107e9caf5417210800000000000000
+      internalID: 1328920308482507130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 192
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0705a4d64be46f0800000000000000
+      internalID: -698422510704627472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 323
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d387e89e43e96380800000000000000
+      internalID: -8977394455474109487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 291
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f805a80e63d9f60800000000000000
+      internalID: 8042644847574683436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7d798b064dc1aa0800000000000000
+      internalID: -6188838276034996248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1313180d4e6d3f8b0800000000000000
+      internalID: -5119512073151106767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a818a5a19743088f0800000000000000
+      internalID: -540374260546633334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f213365c5ee5100800000000000000
+      internalID: 98768877784215360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aac944695351edf0800000000000000
+      internalID: -152749268954133855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab8fc9651e8f4cd0800000000000000
+      internalID: -2571680639584597088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d561a6dc129dce440800000000000000
+      internalID: 4966583228286244445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_14
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0096a4ad6a5d9e4e0800000000000000
+      internalID: -1951794050884802304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_15
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3e90d3990c3fc60800000000000000
+      internalID: 7850830339823494100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a47f1805e347140800000000000000
+      internalID: 4716463225262525006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1846fb6542f43d360800000000000000
+      internalID: 7193180047333614721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_18
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d4d6fe8ebc82060800000000000000
+      internalID: 6929012228019277189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050177c4c15303c40800000000000000
+      internalID: 5489946341422862416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89178eb01b16e9620800000000000000
+      internalID: 2782769032798433688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cd7c05daee0ffc0800000000000000
+      internalID: -3463005685295883152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_22
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c1dc90905bb1370800000000000000
+      internalID: 8294422189156670580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_23
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 326
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0bc779e2302e270800000000000000
+      internalID: 8278182563705303260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_24
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 294
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd448dc89769aa90800000000000000
+      internalID: -7302191414823858703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 291
+        width: 192
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b558f06ea4720a0800000000000000
+      internalID: -6906469151586034837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_26
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03135ed6eb890f60800000000000000
+      internalID: 8001080036689122059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 291
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c7222d38045e8b0800000000000000
+      internalID: -5123618066153702278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be1b1fd98a98f160800000000000000
+      internalID: 7059562332847546032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_29
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8a442a1c64aaa10800000000000000
+      internalID: 1921425988491978948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_30
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0366b97027d556b00800000000000000
+      internalID: 821165251400263216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_31
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c459a536c436c00800000000000000
+      internalID: 892641140754697268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_32
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4989169233cc4230800000000000000
+      internalID: 3624486422160443727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c410aae153944e0800000000000000
+      internalID: -1997006553944601525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_34
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef2b20cf635767e0800000000000000
+      internalID: -1772356188916469783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_35
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e677412c3d68a00800000000000000
+      internalID: 758526417778994696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016ff346e153b5d20800000000000000
+      internalID: 3268264359234631184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_37
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c62d28f7dac81a70800000000000000
+      internalID: 8798004900998751943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_38
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553250e84690b9ff0800000000000000
+      internalID: -28418645163695275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_39
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234bd1808f0123b10800000000000000
+      internalID: 1959647445333685298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_40
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1996ffba53b009f70800000000000000
+      internalID: 9191859164609997201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_41
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a90d6fe979fc60800000000000000
+      internalID: 7852441494530664248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_42
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7430193ea36c5f90800000000000000
+      internalID: -6963581323888806785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_43
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2cfede10c9837d0800000000000000
+      internalID: -2938427224758435084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_44
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 326
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76750ce5a63a3b6e0800000000000000
+      internalID: -1822933746903394457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_45
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 294
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67872698b795d4ad0800000000000000
+      internalID: -2716416613113759626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f78bfa305b0f89d0800000000000000
+      internalID: -2769982806594713610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa30e2af6328c160800000000000000
+      internalID: 7045920579402087154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831fd562cb8b35190800000000000000
+      internalID: -7974827396905963208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece068818be81d320800000000000000
+      internalID: 2581000982796570318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeba20e6e3c507cd0800000000000000
+      internalID: -2562446764770415638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - UI HotTB & Inv_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b428dd88d1b9ef0800000000000000
+      internalID: -100454093016642719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Topdown RPG 32x32 - UI HotTB & Inv_0: 7019802895524300034
+      Topdown RPG 32x32 - UI HotTB & Inv_1: -5860967552374337248
+      Topdown RPG 32x32 - UI HotTB & Inv_10: 98768877784215360
+      Topdown RPG 32x32 - UI HotTB & Inv_11: -152749268954133855
+      Topdown RPG 32x32 - UI HotTB & Inv_12: -2571680639584597088
+      Topdown RPG 32x32 - UI HotTB & Inv_13: 4966583228286244445
+      Topdown RPG 32x32 - UI HotTB & Inv_14: -1951794050884802304
+      Topdown RPG 32x32 - UI HotTB & Inv_15: 7850830339823494100
+      Topdown RPG 32x32 - UI HotTB & Inv_16: 4716463225262525006
+      Topdown RPG 32x32 - UI HotTB & Inv_17: 7193180047333614721
+      Topdown RPG 32x32 - UI HotTB & Inv_18: 6929012228019277189
+      Topdown RPG 32x32 - UI HotTB & Inv_19: 5489946341422862416
+      Topdown RPG 32x32 - UI HotTB & Inv_2: -8808535555453369062
+      Topdown RPG 32x32 - UI HotTB & Inv_20: 2782769032798433688
+      Topdown RPG 32x32 - UI HotTB & Inv_21: -3463005685295883152
+      Topdown RPG 32x32 - UI HotTB & Inv_22: 8294422189156670580
+      Topdown RPG 32x32 - UI HotTB & Inv_23: 8278182563705303260
+      Topdown RPG 32x32 - UI HotTB & Inv_24: -7302191414823858703
+      Topdown RPG 32x32 - UI HotTB & Inv_25: -6906469151586034837
+      Topdown RPG 32x32 - UI HotTB & Inv_26: 8001080036689122059
+      Topdown RPG 32x32 - UI HotTB & Inv_27: -5123618066153702278
+      Topdown RPG 32x32 - UI HotTB & Inv_28: 7059562332847546032
+      Topdown RPG 32x32 - UI HotTB & Inv_29: 1921425988491978948
+      Topdown RPG 32x32 - UI HotTB & Inv_3: 1328920308482507130
+      Topdown RPG 32x32 - UI HotTB & Inv_30: 821165251400263216
+      Topdown RPG 32x32 - UI HotTB & Inv_31: 892641140754697268
+      Topdown RPG 32x32 - UI HotTB & Inv_32: 3624486422160443727
+      Topdown RPG 32x32 - UI HotTB & Inv_33: -1997006553944601525
+      Topdown RPG 32x32 - UI HotTB & Inv_34: -1772356188916469783
+      Topdown RPG 32x32 - UI HotTB & Inv_35: 758526417778994696
+      Topdown RPG 32x32 - UI HotTB & Inv_36: 3268264359234631184
+      Topdown RPG 32x32 - UI HotTB & Inv_37: 8798004900998751943
+      Topdown RPG 32x32 - UI HotTB & Inv_38: -28418645163695275
+      Topdown RPG 32x32 - UI HotTB & Inv_39: 1959647445333685298
+      Topdown RPG 32x32 - UI HotTB & Inv_4: -698422510704627472
+      Topdown RPG 32x32 - UI HotTB & Inv_40: 9191859164609997201
+      Topdown RPG 32x32 - UI HotTB & Inv_41: 7852441494530664248
+      Topdown RPG 32x32 - UI HotTB & Inv_42: -6963581323888806785
+      Topdown RPG 32x32 - UI HotTB & Inv_43: -2938427224758435084
+      Topdown RPG 32x32 - UI HotTB & Inv_44: -1822933746903394457
+      Topdown RPG 32x32 - UI HotTB & Inv_45: -2716416613113759626
+      Topdown RPG 32x32 - UI HotTB & Inv_46: -2769982806594713610
+      Topdown RPG 32x32 - UI HotTB & Inv_47: 7045920579402087154
+      Topdown RPG 32x32 - UI HotTB & Inv_48: -7974827396905963208
+      Topdown RPG 32x32 - UI HotTB & Inv_49: 2581000982796570318
+      Topdown RPG 32x32 - UI HotTB & Inv_5: -8977394455474109487
+      Topdown RPG 32x32 - UI HotTB & Inv_50: -2562446764770415638
+      Topdown RPG 32x32 - UI HotTB & Inv_51: -100454093016642719
+      Topdown RPG 32x32 - UI HotTB & Inv_6: 8042644847574683436
+      Topdown RPG 32x32 - UI HotTB & Inv_7: -6188838276034996248
+      Topdown RPG 32x32 - UI HotTB & Inv_8: -5119512073151106767
+      Topdown RPG 32x32 - UI HotTB & Inv_9: -540374260546633334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
