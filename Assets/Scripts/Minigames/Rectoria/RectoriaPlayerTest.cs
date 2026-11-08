@@ -12,6 +12,13 @@ namespace CampusQuest.Rectoria
         public float runSecondsPerCell = 1f / 6f;
         public Vector2Int facing = Vector2Int.up;
         private bool moving;
+        private CampusQuestMateoVisualDriver visual;
+
+        private void Awake()
+        {
+            visual = GetComponentInChildren<CampusQuestMateoVisualDriver>(true);
+            if (visual != null) visual.Face(facing);
+        }
 
         private void Update()
         {
@@ -24,6 +31,7 @@ namespace CampusQuest.Rectoria
             else if (k.dKey.isPressed || k.rightArrowKey.isPressed) direction = Vector2Int.right;
             if (direction == Vector2Int.zero) return;
             facing = direction;
+            if (visual != null) visual.Face(direction);
             Vector3Int current = map.grid.WorldToCell(transform.position);
             Vector3Int target = current + new Vector3Int(direction.x, direction.y, 0);
             if (!map.CanEnter(target)) return;
