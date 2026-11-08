@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using CampusQuest.Seguridad;
 using UnityEditor;
@@ -20,6 +21,8 @@ namespace CampusQuest.EditorTools
         const string PackRoot = "Assets/Sprites/Enviroment/Sp/Resurrected RPG 1.1";
         const string MixelGroundSheet =
             "Assets/Sprites/Enviroment/Sp/Top-Down RPG 32x32 by Mixel v1.7/Nature v1.5/Topdown RPG 32x32 - Ground Tileset 1.2.PNG";
+        const string PixelLabForestSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/SP_Bosque.png";
+        const string PixelLabTilesRoot = "Assets/Sprites/Enviroment/Sp/Tiles/PixelLab";
         const string RainTexturePath = "Assets/Sprites/Enviroment/Sp/Lluvia/Rain effect/rain effect.png";
         const string RainClipPath = "Assets/Audio/SFX/rain-storm.wav";
         const string MixerPath = "Assets/Audio/MainMixer.mixer";
@@ -55,6 +58,9 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Agregar recorrido del bosque")]
         public static void PaintRouteExtensionFromMenu() => PaintRouteExtension();
+
+        [MenuItem("Campus Quest/SP/Cambiar estilo del bosque")]
+        public static void ApplyPixelLabStyleFromMenu() => ApplyPixelLabForestStyle();
 
         [MenuItem("Campus Quest/SP/Dejar 40 gotas de lluvia")]
         public static void RebuildRain()
@@ -221,6 +227,237 @@ namespace CampusQuest.EditorTools
             EditorSceneManager.SaveScene(scene);
             AssetDatabase.SaveAssets();
             Debug.Log("Campus Quest: recorrido agregado encima de la entrada (" + MapW + "x" + RouteMapH + ").");
+        }
+
+        public static void ApplyPixelLabForestStyle()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var ground = FindGroundTilemap();
+            var canopy = FindTilemap("Tilemap_Canopy");
+            if (ground == null || canopy == null)
+            {
+                Debug.LogError("Campus Quest: faltan Tilemap_Ground o Tilemap_Canopy en Sp_Bosque.");
+                return;
+            }
+
+            EnsureTileFolder();
+            EnsurePixelLabTileFolder();
+            var palette = BuildPixelLabPalette();
+            var mixel = LoadMixelTileSet();
+            var legacyCanopy = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Canopy.asset");
+
+            int groundSwaps = 0;
+            foreach (var pos in ground.cellBounds.allPositionsWithin)
+            {
+                var current = ground.GetTile(pos);
+                if (current == null)
+                    continue;
+
+                if (current == mixel.GrassA || current == mixel.GrassB)
+                {
+                    ground.SetTile(pos, palette.GrassVariants[(pos.x * 3 + pos.y * 7) & 3]);
+                    groundSwaps++;
+                }
+                else if (mixel.PathAndDirt.Contains(current))
+                {
+                    ground.SetTile(pos, palette.Dirt);
+                    groundSwaps++;
+                }
+            }
+
+            int canopySwaps = 0;
+            foreach (var pos in canopy.cellBounds.allPositionsWithin)
+            {
+                var current = canopy.GetTile(pos);
+                if (current == null)
+                    continue;
+                if (current != legacyCanopy && !palette.Pines.Contains(current))
+                    continue;
+
+                canopy.SetTile(pos, palette.Pines[(pos.x + pos.y) % palette.Pines.Length]);
+                canopySwaps++;
+            }
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Campus Quest: estilo PixelLab aplicado (suelo " + groundSwaps + ", copas " + canopySwaps + ").");
+        }
+
+        static void EnsurePixelLabTileFolder()
+        {
+            if (!AssetDatabase.IsValidFolder(TilesRoot + "/PixelLab"))
+                AssetDatabase.CreateFolder(TilesRoot, "PixelLab");
+        }
+
+        struct PixelLabPalette
+        {
+            public Tile Dirt;
+            public Tile[] GrassVariants;
+            public Tile[] Pines;
+        }
+
+        struct MixelTileSet
+        {
+            public Tile GrassA;
+            public Tile GrassB;
+            public HashSet<Tile> PathAndDirt;
+        }
+
+        static MixelTileSet LoadMixelTileSet()
+        {
+            var pathNames = new[]
+            {
+                "SP_Mixel_Dirt_A", "SP_Mixel_Dirt_B", "SP_Mixel_Dirt_C", "SP_Mixel_Dirt_D",
+                "SP_Mixel_Path_N", "SP_Mixel_Path_S", "SP_Mixel_Path_E", "SP_Mixel_Path_W",
+                "SP_Mixel_Path_NE", "SP_Mixel_Path_NW", "SP_Mixel_Path_SE", "SP_Mixel_Path_SW"
+            };
+            var set = new HashSet<Tile>();
+            foreach (var name in pathNames)
+            {
+                var tile = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/" + name + ".asset");
+                if (tile != null)
+                    set.Add(tile);
+            }
+
+            return new MixelTileSet
+            {
+                GrassA = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Mixel_Grass_A.asset"),
+                GrassB = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Mixel_Grass_B.asset"),
+                PathAndDirt = set
+            };
+        }
+
+        static PixelLabPalette BuildPixelLabPalette()
+        {
+            var bySpriteName = LoadSprites(PixelLabForestSheet)
+                .ToDictionary(s => s.name, s => s, StringComparer.Ordinal);
+            Sprite RequireSprite(string name)
+            {
+                if (!bySpriteName.TryGetValue(name, out var sprite))
+                    throw new InvalidOperationException("PixelLab: falta sprite " + name);
+                return sprite;
+            }
+
+            return new PixelLabPalette
+            {
+                Dirt = EnsureTile(RequireSprite("SP_Bosque_19"), "SP_Pixel_Dirt"),
+                GrassVariants = new[]
+                {
+                    EnsureTile(RequireSprite("SP_Bosque_0"), "SP_Pixel_Grass_0"),
+                    EnsureTile(RequireSprite("SP_Bosque_2"), "SP_Pixel_Grass_1"),
+                    EnsureTile(RequireSprite("SP_Bosque_3"), "SP_Pixel_Grass_2"),
+                    EnsureTile(RequireSprite("SP_Bosque_9"), "SP_Pixel_Grass_3")
+                },
+                Pines = new[]
+                {
+                    EnsureTile(EnsurePixelLabPineSprite("SP_Pixel_Pine_0", 177, 176, 31, 79), "SP_Pixel_Pine_Tile_0"),
+                    EnsureTile(EnsurePixelLabPineSprite("SP_Pixel_Pine_1", 225, 193, 30, 62), "SP_Pixel_Pine_Tile_1"),
+                    EnsureTile(EnsurePixelLabPineSprite("SP_Pixel_Pine_2", 225, 97, 30, 62), "SP_Pixel_Pine_Tile_2")
+                }
+            };
+        }
+
+        static Sprite EnsurePixelLabPineSprite(string fileName, int x, int y, int width, int height)
+        {
+            string pngPath = PixelLabTilesRoot + "/" + fileName + ".png";
+            string metaPath = pngPath + ".meta";
+
+            if (!File.Exists(pngPath) || !File.Exists(metaPath) || new FileInfo(pngPath).Length == 0)
+            {
+                var source = AssetDatabase.LoadAssetAtPath<Texture2D>(PixelLabForestSheet);
+                if (source == null)
+                    throw new InvalidOperationException("No se encuentra " + PixelLabForestSheet);
+
+                var readable = MakeReadable(source);
+                try
+                {
+                    var pixels = readable.GetPixels(x, y, width, height);
+                    var slice = new Texture2D(width, height, TextureFormat.RGBA32, false);
+                    slice.SetPixels(pixels);
+                    slice.Apply();
+                    File.WriteAllBytes(pngPath, slice.EncodeToPNG());
+                    UnityEngine.Object.DestroyImmediate(slice);
+                }
+                finally
+                {
+                    UnityEngine.Object.DestroyImmediate(readable);
+                }
+
+                AssetDatabase.ImportAsset(pngPath, ImportAssetOptions.ForceUpdate);
+            }
+
+            ConfigurePixelLabPineImporter(pngPath);
+            return AssetDatabase.LoadAssetAtPath<Sprite>(pngPath);
+        }
+
+        static void ConfigurePixelLabPineImporter(string pngPath)
+        {
+            var importer = AssetImporter.GetAtPath(pngPath) as TextureImporter;
+            if (importer == null)
+                return;
+
+            bool dirty = false;
+            if (importer.textureType != TextureImporterType.Sprite)
+            {
+                importer.textureType = TextureImporterType.Sprite;
+                dirty = true;
+            }
+            if (importer.spriteImportMode != SpriteImportMode.Single)
+            {
+                importer.spriteImportMode = SpriteImportMode.Single;
+                dirty = true;
+            }
+            if (importer.spritePixelsPerUnit != 32f)
+            {
+                importer.spritePixelsPerUnit = 32f;
+                dirty = true;
+            }
+            if (importer.filterMode != FilterMode.Point)
+            {
+                importer.filterMode = FilterMode.Point;
+                dirty = true;
+            }
+            if (importer.textureCompression != TextureImporterCompression.Uncompressed)
+            {
+                importer.textureCompression = TextureImporterCompression.Uncompressed;
+                dirty = true;
+            }
+            if (importer.alphaIsTransparency != true)
+            {
+                importer.alphaIsTransparency = true;
+                dirty = true;
+            }
+
+            var settings = new TextureImporterSettings();
+            importer.ReadTextureSettings(settings);
+            if (settings.spriteAlignment != (int)SpriteAlignment.Custom
+                || settings.spritePivot != new Vector2(0.5f, 0f)
+                || Math.Abs(settings.spritePixelsPerUnit - 32f) > 0.01f)
+            {
+                settings.spriteAlignment = (int)SpriteAlignment.Custom;
+                settings.spritePivot = new Vector2(0.5f, 0f);
+                settings.spritePixelsPerUnit = 32;
+                importer.SetTextureSettings(settings);
+                dirty = true;
+            }
+
+            if (dirty)
+                importer.SaveAndReimport();
+        }
+
+        static Texture2D MakeReadable(Texture2D source)
+        {
+            var rt = RenderTexture.GetTemporary(source.width, source.height, 0, RenderTextureFormat.ARGB32);
+            Graphics.Blit(source, rt);
+            var previous = RenderTexture.active;
+            RenderTexture.active = rt;
+            var copy = new Texture2D(source.width, source.height, TextureFormat.RGBA32, false);
+            copy.ReadPixels(new Rect(0, 0, source.width, source.height), 0, 0);
+            copy.Apply();
+            RenderTexture.active = previous;
+            RenderTexture.ReleaseTemporary(rt);
+            return copy;
         }
 
         static bool[,] BuildExtensionPathMask()
