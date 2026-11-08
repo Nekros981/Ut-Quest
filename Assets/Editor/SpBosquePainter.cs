@@ -18,6 +18,8 @@ namespace CampusQuest.EditorTools
         const string ScenePath = "Assets/Scenes/Sp_Bosque.unity";
         const string TilesRoot = "Assets/Sprites/Enviroment/Sp/Tiles";
         const string PackRoot = "Assets/Sprites/Enviroment/Sp/Resurrected RPG 1.1";
+        const string MixelGroundSheet =
+            "Assets/Sprites/Enviroment/Sp/Top-Down RPG 32x32 by Mixel v1.7/Nature v1.5/Topdown RPG 32x32 - Ground Tileset 1.2.PNG";
         const string RainTexturePath = "Assets/Sprites/Enviroment/Sp/Lluvia/Rain effect/rain effect.png";
         const string RainClipPath = "Assets/Audio/SFX/rain-storm.wav";
         const string MixerPath = "Assets/Audio/MainMixer.mixer";
@@ -45,6 +47,9 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Pintar bosque exterior")]
         public static void PaintFromMenu() => Paint();
+
+        [MenuItem("Campus Quest/SP/Cambiar piso del bosque")]
+        public static void RepaintGroundFromMenu() => RepaintGroundOnly();
 
         [MenuItem("Campus Quest/SP/Dejar 40 gotas de lluvia")]
         public static void RebuildRain()
@@ -126,6 +131,157 @@ namespace CampusQuest.EditorTools
             AssetDatabase.SaveAssets();
             Selection.activeGameObject = gridGo;
             Debug.Log("Campus Quest: entrada amplia SP pintada (" + MapW + "x" + MapH + ").");
+        }
+
+        public static void RepaintGroundOnly()
+        {
+            var scene = SceneManager.GetActiveScene();
+            if (scene.path != ScenePath)
+                scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+
+            var ground = FindGroundTilemap();
+            if (ground == null)
+            {
+                Debug.LogError("Campus Quest: no hay Tilemap_Ground en Sp_Bosque.");
+                return;
+            }
+
+            EnsureTileFolder();
+            var tiles = BuildMixelGroundPalette();
+            var path = BuildPathMask();
+
+            for (int y = 0; y < MapH; y++)
+            for (int x = 0; x < MapW; x++)
+            {
+                var cell = new Vector3Int(x, y, 0);
+                ground.SetTile(cell, path[x, y]
+                    ? SelectPathGroundTile(tiles, path, x, y)
+                    : SelectGrassGroundTile(tiles, x, y));
+            }
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Campus Quest: Tilemap_Ground actualizado con tileset Mixel.");
+        }
+
+        static Tilemap FindGroundTilemap()
+        {
+            foreach (var tilemap in UnityEngine.Object.FindObjectsByType<Tilemap>(FindObjectsSortMode.None))
+            {
+                if (tilemap != null && tilemap.name == "Tilemap_Ground")
+                    return tilemap;
+            }
+            return null;
+        }
+
+        struct MixelGroundPalette
+        {
+            public Tile GrassA;
+            public Tile GrassB;
+            public Tile DirtA;
+            public Tile DirtB;
+            public Tile DirtC;
+            public Tile DirtD;
+            public Tile EdgeNorth;
+            public Tile EdgeSouth;
+            public Tile EdgeWest;
+            public Tile EdgeEast;
+            public Tile CornerNorthWest;
+            public Tile CornerNorthEast;
+            public Tile CornerSouthWest;
+            public Tile CornerSouthEast;
+        }
+
+        static MixelGroundPalette BuildMixelGroundPalette()
+        {
+            var byIndex = LoadSprites(MixelGroundSheet)
+                .Select(s => new { Sprite = s, Index = ParseGroundSpriteIndex(s.name) })
+                .Where(p => p.Index >= 0)
+                .ToDictionary(p => p.Index, p => p.Sprite);
+
+            Tile Require(int index, string assetName)
+            {
+                if (!byIndex.TryGetValue(index, out var sprite))
+                    throw new InvalidOperationException(
+                        "Ground Tileset 1.2 sin sprite _" + index + " (" + assetName + ").");
+                return EnsureTile(sprite, assetName);
+            }
+
+            return new MixelGroundPalette
+            {
+                GrassA = Require(11, "SP_Mixel_Grass_A"),
+                GrassB = Require(23, "SP_Mixel_Grass_B"),
+                DirtA = Require(98, "SP_Mixel_Dirt_A"),
+                DirtB = Require(99, "SP_Mixel_Dirt_B"),
+                DirtC = Require(110, "SP_Mixel_Dirt_C"),
+                DirtD = Require(124, "SP_Mixel_Dirt_D"),
+                EdgeNorth = Require(72, "SP_Mixel_Path_N"),
+                EdgeSouth = Require(84, "SP_Mixel_Path_S"),
+                EdgeWest = Require(76, "SP_Mixel_Path_W"),
+                EdgeEast = Require(77, "SP_Mixel_Path_E"),
+                CornerNorthWest = Require(96, "SP_Mixel_Path_NW"),
+                CornerNorthEast = Require(97, "SP_Mixel_Path_NE"),
+                CornerSouthWest = Require(108, "SP_Mixel_Path_SW"),
+                CornerSouthEast = Require(109, "SP_Mixel_Path_SE")
+            };
+        }
+
+        static int ParseGroundSpriteIndex(string spriteName)
+        {
+            const string suffix = "Ground Tileset 1.2_";
+            int i = spriteName.LastIndexOf(suffix, StringComparison.Ordinal);
+            if (i < 0)
+                return -1;
+            return int.TryParse(spriteName.Substring(i + suffix.Length), out var index) ? index : -1;
+        }
+
+        static bool IsPathCell(bool[,] path, int x, int y)
+        {
+            if (x < 0 || x >= MapW || y < 0 || y >= MapH)
+                return true;
+            return path[x, y];
+        }
+
+        static Tile SelectGrassGroundTile(MixelGroundPalette palette, int x, int y) =>
+            (x * 3 + y * 7) % 11 == 0 ? palette.GrassB : palette.GrassA;
+
+        static Tile SelectPathGroundTile(MixelGroundPalette palette, bool[,] path, int x, int y)
+        {
+            bool north = IsPathCell(path, x, y + 1);
+            bool south = IsPathCell(path, x, y - 1);
+            bool west = IsPathCell(path, x - 1, y);
+            bool east = IsPathCell(path, x + 1, y);
+
+            if (!north && !west)
+                return palette.CornerNorthWest;
+            if (!north && !east)
+                return palette.CornerNorthEast;
+            if (!south && !west)
+                return palette.CornerSouthWest;
+            if (!south && !east)
+                return palette.CornerSouthEast;
+            if (!west)
+                return palette.EdgeWest;
+            if (!east)
+                return palette.EdgeEast;
+            if (!north)
+                return palette.EdgeNorth;
+            if (!south)
+                return palette.EdgeSouth;
+
+            return SelectDirtFillTile(palette, x, y);
+        }
+
+        static Tile SelectDirtFillTile(MixelGroundPalette palette, int x, int y)
+        {
+            switch ((x * 5 + y * 11) % 4)
+            {
+                case 0: return palette.DirtA;
+                case 1: return palette.DirtB;
+                case 2: return palette.DirtC;
+                default: return palette.DirtD;
+            }
         }
 
         static bool IsInsideArena(int x, int y) =>

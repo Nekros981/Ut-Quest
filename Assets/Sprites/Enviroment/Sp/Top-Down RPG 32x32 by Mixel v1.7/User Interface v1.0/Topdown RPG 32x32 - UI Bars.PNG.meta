@@ -765,11 +765,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 368
-        width: 96
-        height: 16
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -786,12 +786,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 368
-        width: 96
-        height: 16
+        x: 32
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -808,12 +808,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 368
-        width: 96
-        height: 16
+        x: 64
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -830,12 +830,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_3
       rect:
         serializedVersion: 2
-        x: 288
-        y: 368
-        width: 96
-        height: 16
+        x: 96
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -852,12 +852,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 336
-        width: 96
-        height: 29
+        x: 128
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -874,12 +874,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 336
-        width: 96
-        height: 29
+        x: 160
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -897,11 +897,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 336
-        width: 96
-        height: 29
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -918,12 +918,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_7
       rect:
         serializedVersion: 2
-        x: 288
-        y: 336
-        width: 96
-        height: 29
+        x: 224
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -940,12 +940,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 304
-        width: 96
-        height: 29
+        x: 256
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -962,12 +962,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 96
-        height: 16
+        x: 288
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -984,12 +984,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 304
-        width: 24
-        height: 16
+        x: 320
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1006,12 +1006,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 288
-        width: 24
-        height: 16
+        x: 352
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1028,12 +1028,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_12
       rect:
         serializedVersion: 2
-        x: 100
-        y: 304
-        width: 92
-        height: 29
+        x: 0
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1050,12 +1050,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_13
       rect:
         serializedVersion: 2
-        x: 120
-        y: 304
-        width: 24
-        height: 16
+        x: 32
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1072,12 +1072,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_14
       rect:
         serializedVersion: 2
-        x: 120
-        y: 288
-        width: 24
-        height: 16
+        x: 64
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1094,12 +1094,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_15
       rect:
         serializedVersion: 2
-        x: 144
-        y: 304
-        width: 24
-        height: 16
+        x: 96
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1116,12 +1116,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_16
       rect:
         serializedVersion: 2
-        x: 144
-        y: 288
-        width: 24
-        height: 16
+        x: 128
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1138,12 +1138,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_17
       rect:
         serializedVersion: 2
-        x: 168
-        y: 288
-        width: 24
-        height: 16
+        x: 160
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1161,11 +1161,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 304
-        width: 16
-        height: 16
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1182,12 +1182,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_19
       rect:
         serializedVersion: 2
-        x: 192
-        y: 288
-        width: 16
-        height: 16
+        x: 224
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1204,12 +1204,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_20
       rect:
         serializedVersion: 2
-        x: 196
-        y: 304
-        width: 92
-        height: 29
+        x: 256
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1226,12 +1226,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_21
       rect:
         serializedVersion: 2
-        x: 208
-        y: 304
-        width: 16
-        height: 16
+        x: 288
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1248,12 +1248,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_22
       rect:
         serializedVersion: 2
-        x: 208
-        y: 288
-        width: 16
-        height: 16
+        x: 320
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1270,12 +1270,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_23
       rect:
         serializedVersion: 2
-        x: 224
-        y: 304
-        width: 16
-        height: 16
+        x: 352
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1292,12 +1292,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_24
       rect:
         serializedVersion: 2
-        x: 224
+        x: 0
         y: 288
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1314,12 +1314,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_25
       rect:
         serializedVersion: 2
-        x: 240
-        y: 304
-        width: 16
-        height: 16
+        x: 32
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1336,12 +1336,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_26
       rect:
         serializedVersion: 2
-        x: 240
+        x: 64
         y: 288
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1358,12 +1358,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_27
       rect:
         serializedVersion: 2
-        x: 256
-        y: 304
-        width: 16
-        height: 16
+        x: 96
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1380,12 +1380,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_28
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 288
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1402,12 +1402,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_29
       rect:
         serializedVersion: 2
-        x: 272
+        x: 160
         y: 288
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1424,12 +1424,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_30
       rect:
         serializedVersion: 2
-        x: 288
-        y: 304
-        width: 12
-        height: 16
+        x: 192
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1446,12 +1446,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_31
       rect:
         serializedVersion: 2
-        x: 288
+        x: 224
         y: 288
-        width: 12
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1468,12 +1468,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_32
       rect:
         serializedVersion: 2
-        x: 292
-        y: 304
-        width: 92
-        height: 29
+        x: 256
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1490,12 +1490,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_33
       rect:
         serializedVersion: 2
-        x: 300
-        y: 304
-        width: 12
-        height: 16
+        x: 288
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1512,12 +1512,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_34
       rect:
         serializedVersion: 2
-        x: 300
+        x: 320
         y: 288
-        width: 12
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1534,12 +1534,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_35
       rect:
         serializedVersion: 2
-        x: 312
-        y: 304
-        width: 12
-        height: 16
+        x: 352
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1556,12 +1556,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_36
       rect:
         serializedVersion: 2
-        x: 312
-        y: 288
-        width: 12
-        height: 16
+        x: 0
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1578,12 +1578,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_37
       rect:
         serializedVersion: 2
-        x: 324
-        y: 304
-        width: 12
-        height: 16
+        x: 32
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1600,12 +1600,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_38
       rect:
         serializedVersion: 2
-        x: 324
-        y: 288
-        width: 12
-        height: 16
+        x: 64
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1622,12 +1622,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_39
       rect:
         serializedVersion: 2
-        x: 336
-        y: 304
-        width: 12
-        height: 16
+        x: 96
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1644,12 +1644,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_40
       rect:
         serializedVersion: 2
-        x: 336
-        y: 288
-        width: 12
-        height: 16
+        x: 128
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1666,12 +1666,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_41
       rect:
         serializedVersion: 2
-        x: 348
-        y: 304
-        width: 12
-        height: 16
+        x: 160
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1688,12 +1688,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_42
       rect:
         serializedVersion: 2
-        x: 348
-        y: 288
-        width: 12
-        height: 16
+        x: 192
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1710,12 +1710,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_43
       rect:
         serializedVersion: 2
-        x: 360
-        y: 304
-        width: 12
-        height: 16
+        x: 224
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1732,12 +1732,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_44
       rect:
         serializedVersion: 2
-        x: 360
-        y: 288
-        width: 12
-        height: 16
+        x: 256
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1754,12 +1754,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_45
       rect:
         serializedVersion: 2
-        x: 372
-        y: 288
-        width: 12
-        height: 16
+        x: 288
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1776,12 +1776,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_46
       rect:
         serializedVersion: 2
-        x: 0
-        y: 272
-        width: 96
-        height: 16
+        x: 320
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1798,12 +1798,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_47
       rect:
         serializedVersion: 2
-        x: 0
+        x: 352
         y: 256
-        width: 96
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1820,12 +1820,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_48
       rect:
         serializedVersion: 2
-        x: 96
-        y: 223
-        width: 96
-        height: 66
+        x: 0
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1842,12 +1842,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_49
       rect:
         serializedVersion: 2
-        x: 192
-        y: 223
-        width: 96
-        height: 66
+        x: 32
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1864,12 +1864,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_50
       rect:
         serializedVersion: 2
-        x: 288
-        y: 223
-        width: 96
-        height: 66
+        x: 64
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1886,12 +1886,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_51
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
-        width: 96
-        height: 16
+        x: 96
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1908,12 +1908,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_52
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 224
-        width: 96
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1930,12 +1930,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_53
       rect:
         serializedVersion: 2
-        x: 1
-        y: 209
-        width: 14
-        height: 14
+        x: 160
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1952,12 +1952,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_54
       rect:
         serializedVersion: 2
-        x: 17
-        y: 209
-        width: 14
-        height: 14
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1974,12 +1974,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_55
       rect:
         serializedVersion: 2
-        x: 33
-        y: 209
-        width: 14
-        height: 14
+        x: 224
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1996,12 +1996,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_56
       rect:
         serializedVersion: 2
-        x: 49
-        y: 209
-        width: 14
-        height: 14
+        x: 256
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2018,12 +2018,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_57
       rect:
         serializedVersion: 2
-        x: 65
-        y: 209
-        width: 14
-        height: 14
+        x: 288
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2040,12 +2040,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_58
       rect:
         serializedVersion: 2
-        x: 81
-        y: 209
-        width: 14
-        height: 14
+        x: 320
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2062,12 +2062,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_59
       rect:
         serializedVersion: 2
-        x: 96
-        y: 208
-        width: 24
-        height: 16
+        x: 352
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2084,12 +2084,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_60
       rect:
         serializedVersion: 2
-        x: 120
-        y: 208
-        width: 24
-        height: 16
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2106,12 +2106,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_61
       rect:
         serializedVersion: 2
-        x: 144
-        y: 208
-        width: 24
-        height: 16
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2128,12 +2128,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_62
       rect:
         serializedVersion: 2
-        x: 168
-        y: 208
-        width: 24
-        height: 16
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2150,12 +2150,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_63
       rect:
         serializedVersion: 2
-        x: 192
-        y: 208
-        width: 16
-        height: 16
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2172,12 +2172,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_64
       rect:
         serializedVersion: 2
-        x: 208
-        y: 208
-        width: 16
-        height: 16
+        x: 128
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2194,12 +2194,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_65
       rect:
         serializedVersion: 2
-        x: 224
-        y: 208
-        width: 16
-        height: 16
+        x: 160
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2216,12 +2216,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_66
       rect:
         serializedVersion: 2
-        x: 240
-        y: 208
-        width: 16
-        height: 16
+        x: 192
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2238,12 +2238,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_67
       rect:
         serializedVersion: 2
-        x: 256
-        y: 208
-        width: 16
-        height: 16
+        x: 224
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2260,12 +2260,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_68
       rect:
         serializedVersion: 2
-        x: 272
-        y: 208
-        width: 16
-        height: 16
+        x: 256
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2283,11 +2283,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 208
-        width: 12
-        height: 16
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2304,12 +2304,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_70
       rect:
         serializedVersion: 2
-        x: 300
-        y: 208
-        width: 12
-        height: 16
+        x: 320
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2326,12 +2326,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_71
       rect:
         serializedVersion: 2
-        x: 312
-        y: 208
-        width: 12
-        height: 16
+        x: 352
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2348,12 +2348,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_72
       rect:
         serializedVersion: 2
-        x: 324
-        y: 208
-        width: 12
-        height: 16
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2370,12 +2370,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_73
       rect:
         serializedVersion: 2
-        x: 336
-        y: 208
-        width: 12
-        height: 16
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2392,12 +2392,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_74
       rect:
         serializedVersion: 2
-        x: 348
-        y: 208
-        width: 12
-        height: 16
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2414,12 +2414,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_75
       rect:
         serializedVersion: 2
-        x: 360
-        y: 208
-        width: 12
-        height: 16
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2436,12 +2436,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_76
       rect:
         serializedVersion: 2
-        x: 372
-        y: 208
-        width: 12
-        height: 16
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2458,12 +2458,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_77
       rect:
         serializedVersion: 2
-        x: 1
-        y: 193
-        width: 14
-        height: 14
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2480,12 +2480,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_78
       rect:
         serializedVersion: 2
-        x: 17
-        y: 193
-        width: 14
-        height: 14
+        x: 192
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2502,12 +2502,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_79
       rect:
         serializedVersion: 2
-        x: 33
-        y: 193
-        width: 14
-        height: 14
+        x: 224
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2524,12 +2524,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_80
       rect:
         serializedVersion: 2
-        x: 49
-        y: 193
-        width: 14
-        height: 14
+        x: 256
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2546,12 +2546,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_81
       rect:
         serializedVersion: 2
-        x: 65
-        y: 193
-        width: 14
-        height: 14
+        x: 288
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2568,12 +2568,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_82
       rect:
         serializedVersion: 2
-        x: 81
-        y: 193
-        width: 14
-        height: 14
+        x: 320
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2590,12 +2590,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_83
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 24
-        height: 16
+        x: 352
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2612,12 +2612,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_84
       rect:
         serializedVersion: 2
-        x: 120
-        y: 192
-        width: 24
-        height: 16
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2634,12 +2634,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_85
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
-        width: 24
-        height: 16
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2656,12 +2656,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_86
       rect:
         serializedVersion: 2
-        x: 168
-        y: 192
-        width: 24
-        height: 16
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2678,12 +2678,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_87
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 16
-        height: 16
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2700,12 +2700,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_88
       rect:
         serializedVersion: 2
-        x: 208
-        y: 192
-        width: 16
-        height: 16
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2722,12 +2722,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_89
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
-        width: 16
-        height: 16
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2744,12 +2744,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_90
       rect:
         serializedVersion: 2
-        x: 240
-        y: 192
-        width: 16
-        height: 16
+        x: 192
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2766,12 +2766,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_91
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 16
-        height: 16
+        x: 224
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2788,12 +2788,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_92
       rect:
         serializedVersion: 2
-        x: 272
-        y: 192
-        width: 16
-        height: 16
+        x: 256
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2811,11 +2811,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 192
-        width: 12
-        height: 16
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2832,12 +2832,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_94
       rect:
         serializedVersion: 2
-        x: 300
-        y: 192
-        width: 12
-        height: 16
+        x: 320
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2854,12 +2854,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_95
       rect:
         serializedVersion: 2
-        x: 312
-        y: 192
-        width: 12
-        height: 16
+        x: 352
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2876,12 +2876,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_96
       rect:
         serializedVersion: 2
-        x: 324
-        y: 192
-        width: 12
-        height: 16
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2898,12 +2898,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_97
       rect:
         serializedVersion: 2
-        x: 336
-        y: 192
-        width: 12
-        height: 16
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2920,12 +2920,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_98
       rect:
         serializedVersion: 2
-        x: 348
-        y: 192
-        width: 12
-        height: 16
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2942,12 +2942,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_99
       rect:
         serializedVersion: 2
-        x: 360
-        y: 192
-        width: 12
-        height: 16
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2964,12 +2964,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_100
       rect:
         serializedVersion: 2
-        x: 372
-        y: 192
-        width: 12
-        height: 16
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2986,12 +2986,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_101
       rect:
         serializedVersion: 2
-        x: 1
-        y: 177
-        width: 14
-        height: 14
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3008,12 +3008,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_102
       rect:
         serializedVersion: 2
-        x: 17
-        y: 177
-        width: 14
-        height: 14
+        x: 192
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3030,12 +3030,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_103
       rect:
         serializedVersion: 2
-        x: 33
-        y: 177
-        width: 14
-        height: 14
+        x: 224
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3052,12 +3052,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_104
       rect:
         serializedVersion: 2
-        x: 49
-        y: 177
-        width: 14
-        height: 14
+        x: 256
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3074,12 +3074,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_105
       rect:
         serializedVersion: 2
-        x: 65
-        y: 177
-        width: 14
-        height: 14
+        x: 288
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3096,12 +3096,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_106
       rect:
         serializedVersion: 2
-        x: 81
-        y: 177
-        width: 14
-        height: 14
+        x: 320
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3118,12 +3118,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_107
       rect:
         serializedVersion: 2
-        x: 96
-        y: 176
-        width: 24
-        height: 16
+        x: 352
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3140,12 +3140,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_108
       rect:
         serializedVersion: 2
-        x: 120
-        y: 176
-        width: 24
-        height: 16
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3162,12 +3162,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_109
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
-        width: 24
-        height: 16
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3184,12 +3184,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_110
       rect:
         serializedVersion: 2
-        x: 168
-        y: 176
-        width: 24
-        height: 16
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3206,12 +3206,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_111
       rect:
         serializedVersion: 2
-        x: 192
-        y: 176
-        width: 16
-        height: 16
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3228,12 +3228,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_112
       rect:
         serializedVersion: 2
-        x: 208
-        y: 176
-        width: 16
-        height: 16
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3250,12 +3250,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_113
       rect:
         serializedVersion: 2
-        x: 224
-        y: 176
-        width: 16
-        height: 16
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3272,12 +3272,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_114
       rect:
         serializedVersion: 2
-        x: 240
-        y: 176
-        width: 16
-        height: 16
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3295,11 +3295,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 176
-        width: 16
-        height: 16
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3316,12 +3316,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_116
       rect:
         serializedVersion: 2
-        x: 272
-        y: 176
-        width: 16
-        height: 16
+        x: 288
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3338,12 +3338,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_117
       rect:
         serializedVersion: 2
-        x: 288
-        y: 176
-        width: 12
-        height: 16
+        x: 320
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3360,12 +3360,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_118
       rect:
         serializedVersion: 2
-        x: 300
-        y: 176
-        width: 12
-        height: 16
+        x: 352
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3382,12 +3382,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_119
       rect:
         serializedVersion: 2
-        x: 312
-        y: 176
-        width: 12
-        height: 16
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3404,12 +3404,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_120
       rect:
         serializedVersion: 2
-        x: 324
-        y: 176
-        width: 12
-        height: 16
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3426,12 +3426,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_121
       rect:
         serializedVersion: 2
-        x: 336
-        y: 176
-        width: 12
-        height: 16
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3448,12 +3448,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_122
       rect:
         serializedVersion: 2
-        x: 348
-        y: 176
-        width: 12
-        height: 16
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3470,12 +3470,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_123
       rect:
         serializedVersion: 2
-        x: 360
-        y: 176
-        width: 12
-        height: 16
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3492,12 +3492,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_124
       rect:
         serializedVersion: 2
-        x: 372
-        y: 176
-        width: 12
-        height: 16
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3514,12 +3514,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_125
       rect:
         serializedVersion: 2
-        x: 1
-        y: 161
-        width: 14
-        height: 14
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3536,12 +3536,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_126
       rect:
         serializedVersion: 2
-        x: 17
-        y: 161
-        width: 14
-        height: 14
+        x: 224
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3558,12 +3558,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_127
       rect:
         serializedVersion: 2
-        x: 33
-        y: 161
-        width: 14
-        height: 14
+        x: 256
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3580,12 +3580,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_128
       rect:
         serializedVersion: 2
-        x: 49
-        y: 161
-        width: 14
-        height: 14
+        x: 288
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3602,12 +3602,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_129
       rect:
         serializedVersion: 2
-        x: 65
-        y: 161
-        width: 14
-        height: 14
+        x: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3624,12 +3624,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_130
       rect:
         serializedVersion: 2
-        x: 81
-        y: 161
-        width: 14
-        height: 14
+        x: 352
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3646,12 +3646,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_131
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
-        width: 24
-        height: 16
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3668,12 +3668,12 @@ TextureImporter:
       name: Topdown RPG 32x32 - UI Bars_132
       rect:
         serializedVersion: 2
-        x: 120
-        y: 160
-        width: 24
-        height: 16
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3686,1859 +3686,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_133
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 160
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08eba77cb05c1ad20800000000000000
-      internalID: 3288125857339195008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_134
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 160
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e5548c58cf3cd200800000000000000
-      internalID: 206109812730385891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_135
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2538f356e0a0dc000800000000000000
-      internalID: 57713427170165586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_136
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a2a2d3d1f57b5fc0800000000000000
-      internalID: -3505078203476434269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_137
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 297eb0cbc058e0de0800000000000000
-      internalID: -1365007347305683054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_138
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a0eb227fc2d6da70800000000000000
-      internalID: 8851493906058829989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_139
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8638a5ad724f27bf0800000000000000
-      internalID: -327931370840358040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_140
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af2f50adb569fd1b0800000000000000
-      internalID: -5629615687945817350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_141
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 537c5674ced987640800000000000000
-      internalID: 5077982217995929397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_142
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 066a613b655cfb480800000000000000
-      internalID: -8881162963988863392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_143
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ef5b200bac039230800000000000000
-      internalID: 3644270452054646759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_144
-      rect:
-        serializedVersion: 2
-        x: 324
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7876f09f452622cf0800000000000000
-      internalID: -278552109848238201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_145
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f71e98c24e5b3030800000000000000
-      internalID: 3475475178373126136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_146
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a5e06eb0f55ea850800000000000000
-      internalID: 6390139413759845797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_147
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d50a8644f636103c0800000000000000
-      internalID: -4395122431796666275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_148
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 259dbc2ae4c564d80800000000000000
-      internalID: -8266818573183493806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_149
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6bb9d302e891b280800000000000000
-      internalID: -9029267681406502038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_150
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afa0011752eeb0cc0800000000000000
-      internalID: -3743636820650358022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_151
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 991030fb79f1eb560800000000000000
-      internalID: 7331331980010914201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_152
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96ee34687dd58d0a0800000000000000
-      internalID: -6856627252419629463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_153
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 895f28283182c9af0800000000000000
-      internalID: -388391403601594984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_154
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7a2efa918e033060800000000000000
-      internalID: 6931900201267243647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_155
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53b3736f30926efc0800000000000000
-      internalID: -3466037766222562507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_156
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 13
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53f8d434e5e3bd520800000000000000
-      internalID: 2727842573879971637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_157
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd518dbd5633d0e0800000000000000
-      internalID: -2246392012888515117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_158
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 96
-        width: 13
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23fbddb6f6072f580800000000000000
-      internalID: -8794843498447782094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_159
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8640a24e9c7132a70800000000000000
-      internalID: 8800904252695905384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_160
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2cbe4cf13f55a34c0800000000000000
-      internalID: -4307035590928045118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_161
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 848fd6549b2183660800000000000000
-      internalID: 7365657777507530824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_162
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96f7d442ce744bea0800000000000000
-      internalID: -5857978135755260055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_163
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 144
-        width: 96
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28e7b2b59a26be980800000000000000
-      internalID: -8508598591467848062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_164
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 96
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45295c3fe39d1e3e0800000000000000
-      internalID: -2026099492939001260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_165
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 144
-        width: 96
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04e6110c3b0211910800000000000000
-      internalID: 1806260881945882176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_166
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 128
-        width: 96
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b874cd05f004745e0800000000000000
-      internalID: -1925499881152297077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_167
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 86
-        width: 48
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ccebce153f595150800000000000000
-      internalID: 5861821071753997512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_168
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 86
-        width: 48
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f311299a247096a0800000000000000
-      internalID: -6444523340460649483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_169
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 102
-        width: 22
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfe772c8d51e4b5f0800000000000000
-      internalID: -741720246709682435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_170
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 102
-        width: 22
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2363c3731427c7c90800000000000000
-      internalID: -7170730882255538638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_171
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c750e603937aece0800000000000000
-      internalID: -1375159660895512631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_172
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 699050bd32f2e0590800000000000000
-      internalID: -7706170081339438698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_173
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78c2f23cf189adc80800000000000000
-      internalID: -8297152101290660729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_174
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74cf73273602b3010800000000000000
-      internalID: 1169564139722898503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_175
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06798bc1dd97ffad0800000000000000
-      internalID: -2666278463803451552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_176
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6defa54062102920800000000000000
-      internalID: 2963388759505104234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_177
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed8d1ece332b02890800000000000000
-      internalID: -7484786644602464034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_178
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3bbacc48543aaa4e0800000000000000
-      internalID: -1969582368045093965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_179
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a59e9f3e0cbe68c60800000000000000
-      internalID: 7820197016666499418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_180
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4001b8a41edcb57e0800000000000000
-      internalID: -1775599260565565436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_181
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14c016c0ad775f3a0800000000000000
-      internalID: -6632263097838924735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_182
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 113
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: defd9a4255c5d1080800000000000000
-      internalID: -9215107741773078547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_183
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 13
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e304e19599c5bc690800000000000000
-      internalID: -7580863734053191618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_184
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 48
-        width: 13
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffea841e050472690800000000000000
-      internalID: -7627056727807447297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_185
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 97
-        width: 96
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c79173c8378f165f0800000000000000
-      internalID: -765057286518924932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_186
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 97
-        width: 96
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f65d895db63cd3950800000000000000
-      internalID: 6430510710867416431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_187
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 54
-        width: 22
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47a543ce9b2434e30800000000000000
-      internalID: 4486503020090382964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_188
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 54
-        width: 22
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b95ff6b4fcc6acd10800000000000000
-      internalID: 2146647809975121307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_189
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 81
-        width: 96
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be9c6017f2442b610800000000000000
-      internalID: 1635444585239333355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_190
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 81
-        width: 96
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1111b3781377fd230800000000000000
-      internalID: 3665779676308771089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_191
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 22
-        width: 48
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0798f42e69094bfc0800000000000000
-      internalID: -3479997634334193296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_192
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 22
-        width: 48
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6433945cf6d0dbb40800000000000000
-      internalID: 5457533097145348934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_193
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbe56a65112500f40800000000000000
-      internalID: 5692640163417972411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_194
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c547f81a3b595be70800000000000000
-      internalID: 9130368418305766492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_195
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57f16a402876aec30800000000000000
-      internalID: 4389434594947374965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_196
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97f2aecfe5f3afcf0800000000000000
-      internalID: -217791954771366023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_197
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d22f72ce20e82e270800000000000000
-      internalID: 8278335208263512621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_198
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ddb0213a18e50220800000000000000
-      internalID: 2451620771364126167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_199
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55e55042e557ef580800000000000000
-      internalID: -8791460375388922283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_200
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 761f480e2f50b2c80800000000000000
-      internalID: -8346570943694048921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_201
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4aac14eed4932260800000000000000
-      internalID: 7071659524932545102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_202
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f11ad211c02299a10800000000000000
-      internalID: 1916600551646011679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_203
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6668582f6d89da60800000000000000
-      internalID: 7699340546524341866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_204
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 66
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebee49a074551ee00800000000000000
-      internalID: 1072231949899460286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_205
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df53275fd60db0690800000000000000
-      internalID: -7634779572588628483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_206
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 699298c651f522280800000000000000
-      internalID: -9069582153950877290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_207
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77a453428d1426f60800000000000000
-      internalID: 8026049882503858807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_208
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23e6da6716cbf3090800000000000000
-      internalID: -8052510481926230478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_209
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4761855f9b2847b0800000000000000
-      internalID: -5239890203111233716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_210
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b73af38e4c6054bf0800000000000000
-      internalID: -340858754016763013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_211
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6be81dbf83309c740800000000000000
-      internalID: 5172669190289591990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_212
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 440d47d61b4247d70800000000000000
-      internalID: 9039890696503611460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_213
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8020c2f731ed247d0800000000000000
-      internalID: -2935539831772806648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_214
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7766acdce28d35810800000000000000
-      internalID: 1752982375509943927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_215
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8bca3e1750d2664c0800000000000000
-      internalID: -4294695693242356552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topdown RPG 32x32 - UI Bars_216
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 50
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d3c329dac28076c0800000000000000
-      internalID: -4147671449070222379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 01521a544650a33eea86596f8ab1b882
     internalID: 0
     vertices: []
     indices: 
@@ -5546,7 +3698,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Topdown RPG 32x32 - UI Bars_0: 8148466403728124103
       Topdown RPG 32x32 - UI Bars_1: -7693719092240818138
@@ -5587,99 +3741,15 @@ TextureImporter:
       Topdown RPG 32x32 - UI Bars_130: -7367794024361950975
       Topdown RPG 32x32 - UI Bars_131: -5858689184021125935
       Topdown RPG 32x32 - UI Bars_132: 8048199907937530524
-      Topdown RPG 32x32 - UI Bars_133: 3288125857339195008
-      Topdown RPG 32x32 - UI Bars_134: 206109812730385891
-      Topdown RPG 32x32 - UI Bars_135: 57713427170165586
-      Topdown RPG 32x32 - UI Bars_136: -3505078203476434269
-      Topdown RPG 32x32 - UI Bars_137: -1365007347305683054
-      Topdown RPG 32x32 - UI Bars_138: 8851493906058829989
-      Topdown RPG 32x32 - UI Bars_139: -327931370840358040
       Topdown RPG 32x32 - UI Bars_14: -8730252130275272850
-      Topdown RPG 32x32 - UI Bars_140: -5629615687945817350
-      Topdown RPG 32x32 - UI Bars_141: 5077982217995929397
-      Topdown RPG 32x32 - UI Bars_142: -8881162963988863392
-      Topdown RPG 32x32 - UI Bars_143: 3644270452054646759
-      Topdown RPG 32x32 - UI Bars_144: -278552109848238201
-      Topdown RPG 32x32 - UI Bars_145: 3475475178373126136
-      Topdown RPG 32x32 - UI Bars_146: 6390139413759845797
-      Topdown RPG 32x32 - UI Bars_147: -4395122431796666275
-      Topdown RPG 32x32 - UI Bars_148: -8266818573183493806
-      Topdown RPG 32x32 - UI Bars_149: -9029267681406502038
       Topdown RPG 32x32 - UI Bars_15: -1854159983924904188
-      Topdown RPG 32x32 - UI Bars_150: -3743636820650358022
-      Topdown RPG 32x32 - UI Bars_151: 7331331980010914201
-      Topdown RPG 32x32 - UI Bars_152: -6856627252419629463
-      Topdown RPG 32x32 - UI Bars_153: -388391403601594984
-      Topdown RPG 32x32 - UI Bars_154: 6931900201267243647
-      Topdown RPG 32x32 - UI Bars_155: -3466037766222562507
-      Topdown RPG 32x32 - UI Bars_156: 2727842573879971637
-      Topdown RPG 32x32 - UI Bars_157: -2246392012888515117
-      Topdown RPG 32x32 - UI Bars_158: -8794843498447782094
-      Topdown RPG 32x32 - UI Bars_159: 8800904252695905384
       Topdown RPG 32x32 - UI Bars_16: -7216815198222122486
-      Topdown RPG 32x32 - UI Bars_160: -4307035590928045118
-      Topdown RPG 32x32 - UI Bars_161: 7365657777507530824
-      Topdown RPG 32x32 - UI Bars_162: -5857978135755260055
-      Topdown RPG 32x32 - UI Bars_163: -8508598591467848062
-      Topdown RPG 32x32 - UI Bars_164: -2026099492939001260
-      Topdown RPG 32x32 - UI Bars_165: 1806260881945882176
-      Topdown RPG 32x32 - UI Bars_166: -1925499881152297077
-      Topdown RPG 32x32 - UI Bars_167: 5861821071753997512
-      Topdown RPG 32x32 - UI Bars_168: -6444523340460649483
-      Topdown RPG 32x32 - UI Bars_169: -741720246709682435
       Topdown RPG 32x32 - UI Bars_17: 5830063737390772465
-      Topdown RPG 32x32 - UI Bars_170: -7170730882255538638
-      Topdown RPG 32x32 - UI Bars_171: -1375159660895512631
-      Topdown RPG 32x32 - UI Bars_172: -7706170081339438698
-      Topdown RPG 32x32 - UI Bars_173: -8297152101290660729
-      Topdown RPG 32x32 - UI Bars_174: 1169564139722898503
-      Topdown RPG 32x32 - UI Bars_175: -2666278463803451552
-      Topdown RPG 32x32 - UI Bars_176: 2963388759505104234
-      Topdown RPG 32x32 - UI Bars_177: -7484786644602464034
-      Topdown RPG 32x32 - UI Bars_178: -1969582368045093965
-      Topdown RPG 32x32 - UI Bars_179: 7820197016666499418
       Topdown RPG 32x32 - UI Bars_18: -9033675299111995742
-      Topdown RPG 32x32 - UI Bars_180: -1775599260565565436
-      Topdown RPG 32x32 - UI Bars_181: -6632263097838924735
-      Topdown RPG 32x32 - UI Bars_182: -9215107741773078547
-      Topdown RPG 32x32 - UI Bars_183: -7580863734053191618
-      Topdown RPG 32x32 - UI Bars_184: -7627056727807447297
-      Topdown RPG 32x32 - UI Bars_185: -765057286518924932
-      Topdown RPG 32x32 - UI Bars_186: 6430510710867416431
-      Topdown RPG 32x32 - UI Bars_187: 4486503020090382964
-      Topdown RPG 32x32 - UI Bars_188: 2146647809975121307
-      Topdown RPG 32x32 - UI Bars_189: 1635444585239333355
       Topdown RPG 32x32 - UI Bars_19: -4566301988615699041
-      Topdown RPG 32x32 - UI Bars_190: 3665779676308771089
-      Topdown RPG 32x32 - UI Bars_191: -3479997634334193296
-      Topdown RPG 32x32 - UI Bars_192: 5457533097145348934
-      Topdown RPG 32x32 - UI Bars_193: 5692640163417972411
-      Topdown RPG 32x32 - UI Bars_194: 9130368418305766492
-      Topdown RPG 32x32 - UI Bars_195: 4389434594947374965
-      Topdown RPG 32x32 - UI Bars_196: -217791954771366023
-      Topdown RPG 32x32 - UI Bars_197: 8278335208263512621
-      Topdown RPG 32x32 - UI Bars_198: 2451620771364126167
-      Topdown RPG 32x32 - UI Bars_199: -8791460375388922283
       Topdown RPG 32x32 - UI Bars_2: -7425419226388632032
       Topdown RPG 32x32 - UI Bars_20: -5784621953578050685
-      Topdown RPG 32x32 - UI Bars_200: -8346570943694048921
-      Topdown RPG 32x32 - UI Bars_201: 7071659524932545102
-      Topdown RPG 32x32 - UI Bars_202: 1916600551646011679
-      Topdown RPG 32x32 - UI Bars_203: 7699340546524341866
-      Topdown RPG 32x32 - UI Bars_204: 1072231949899460286
-      Topdown RPG 32x32 - UI Bars_205: -7634779572588628483
-      Topdown RPG 32x32 - UI Bars_206: -9069582153950877290
-      Topdown RPG 32x32 - UI Bars_207: 8026049882503858807
-      Topdown RPG 32x32 - UI Bars_208: -8052510481926230478
-      Topdown RPG 32x32 - UI Bars_209: -5239890203111233716
       Topdown RPG 32x32 - UI Bars_21: -4740455800947855696
-      Topdown RPG 32x32 - UI Bars_210: -340858754016763013
-      Topdown RPG 32x32 - UI Bars_211: 5172669190289591990
-      Topdown RPG 32x32 - UI Bars_212: 9039890696503611460
-      Topdown RPG 32x32 - UI Bars_213: -2935539831772806648
-      Topdown RPG 32x32 - UI Bars_214: 1752982375509943927
-      Topdown RPG 32x32 - UI Bars_215: -4294695693242356552
-      Topdown RPG 32x32 - UI Bars_216: -4147671449070222379
       Topdown RPG 32x32 - UI Bars_22: 5144275324439329979
       Topdown RPG 32x32 - UI Bars_23: 3173685468493597951
       Topdown RPG 32x32 - UI Bars_24: 3138008456522737132
