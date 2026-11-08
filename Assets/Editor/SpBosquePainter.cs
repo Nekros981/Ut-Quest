@@ -39,10 +39,12 @@ namespace CampusQuest.EditorTools
         const int PathHalfWidth = 4;
         const int RainColumns = 8;
         const int RainRows = 5;
+        const int RouteMapH = 80;
 
         static readonly string[] MarkerNames =
         {
-            "SP_Puerta", "SP_Spawn_Sur", "SP_Secuaz_1", "SP_Secuaz_2", "SP_Tolete"
+            "SP_Puerta", "SP_Spawn_Sur", "SP_Secuaz_1", "SP_Secuaz_2", "SP_Tolete",
+            "SP_Claro_1", "SP_Emboscada_2", "SP_Bunker"
         };
 
         [MenuItem("Campus Quest/SP/Pintar bosque exterior")]
@@ -50,6 +52,9 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Cambiar piso del bosque")]
         public static void RepaintGroundFromMenu() => RepaintGroundOnly();
+
+        [MenuItem("Campus Quest/SP/Agregar recorrido del bosque")]
+        public static void PaintRouteExtensionFromMenu() => PaintRouteExtension();
 
         [MenuItem("Campus Quest/SP/Dejar 40 gotas de lluvia")]
         public static void RebuildRain()
@@ -165,11 +170,112 @@ namespace CampusQuest.EditorTools
             Debug.Log("Campus Quest: Tilemap_Ground actualizado con tileset Mixel.");
         }
 
+        public static void PaintRouteExtension()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var ground = FindGroundTilemap();
+            var walls = FindTilemap("Tilemap_Walls");
+            var canopy = FindTilemap("Tilemap_Canopy");
+            if (ground == null || walls == null || canopy == null)
+            {
+                Debug.LogError("Campus Quest: falta el Grid con capas de tilemap en Sp_Bosque.");
+                return;
+            }
+
+            var trunk = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Trunk.asset");
+            var canopyTile = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Canopy.asset");
+            if (trunk == null || canopyTile == null)
+            {
+                Debug.LogError("Campus Quest: faltan SP_Trunk o SP_Canopy.");
+                return;
+            }
+
+            EnsureTileFolder();
+            var mixel = BuildMixelGroundPalette();
+            var path = BuildExtensionPathMask();
+
+            for (int y = MapH; y < RouteMapH; y++)
+            for (int x = 0; x < MapW; x++)
+            {
+                var cell = new Vector3Int(x, y, 0);
+                ground.SetTile(cell, path[x, y]
+                    ? SelectPathGroundTile(mixel, path, x, y)
+                    : SelectGrassGroundTile(mixel, x, y));
+
+                if (IsExtensionTree(x, y, path))
+                {
+                    walls.SetTile(cell, trunk);
+                    canopy.SetTile(cell, canopyTile);
+                }
+            }
+
+            var markers = GameObject.Find("SP_MapMarkers");
+            if (markers != null)
+            {
+                PlaceMarker(markers.transform, "SP_Claro_1", new Vector3(12.5f, 43.5f, 0f));
+                PlaceMarker(markers.transform, "SP_Emboscada_2", new Vector3(15.5f, 70.5f, 0f));
+                PlaceMarker(markers.transform, "SP_Bunker", new Vector3(16.5f, 76.5f, 0f));
+            }
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Campus Quest: recorrido agregado encima de la entrada (" + MapW + "x" + RouteMapH + ").");
+        }
+
+        static bool[,] BuildExtensionPathMask()
+        {
+            var path = new bool[MapW, RouteMapH];
+            int pathLeft = PathCenterX - PathHalfWidth;
+            int pathRight = PathCenterX + PathHalfWidth - 1;
+            FillPathRect(path, pathLeft, pathRight, 0, MapH - 1);
+            FillPathRect(path, pathLeft, pathRight, MapH, 42);
+            FillPathRect(path, 6, 27, 36, 43);
+            FillPathRect(path, 2, 22, 34, 52);
+            FillPathRect(path, 8, 15, 48, 70);
+            FillPathRect(path, 4, 26, 66, 74);
+            FillPathRect(path, 10, 22, 74, RouteMapH - 1);
+            return path;
+        }
+
+        static void FillPathRect(bool[,] path, int xMin, int xMax, int yMin, int yMax)
+        {
+            int width = path.GetLength(0);
+            int height = path.GetLength(1);
+            for (int y = yMin; y <= yMax; y++)
+            for (int x = xMin; x <= xMax; x++)
+            {
+                if (x >= 0 && x < width && y >= 0 && y < height)
+                    path[x, y] = true;
+            }
+        }
+
+        static bool IsExtensionTree(int x, int y, bool[,] path)
+        {
+            if (path[x, y])
+                return false;
+            if (x == 0 || x == MapW - 1 || y == RouteMapH - 1)
+                return true;
+            if ((x * 5 + y * 11) % 5 == 0)
+                return false;
+            return (x + y) % 2 == 0;
+        }
+
         static Tilemap FindGroundTilemap()
         {
             foreach (var tilemap in UnityEngine.Object.FindObjectsByType<Tilemap>(FindObjectsSortMode.None))
             {
                 if (tilemap != null && tilemap.name == "Tilemap_Ground")
+                    return tilemap;
+            }
+            return null;
+        }
+
+        static Tilemap FindTilemap(string name)
+        {
+            foreach (var tilemap in UnityEngine.Object.FindObjectsByType<Tilemap>(FindObjectsSortMode.None))
+            {
+                if (tilemap != null && tilemap.name == name)
                     return tilemap;
             }
             return null;
@@ -238,7 +344,9 @@ namespace CampusQuest.EditorTools
 
         static bool IsPathCell(bool[,] path, int x, int y)
         {
-            if (x < 0 || x >= MapW || y < 0 || y >= MapH)
+            int width = path.GetLength(0);
+            int height = path.GetLength(1);
+            if (x < 0 || x >= width || y < 0 || y >= height)
                 return true;
             return path[x, y];
         }
