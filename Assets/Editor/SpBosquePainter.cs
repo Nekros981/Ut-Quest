@@ -22,6 +22,11 @@ namespace CampusQuest.EditorTools
         const string MixelGroundSheet =
             "Assets/Sprites/Enviroment/Sp/Top-Down RPG 32x32 by Mixel v1.7/Nature v1.5/Topdown RPG 32x32 - Ground Tileset 1.2.PNG";
         const string PixelLabForestSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/SP_Bosque.png";
+        const string BunkerRetroSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/objetos-bunker-retro.png";
+        const string CampoMilitarSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/CompoMilitar.png";
+        const string FireVfxRoot = "Assets/Sprites/Enviroment/Sp/Free Pixel Art Explosions/PNG/Fire";
+        const string SmokeVfxRoot = "Assets/Sprites/Enviroment/Sp/Free Pixel Art Explosions/PNG/Smoke";
+        const string VfxParticleMaterialPath = "Assets/Sprites/Enviroment/Sp/Materials/SP_VfxSpriteUnlit.mat";
         const string PixelLabTilesRoot = "Assets/Sprites/Enviroment/Sp/Tiles/PixelLab";
         const string RainTexturePath = "Assets/Sprites/Enviroment/Sp/Lluvia/Rain effect/rain effect.png";
         const string RainClipPath = "Assets/Audio/SFX/rain-storm.wav";
@@ -43,11 +48,21 @@ namespace CampusQuest.EditorTools
         const int RainColumns = 8;
         const int RainRows = 5;
         const int RouteMapH = 80;
+        const int NorthRouteStartY = 80;
+        const int FullMapH = 112;
+        const int NorthPathLeft = 14;
+        const int NorthPathRight = 21;
+        const int NorthPathEndY = 94;
+        const int FieldStartY = 95;
+        const int FieldLeft = 8;
+        const int FieldRight = 39;
+        const float FieldLaneLeft = 13.5f;
+        const float FieldLaneRight = 22.5f;
 
         static readonly string[] MarkerNames =
         {
             "SP_Puerta", "SP_Spawn_Sur", "SP_Secuaz_1", "SP_Secuaz_2", "SP_Tolete",
-            "SP_Claro_1", "SP_Emboscada_2", "SP_Bunker"
+            "SP_Claro_1", "SP_Emboscada_2", "SP_Bunker", "SP_Campo"
         };
 
         [MenuItem("Campus Quest/SP/Pintar bosque exterior")]
@@ -58,6 +73,9 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Agregar recorrido del bosque")]
         public static void PaintRouteExtensionFromMenu() => PaintRouteExtension();
+
+        [MenuItem("Campus Quest/SP/Pintar campo destruido")]
+        public static void PaintDestroyedCampNorthFromMenu() => PaintDestroyedCampNorth();
 
         [MenuItem("Campus Quest/SP/Cambiar estilo del bosque")]
         public static void ApplyPixelLabStyleFromMenu() => ApplyPixelLabForestStyle();
@@ -229,6 +247,67 @@ namespace CampusQuest.EditorTools
             Debug.Log("Campus Quest: recorrido agregado encima de la entrada (" + MapW + "x" + RouteMapH + ").");
         }
 
+        public static void PaintDestroyedCampNorth()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var ground = FindGroundTilemap();
+            var walls = FindTilemap("Tilemap_Walls");
+            var canopy = FindTilemap("Tilemap_Canopy");
+            var decorations = FindTilemap("Tilemap_Decorations");
+            if (ground == null || walls == null || canopy == null || decorations == null)
+            {
+                Debug.LogError("Campus Quest: faltan capas de tilemap en Sp_Bosque.");
+                return;
+            }
+
+            var trunk = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Trunk.asset");
+            if (trunk == null)
+            {
+                Debug.LogError("Campus Quest: falta SP_Trunk.");
+                return;
+            }
+
+            EnsureTileFolder();
+            EnsurePixelLabTileFolder();
+            var forest = BuildPixelLabPalette();
+
+            for (int y = NorthRouteStartY; y < FullMapH; y++)
+            for (int x = 0; x < MapW; x++)
+            {
+                var cell = new Vector3Int(x, y, 0);
+                bool onPath = IsNorthPathCell(x, y);
+                bool inField = IsFieldCell(x, y);
+
+                if (onPath || inField)
+                    ground.SetTile(cell, forest.Dirt);
+                else
+                    ground.SetTile(cell, forest.GrassVariants[(x * 3 + y * 7) & 3]);
+
+                decorations.SetTile(cell, null);
+
+                walls.SetTile(cell, null);
+                canopy.SetTile(cell, null);
+                if (IsNorthEdgeTree(x, y, onPath, inField))
+                {
+                    walls.SetTile(cell, trunk);
+                    canopy.SetTile(cell, forest.Pines[(x + y) % forest.Pines.Length]);
+                }
+            }
+
+            var markers = GameObject.Find("SP_MapMarkers");
+            if (markers != null)
+                PlaceMarker(markers.transform, "SP_Campo", new Vector3(17.5f, 103.5f, 0f));
+
+            EnsureCampoMilitarProps();
+            EnsureFieldFireSmokeColumns();
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Campus Quest: campo destruido al norte (camino libre x "
+                + FieldLaneLeft + "-" + FieldLaneRight + ", " + MapW + "x" + FullMapH + ").");
+        }
+
         public static void ApplyPixelLabForestStyle()
         {
             var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -326,6 +405,539 @@ namespace CampusQuest.EditorTools
                 GrassB = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Mixel_Grass_B.asset"),
                 PathAndDirt = set
             };
+        }
+
+        struct BunkerFieldPalette
+        {
+            public Tile[] Floors;
+            public Tile[] Debris;
+            public Tile Hatch;
+            public Tile Barrel;
+        }
+
+        static BunkerFieldPalette BuildBunkerFieldPalette()
+        {
+            var byIndex = LoadSprites(BunkerRetroSheet)
+                .Select(s => new { Sprite = s, Index = ParseBunkerSpriteIndex(s.name) })
+                .Where(p => p.Index >= 0)
+                .ToDictionary(p => p.Index, p => p.Sprite);
+            Sprite Require(int index)
+            {
+                if (!byIndex.TryGetValue(index, out var sprite))
+                    throw new InvalidOperationException("Bunker retro sin sprite _" + index);
+                return TrimSpriteTopWhiteGuide(sprite);
+            }
+
+            Tile Floor(int index) => EnsureTile(Require(index), "SP_Bunker_Floor_" + index);
+            return new BunkerFieldPalette
+            {
+                Floors = new[] { 0, 1, 2, 6, 14, 16, 33, 34 }.Select(Floor).ToArray(),
+                Debris = new[] { 18, 24, 35, 52 }.Select(Floor).ToArray(),
+                Hatch = EnsureTile(Require(4), "SP_Bunker_Hatch"),
+                Barrel = EnsureTile(Require(25), "SP_Bunker_Barrel")
+            };
+        }
+
+        static int ParseBunkerSpriteIndex(string spriteName)
+        {
+            const string suffix = "objetos-bunker-retro_";
+            int i = spriteName.LastIndexOf(suffix, StringComparison.Ordinal);
+            if (i < 0)
+                return -1;
+            return int.TryParse(spriteName.Substring(i + suffix.Length), out var index) ? index : -1;
+        }
+
+        static Sprite TrimSpriteTopWhiteGuide(Sprite source)
+        {
+            if (source == null)
+                return source;
+            var tex = source.texture;
+            if (tex == null)
+                return source;
+
+            string cacheKey = "SP_BunkerTrim_" + source.GetInstanceID();
+            var cached = AssetDatabase.LoadAssetAtPath<Sprite>(PixelLabTilesRoot + "/" + cacheKey + ".png");
+            if (cached != null)
+                return cached;
+
+            var readable = MakeReadable(tex);
+            try
+            {
+                var rect = source.textureRect;
+                int x0 = Mathf.RoundToInt(rect.x);
+                int y0 = Mathf.RoundToInt(rect.y);
+                int w = Mathf.RoundToInt(rect.width);
+                int h = Mathf.RoundToInt(rect.height);
+                if (w <= 2 || h <= 2)
+                    return source;
+
+                int whiteTopRows = 0;
+                for (int row = h - 1; row >= 0 && whiteTopRows < 2; row--)
+                {
+                    int white = 0;
+                    int samples = 0;
+                    for (int col = 0; col < w; col++)
+                    {
+                        var c = readable.GetPixel(x0 + col, y0 + row);
+                        if (c.a < 0.1f)
+                            continue;
+                        samples++;
+                        if (c.r > 0.92f && c.g > 0.92f && c.b > 0.92f)
+                            white++;
+                    }
+
+                    if (samples > 0 && white >= samples * 0.7f)
+                        whiteTopRows++;
+                    else
+                        break;
+                }
+
+                if (whiteTopRows == 0)
+                    return source;
+
+                int trimH = h - whiteTopRows;
+                var pixels = readable.GetPixels(x0, y0, w, trimH);
+                var slice = new Texture2D(w, trimH, TextureFormat.RGBA32, false);
+                slice.SetPixels(pixels);
+                slice.Apply();
+
+                string path = PixelLabTilesRoot + "/" + cacheKey + ".png";
+                File.WriteAllBytes(path, slice.EncodeToPNG());
+                UnityEngine.Object.DestroyImmediate(slice);
+                AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+
+                var importer = AssetImporter.GetAtPath(path) as TextureImporter;
+                if (importer != null)
+                {
+                    importer.textureType = TextureImporterType.Sprite;
+                    importer.spriteImportMode = SpriteImportMode.Single;
+                    importer.spritePixelsPerUnit = 32f;
+                    importer.filterMode = FilterMode.Point;
+                    importer.alphaIsTransparency = true;
+                    importer.SaveAndReimport();
+                }
+
+                return AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(readable);
+            }
+        }
+
+        static bool IsNorthPathCell(int x, int y) =>
+            y >= NorthRouteStartY && y <= NorthPathEndY && x >= NorthPathLeft && x <= NorthPathRight;
+
+        static bool IsFieldCell(int x, int y) =>
+            y >= FieldStartY && y < FullMapH && x >= FieldLeft && x <= FieldRight;
+
+        static bool IsNorthEdgeTree(int x, int y, bool onPath, bool inField)
+        {
+            if (onPath)
+                return false;
+            if (x == 0 || x == MapW - 1)
+                return true;
+            if (inField)
+                return x <= FieldLeft - 1 || x >= FieldRight + 1;
+            if (x >= NorthPathLeft - 2 && x <= NorthPathRight + 2)
+                return false;
+            if (x <= 5 || x >= MapW - 6)
+                return (x * 5 + y * 11) % 5 != 0;
+            return false;
+        }
+
+        static readonly int[] CampoMilitarExcludedIndices =
+        {
+            7, 11, 15, 38, 40, 41
+        };
+
+        static void EnsureCampoMilitarProps()
+        {
+            var existing = GameObject.Find("SP_CampoMilitar");
+            if (existing != null)
+                Undo.DestroyObjectImmediate(existing);
+
+            var byIndex = LoadSprites(CampoMilitarSheet)
+                .Select(s => new { Sprite = s, Index = ParseCompoMilitarIndex(s.name) })
+                .Where(p => p.Index >= 0 && !CampoMilitarExcludedIndices.Contains(p.Index))
+                .Where(p => p.Sprite.rect.width >= 16 && p.Sprite.rect.height >= 16)
+                .ToDictionary(p => p.Index, p => p.Sprite);
+
+            if (byIndex.Count == 0)
+            {
+                Debug.LogWarning("Campus Quest: CompoMilitar sin sprites utilizables.");
+                return;
+            }
+
+            var placementsCore = new (int index, float wx, float wy, int order)[]
+            {
+                // Boca del sendero: alambre, letreros, sacos y restos a cada lado (sin camino)
+                (8, 9f, 96.5f, 9),
+                (14, 37f, 96f, 9),
+                (23, 11.5f, 97f, 8),
+                (31, 28f, 96.5f, 7),
+                (17, 30f, 97f, 7),
+                (29, 33f, 96f, 7),
+                (5, 10f, 96.5f, 10),
+                (6, 12f, 96.5f, 10),
+                (36, 35f, 96.5f, 8),
+                (35, 37f, 97f, 8),
+
+                // Foco oeste: tienda _0 + sacos, cajas, escombro, hoguera _32
+                (0, 10f, 109f, 12),
+                (5, 9.5f, 108f, 10),
+                (6, 11.5f, 108.5f, 10),
+                (24, 10f, 107.5f, 8),
+                (25, 11f, 106.5f, 7),
+                (33, 9f, 110.5f, 8),
+                (35, 12f, 109f, 8),
+                (32, 10.5f, 109.8f, 17),
+                (43, 9.5f, 107f, 18),
+
+                // Zona entrenamiento oeste (ruinas sueltas, no en camino)
+                (4, 11f, 101f, 11),
+                (9, 10f, 104f, 8),
+                (12, 10.5f, 102f, 8),
+                (16, 11.5f, 105f, 8),
+                (20, 9.5f, 103f, 7),
+                (22, 11f, 107f, 8),
+                (34, 10.5f, 104f, 8),
+                (39, 11f, 101f, 8),
+
+                // Foco este: tienda en llamas _2 + barriles, ceniza, llama _42
+                (2, 26f, 108f, 13),
+                (28, 25f, 107f, 9),
+                (30, 27f, 106.5f, 7),
+                (24, 25.5f, 109.5f, 8),
+                (39, 26.5f, 110f, 8),
+                (44, 25f, 107.5f, 18),
+                (42, 26f, 108.8f, 18),
+
+                // Foco torre _3 y caseta _4: alambre, blancos, restos
+                (3, 35f, 107f, 14),
+                (4, 33f, 101f, 11),
+                (8, 37f, 103f, 9),
+                (14, 36f, 104.5f, 9),
+                (9, 34f, 100f, 8),
+                (13, 30f, 105f, 8),
+                (36, 35f, 100.5f, 8),
+                (37, 34f, 109f, 8),
+                (26, 33f, 102f, 7),
+                (27, 36f, 108f, 7),
+
+                // Campo este central (pocas piezas, pegadas a estructuras)
+                (19, 28f, 104f, 8),
+                (22, 34f, 109f, 8),
+                (31, 25f, 109f, 7),
+                (29, 30f, 111f, 10),
+
+                // Foco sureste: junto al camino al entrar (y 96–101, este del sendero)
+                (2, 27.5f, 99f, 13),
+                (4, 30.5f, 98.5f, 11),
+                (5, 25f, 97.5f, 10),
+                (5, 28f, 96.8f, 10),
+                (6, 31f, 97f, 10),
+                (6, 26.5f, 98.5f, 10),
+                (24, 29f, 98f, 8),
+                (25, 27f, 99.5f, 7),
+                (26, 32f, 97.5f, 7),
+                (27, 25.5f, 100f, 7),
+                (28, 30f, 96.5f, 9),
+                (33, 27.5f, 100.5f, 8),
+                (35, 29.5f, 99f, 8),
+                (39, 26f, 98f, 8),
+                (42, 27.5f, 99.2f, 18),
+                (43, 30.5f, 98.8f, 18),
+                (44, 28.5f, 97f, 18)
+            };
+
+            var placements = placementsCore.Concat(BuildCampoSideBandPlacements()).ToArray();
+
+            var root = new GameObject("SP_CampoMilitar");
+            Undo.RegisterCreatedObjectUndo(root, "SP_CampoMilitar");
+
+            foreach (var (index, wx, wy, order) in placements)
+            {
+                if (!byIndex.TryGetValue(index, out var sprite))
+                    continue;
+
+                string goName = "CompoMilitar_" + index;
+                var existingChild = root.transform.Find(goName);
+                if (existingChild != null)
+                {
+                    int suffix = 1;
+                    while (root.transform.Find(goName + "_" + suffix) != null)
+                        suffix++;
+                    goName = goName + "_" + suffix;
+                }
+
+                var go = new GameObject(goName);
+                Undo.RegisterCreatedObjectUndo(go, goName);
+                go.transform.SetParent(root.transform, false);
+                float footX = NudgeCampoMilitarFootX(sprite, wx, wy);
+                go.transform.position = CampoMilitarSpritePosition(sprite, footX, wy);
+
+                var sr = go.AddComponent<SpriteRenderer>();
+                sr.sprite = sprite;
+                sr.sortingOrder = order;
+            }
+        }
+
+        static (int index, float wx, float wy, int order)[] BuildCampoSideBandPlacements()
+        {
+            var list = new List<(int index, float wx, float wy, int order)>();
+            int[] west = { 5, 6, 24, 25, 33, 34, 35, 39, 9, 12, 16, 20, 22 };
+            int[] east = { 24, 25, 26, 27, 28, 30, 31, 33, 35, 36, 37, 19, 22 };
+            int[] westFire = { 32, 42, 43, 44 };
+            int[] eastFire = { 42, 43, 44 };
+
+            for (int y = 97; y <= 111; y += 2)
+            {
+                float westX = 9.5f + (y % 3) * 0.6f;
+                list.Add((west[(y / 2) % west.Length], westX, y, 8));
+                list.Add((west[(y / 2 + 3) % west.Length], westX + 1.2f, y + 0.4f, 7));
+                list.Add((west[(y / 2 + 6) % west.Length], 11f, y + 0.2f, 8));
+                if (y % 4 == 1)
+                    list.Add((westFire[(y / 2) % westFire.Length], westX + 0.3f, y + 0.5f, 17));
+
+                float eastX = 26f + (y % 4) * 1.1f;
+                list.Add((east[(y / 2) % east.Length], eastX, y, 8));
+                list.Add((east[(y / 2 + 4) % east.Length], eastX + 2f, y + 0.3f, 7));
+                list.Add((east[(y / 2 + 2) % east.Length], eastX + 4.5f, y + 0.1f, 8));
+                if (y % 3 == 0)
+                    list.Add((eastFire[(y / 2) % eastFire.Length], eastX + 1f, y + 0.6f, 18));
+            }
+
+            for (int y = 96; y <= 111; y += 5)
+            {
+                list.Add((8, 9f, y + 0.5f, 9));
+                list.Add((14, 37f, y + 0.5f, 9));
+            }
+
+            return list.ToArray();
+        }
+
+        static int ParseCompoMilitarIndex(string spriteName)
+        {
+            const string suffix = "CompoMilitar_";
+            int i = spriteName.LastIndexOf(suffix, StringComparison.Ordinal);
+            if (i < 0)
+                return -1;
+            return int.TryParse(spriteName.Substring(i + suffix.Length), out var index) ? index : -1;
+        }
+
+        static Vector3 CampoMilitarSpritePosition(Sprite sprite, float footCenterX, float footY)
+        {
+            float halfWidth = sprite.bounds.extents.x;
+            return new Vector3(footCenterX - halfWidth, footY, 0f);
+        }
+
+        static float NudgeCampoMilitarFootX(Sprite sprite, float footCenterX, float footY)
+        {
+            if (footY < FieldStartY)
+                return footCenterX;
+
+            float half = sprite.bounds.extents.x;
+            float left = footCenterX - half;
+            float right = footCenterX + half;
+            if (right <= FieldLaneLeft || left >= FieldLaneRight)
+                return footCenterX;
+
+            const float pad = 0.2f;
+            float laneCenter = (FieldLaneLeft + FieldLaneRight) * 0.5f;
+            float nudged = footCenterX <= laneCenter
+                ? FieldLaneLeft - half - pad
+                : FieldLaneRight + half + pad;
+
+            float minX = FieldLeft + half + 0.25f;
+            float maxX = FieldRight + 1f - half - 0.25f;
+            return Mathf.Clamp(nudged, minX, maxX);
+        }
+
+        static Vector3 NudgeCampoFirePosition(Vector3 position)
+        {
+            if (position.y < FieldStartY)
+                return position;
+            if (position.x > FieldLaneLeft && position.x < FieldLaneRight)
+            {
+                float laneCenter = (FieldLaneLeft + FieldLaneRight) * 0.5f;
+                float x = position.x <= laneCenter ? FieldLaneLeft - 1.2f : FieldLaneRight + 1.2f;
+                return new Vector3(x, position.y, position.z);
+            }
+
+            return position;
+        }
+
+        static void EnsureFieldFireSmokeColumns()
+        {
+            var existingRoot = GameObject.Find("SP_FieldFires");
+            if (existingRoot != null)
+                Undo.DestroyObjectImmediate(existingRoot);
+
+            var fireFrames = LoadExplosionFrames(FireVfxRoot, "Fire");
+            var smokeFrames = LoadExplosionFrames(SmokeVfxRoot, "Smoke");
+            var material = EnsureVfxParticleMaterial();
+            if (fireFrames.Length == 0 || smokeFrames.Length == 0)
+            {
+                Debug.LogWarning("Campus Quest: no hay sprites de fuego o humo.");
+                return;
+            }
+
+            var root = new GameObject("SP_FieldFires");
+            Undo.RegisterCreatedObjectUndo(root, "SP_FieldFires");
+
+            var positions = new[]
+            {
+                new Vector3(10.5f, 109.8f, 0f),
+                new Vector3(11f, 103.5f, 0f),
+                new Vector3(10f, 106.5f, 0f),
+                new Vector3(11.5f, 101f, 0f),
+                new Vector3(26f, 108.8f, 0f),
+                new Vector3(27f, 106.5f, 0f),
+                new Vector3(33f, 101f, 0f),
+                new Vector3(35f, 107f, 0f),
+                new Vector3(32f, 105f, 0f),
+                new Vector3(34f, 100.5f, 0f),
+                new Vector3(30.5f, 98.5f, 0f),
+                new Vector3(10f, 98f, 0f),
+                new Vector3(11f, 102f, 0f),
+                new Vector3(10.5f, 105f, 0f),
+                new Vector3(11f, 110f, 0f),
+                new Vector3(27f, 100f, 0f),
+                new Vector3(29f, 103f, 0f),
+                new Vector3(31f, 106f, 0f)
+            };
+
+            for (int i = 0; i < positions.Length; i++)
+            {
+                var column = new GameObject("SP_FireSmoke_" + (i + 1));
+                Undo.RegisterCreatedObjectUndo(column, column.name);
+                column.transform.SetParent(root.transform, false);
+                column.transform.position = NudgeCampoFirePosition(positions[i]);
+
+                var fireGo = new GameObject("Fire");
+                fireGo.transform.SetParent(column.transform, false);
+                fireGo.transform.localPosition = Vector3.zero;
+                ConfigureSpriteLoopParticles(fireGo, fireFrames, material, new Color(1f, 0.55f, 0.15f, 1f),
+                    startLifetime: 0.55f, startSpeed: 0.9f, startSize: 0.45f, rate: 14f, rise: 1.6f, sortingOrder: 25);
+
+                var smokeGo = new GameObject("Smoke");
+                smokeGo.transform.SetParent(column.transform, false);
+                smokeGo.transform.localPosition = new Vector3(0f, 0.85f, 0f);
+                ConfigureSpriteLoopParticles(smokeGo, smokeFrames, material, new Color(0.38f, 0.38f, 0.4f, 0.78f),
+                    startLifetime: 2.9f, startSpeed: 0.3f, startSize: 1.15f, rate: 8f, rise: 0.7f, sortingOrder: 27);
+            }
+        }
+
+        static Sprite[] LoadExplosionFrames(string folder, string prefix)
+        {
+            var frames = new List<Sprite>();
+            for (int i = 1; i <= 6; i++)
+            {
+                var sheet = LoadSprites(folder + "/" + prefix + i + ".png");
+                var primary = sheet.FirstOrDefault(s => s.name == prefix + i + "_0")
+                    ?? sheet.Where(s => s.rect.width >= 40 && s.rect.height >= 40)
+                        .OrderByDescending(s => s.rect.width * s.rect.height)
+                        .FirstOrDefault();
+                if (primary != null)
+                    frames.Add(primary);
+            }
+
+            return frames.ToArray();
+        }
+
+        static Material EnsureVfxParticleMaterial()
+        {
+            var existing = AssetDatabase.LoadAssetAtPath<Material>(VfxParticleMaterialPath);
+            if (existing != null)
+                return existing;
+
+            EnsureMaterialFolder();
+            var shader = Shader.Find("Universal Render Pipeline/2D/Sprite-Unlit-Default")
+                ?? Shader.Find("Sprites/Default");
+            if (shader == null)
+            {
+                Debug.LogWarning("Campus Quest: no hay shader URP 2D para partículas.");
+                return null;
+            }
+
+            var material = new Material(shader) { name = "SP_VfxSpriteUnlit" };
+            if (material.HasProperty("_ZWrite"))
+                material.SetFloat("_ZWrite", 0f);
+            AssetDatabase.CreateAsset(material, VfxParticleMaterialPath);
+            return material;
+        }
+
+        static void EnsureMaterialFolder()
+        {
+            if (!AssetDatabase.IsValidFolder("Assets/Sprites/Enviroment/Sp/Materials"))
+                AssetDatabase.CreateFolder("Assets/Sprites/Enviroment/Sp", "Materials");
+        }
+
+        static void ConfigureSpriteLoopParticles(
+            GameObject go,
+            Sprite[] frames,
+            Material material,
+            Color tint,
+            float startLifetime,
+            float startSpeed,
+            float startSize,
+            float rate,
+            float rise,
+            int sortingOrder)
+        {
+            var ps = go.AddComponent<ParticleSystem>();
+            var renderer = go.GetComponent<ParticleSystemRenderer>();
+            renderer.material = material;
+            renderer.renderMode = ParticleSystemRenderMode.Billboard;
+            renderer.sortingOrder = sortingOrder;
+
+            var main = ps.main;
+            main.loop = true;
+            main.playOnAwake = true;
+            main.simulationSpace = ParticleSystemSimulationSpace.World;
+            main.startLifetime = startLifetime;
+            main.startSpeed = startSpeed;
+            main.startSize = startSize;
+            main.startColor = tint;
+            main.maxParticles = 48;
+
+            var emission = ps.emission;
+            emission.rateOverTime = rate;
+
+            var shape = ps.shape;
+            shape.enabled = true;
+            shape.shapeType = ParticleSystemShapeType.Circle;
+            shape.radius = 0.12f;
+
+            var velocity = ps.velocityOverLifetime;
+            velocity.enabled = true;
+            velocity.y = new ParticleSystem.MinMaxCurve(rise);
+
+            var colorOverLifetime = ps.colorOverLifetime;
+            colorOverLifetime.enabled = true;
+            var gradient = new Gradient();
+            gradient.SetKeys(
+                new[]
+                {
+                    new GradientColorKey(tint, 0f),
+                    new GradientColorKey(tint, 0.7f),
+                    new GradientColorKey(tint, 1f)
+                },
+                new[]
+                {
+                    new GradientAlphaKey(Mathf.Clamp01(tint.a), 0f),
+                    new GradientAlphaKey(Mathf.Clamp01(tint.a * 0.75f), 0.6f),
+                    new GradientAlphaKey(0f, 1f)
+                });
+            colorOverLifetime.color = gradient;
+
+            var tex = ps.textureSheetAnimation;
+            tex.enabled = true;
+            tex.mode = ParticleSystemAnimationMode.Sprites;
+            tex.fps = 12f;
+            for (int i = 0; i < frames.Length; i++)
+                tex.AddSprite(frames[i]);
         }
 
         static PixelLabPalette BuildPixelLabPalette()
