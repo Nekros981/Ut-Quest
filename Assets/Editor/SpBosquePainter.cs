@@ -24,6 +24,8 @@ namespace CampusQuest.EditorTools
         const string PixelLabForestSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/SP_Bosque.png";
         const string BunkerRetroSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/objetos-bunker-retro.png";
         const string CampoMilitarSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/CompoMilitar.png";
+        const string ZoneBunkerSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/Zone_Bunker.png";
+        const string HatchSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/Escotilla_Bunker.png";
         const string FireVfxRoot = "Assets/Sprites/Enviroment/Sp/Free Pixel Art Explosions/PNG/Fire";
         const string SmokeVfxRoot = "Assets/Sprites/Enviroment/Sp/Free Pixel Art Explosions/PNG/Smoke";
         const string VfxParticleMaterialPath = "Assets/Sprites/Enviroment/Sp/Materials/SP_VfxSpriteUnlit.mat";
@@ -58,11 +60,19 @@ namespace CampusQuest.EditorTools
         const int FieldRight = 39;
         const float FieldLaneLeft = 13.5f;
         const float FieldLaneRight = 22.5f;
+        const int PlazaStartY = 112;
+        const int BunkerMapH = 132;
+        const int PlazaTopY = 118;
+        const int PlazaBottomY = 131;
+        const int PlazaLeft = 10;
+        const int PlazaRight = 25;
+        const int PlazaGateLeft = 16;
+        const int PlazaGateRight = 17;
 
         static readonly string[] MarkerNames =
         {
             "SP_Puerta", "SP_Spawn_Sur", "SP_Secuaz_1", "SP_Secuaz_2", "SP_Tolete",
-            "SP_Claro_1", "SP_Emboscada_2", "SP_Bunker", "SP_Campo"
+            "SP_Claro_1", "SP_Emboscada_2", "SP_Bunker", "SP_Campo", "SP_Escotilla"
         };
 
         [MenuItem("Campus Quest/SP/Pintar bosque exterior")]
@@ -76,6 +86,9 @@ namespace CampusQuest.EditorTools
 
         [MenuItem("Campus Quest/SP/Pintar campo destruido")]
         public static void PaintDestroyedCampNorthFromMenu() => PaintDestroyedCampNorth();
+
+        [MenuItem("Campus Quest/SP/Pintar plaza del búnker")]
+        public static void PaintBunkerPlazaFromMenu() => PaintBunkerPlazaNorth();
 
         [MenuItem("Campus Quest/SP/Cambiar estilo del bosque")]
         public static void ApplyPixelLabStyleFromMenu() => ApplyPixelLabForestStyle();
@@ -306,6 +319,265 @@ namespace CampusQuest.EditorTools
             AssetDatabase.SaveAssets();
             Debug.Log("Campus Quest: campo destruido al norte (camino libre x "
                 + FieldLaneLeft + "-" + FieldLaneRight + ", " + MapW + "x" + FullMapH + ").");
+        }
+
+        public static string PlazaLayoutVersion() => "ordered-v3";
+
+        const float PlazaCenterX = 18f;
+        const float PlazaCenterY = 125f;
+
+        public static void PaintBunkerPlazaNorth()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var ground = FindGroundTilemap();
+            var walls = FindTilemap("Tilemap_Walls");
+            var canopy = FindTilemap("Tilemap_Canopy");
+            var decorations = FindTilemap("Tilemap_Decorations");
+            if (ground == null || walls == null || canopy == null || decorations == null)
+            {
+                Debug.LogError("Campus Quest: faltan capas de tilemap en Sp_Bosque.");
+                return;
+            }
+
+            var trunk = AssetDatabase.LoadAssetAtPath<Tile>(TilesRoot + "/SP_Trunk.asset");
+            if (trunk == null)
+            {
+                Debug.LogError("Campus Quest: falta SP_Trunk.");
+                return;
+            }
+
+            EnsureTileFolder();
+            var forest = BuildPixelLabPalette();
+
+            for (int y = PlazaStartY; y < BunkerMapH; y++)
+            for (int x = 0; x < MapW; x++)
+            {
+                var cell = new Vector3Int(x, y, 0);
+                bool onPath = IsPlazaPathCell(x, y);
+                bool inPlaza = IsPlazaSlabCell(x, y);
+
+                if (onPath)
+                    ground.SetTile(cell, forest.Dirt);
+                else if (inPlaza)
+                    ground.SetTile(cell, forest.Dirt);
+                else
+                    ground.SetTile(cell, forest.GrassVariants[(x * 3 + y * 7) & 3]);
+
+                decorations.SetTile(cell, null);
+
+                walls.SetTile(cell, null);
+                canopy.SetTile(cell, null);
+                if (!onPath && !inPlaza && (x <= 6 || x >= MapW - 7 || (x + y) % 4 == 0))
+                {
+                    walls.SetTile(cell, trunk);
+                    canopy.SetTile(cell, forest.Pines[(x + y) % forest.Pines.Length]);
+                }
+            }
+
+            var markers = GameObject.Find("SP_MapMarkers");
+            if (markers != null)
+                PlaceMarker(markers.transform, "SP_Escotilla", new Vector3(PlazaCenterX, PlazaCenterY, 0f));
+
+            EnsureBunkerPlazaVisuals();
+            EnsureBunkerPlazaFires();
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Campus Quest: plaza del búnker (filas " + PlazaStartY + "-" + (BunkerMapH - 1) + ").");
+        }
+
+        static bool IsPlazaPathCell(int x, int y) =>
+            y >= PlazaStartY && y < BunkerMapH && x >= NorthPathLeft && x <= NorthPathRight;
+
+        static bool IsPlazaSlabCell(int x, int y) =>
+            y >= PlazaTopY && y <= PlazaBottomY && x >= PlazaLeft && x <= PlazaRight;
+
+        static bool IsPlazaBorderCell(int x, int y)
+        {
+            if (!IsPlazaSlabCell(x, y))
+                return false;
+            return x == PlazaLeft || x == PlazaRight || y == PlazaTopY || y == PlazaBottomY;
+        }
+
+        static bool IsPlazaSouthGateAnchor(int x, int y) =>
+            y == PlazaTopY && x == PlazaGateLeft;
+
+        static bool IsPlazaCornerConcreteAnchor(int x, int y) =>
+            (x == PlazaLeft || x == PlazaRight - 1) && (y == PlazaTopY || y == PlazaBottomY - 1);
+
+        static Dictionary<int, Sprite> LoadZoneBunkerSprites()
+        {
+            return LoadSprites(ZoneBunkerSheet)
+                .Select(s => new { Sprite = s, Index = ParseZoneBunkerIndex(s.name) })
+                .Where(p => p.Index >= 0)
+                .ToDictionary(p => p.Index, p => p.Sprite);
+        }
+
+        static int ParseZoneBunkerIndex(string spriteName)
+        {
+            const string suffix = "Zone_Bunker_";
+            int i = spriteName.LastIndexOf(suffix, StringComparison.Ordinal);
+            if (i < 0)
+                return -1;
+            return int.TryParse(spriteName.Substring(i + suffix.Length), out var index) ? index : -1;
+        }
+
+        static void EnsureBunkerPlazaVisuals()
+        {
+            var existing = GameObject.Find("SP_BunkerPlaza");
+            if (existing != null)
+                Undo.DestroyObjectImmediate(existing);
+
+            var zone = LoadZoneBunkerSprites();
+            Sprite Require(int index)
+            {
+                if (!zone.TryGetValue(index, out var sprite))
+                    throw new InvalidOperationException("Zone_Bunker sin sprite _" + index);
+                return sprite;
+            }
+
+            var root = new GameObject("SP_BunkerPlaza");
+            Undo.RegisterCreatedObjectUndo(root, "SP_BunkerPlaza");
+
+            var slabClean = Require(0);
+            var slabCorner = Require(1);
+            var meshFence = Require(12);
+
+            for (int y = PlazaTopY; y <= PlazaBottomY - 1; y += 2)
+            for (int x = PlazaLeft; x <= PlazaRight - 1; x += 2)
+            {
+                var sprite = IsPlazaCornerConcreteAnchor(x, y) ? slabCorner : slabClean;
+                PlacePlazaSprite(root.transform, sprite, x, y, 5);
+            }
+
+            var fenceAnchors = new HashSet<Vector2Int>();
+            int fenceBottom = PlazaBottomY - 1;
+            int fenceRight = PlazaRight - 1;
+            for (int x = PlazaLeft; x <= fenceRight; x += 2)
+            {
+                if (!IsPlazaSouthGateAnchor(x, PlazaTopY))
+                    fenceAnchors.Add(new Vector2Int(x, PlazaTopY));
+                fenceAnchors.Add(new Vector2Int(x, fenceBottom));
+            }
+
+            for (int y = PlazaTopY; y <= fenceBottom; y += 2)
+            {
+                fenceAnchors.Add(new Vector2Int(PlazaLeft, y));
+                fenceAnchors.Add(new Vector2Int(fenceRight, y));
+            }
+
+            foreach (var cell in fenceAnchors)
+                PlacePlazaFenceSegment(root.transform, meshFence, cell.x, cell.y);
+
+            var hatch = LoadSprites(HatchSheet).FirstOrDefault(s => s.name == "Escotilla_Bunker_0");
+            if (hatch != null)
+                PlacePlazaSpriteAtCenter(root.transform, hatch, PlazaCenterX, PlazaCenterY, 20);
+
+            if (zone.TryGetValue(5, out var panel))
+                PlacePlazaSpriteAtCenter(root.transform, panel, 20.5f, PlazaCenterY, 19);
+
+            var campo = LoadSprites(CampoMilitarSheet)
+                .Select(s => new { Sprite = s, Index = ParseCompoMilitarIndex(s.name) })
+                .Where(p => p.Index >= 0)
+                .ToDictionary(p => p.Index, p => p.Sprite);
+
+            void Tire(int index, float centerX, float centerY)
+            {
+                if (!campo.TryGetValue(index, out var sprite))
+                    return;
+                var go = new GameObject("CompoMilitar_tire_" + index);
+                go.transform.SetParent(root.transform, false);
+                go.transform.position = new Vector3(centerX, centerY, 0f);
+                var sr = go.AddComponent<SpriteRenderer>();
+                sr.sprite = sprite;
+                sr.sortingOrder = 9;
+                var delta = new Vector3(centerX, centerY, 0f) - sr.bounds.center;
+                go.transform.position += delta;
+            }
+
+            const int tireStack = 26;
+            Tire(tireStack, 13f, 121f);
+            Tire(tireStack, 23f, 121f);
+            Tire(tireStack, 13f, 129f);
+            Tire(tireStack, 23f, 129f);
+        }
+
+        static void PlacePlazaSprite(Transform parent, Sprite sprite, int tileX, int tileY, int sortingOrder)
+        {
+            var go = new GameObject(sprite.name + "_" + tileX + "_" + tileY);
+            Undo.RegisterCreatedObjectUndo(go, go.name);
+            go.transform.SetParent(parent, false);
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.sortingOrder = sortingOrder;
+            AlignSpriteBottomLeft(go.transform, sr, tileX, tileY);
+        }
+
+        static void PlacePlazaSpriteAtCenter(Transform parent, Sprite sprite, float centerX, float centerY, int sortingOrder)
+        {
+            var go = new GameObject(sprite.name);
+            Undo.RegisterCreatedObjectUndo(go, go.name);
+            go.transform.SetParent(parent, false);
+            go.transform.position = new Vector3(centerX, centerY, 0f);
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.sortingOrder = sortingOrder;
+            var delta = new Vector3(centerX, centerY, 0f) - sr.bounds.center;
+            go.transform.position += delta;
+        }
+
+        static void PlacePlazaFenceSegment(Transform parent, Sprite sprite, int tileX, int tileY)
+        {
+            var go = new GameObject("fence_" + tileX + "_" + tileY);
+            Undo.RegisterCreatedObjectUndo(go, go.name);
+            go.transform.SetParent(parent, false);
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.sortingOrder = 8;
+            AlignSpriteBottomLeft(go.transform, sr, tileX, tileY);
+            var box = go.AddComponent<BoxCollider2D>();
+            box.size = sprite.bounds.size;
+            box.offset = sprite.bounds.center;
+        }
+
+        static void AlignSpriteBottomLeft(Transform transform, SpriteRenderer renderer, float tileX, float tileY)
+        {
+            transform.position = new Vector3(tileX, tileY, 0f);
+            var delta = new Vector3(tileX, tileY, 0f) - renderer.bounds.min;
+            transform.position += delta;
+        }
+
+        static void EnsureBunkerPlazaFires()
+        {
+            var existing = GameObject.Find("SP_BunkerPlazaFires");
+            if (existing != null)
+                Undo.DestroyObjectImmediate(existing);
+
+            var fireFrames = LoadExplosionFrames(FireVfxRoot, "Fire");
+            var smokeFrames = LoadExplosionFrames(SmokeVfxRoot, "Smoke");
+            var material = EnsureVfxParticleMaterial();
+            if (fireFrames.Length == 0 || smokeFrames.Length == 0 || material == null)
+                return;
+
+            var root = new GameObject("SP_BunkerPlazaFires");
+            Undo.RegisterCreatedObjectUndo(root, "SP_BunkerPlazaFires");
+
+            var column = new GameObject("SP_PlazaFireSmoke_SE");
+            Undo.RegisterCreatedObjectUndo(column, column.name);
+            column.transform.SetParent(root.transform, false);
+            column.transform.position = new Vector3(23f, 121f, 0f);
+
+            var fireGo = new GameObject("Fire");
+            fireGo.transform.SetParent(column.transform, false);
+            ConfigureSpriteLoopParticles(fireGo, fireFrames, material, new Color(1f, 0.55f, 0.15f, 1f),
+                startLifetime: 0.55f, startSpeed: 0.9f, startSize: 0.45f, rate: 14f, rise: 1.6f, sortingOrder: 25);
+
+            var smokeGo = new GameObject("Smoke");
+            smokeGo.transform.SetParent(column.transform, false);
+            smokeGo.transform.localPosition = new Vector3(0f, 0.85f, 0f);
+            ConfigureSpriteLoopParticles(smokeGo, smokeFrames, material, new Color(0.38f, 0.38f, 0.4f, 0.78f),
+                startLifetime: 2.9f, startSpeed: 0.3f, startSize: 1.15f, rate: 8f, rise: 0.7f, sortingOrder: 27);
         }
 
         public static void ApplyPixelLabForestStyle()
