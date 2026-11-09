@@ -37,8 +37,9 @@ una casilla cardinal adyacente mirando hacia el NPC.
 
 La bienvenida de la Rectora usa el ID `rectoria.rector_welcome`. Los cinco textos
 hablados proceden de la página 5 de `GUION RECTORIA.pdf` del equipo; las acotaciones
-de cámara y gestos no se muestran como diálogo. Los otros cuatro NPC conservan sus
-anclas y todavía no tienen conversaciones asignadas.
+de cámara y gestos no se muestran como diálogo. Don Chuy y las cuatro notas del
+Archivo ya reutilizan este sistema; ver `Scripts/Minigames/Rectoria/ARCHIVE.md`.
+Los demás NPC conservan sus anclas y todavía no tienen conversaciones asignadas.
 
 - `HasCompleted(id)` y `RectoriaDialogueInteractor.HasSpokenToRectora` permiten
   consultar si se cerró la última línea.

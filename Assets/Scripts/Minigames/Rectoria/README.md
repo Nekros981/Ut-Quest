@@ -80,6 +80,10 @@ Ver `Scripts/Core/Dialogue/README.md` para reutilización y enlaces con el futur
 Implementados misión, HUD de documentos y guardado persistente: ver `ENROLLMENT.md`
 para integración de recompensas, nueva partida y herramientas exclusivas del Editor.
 
+Archivo con Don Chuy: conversaciones, lectura persistente de cuatro pistas y
+acertijo habilitado con las nueve carpetas originales de la página 7 del guion.
+Orden inicial fijo y reorganización solo tras tres errores. Ver `ARCHIVE.md`.
+
 Todavía pendientes: diálogos de los otros NPC, bloqueo inicial de salida hasta hablar con la Rectora,
 puzles, animaciones de recompensa, apertura de puertas,
 cinemáticas y conexión al mapa de carreras. No se modifica el menú de Chino para

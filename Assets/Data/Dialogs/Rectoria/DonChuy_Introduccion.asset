@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab75097a03ca5949a4a575720fbd9bc, type: 3}
+  m_Name: DonChuy_Introduccion
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
+  dialogueId: rectoria.archive.don_chuy_intro
+  defaultSpeaker: Don Chuy
+  defaultPortrait: {fileID: 4307720178204934134, guid: 4b438f418061f0d4990d2746af888cbc, type: 3}
+  lines:
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "\xA1Bienvenido al Archivo! Tengo todas las carpetas revueltas y necesito
+      tu ayuda para encontrar tu acta de nacimiento."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Dej\xE9 cuatro notas por la oficina. Ac\xE9rcate a cada una, m\xEDrala
+      y presiona E o Enter para leerla."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Cuando hayas le\xEDdo las cuatro pistas, vuelve conmigo. Juntos encontraremos
+      la carpeta correcta."
