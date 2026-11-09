@@ -62,7 +62,7 @@ Caja y Puerta de Bloques. No se muestran otros NPC ni objetos.
 
 Documentos queda arriba a la izquierda y el minimapa arriba a la derecha. El mapa
 no recibe teclado ni bloquea raycasts. Sigue visible durante conversaciones y se
-oculta con CanvasGroup durante Archivo, captura y puzle de Credencialización;
+oculta con CanvasGroup durante Archivo, Caja, captura y puzle de Credencialización;
 al cerrar se restaura. No se cambian dimensiones, Tilemaps ni colisiones.
 
 ## Configuración y validación
@@ -82,4 +82,4 @@ por separado la restauración tras salir y volver a Play Mode y las referencias.
 
 Pendiente de arte final: sustituir la imagen provisional de credencial.
 Queda por validar en un ejecutable y en resoluciones adicionales a Game View.
-Caja y apertura de Bloques continúan fuera de esta etapa.
+Caja está implementada en `CASHIER.md`. La apertura de Bloques sigue pendiente.

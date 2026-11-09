@@ -87,8 +87,11 @@ Orden inicial fijo y reorganización solo tras tres errores. Ver `ARCHIVE.md`.
 Credencialización, carrera con ambos Shift y minimapa de la cuadrícula lógica
 implementados. Ver `CREDENTIALIZATION.md` para controles, persistencia y pruebas.
 
-Todavía pendientes: diálogos de los otros NPC, bloqueo inicial de salida hasta hablar con la Rectora,
-puzle de Caja y su recompensa, apertura de puertas,
+Caja con Beto implementada: seis recibos únicos, ambas combinaciones exactas,
+selección por teclado/mouse y comprobante persistente sin duplicados. Ver `CASHIER.md`.
+
+Todavía pendientes: diálogo y revisión de Guardia Rocky, bloqueo inicial de salida hasta hablar con la Rectora,
+apertura de puertas,
 cinemáticas y conexión al mapa de carreras. No se modifica el menú de Chino para
 simular esas funciones. Los storyboards visuales no se han localizado como archivos
 identificados; el plano original, el guion y los assets existentes guían esta etapa.

@@ -13,6 +13,7 @@ namespace CampusQuest.Rectoria
         public RectoriaPlayerTest player;
         public ArchiveChallenge archive;
         public CredentialChallenge credential;
+        public CashierChallenge cashier;
         public CanvasGroup visibility;
         public RectTransform playerDot;
         public RectTransform[] markers;
@@ -44,7 +45,8 @@ namespace CampusQuest.Rectoria
             if (map == null || map.grid == null || player == null) return;
             if (visibility != null)
             {
-                visibility.alpha = (archive != null && archive.IsOpen) || (credential != null && credential.IsBusy) ? 0 : 1;
+                visibility.alpha = (archive != null && archive.IsOpen) || (credential != null && credential.IsBusy)
+                    || (cashier != null && cashier.IsOpen) ? 0 : 1;
                 visibility.interactable = false; visibility.blocksRaycasts = false;
             }
             if (playerDot != null) playerDot.anchoredPosition = PositionForWorld(player.transform.position);

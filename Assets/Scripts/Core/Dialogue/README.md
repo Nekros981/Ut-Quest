@@ -39,7 +39,9 @@ La bienvenida de la Rectora usa el ID `rectoria.rector_welcome`. Los cinco texto
 hablados proceden de la página 5 de `GUION RECTORIA.pdf` del equipo; las acotaciones
 de cámara y gestos no se muestran como diálogo. Don Chuy y las cuatro notas del
 Archivo ya reutilizan este sistema; ver `Scripts/Minigames/Rectoria/ARCHIVE.md`.
-Los demás NPC conservan sus anclas y todavía no tienen conversaciones asignadas.
+Lic. Mony y Cajero Beto también lo reutilizan en `CREDENTIALIZATION.md` y
+`CASHIER.md`, dentro de esa misma carpeta. Guardia Rocky conserva su ancla y
+todavía no tiene conversación de revisión ni apertura de puerta asignada.
 
 - `HasCompleted(id)` y `RectoriaDialogueInteractor.HasSpokenToRectora` permiten
   consultar si se cerró la última línea.
