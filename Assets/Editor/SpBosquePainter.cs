@@ -494,6 +494,7 @@ namespace CampusQuest.EditorTools
                 sr.sortingOrder = 9;
                 var delta = new Vector3(centerX, centerY, 0f) - sr.bounds.center;
                 go.transform.position += delta;
+                SpBosqueFootColliderUtil.EnsureFootBox(go, sprite);
             }
 
             const int tireStack = 26;
@@ -952,6 +953,7 @@ namespace CampusQuest.EditorTools
                 var sr = go.AddComponent<SpriteRenderer>();
                 sr.sprite = sprite;
                 sr.sortingOrder = order;
+                SpBosqueFootColliderUtil.EnsureFootBox(go, sprite);
             }
         }
 

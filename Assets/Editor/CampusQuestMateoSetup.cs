@@ -1,6 +1,9 @@
 #if UNITY_EDITOR
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -10,7 +13,20 @@ public static class CampusQuestMateoSetup
     private const string Root = "Assets/Sprites/Characters/Mateo";
     private const string Frames = Root + "/Frames";
     private const string Anim = "Assets/Animations/Player/Mateo";
+    private const string ActionRoot = Root + "/Animaciones";
     private const string ControllerPath = Anim + "/Mateo.controller";
+    private const float ActionFrameRate = 10f;
+    private const int ActionFrameCount = 9;
+
+    static readonly (string clipSuffix, string sheetFile)[] ActionSheets =
+    {
+        ("Disparo_Down", "Disparo/Disparo_Abajo.png"),
+        ("Disparo_Side", "Disparo/Disparo_Lado.png"),
+        ("Disparo_Up", "Disparo/Disparo_Arriba.png"),
+        ("Golpe_Down", "Ataque/Golpe_Abajo.png"),
+        ("Golpe_Side", "Ataque/Golpe_Lado.png"),
+        ("Golpe_Up", "Ataque/Golpe_Arriba.png")
+    };
 
     [MenuItem("Campus Quest/Mateo/1 - Crear animaciones desde 16 PNG")]
     public static void Generate()
@@ -96,15 +112,227 @@ public static class CampusQuestMateoSetup
             clip = new AnimationClip();
             AssetDatabase.CreateAsset(clip, path);
         }
-        clip.frameRate = 8;
+        WriteSpriteClip(clip, frames, 8f, loop);
+    }
+
+    static void WriteSpriteClip(AnimationClip clip, Sprite[] frames, float frameRate, bool loop)
+    {
+        clip.frameRate = frameRate;
         var keyframes = new ObjectReferenceKeyframe[frames.Length];
         for (int i = 0; i < frames.Length; i++)
-            keyframes[i] = new ObjectReferenceKeyframe { time = i / 8f, value = frames[i] };
+            keyframes[i] = new ObjectReferenceKeyframe { time = i / frameRate, value = frames[i] };
         AnimationUtility.SetObjectReferenceCurve(clip, EditorCurveBinding.PPtrCurve("", typeof(SpriteRenderer), "m_Sprite"), keyframes);
         var settings = AnimationUtility.GetAnimationClipSettings(clip);
         settings.loopTime = loop;
         AnimationUtility.SetAnimationClipSettings(clip, settings);
         EditorUtility.SetDirty(clip);
+    }
+
+    [MenuItem("Campus Quest/Mateo/3 - Crear disparo y golpe")]
+    public static void GenerateActionClipsAndWireAnimator()
+    {
+        var controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
+        if (controller == null)
+        {
+            EditorUtility.DisplayDialog("Falta Mateo", "Ejecuta primero el menú 1 para crear Mateo.controller.", "Aceptar");
+            return;
+        }
+
+        Directory.CreateDirectory(Anim);
+        foreach (var (clipSuffix, relativePath) in ActionSheets)
+        {
+            var path = $"{ActionRoot}/{relativePath}";
+            if (!File.Exists(path))
+            {
+                EditorUtility.DisplayDialog("Faltan sprites", "No existe: " + path, "Aceptar");
+                return;
+            }
+
+            ApplyActionSheetImport(path);
+            var sprites = LoadOrderedSheetSprites(path);
+            if (sprites.Length < ActionFrameCount)
+            {
+                EditorUtility.DisplayDialog("Sprites incompletos",
+                    $"En {relativePath} hay {sprites.Length} sprites; se necesitan {ActionFrameCount}.", "Aceptar");
+                return;
+            }
+
+            var clipPath = $"{Anim}/Mateo_{clipSuffix}.anim";
+            var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(clipPath);
+            if (clip == null)
+            {
+                clip = new AnimationClip();
+                AssetDatabase.CreateAsset(clip, clipPath);
+            }
+
+            WriteSpriteClip(clip, sprites, ActionFrameRate, false);
+        }
+
+        WireActionStates(controller);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("[Campus Quest] Mateo: disparo y golpe en " + Anim);
+    }
+
+    static void ApplyActionSheetImport(string assetPath)
+    {
+        var importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer == null)
+            throw new Exception("No se pudo importar " + assetPath);
+
+        importer.textureType = TextureImporterType.Sprite;
+        importer.spriteImportMode = SpriteImportMode.Multiple;
+        importer.spritePixelsPerUnit = 110f;
+        importer.filterMode = FilterMode.Point;
+        importer.mipmapEnabled = false;
+        importer.textureCompression = TextureImporterCompression.Uncompressed;
+
+        var settings = new TextureImporterSettings();
+        importer.ReadTextureSettings(settings);
+        settings.spriteAlignment = (int)SpriteAlignment.Custom;
+        settings.spritePivot = new Vector2(0.5f, 0f);
+        importer.SetTextureSettings(settings);
+
+        importer.SaveAndReimport();
+    }
+
+    static Sprite[] LoadOrderedSheetSprites(string assetPath)
+    {
+        var matches = AssetDatabase.LoadAllAssetsAtPath(assetPath).OfType<Sprite>()
+            .Select(s => new { Sprite = s, Index = ParseTrailingIndex(s.name) })
+            .Where(p => p.Index >= 0)
+            .OrderBy(p => p.Index)
+            .ToList();
+        return matches.Select(p => p.Sprite).ToArray();
+    }
+
+    static int ParseTrailingIndex(string spriteName)
+    {
+        var match = Regex.Match(spriteName, @"_(\d+)$");
+        return match.Success && int.TryParse(match.Groups[1].Value, out var index) ? index : -1;
+    }
+
+    static void WireActionStates(AnimatorController controller)
+    {
+        EnsureParameter(controller, "Action", AnimatorControllerParameterType.Int);
+        var sm = controller.layers[0].stateMachine;
+
+        RequireLocomotionOnlyWhenIdle(controller, sm);
+
+        var idleByDir = new Dictionary<int, AnimatorState>();
+        foreach (var child in sm.states)
+        {
+            if (child.state.name.StartsWith("Idle_", StringComparison.Ordinal))
+            {
+                var dirName = child.state.name.Substring("Idle_".Length);
+                if (TryDirectionName(dirName, out var dir))
+                    idleByDir[dir] = child.state;
+            }
+        }
+
+        RemoveActionStates(sm);
+
+        var actionSpecs = new[]
+        {
+            ("Disparo_Down", 1, new[] { 0 }),
+            ("Disparo_Side", 1, new[] { 1, 2 }),
+            ("Disparo_Up", 1, new[] { 3 }),
+            ("Golpe_Down", 2, new[] { 0 }),
+            ("Golpe_Side", 2, new[] { 1, 2 }),
+            ("Golpe_Up", 2, new[] { 3 })
+        };
+
+        foreach (var (stateName, actionValue, directions) in actionSpecs)
+        {
+            var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>($"{Anim}/Mateo_{stateName}.anim");
+            if (clip == null)
+                throw new Exception("Falta clip " + stateName);
+
+            var state = sm.AddState(stateName);
+            state.motion = clip;
+
+            foreach (var dir in directions)
+            {
+                var enter = sm.AddAnyStateTransition(state);
+                enter.hasExitTime = false;
+                enter.duration = 0f;
+                enter.canTransitionToSelf = false;
+                enter.AddCondition(AnimatorConditionMode.Equals, actionValue, "Action");
+                enter.AddCondition(AnimatorConditionMode.Equals, dir, "Direction");
+            }
+
+            foreach (var dir in directions)
+            {
+                if (!idleByDir.TryGetValue(dir, out var idle))
+                    continue;
+                var exit = state.AddTransition(idle);
+                exit.hasExitTime = true;
+                exit.exitTime = 0.95f;
+                exit.duration = 0f;
+                exit.AddCondition(AnimatorConditionMode.Equals, 0, "Action");
+                exit.AddCondition(AnimatorConditionMode.Equals, dir, "Direction");
+            }
+        }
+
+        EditorUtility.SetDirty(controller);
+    }
+
+    static void EnsureParameter(AnimatorController controller, string name, AnimatorControllerParameterType type)
+    {
+        foreach (var p in controller.parameters)
+        {
+            if (p.name == name)
+                return;
+        }
+
+        controller.AddParameter(name, type);
+    }
+
+    static void RequireLocomotionOnlyWhenIdle(AnimatorController controller, AnimatorStateMachine sm)
+    {
+        foreach (var transition in sm.anyStateTransitions)
+        {
+            if (transition == null || transition.destinationState == null)
+                continue;
+            var dstName = transition.destinationState.name;
+            if (!dstName.StartsWith("Idle_", StringComparison.Ordinal) &&
+                !dstName.StartsWith("Walk_", StringComparison.Ordinal))
+                continue;
+            if (HasCondition(transition, "Action", AnimatorConditionMode.Equals, 0))
+                continue;
+            transition.AddCondition(AnimatorConditionMode.Equals, 0, "Action");
+        }
+    }
+
+    static bool HasCondition(AnimatorStateTransition transition, string param, AnimatorConditionMode mode, float threshold)
+    {
+        foreach (var condition in transition.conditions)
+        {
+            if (condition.mode == mode && condition.parameter == param && Mathf.Approximately(condition.threshold, threshold))
+                return true;
+        }
+
+        return false;
+    }
+
+    static void RemoveActionStates(AnimatorStateMachine sm)
+    {
+        var toRemove = sm.states.Where(s => s.state.name.StartsWith("Disparo_", StringComparison.Ordinal) ||
+                                            s.state.name.StartsWith("Golpe_", StringComparison.Ordinal)).ToList();
+        foreach (var child in toRemove)
+            sm.RemoveState(child.state);
+    }
+
+    static bool TryDirectionName(string name, out int direction)
+    {
+        switch (name)
+        {
+            case "Down": direction = 0; return true;
+            case "Left": direction = 1; return true;
+            case "Right": direction = 2; return true;
+            case "Up": direction = 3; return true;
+            default: direction = 0; return false;
+        }
     }
 
     [MenuItem("Campus Quest/Mateo/2 - Aplicar visual al personaje seleccionado")]
