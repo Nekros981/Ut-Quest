@@ -12,20 +12,22 @@ namespace CampusQuest.Rectoria
         public RectoriaScenePoint[] points;
         public DialogueSession session;
         public ArchiveChallenge archive;
+        public CredentialChallenge credential;
         public bool HasSpokenToRectora => session != null && session.HasCompleted(WelcomeId);
 
         public RectoriaScenePoint AvailableSpeaker()
         {
             if (player == null || !player.isActiveAndEnabled || session == null
                 || !session.isActiveAndEnabled || DialogueSession.IsAnyOpen || points == null
-                || (archive != null && (archive.IsOpen || archive.ConsumedInputThisFrame))) return null;
+                || (archive != null && (archive.IsOpen || archive.ConsumedInputThisFrame))
+                || (credential != null && (credential.IsBusy || credential.ConsumedInputThisFrame))) return null;
             if (player.map == null || player.map.grid == null
                 || !player.map.CanEnter(player.map.grid.WorldToCell(player.transform.position))) return null;
             foreach (var point in points)
                 if (point != null && (point.kind == RectoriaPointKind.Npc || point.kind == RectoriaPointKind.Clue)
                     && point.IsFacing(player))
                 {
-                    var definition = archive != null ? archive.DialogueFor(point) : point.dialogue;
+                    var definition = DefinitionFor(point);
                     if (definition != null && definition.IsValid) return point;
                 }
             return null;
@@ -35,7 +37,13 @@ namespace CampusQuest.Rectoria
         {
             if (session == null || session.LastInputFrame == Time.frameCount) return false;
             var point = AvailableSpeaker();
-            return point != null && session.TryBegin(archive != null ? archive.DialogueFor(point) : point.dialogue);
+            return point != null && session.TryBegin(DefinitionFor(point));
+        }
+
+        private DialogueDefinition DefinitionFor(RectoriaScenePoint point)
+        {
+            if (point.pointId == "lic_mony" && credential != null) return credential.DialogueForMony();
+            return archive != null ? archive.DialogueFor(point) : point.dialogue;
         }
 
         private void Update()

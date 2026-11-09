@@ -35,7 +35,7 @@ namespace CampusQuest.Rectoria
             Vector3Int current = map.grid.WorldToCell(transform.position);
             Vector3Int target = current + new Vector3Int(direction.x, direction.y, 0);
             if (!map.CanEnter(target)) return;
-            float seconds = (k.zKey.isPressed ? runSecondsPerCell : walkSecondsPerCell);
+            float seconds = (k.leftShiftKey.isPressed || k.rightShiftKey.isPressed) ? runSecondsPerCell : walkSecondsPerCell;
             StartCoroutine(Travel(map.CellCenter(current), map.CellCenter(target), Mathf.Max(0.02f, seconds)));
         }
 

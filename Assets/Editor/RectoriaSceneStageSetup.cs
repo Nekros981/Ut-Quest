@@ -240,7 +240,7 @@ namespace CampusQuest.EditorTools
             HudPanel(root, "Fondo_Zona", true);
             HudPanel(root, "Fondo_Controles", false);
             guide.areaLabel = HudText(root, "Zona", "RECTORÍA / RECIBIDOR", true, 22);
-            guide.contextLabel = HudText(root, "Controles_Y_Contexto", "WASD / Flechas: caminar     Z: correr", false, 20);
+            guide.contextLabel = HudText(root, "Controles_Y_Contexto", "WASD / Flechas: caminar     Shift: correr", false, 20);
         }
 
         private static void HudPanel(Transform parent, string name, bool top)

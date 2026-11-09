@@ -124,7 +124,7 @@ namespace CampusQuest.EditorTools
             }
             AssetDatabase.SaveAssets();
             Selection.activeGameObject = actor;
-            Debug.Log("Campus Quest: escena creada en " + ScenePath + ". WASD/flechas caminan, Z corre. Solo geometria de prueba: no hay misiones, dialogos ni sprites definitivos.");
+            Debug.Log("Campus Quest: escena creada en " + ScenePath + ". WASD/flechas caminan, Shift corre. Solo geometria de prueba: no hay misiones, dialogos ni sprites definitivos.");
             EditorUtility.DisplayDialog("Campus Quest", "Blockout creado en " + ScenePath + ". Pulsa Play para recorrerlo. Las puertas rojas permanecen bloqueadas hasta editarlas manualmente.", "Aceptar");
         }
 

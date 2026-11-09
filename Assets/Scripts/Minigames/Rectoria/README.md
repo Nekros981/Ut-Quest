@@ -54,7 +54,7 @@ Referencia: `GUION RECTORIA.pdf` del equipo, complementado por las decisiones m�
 recientes del usuario. Estas decisiones prevalecen sobre las versiones antiguas:
 
 - El estudiante elegirá su nombre; Mateo sigue siendo el nombre del recurso visual.
-- Movimiento continuo en cuatro direcciones; Z para correr. Sin salto ni charco
+- Movimiento continuo en cuatro direcciones; Shift izquierdo o derecho para correr. Sin salto ni charco
   obligatorio. No se implementa giro automático al NPC más cercano.
 - Conversaciones desde casilla adyacente, mirando al NPC; E/Enter para avanzar
   manualmente. Movimiento bloqueado durante diálogo, puzle y cinemática.
@@ -84,8 +84,11 @@ Archivo con Don Chuy: conversaciones, lectura persistente de cuatro pistas y
 acertijo habilitado con las nueve carpetas originales de la página 7 del guion.
 Orden inicial fijo y reorganización solo tras tres errores. Ver `ARCHIVE.md`.
 
+Credencialización, carrera con ambos Shift y minimapa de la cuadrícula lógica
+implementados. Ver `CREDENTIALIZATION.md` para controles, persistencia y pruebas.
+
 Todavía pendientes: diálogos de los otros NPC, bloqueo inicial de salida hasta hablar con la Rectora,
-puzles, animaciones de recompensa, apertura de puertas,
+puzle de Caja y su recompensa, apertura de puertas,
 cinemáticas y conexión al mapa de carreras. No se modifica el menú de Chino para
 simular esas funciones. Los storyboards visuales no se han localizado como archivos
 identificados; el plano original, el guion y los assets existentes guían esta etapa.

@@ -30,7 +30,7 @@ namespace CampusQuest.Rectoria
             if (player == null || player.map == null || player.map.grid == null) return;
             var cell = player.map.grid.WorldToCell(player.transform.position);
             string area = AreaAt(cell);
-            string context = "WASD / Flechas: caminar     Z: correr";
+            string context = "WASD / Flechas: caminar     Shift: correr";
             if (points != null)
                 foreach (var point in points)
                 {
