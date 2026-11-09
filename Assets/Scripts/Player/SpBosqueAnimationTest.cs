@@ -13,12 +13,6 @@ public sealed class SpBosqueAnimationTest : MonoBehaviour
         if (keyboard == null)
             return;
 
-        if (keyboard.gKey.wasPressedThisFrame)
-            mateo?.PlayGolpe();
-
-        if (keyboard.hKey.wasPressedThisFrame)
-            mateo?.PlayDisparo();
-
         if (keyboard.jKey.wasPressedThisFrame)
         {
             secuazLeft?.PlayGolpe();

@@ -15,7 +15,7 @@ public static class CampusQuestMateoSetup
     private const string Anim = "Assets/Animations/Player/Mateo";
     private const string ActionRoot = Root + "/Animaciones";
     private const string ControllerPath = Anim + "/Mateo.controller";
-    private const float ActionFrameRate = 10f;
+    private const float ActionFrameRate = 18f;
     private const int ActionFrameCount = 9;
 
     static readonly (string clipSuffix, string sheetFile)[] ActionSheets =
@@ -186,14 +186,193 @@ public static class CampusQuestMateoSetup
         importer.filterMode = FilterMode.Point;
         importer.mipmapEnabled = false;
         importer.textureCompression = TextureImporterCompression.Uncompressed;
+        importer.isReadable = true;
+
+        var settings = new TextureImporterSettings();
+        importer.ReadTextureSettings(settings);
+        settings.spriteAlignment = (int)SpriteAlignment.Custom;
+        importer.SetTextureSettings(settings);
+
+        importer.SaveAndReimport();
+        ApplyFootPivotToSheet(assetPath);
+    }
+
+    [MenuItem("Campus Quest/Mateo/4 - Pivote y tiempo de golpe/disparo")]
+    public static void RefreshActionPivotsAndClipSpeed()
+    {
+        var prefixes = new[] { "caminataA", "caminataIzq", "caminataD", "caminataUp" };
+        for (int d = 0; d < prefixes.Length; d++)
+        for (int i = 1; i <= 4; i++)
+        {
+            var walkPath = $"{Frames}/{prefixes[d]}{i}.png";
+            if (File.Exists(walkPath))
+                RestoreWalkFramePivot(walkPath);
+        }
+
+        foreach (var (_, relativePath) in ActionSheets)
+        {
+            var path = $"{ActionRoot}/{relativePath}";
+            if (!File.Exists(path))
+                continue;
+            ApplyActionSheetImport(path);
+        }
+
+        Directory.CreateDirectory(Anim);
+        foreach (var (clipSuffix, relativePath) in ActionSheets)
+        {
+            var path = $"{ActionRoot}/{relativePath}";
+            if (!File.Exists(path))
+                continue;
+
+            var sprites = LoadOrderedSheetSprites(path);
+            if (sprites.Length < ActionFrameCount)
+                continue;
+
+            var clipPath = $"{Anim}/Mateo_{clipSuffix}.anim";
+            var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(clipPath);
+            if (clip == null)
+            {
+                clip = new AnimationClip();
+                AssetDatabase.CreateAsset(clip, clipPath);
+            }
+
+            WriteSpriteClip(clip, sprites, ActionFrameRate, false);
+        }
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("[Campus Quest] Mateo: caminata (0.5,0), ancla de piernas en ataque, clips a " + ActionFrameRate + " FPS.");
+    }
+
+    static void RestoreWalkFramePivot(string assetPath)
+    {
+        var importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer == null)
+            return;
 
         var settings = new TextureImporterSettings();
         importer.ReadTextureSettings(settings);
         settings.spriteAlignment = (int)SpriteAlignment.Custom;
         settings.spritePivot = new Vector2(0.5f, 0f);
         importer.SetTextureSettings(settings);
-
         importer.SaveAndReimport();
+    }
+
+    static Texture2D LoadReadableTexture(string assetPath)
+    {
+        var importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer == null)
+            return null;
+
+        if (!importer.isReadable)
+        {
+            importer.isReadable = true;
+            importer.SaveAndReimport();
+        }
+
+        AssetDatabase.ImportAsset(assetPath, ImportAssetOptions.ForceUpdate);
+        return AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
+    }
+
+    static void ApplyFootPivotToSheet(string assetPath)
+    {
+        var importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer == null)
+            return;
+
+        var texture = LoadReadableTexture(assetPath);
+        if (texture == null)
+            return;
+
+        importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer == null)
+            return;
+
+        var sheet = importer.spritesheet;
+        if (sheet == null || sheet.Length == 0)
+            return;
+
+        var serialized = new SerializedObject(importer);
+        var spritesProp = serialized.FindProperty("m_SpriteSheet.m_Sprites");
+        if (spritesProp == null || !spritesProp.isArray)
+            return;
+
+        int count = Mathf.Min(sheet.Length, spritesProp.arraySize);
+        for (int i = 0; i < count; i++)
+        {
+            var element = spritesProp.GetArrayElementAtIndex(i);
+            if (!TryComputeFootPivot(texture, sheet[i].rect, out var pivot))
+                continue;
+
+            var alignment = element.FindPropertyRelative("m_Alignment");
+            var pivotProp = element.FindPropertyRelative("m_Pivot");
+            if (alignment != null)
+                alignment.intValue = (int)SpriteAlignment.Custom;
+            if (pivotProp != null)
+                pivotProp.vector2Value = pivot;
+        }
+
+        serialized.ApplyModifiedPropertiesWithoutUndo();
+        importer.SaveAndReimport();
+    }
+
+    const float FootAlphaThreshold = 0.1f;
+    const float LegBandHeightFraction = 0.35f;
+
+    static bool TryComputeFootPivot(Texture2D texture, Rect rect, out Vector2 pivot)
+    {
+        pivot = new Vector2(0.5f, 0f);
+        if (texture == null || rect.width < 1f || rect.height < 1f)
+            return false;
+
+        int x0 = Mathf.FloorToInt(rect.x);
+        int y0 = Mathf.FloorToInt(rect.y);
+        int w = Mathf.FloorToInt(rect.width);
+        int h = Mathf.FloorToInt(rect.height);
+
+        int footRow = -1;
+        for (int row = y0; row < y0 + h; row++)
+        {
+            for (int col = x0; col < x0 + w; col++)
+            {
+                if (texture.GetPixel(col, row).a > FootAlphaThreshold)
+                {
+                    footRow = row;
+                    break;
+                }
+            }
+
+            if (footRow >= 0)
+                break;
+        }
+
+        if (footRow < 0)
+            return false;
+
+        int bandRows = Mathf.Max(1, Mathf.CeilToInt(h * LegBandHeightFraction));
+        int bandTop = Mathf.Min(y0 + bandRows, y0 + h);
+
+        int minX = x0 + w;
+        int maxX = x0;
+        bool anyInBand = false;
+        for (int row = y0; row < bandTop; row++)
+        {
+            for (int col = x0; col < x0 + w; col++)
+            {
+                if (texture.GetPixel(col, row).a <= FootAlphaThreshold)
+                    continue;
+                anyInBand = true;
+                if (col < minX) minX = col;
+                if (col > maxX) maxX = col;
+            }
+        }
+
+        if (!anyInBand)
+            return false;
+
+        float centerX = (minX + maxX) * 0.5f;
+        pivot = new Vector2((centerX - x0) / w, (footRow - y0) / (float)h);
+        return true;
     }
 
     static Sprite[] LoadOrderedSheetSprites(string assetPath)

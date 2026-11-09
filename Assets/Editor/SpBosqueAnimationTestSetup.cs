@@ -47,7 +47,7 @@ public static class SpBosqueAnimationTestSetup
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
-        Debug.Log("Campus Quest: prueba de animaciones lista (WASD mover, J golpe secuaces, K derrota izq, G/H Mateo).");
+        Debug.Log("Campus Quest: prueba lista (WASD+Shift Mateo, clic golpe/disparo, F acción, J/K secuaces).");
     }
 
     static Transform FindMarker(string name, Vector3 fallback)

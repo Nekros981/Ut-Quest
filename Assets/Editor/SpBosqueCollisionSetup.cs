@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
 public static class SpBosqueCollisionSetup
@@ -134,8 +135,19 @@ public static class SpBosqueCollisionSetup
         circle.radius = 0.28f;
         circle.offset = new Vector2(0f, -0.12f);
 
-        if (mateo.GetComponent<SpTopDownTestMover>() == null)
-            Undo.AddComponent<SpTopDownTestMover>(mateo);
+        foreach (var comp in mateo.GetComponents<Component>())
+        {
+            if (comp != null && comp.GetType().Name == "SpTopDownTestMover")
+                Undo.DestroyObjectImmediate(comp);
+        }
+
+        var input = AssetDatabase.LoadAssetAtPath<InputActionAsset>("Assets/Settings/InputSystem_Actions.inputactions");
+        var playerInput = mateo.GetComponent<CampusQuestMateoPlayerInput>();
+        if (playerInput == null)
+            playerInput = Undo.AddComponent<CampusQuestMateoPlayerInput>(mateo);
+        var driver = mateo.GetComponentInChildren<CampusQuestMateoVisualDriver>();
+        if (input != null)
+            playerInput.Configure(input, driver);
     }
 
     static void EnsureWallComposite(GameObject wallsGo)

@@ -290485,10 +290485,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826207196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc06c7044ee8a7c7b286fa2f52e4892, type: 3}
+  m_Script: {fileID: 11500000, guid: e8f41a2c9d3b4e6f8a1c0b5d7e9f234a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpTopDownTestMover
-  speed: 4
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestMateoPlayerInput
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  visualDriver: {fileID: 1136717873}
+  walkSpeed: 4
+  sprintSpeed: 6.5
+  interactRadius: 1.2
 --- !u!4 &1826207198
 Transform:
   m_ObjectHideFlags: 0

@@ -146,7 +146,10 @@ public class OptionsMenu : MonoBehaviour
         var group = ResolveControlSchemeGroup();
         var builder = new StringBuilder();
         AppendActionBinding(builder, map, "Move", "Mover", group);
-        AppendActionBinding(builder, map, "Interact", "Interactuar", group);
+        AppendActionBinding(builder, map, "Sprint", "Correr", group);
+        AppendActionBinding(builder, map, "Attack", "Golpe", group);
+        AppendActionBinding(builder, map, "Shoot", "Disparar", group);
+        AppendActionBinding(builder, map, "Interact", "Acción (E)", group);
 
         controlsListText.text = builder.ToString().TrimEnd();
     }

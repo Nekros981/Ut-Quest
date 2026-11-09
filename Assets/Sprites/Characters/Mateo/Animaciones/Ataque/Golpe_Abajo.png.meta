@@ -48,7 +48,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -74,7 +74,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.5, y: 0}
+  spritePivot: {x: 0, y: 0}
   spritePixelsToUnits: 110
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -144,8 +144,8 @@ TextureImporter:
         y: 224
         width: 81
         height: 98
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.48765433, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,8 +166,8 @@ TextureImporter:
         y: 224
         width: 67
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.47761193, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,8 +188,8 @@ TextureImporter:
         y: 224
         width: 80
         height: 101
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,8 +210,8 @@ TextureImporter:
         y: 114
         width: 82
         height: 102
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.54268295, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,8 +232,8 @@ TextureImporter:
         y: 114
         width: 66
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.52272725, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,8 +254,8 @@ TextureImporter:
         y: 114
         width: 67
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.54477614, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,8 +276,8 @@ TextureImporter:
         y: 4
         width: 85
         height: 98
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.45882353, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,8 +298,8 @@ TextureImporter:
         y: 4
         width: 66
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5151515, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,8 +320,8 @@ TextureImporter:
         y: 4
         width: 80
         height: 101
-      alignment: 0
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
