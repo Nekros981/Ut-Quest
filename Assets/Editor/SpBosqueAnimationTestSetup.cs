@@ -27,6 +27,7 @@ public static class SpBosqueAnimationTestSetup
 
         var toleteMarker = FindMarker("SP_Tolete", new Vector3(12.5f, 11.5f, 0f));
         EnsureGroundTolete(toleteMarker.position);
+        var interactPrompt = EnsureInteractPrompt();
 
         var mateo = EnsureMateo(new Vector3(24.5f, 2f, 0f));
         var secuazLeft = EnsureSecuaz("Secuaz_Izq", new Vector3(20.5f, 6f, 0f));
@@ -87,6 +88,31 @@ public static class SpBosqueAnimationTestSetup
         var sr = go.AddComponent<SpriteRenderer>();
         sr.sprite = sprite;
         sr.sortingOrder = 15;
+
+        EnsureComponent<CampusQuestWeaponPickup>(go);
+
+        var collider = go.GetComponent<BoxCollider2D>();
+        if (collider == null)
+            collider = Undo.AddComponent<BoxCollider2D>(go);
+        collider.isTrigger = false;
+        if (sprite != null)
+        {
+            collider.size = sprite.bounds.size;
+            collider.offset = sprite.bounds.center;
+        }
+    }
+
+    static CampusQuestInteractPrompt EnsureInteractPrompt()
+    {
+        const string name = "CampusQuest_InteractPrompt";
+        var go = GameObject.Find(name);
+        if (go == null)
+        {
+            go = new GameObject(name);
+            Undo.RegisterCreatedObjectUndo(go, name);
+        }
+
+        return EnsureComponent<CampusQuestInteractPrompt>(go);
     }
 
     static Sprite LoadToleteSprite(int index)
@@ -130,8 +156,17 @@ public static class SpBosqueAnimationTestSetup
         var animator = EnsureComponent<Animator>(visual.gameObject);
         animator.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(MateoController);
 
+        EnsureComponent<CampusQuestLoadout>(go);
+
         var driver = EnsureComponent<CampusQuestMateoVisualDriver>(visual.gameObject);
         driver.motionRoot = go.transform;
+
+        var playerInput = EnsureComponent<CampusQuestMateoPlayerInput>(go);
+        var inputAsset = AssetDatabase.LoadAssetAtPath<UnityEngine.InputSystem.InputActionAsset>(
+            "Assets/Settings/InputSystem_Actions.inputactions");
+        var prompt = EnsureInteractPrompt();
+        if (inputAsset != null)
+            playerInput.Configure(inputAsset, driver, prompt);
 
         var squareRenderer = go.GetComponent<SpriteRenderer>();
         if (squareRenderer != null)
@@ -173,6 +208,14 @@ public static class SpBosqueAnimationTestSetup
             .FirstOrDefault(s => s.name == "Secueces_0");
         if (renderer.sprite == null && sheet != null)
             renderer.sprite = sheet;
+
+        if (name == "Secuaz_Izq")
+        {
+            var loot = EnsureComponent<CampusQuestSecuazLoot>(go);
+            var so = new SerializedObject(loot);
+            so.FindProperty("secuaz").objectReferenceValue = driver;
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
 
         return go;
     }

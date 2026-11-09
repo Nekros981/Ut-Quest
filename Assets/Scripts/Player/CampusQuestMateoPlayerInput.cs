@@ -9,6 +9,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
     [SerializeField] float walkSpeed = 4f;
     [SerializeField] float sprintSpeed = 6.5f;
     [SerializeField] float interactRadius = 1.2f;
+    [SerializeField] CampusQuestInteractPrompt interactPrompt;
 
     Rigidbody2D body;
     InputAction moveAction;
@@ -22,6 +23,13 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         if (visualDriver == null)
             visualDriver = GetComponentInChildren<CampusQuestMateoVisualDriver>();
+        if (interactPrompt == null)
+            interactPrompt = FindAnyObjectByType<CampusQuestInteractPrompt>(FindObjectsInactive.Include);
+        if (interactPrompt == null)
+        {
+            var promptGo = new GameObject("CampusQuest_InteractPrompt");
+            interactPrompt = promptGo.AddComponent<CampusQuestInteractPrompt>();
+        }
     }
 
     void OnEnable()
@@ -58,6 +66,17 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        var target = FindBestInteractable();
+        if (interactPrompt == null)
+            return;
+        if (target != null)
+            interactPrompt.Show(target);
+        else
+            interactPrompt.Hide();
+    }
+
     void FixedUpdate()
     {
         if (moveAction == null || body == null)
@@ -75,13 +94,34 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         body.linearVelocity = move * speed;
     }
 
-    void OnAttack(InputAction.CallbackContext _) => visualDriver?.PlayGolpe();
+    void OnAttack(InputAction.CallbackContext _)
+    {
+        if (visualDriver != null && visualDriver.PlayGolpe())
+            TryMeleeDamage();
+    }
 
-    void OnShoot(InputAction.CallbackContext _) => visualDriver?.PlayDisparo();
+    void OnShoot(InputAction.CallbackContext _)
+    {
+        if (visualDriver != null && visualDriver.PlayDisparo())
+            TryRangedDamage();
+    }
+
+    static void TryMeleeDamage()
+    {
+    }
+
+    static void TryRangedDamage()
+    {
+    }
 
     void OnInteract(InputAction.CallbackContext _) => TryInteract();
 
     void TryInteract()
+    {
+        FindBestInteractable()?.Interact(gameObject);
+    }
+
+    CampusQuestInteractable FindBestInteractable()
     {
         CampusQuestInteractable best = null;
         float bestDistance = interactRadius;
@@ -89,7 +129,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
         foreach (var target in FindObjectsByType<CampusQuestInteractable>(FindObjectsSortMode.None))
         {
-            if (target == null)
+            if (target == null || !target.isActiveAndEnabled || !target.CanInteract(gameObject))
                 continue;
 
             float distance = Vector2.Distance(origin, target.transform.position);
@@ -100,12 +140,14 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
             }
         }
 
-        best?.Interact(gameObject);
+        return best;
     }
 
-    public void Configure(InputActionAsset asset, CampusQuestMateoVisualDriver driver)
+    public void Configure(InputActionAsset asset, CampusQuestMateoVisualDriver driver, CampusQuestInteractPrompt prompt = null)
     {
         inputActions = asset;
         visualDriver = driver;
+        if (prompt != null)
+            interactPrompt = prompt;
     }
 }

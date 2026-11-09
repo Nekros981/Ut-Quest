@@ -10,6 +10,7 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
 
     public Transform motionRoot;
 
+    CampusQuestLoadout loadout;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector3 lastPosition;
@@ -25,6 +26,8 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (motionRoot == null)
             motionRoot = transform.parent;
+        if (motionRoot != null)
+            loadout = motionRoot.GetComponent<CampusQuestLoadout>();
         lastPosition = motionRoot != null ? motionRoot.position : transform.position;
     }
 
@@ -53,18 +56,24 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
         lastPosition = current;
     }
 
-    public void PlayDisparo()
+    public bool PlayDisparo()
     {
+        if (loadout == null || !loadout.HasPistol)
+            return false;
         if (animator.GetInteger(ActionId) != ActionNone)
-            return;
+            return false;
         animator.SetInteger(ActionId, ActionShoot);
+        return true;
     }
 
-    public void PlayGolpe()
+    public bool PlayGolpe()
     {
+        if (loadout == null || !loadout.HasClub)
+            return false;
         if (animator.GetInteger(ActionId) != ActionNone)
-            return;
+            return false;
         animator.SetInteger(ActionId, ActionMelee);
+        return true;
     }
 
     bool IsCurrentActionStateFinished()

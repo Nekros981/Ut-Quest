@@ -47,8 +47,6 @@ namespace CampusQuest.EditorTools
 
         const int PathCenterX = 24;
         const int PathHalfWidth = 4;
-        const int RainColumns = 8;
-        const int RainRows = 5;
         const int RouteMapH = 80;
         const int NorthRouteStartY = 80;
         const int FullMapH = 112;
@@ -103,7 +101,7 @@ namespace CampusQuest.EditorTools
             EnsureRainAtmosphere();
             EditorSceneManager.MarkSceneDirty(scene);
             EditorSceneManager.SaveScene(scene);
-            Debug.Log("Campus Quest: lluvia de SP quedó en " + (RainColumns * RainRows) + " gotas.");
+            Debug.Log("Campus Quest: la lluvia de SP quedó como partícula en la cámara.");
         }
 
         public static void Paint()
@@ -1745,15 +1743,6 @@ namespace CampusQuest.EditorTools
 
             EnsureRainAudio(atmosphere.transform);
 
-            var previousOverlay = cam.transform.Find("RainOverlay");
-            if (previousOverlay != null)
-                UnityEngine.Object.DestroyImmediate(previousOverlay.gameObject);
-
-            var overlayGo = new GameObject("RainOverlay");
-            overlayGo.transform.SetParent(cam.transform, false);
-            overlayGo.transform.localPosition = Vector3.zero;
-            var overlayRoot = overlayGo.transform;
-
             var frames = LoadSprites(RainTexturePath)
                 .Where(s => s.name.StartsWith("rain effect_", StringComparison.Ordinal))
                 .OrderBy(s => s.name, StringComparer.Ordinal)
@@ -1764,36 +1753,129 @@ namespace CampusQuest.EditorTools
                 return;
             }
 
-            float viewHeight = cam.orthographicSize * 2f;
-            float viewWidth = viewHeight * cam.aspect;
-            float stepX = viewWidth / RainColumns;
-            float stepY = viewHeight / RainRows;
-            var tileRenderers = new List<SpriteRenderer>(RainColumns * RainRows);
-            float originX = -viewWidth * 0.5f;
-            float originY = -viewHeight * 0.5f;
+            DestroyRainTiles();
+            var overlayRoot = AcquireRainOverlayRoot(cam.transform);
+            for (int i = overlayRoot.childCount - 1; i >= 0; i--)
+                UnityEngine.Object.DestroyImmediate(overlayRoot.GetChild(i).gameObject);
 
-            for (int row = 0; row < RainRows; row++)
-            for (int col = 0; col < RainColumns; col++)
-            {
-                var drop = new GameObject($"RainTile_{col}_{row}");
-                drop.transform.SetParent(overlayRoot, false);
-                drop.transform.localPosition = new Vector3(
-                    originX + col * stepX + stepX * 0.5f,
-                    originY + row * stepY + stepY * 0.5f,
-                    0.05f);
-                drop.transform.localScale = Vector3.one;
+            var strayRenderer = overlayRoot.GetComponent<SpriteRenderer>();
+            if (strayRenderer != null)
+                UnityEngine.Object.DestroyImmediate(strayRenderer);
 
-                var sr = drop.AddComponent<SpriteRenderer>();
-                sr.sprite = frames[(col + row) % frames.Length];
-                sr.sortingOrder = 30;
-                sr.color = new Color(1f, 1f, 1f, 0.55f);
-                tileRenderers.Add(sr);
-            }
-
+            ConfigureRainParticles(overlayRoot.gameObject, frames, cam);
             var overlay = overlayRoot.gameObject.GetComponent<SpForestRainOverlay>();
             if (overlay == null)
                 overlay = overlayRoot.gameObject.AddComponent<SpForestRainOverlay>();
-            overlay.ConfigureGrid(frames, tileRenderers.ToArray(), 10f);
+            overlay.FitEmitterToCamera();
+        }
+
+        const string RainMaterialPath = "Assets/Sprites/Enviroment/Sp/Lluvia/Rain effect/Luvia.mat";
+
+        static void DestroyRainTiles()
+        {
+            var scene = SceneManager.GetActiveScene();
+            var doomed = new List<GameObject>();
+            foreach (var root in scene.GetRootGameObjects())
+            {
+                foreach (var t in root.GetComponentsInChildren<Transform>(true))
+                {
+                    if (t.name.StartsWith("RainTile_", StringComparison.Ordinal))
+                        doomed.Add(t.gameObject);
+                }
+            }
+
+            foreach (var go in doomed)
+                UnityEngine.Object.DestroyImmediate(go);
+        }
+
+        static void ConfigureRainParticles(GameObject go, Sprite[] frames, Camera cam)
+        {
+            var ps = go.GetComponent<ParticleSystem>();
+            if (ps == null)
+                ps = go.AddComponent<ParticleSystem>();
+
+            var renderer = go.GetComponent<ParticleSystemRenderer>();
+            var material = AssetDatabase.LoadAssetAtPath<Material>(RainMaterialPath);
+            if (material == null)
+                material = EnsureVfxParticleMaterial();
+            renderer.material = material;
+            renderer.renderMode = ParticleSystemRenderMode.Billboard;
+            renderer.sortingOrder = 30;
+            renderer.maxParticleSize = 1f;
+
+            var main = ps.main;
+            main.loop = true;
+            main.playOnAwake = true;
+            main.prewarm = true;
+            main.simulationSpace = ParticleSystemSimulationSpace.Local;
+            main.startLifetime = 1.6f;
+            main.startSpeed = 0f;
+            main.startSize = new ParticleSystem.MinMaxCurve(1.5f, 2.5f);
+            main.startColor = new Color(1f, 1f, 1f, 0.65f);
+            main.maxParticles = 1000;
+            main.gravityModifier = 0f;
+
+            var emission = ps.emission;
+            emission.rateOverTime = 500f;
+
+            var shape = ps.shape;
+            shape.enabled = true;
+            shape.shapeType = ParticleSystemShapeType.Box;
+            float viewHeight = cam.orthographicSize * 2f * 1.15f;
+            float viewWidth = viewHeight * cam.aspect;
+            shape.scale = new Vector3(Mathf.Max(1f, viewWidth), Mathf.Max(1f, viewHeight), 0.1f);
+
+            var velocity = ps.velocityOverLifetime;
+            velocity.enabled = true;
+            velocity.space = ParticleSystemSimulationSpace.Local;
+            velocity.x = new ParticleSystem.MinMaxCurve(-1.2f, 0.4f);
+            velocity.y = new ParticleSystem.MinMaxCurve(-16f, -10f);
+            velocity.z = new ParticleSystem.MinMaxCurve(0f, 0f);
+
+            var tex = ps.textureSheetAnimation;
+            tex.enabled = true;
+            tex.mode = ParticleSystemAnimationMode.Sprites;
+            while (tex.spriteCount > 0)
+                tex.RemoveSprite(0);
+            for (int i = 0; i < frames.Length; i++)
+                tex.AddSprite(frames[i]);
+            tex.frameOverTime = new ParticleSystem.MinMaxCurve(0f);
+            tex.startFrame = new ParticleSystem.MinMaxCurve(0f, Mathf.Max(0, frames.Length - 1));
+        }
+
+        static Transform AcquireRainOverlayRoot(Transform cameraTransform)
+        {
+            var scene = SceneManager.GetActiveScene();
+            var found = new List<Transform>();
+            foreach (var root in scene.GetRootGameObjects())
+            {
+                foreach (var t in root.GetComponentsInChildren<Transform>(true))
+                {
+                    if (t.name != "RainOverlay" || t.gameObject.scene != scene)
+                        continue;
+                    found.Add(t);
+                }
+            }
+
+            Transform overlayRoot;
+            if (found.Count > 0)
+            {
+                overlayRoot = found[0];
+                for (int i = 1; i < found.Count; i++)
+                    UnityEngine.Object.DestroyImmediate(found[i].gameObject);
+            }
+            else
+            {
+                var overlayGo = new GameObject("RainOverlay");
+                Undo.RegisterCreatedObjectUndo(overlayGo, "RainOverlay");
+                overlayRoot = overlayGo.transform;
+            }
+
+            overlayRoot.SetParent(cameraTransform, false);
+            overlayRoot.localPosition = new Vector3(0f, 0f, 10f);
+            overlayRoot.localRotation = Quaternion.identity;
+            overlayRoot.localScale = Vector3.one;
+            return overlayRoot;
         }
 
         static void EnsureRainAudio(Transform parent)

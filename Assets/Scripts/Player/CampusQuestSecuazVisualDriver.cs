@@ -65,6 +65,8 @@ public sealed class CampusQuestSecuazVisualDriver : MonoBehaviour
 
     public void SetArma(int arma) => animator.SetInteger(ArmaId, arma);
 
+    public bool IsDefeated => animator != null && animator.GetBool(DerrotadoId);
+
     public void PlayDerrotado()
     {
         if (animator.GetBool(DerrotadoId))
