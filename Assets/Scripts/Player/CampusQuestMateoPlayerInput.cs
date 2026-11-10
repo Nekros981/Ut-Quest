@@ -131,7 +131,10 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         if (visualDriver != null && visualDriver.IsDefeated)
             return;
         if (visualDriver != null && visualDriver.PlayGolpe())
+        {
+            CampusQuestGunshot.PlayMelee(visualDriver.ShooterRoot.position);
             TryMeleeDamage();
+        }
     }
 
     void OnShoot(InputAction.CallbackContext _)
@@ -143,6 +146,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
         var facing = visualDriver.Facing;
         var origin = (Vector2)visualDriver.ShooterRoot.position;
+        CampusQuestGunshot.Play(visualDriver.ShooterRoot.position);
         CampusQuestBullet.Spawn(bulletSprite, facing, origin, true, visualDriver.ShooterRoot);
     }
 

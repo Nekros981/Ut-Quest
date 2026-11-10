@@ -37,6 +37,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
             return;
 
         vida = Mathf.Max(0, vida - 1);
+        CampusQuestGunshot.PlayDamage(transform.position);
         if (vida > 0)
             return;
 
@@ -101,6 +102,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
                     cooldown = AttackCooldown;
                     pendingMeleeHit = MeleeHitDelay;
                     body.linearVelocity = Vector2.zero;
+                    CampusQuestGunshot.PlayMelee(transform.position);
                 }
                 return;
             }
@@ -170,6 +172,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
         if (towardMateo.sqrMagnitude < 0.0001f)
             return;
 
+        CampusQuestGunshot.Play(visual.ShooterRoot.position);
         CampusQuestBullet.Spawn(bulletSprite, towardMateo, origin, false, visual.ShooterRoot);
     }
 

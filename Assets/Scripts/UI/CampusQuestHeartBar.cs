@@ -31,6 +31,10 @@ public sealed class CampusQuestHeartBar : MonoBehaviour
         currentHearts = Mathf.Max(0, currentHearts - amount);
         Refresh();
 
+        var mateoForSfx = FindAnyObjectByType<CampusQuestMateoPlayerInput>();
+        if (mateoForSfx != null)
+            CampusQuestGunshot.PlayDamage(mateoForSfx.transform.position);
+
         if (currentHearts <= 0)
         {
             var mateo = FindAnyObjectByType<CampusQuestMateoPlayerInput>();

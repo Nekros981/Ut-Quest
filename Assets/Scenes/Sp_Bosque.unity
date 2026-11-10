@@ -197417,7 +197417,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -212988,6 +212988,54 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.16875, y: 0.9625}
   m_EdgeRadius: 0
+--- !u!1 &892542857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892542859}
+  - component: {fileID: 892542858}
+  m_Layer: 0
+  m_Name: CampusQuest_Gunshot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &892542858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892542857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1c496e743971348bd9d5dcec10787e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestGunshot
+  pistolClip: {fileID: 8300000, guid: 81feedd17e609f76eae122d8f0a11edb, type: 3}
+  meleeClip: {fileID: 8300000, guid: 611bcb3a5a2352f8e950ac8a88edd095, type: 3}
+  damageClip: {fileID: 8300000, guid: 72f882197aa80cd3f98cb1105eb2769d, type: 3}
+  mixer: {fileID: 24100000, guid: 403958e982619a3ec9eaaa11b8f28cdf, type: 2}
+--- !u!4 &892542859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892542857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &897879963
 GameObject:
   m_ObjectHideFlags: 0
@@ -330751,3 +330799,4 @@ SceneRoots:
   - {fileID: 281669754}
   - {fileID: 280675734}
   - {fileID: 1270931182}
+  - {fileID: 892542859}

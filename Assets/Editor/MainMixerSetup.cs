@@ -31,6 +31,7 @@ public static class MainMixerSetup
 
         EnsureGroup(mixer, createNewGroup, "Music");
         EnsureGroup(mixer, createNewGroup, "SFX");
+        EnsureGroup(mixer, createNewGroup, "Combat");
 
         var exposeParam = controllerType.GetMethod(
             "ExposeParameter",
@@ -47,10 +48,11 @@ public static class MainMixerSetup
 
         ExposeGroupAttenuation(mixer, effectType, exposeParam, "Music", "MusicVolume");
         ExposeGroupAttenuation(mixer, effectType, exposeParam, "SFX", "SfxVolume");
+        ExposeGroupAttenuation(mixer, effectType, exposeParam, "Combat", "CombatVolume");
 
         EditorUtility.SetDirty(mixer);
         AssetDatabase.SaveAssets();
-        Debug.Log("MainMixer groups Music/SFX and exposed MusicVolume/SfxVolume.");
+        Debug.Log("MainMixer groups Music/SFX/Combat with MusicVolume, SfxVolume and CombatVolume.");
     }
 
     static void EnsureGroup(AudioMixer mixer, MethodInfo createNewGroup, string groupName)
