@@ -85,6 +85,16 @@ namespace CampusQuest.EditorTools
         [MenuItem("Campus Quest/SP/Pintar campo destruido")]
         public static void PaintDestroyedCampNorthFromMenu() => PaintDestroyedCampNorth();
 
+        [MenuItem("Campus Quest/SP/Luces del campo en llamas")]
+        public static void RebuildFieldFireLightsFromMenu()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            EnsureFieldFireSmokeColumns();
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            Debug.Log("[Campus Quest] SP_FieldFires recreado con luces en el campo.");
+        }
+
         [MenuItem("Campus Quest/SP/Pintar plaza del búnker")]
         public static void PaintBunkerPlazaFromMenu() => PaintBunkerPlazaNorth();
 
@@ -1098,7 +1108,47 @@ namespace CampusQuest.EditorTools
                 smokeGo.transform.localPosition = new Vector3(0f, 0.85f, 0f);
                 ConfigureSpriteLoopParticles(smokeGo, smokeFrames, material, new Color(0.38f, 0.38f, 0.4f, 0.78f),
                     startLifetime: 2.9f, startSpeed: 0.3f, startSize: 1.15f, rate: 8f, rise: 0.7f, sortingOrder: 27);
+
+                EnsureFieldFireGlow(column.transform, i);
             }
+        }
+
+        static void EnsureFieldFireGlow(Transform column, int index)
+        {
+            var existing = column.Find("Glow");
+            Transform glowT;
+            if (existing != null)
+                glowT = existing;
+            else
+            {
+                var glowGo = new GameObject("Glow");
+                Undo.RegisterCreatedObjectUndo(glowGo, "Glow");
+                glowT = glowGo.transform;
+                glowT.SetParent(column, false);
+            }
+
+            glowT.localPosition = new Vector3(0f, 0.15f, 0f);
+
+            var light = glowT.GetComponent<Light2D>();
+            if (light == null)
+                light = glowT.gameObject.AddComponent<Light2D>();
+
+            light.lightType = Light2D.LightType.Point;
+            light.blendStyleIndex = 1;
+            light.color = new Color(1f, 0.42f, 0.08f, 1f);
+            light.intensity = 0.45f;
+            light.pointLightInnerRadius = 0.2f;
+            light.pointLightOuterRadius = 2.2f;
+            light.falloffIntensity = 0.6f;
+            light.shadowsEnabled = false;
+
+            var glow = glowT.GetComponent<CampusQuestFireGlow>();
+            if (glow == null)
+                glow = glowT.gameObject.AddComponent<CampusQuestFireGlow>();
+            var glowSo = new SerializedObject(glow);
+            glowSo.FindProperty("light2D").objectReferenceValue = light;
+            glowSo.FindProperty("phase").floatValue = index * 1.7f;
+            glowSo.ApplyModifiedPropertiesWithoutUndo();
         }
 
         static Sprite[] LoadExplosionFrames(string folder, string prefix)
