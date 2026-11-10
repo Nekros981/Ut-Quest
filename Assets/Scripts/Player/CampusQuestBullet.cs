@@ -95,6 +95,9 @@ public sealed class CampusQuestBullet : MonoBehaviour
             }
         }
 
+        if (other.isTrigger)
+            return;
+
         Destroy(gameObject);
     }
 

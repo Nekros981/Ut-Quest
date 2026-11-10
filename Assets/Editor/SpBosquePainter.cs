@@ -82,6 +82,9 @@ namespace CampusQuest.EditorTools
         [MenuItem("Campus Quest/SP/Agregar recorrido del bosque")]
         public static void PaintRouteExtensionFromMenu() => PaintRouteExtension();
 
+        [MenuItem("Campus Quest/SP/Limpiar troncos invisibles del camino")]
+        public static void ClearExtensionPathWallTilesFromMenu() => ClearExtensionPathWallTiles();
+
         [MenuItem("Campus Quest/SP/Pintar campo destruido")]
         public static void PaintDestroyedCampNorthFromMenu() => PaintDestroyedCampNorth();
 
@@ -247,7 +250,12 @@ namespace CampusQuest.EditorTools
                     ? SelectPathGroundTile(mixel, path, x, y)
                     : SelectGrassGroundTile(mixel, x, y));
 
-                if (IsExtensionTree(x, y, path))
+                if (path[x, y])
+                {
+                    walls.SetTile(cell, null);
+                    canopy.SetTile(cell, null);
+                }
+                else if (IsExtensionTree(x, y, path))
                 {
                     walls.SetTile(cell, trunk);
                     canopy.SetTile(cell, canopyTile);
@@ -266,6 +274,40 @@ namespace CampusQuest.EditorTools
             EditorSceneManager.SaveScene(scene);
             AssetDatabase.SaveAssets();
             Debug.Log("Campus Quest: recorrido agregado encima de la entrada (" + MapW + "x" + RouteMapH + ").");
+        }
+
+        public static void ClearExtensionPathWallTiles()
+        {
+            var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var walls = FindTilemap("Tilemap_Walls");
+            var canopy = FindTilemap("Tilemap_Canopy");
+            if (walls == null || canopy == null)
+            {
+                Debug.LogError("Campus Quest: faltan Tilemap_Walls o Tilemap_Canopy.");
+                return;
+            }
+
+            var path = BuildExtensionPathMask();
+            int cleared = 0;
+            for (int y = MapH; y < RouteMapH; y++)
+            for (int x = 0; x < MapW; x++)
+            {
+                if (!path[x, y])
+                    continue;
+
+                var cell = new Vector3Int(x, y, 0);
+                if (walls.GetTile(cell) != null || canopy.GetTile(cell) != null)
+                    cleared++;
+
+                walls.SetTile(cell, null);
+                canopy.SetTile(cell, null);
+            }
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Physics2D.SyncTransforms();
+            Debug.Log("[Campus Quest] Troncos invisibles quitados del camino (y " + MapH + "-" + (RouteMapH - 1) + "), celdas limpiadas: " + cleared + ".");
         }
 
         public static void PaintDestroyedCampNorth()

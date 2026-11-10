@@ -268,6 +268,10 @@ public static class SpBosqueMinimapSetup
         circle.radius = 1.2f;
 
         EnsureComponent<CampusQuestBunkerStoryInteract>(go);
+
+        var mapMarker = EnsureComponent<CampusQuestMapMarker>(go);
+        mapMarker.enabled = false;
+        EnsureComponent<CampusQuestBunkerMapMarker>(go);
     }
 
     static T EnsureComponent<T>(GameObject go) where T : Component

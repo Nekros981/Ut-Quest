@@ -124,6 +124,65 @@ public static class SpBosqueAmbushSetup
         Debug.Log("[Campus Quest] Emboscada 2: 4 secuaces (apagados) y trigger en y=67.");
     }
 
+    [MenuItem("Campus Quest/SP/Emboscada 3")]
+    public static void SetupEmboscada3()
+    {
+        var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+
+        const string rootName = "Emboscada_3";
+        var root = GameObject.Find(rootName);
+        if (root == null)
+        {
+            root = new GameObject(rootName);
+            Undo.RegisterCreatedObjectUndo(root, rootName);
+        }
+
+        var shootNw = EnsureAmbushSecuaz(root.transform, "Emboscada3_Tiro_Noroeste", new Vector3(8.5f, 72.5f, 0f), true);
+        var shootNe = EnsureAmbushSecuaz(root.transform, "Emboscada3_Tiro_Noreste", new Vector3(22.5f, 72.5f, 0f), true);
+        var shootWest = EnsureAmbushSecuaz(root.transform, "Emboscada3_Tiro_Oeste", new Vector3(7.5f, 68.5f, 0f), true);
+        var shootEast = EnsureAmbushSecuaz(root.transform, "Emboscada3_Tiro_Este", new Vector3(23.5f, 68.5f, 0f), true);
+        var meleCenterL = EnsureAmbushSecuaz(root.transform, "Emboscada3_Mele_Centro_Izq", new Vector3(12.5f, 70.5f, 0f), false);
+        var meleCenterR = EnsureAmbushSecuaz(root.transform, "Emboscada3_Mele_Centro_Der", new Vector3(18.5f, 70.5f, 0f), false);
+
+        const string triggerName = "Emboscada_3_Trigger";
+        var triggerTransform = root.transform.Find(triggerName);
+        GameObject triggerGo;
+        if (triggerTransform == null)
+        {
+            triggerGo = new GameObject(triggerName);
+            Undo.RegisterCreatedObjectUndo(triggerGo, triggerName);
+            triggerGo.transform.SetParent(root.transform, false);
+        }
+        else
+            triggerGo = triggerTransform.gameObject;
+
+        triggerGo.transform.position = new Vector3(16f, 77f, 0f);
+        var box = triggerGo.GetComponent<BoxCollider2D>();
+        if (box == null)
+            box = triggerGo.AddComponent<BoxCollider2D>();
+        box.isTrigger = true;
+        box.size = new Vector2(12f, 1.2f);
+
+        var ambush = triggerGo.GetComponent<CampusQuestAmbush>();
+        if (ambush == null)
+            ambush = triggerGo.AddComponent<CampusQuestAmbush>();
+        var so = new SerializedObject(ambush);
+        var enemies = so.FindProperty("ambushEnemies");
+        enemies.arraySize = 6;
+        enemies.GetArrayElementAtIndex(0).objectReferenceValue = shootNw;
+        enemies.GetArrayElementAtIndex(1).objectReferenceValue = shootNe;
+        enemies.GetArrayElementAtIndex(2).objectReferenceValue = shootWest;
+        enemies.GetArrayElementAtIndex(3).objectReferenceValue = shootEast;
+        enemies.GetArrayElementAtIndex(4).objectReferenceValue = meleCenterL;
+        enemies.GetArrayElementAtIndex(5).objectReferenceValue = meleCenterR;
+        so.FindProperty("requiredStep").intValue = 6;
+        so.ApplyModifiedPropertiesWithoutUndo();
+
+        EditorSceneManager.MarkSceneDirty(scene);
+        EditorSceneManager.SaveScene(scene);
+        Debug.Log("[Campus Quest] Emboscada 3: 6 secuaces (4 tiro, 2 melee), trigger en y=77, requiere paso 6.");
+    }
+
     static GameObject EnsureAmbushSecuaz(Transform parent, string name, Vector3 position, bool usePistol)
     {
         var existing = parent.Find(name);
