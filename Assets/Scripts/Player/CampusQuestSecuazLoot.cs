@@ -45,6 +45,7 @@ public sealed class CampusQuestSecuazLoot : CampusQuestInteractable
         if (loadout == null || !loadout.GivePistol())
             return;
 
+        CampusQuestObjectives.Instance?.AdvanceTo(3);
         usado = true;
     }
 }

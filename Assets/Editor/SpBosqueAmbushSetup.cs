@@ -188,6 +188,18 @@ public static class SpBosqueAmbushSetup
             brainSo.FindProperty("bulletSprite").objectReferenceValue = bullet;
         brainSo.ApplyModifiedPropertiesWithoutUndo();
 
+        var keycard = go.GetComponent<CampusQuestAmbushKeycard>();
+        if (keycard == null)
+        {
+            keycard = Undo.AddComponent<CampusQuestAmbushKeycard>(go);
+            if (keycard == null)
+                keycard = go.AddComponent<CampusQuestAmbushKeycard>();
+        }
+
+        var keySo = new SerializedObject(keycard);
+        keySo.FindProperty("secuaz").objectReferenceValue = driver;
+        keySo.ApplyModifiedPropertiesWithoutUndo();
+
         var sheet = AssetDatabase.LoadAllAssetsAtPath("Assets/Sprites/Characters/Secuaces/Secueces.png")
             .OfType<Sprite>()
             .FirstOrDefault(s => s.name == "Secueces_0");

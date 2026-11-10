@@ -13,6 +13,7 @@ public sealed class CampusQuestWeaponPickup : CampusQuestInteractable
         if (loadout == null || !loadout.GiveClub())
             return;
 
+        CampusQuestObjectives.Instance?.AdvanceTo(1);
         gameObject.SetActive(false);
     }
 }

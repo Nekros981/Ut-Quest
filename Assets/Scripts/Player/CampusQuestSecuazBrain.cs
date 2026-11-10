@@ -44,6 +44,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
         body.linearVelocity = Vector2.zero;
         visual.PlayDerrotado();
         DisablePhysicsWhenDefeated();
+        CampusQuestObjectives.Instance?.TryAdvanceAfterFirstDefeat();
 
         var loot = GetComponent<CampusQuestSecuazLoot>();
         if (loot != null && CampusQuestSecuazLoot.TryClaimFirstDefeat(loot))
