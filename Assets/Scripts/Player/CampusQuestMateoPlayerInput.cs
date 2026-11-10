@@ -9,7 +9,9 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
     [SerializeField] float walkSpeed = 4f;
     [SerializeField] float sprintSpeed = 6.5f;
     [SerializeField] float interactRadius = 1.2f;
+    const float MeleeDamageRange = 1.5f;
     [SerializeField] CampusQuestInteractPrompt interactPrompt;
+    [SerializeField] Sprite bulletSprite;
 
     Rigidbody2D body;
     InputAction moveAction;
@@ -66,8 +68,31 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         }
     }
 
+    public void Defeat()
+    {
+        if (visualDriver != null)
+            visualDriver.PlayDerrotado();
+
+        if (body != null)
+        {
+            body.linearVelocity = Vector2.zero;
+            body.simulated = false;
+        }
+
+        var circle = GetComponent<CircleCollider2D>();
+        if (circle != null)
+            circle.enabled = false;
+    }
+
     void Update()
     {
+        if (visualDriver != null && visualDriver.IsDefeated)
+        {
+            if (interactPrompt != null)
+                interactPrompt.Hide();
+            return;
+        }
+
         var target = FindBestInteractable();
         if (interactPrompt == null)
             return;
@@ -79,6 +104,13 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (visualDriver != null && visualDriver.IsDefeated)
+        {
+            if (body != null)
+                body.linearVelocity = Vector2.zero;
+            return;
+        }
+
         if (moveAction == null || body == null)
             return;
 
@@ -96,28 +128,62 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
     void OnAttack(InputAction.CallbackContext _)
     {
+        if (visualDriver != null && visualDriver.IsDefeated)
+            return;
         if (visualDriver != null && visualDriver.PlayGolpe())
             TryMeleeDamage();
     }
 
     void OnShoot(InputAction.CallbackContext _)
     {
-        if (visualDriver != null && visualDriver.PlayDisparo())
-            TryRangedDamage();
+        if (visualDriver != null && visualDriver.IsDefeated)
+            return;
+        if (visualDriver == null || !visualDriver.PlayDisparo())
+            return;
+
+        var facing = visualDriver.Facing;
+        var origin = (Vector2)visualDriver.ShooterRoot.position;
+        CampusQuestBullet.Spawn(bulletSprite, facing, origin, true, visualDriver.ShooterRoot);
     }
 
-    static void TryMeleeDamage()
+    void TryMeleeDamage()
     {
+        var target = FindClosestSecuaz(MeleeDamageRange);
+        target?.RecibirGolpe();
     }
 
-    static void TryRangedDamage()
+    CampusQuestSecuazBrain FindClosestSecuaz(float maxRange)
     {
+        CampusQuestSecuazBrain best = null;
+        float bestDistance = maxRange;
+        var origin = (Vector2)transform.position;
+
+        foreach (var secuaz in FindObjectsByType<CampusQuestSecuazBrain>(FindObjectsSortMode.None))
+        {
+            if (secuaz == null || !secuaz.isActiveAndEnabled)
+                continue;
+
+            var driver = secuaz.GetComponentInChildren<CampusQuestSecuazVisualDriver>(true);
+            if (driver != null && driver.IsDefeated)
+                continue;
+
+            float distance = Vector2.Distance(origin, secuaz.transform.position);
+            if (distance < bestDistance)
+            {
+                bestDistance = distance;
+                best = secuaz;
+            }
+        }
+
+        return best;
     }
 
     void OnInteract(InputAction.CallbackContext _) => TryInteract();
 
     void TryInteract()
     {
+        if (visualDriver != null && visualDriver.IsDefeated)
+            return;
         FindBestInteractable()?.Interact(gameObject);
     }
 

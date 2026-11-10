@@ -4,6 +4,7 @@ using UnityEngine;
 public sealed class CampusQuestInteractPrompt : MonoBehaviour
 {
     const string DefaultKey = "E";
+    const int CanvasSortingOrder = 60;
     static readonly Vector2 CanvasSize = new(180f, 56f);
     static readonly Vector2 ActionLabelSize = new(170f, 28f);
     static readonly Vector2 KeyLabelSize = new(40f, 28f);
@@ -35,6 +36,9 @@ public sealed class CampusQuestInteractPrompt : MonoBehaviour
                 canvasGo.GetComponent<RectTransform>().localScale = Vector3.one * 0.01f;
             }
         }
+
+        canvas.overrideSorting = true;
+        canvas.sortingOrder = CanvasSortingOrder;
 
         var canvasRect = canvas.GetComponent<RectTransform>();
         canvasRect.sizeDelta = CanvasSize;

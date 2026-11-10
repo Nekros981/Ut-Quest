@@ -19,6 +19,7 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
     private static readonly int DirectionId = Animator.StringToHash("Direction");
     private static readonly int IsMovingId = Animator.StringToHash("IsMoving");
     private static readonly int ActionId = Animator.StringToHash("Action");
+    private static readonly int DerrotadoId = Animator.StringToHash("Derrotado");
 
     private void Awake()
     {
@@ -42,6 +43,9 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (animator.GetBool(DerrotadoId))
+            return;
+
         Vector3 current = motionRoot != null ? motionRoot.position : transform.position;
         Vector3 delta = current - lastPosition;
         bool walking = delta.sqrMagnitude > .0000001f;
@@ -65,8 +69,31 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
         lastPosition = current;
     }
 
+    public Vector2 Facing => direction switch
+    {
+        1 => Vector2.left,
+        2 => Vector2.right,
+        3 => Vector2.up,
+        _ => Vector2.down,
+    };
+
+    public Transform ShooterRoot => motionRoot != null ? motionRoot : transform;
+
+    public bool IsDefeated => animator != null && animator.GetBool(DerrotadoId);
+
+    public void PlayDerrotado()
+    {
+        if (animator.GetBool(DerrotadoId))
+            return;
+        animator.SetInteger(ActionId, ActionNone);
+        animator.SetBool(IsMovingId, false);
+        animator.SetBool(DerrotadoId, true);
+    }
+
     public bool PlayDisparo()
     {
+        if (IsDefeated)
+            return false;
         if (loadout == null || !loadout.HasPistol)
             return false;
         if (animator.GetInteger(ActionId) != ActionNone)
@@ -77,6 +104,8 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
 
     public bool PlayGolpe()
     {
+        if (IsDefeated)
+            return false;
         if (loadout == null || !loadout.HasClub)
             return false;
         if (animator.GetInteger(ActionId) != ActionNone)

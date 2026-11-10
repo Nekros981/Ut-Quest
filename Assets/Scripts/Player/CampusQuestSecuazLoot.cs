@@ -2,15 +2,32 @@ using UnityEngine;
 
 public sealed class CampusQuestSecuazLoot : CampusQuestInteractable
 {
+    static CampusQuestSecuazLoot dueño;
+    static bool usado;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetForPlay()
+    {
+        dueño = null;
+        usado = false;
+    }
+
     [SerializeField] CampusQuestSecuazVisualDriver secuaz;
 
-    bool pistolTaken;
+    public override string PromptText => "Interactuar";
 
-    public override string PromptText => "Inspeccionar";
+    public static bool TryClaimFirstDefeat(CampusQuestSecuazLoot loot)
+    {
+        if (loot == null || usado || dueño != null)
+            return false;
+
+        dueño = loot;
+        return true;
+    }
 
     public override bool CanInteract(GameObject interactor)
     {
-        return isActiveAndEnabled && !pistolTaken && secuaz != null && secuaz.IsDefeated;
+        return isActiveAndEnabled && !usado && dueño == this && secuaz != null && secuaz.IsDefeated;
     }
 
     void Awake()
@@ -21,16 +38,13 @@ public sealed class CampusQuestSecuazLoot : CampusQuestInteractable
 
     public override void Interact(GameObject interactor)
     {
-        if (interactor == null || pistolTaken || secuaz == null)
-            return;
-
-        if (!secuaz.IsDefeated)
+        if (interactor == null || !CanInteract(interactor))
             return;
 
         var loadout = interactor.GetComponent<CampusQuestLoadout>();
         if (loadout == null || !loadout.GivePistol())
             return;
 
-        pistolTaken = true;
+        usado = true;
     }
 }

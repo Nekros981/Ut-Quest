@@ -63,9 +63,37 @@ public sealed class CampusQuestSecuazVisualDriver : MonoBehaviour
         lastPosition = current;
     }
 
+    public Vector2 Facing => direction switch
+    {
+        1 => Vector2.left,
+        2 => Vector2.right,
+        3 => Vector2.up,
+        _ => Vector2.down,
+    };
+
+    public Transform ShooterRoot => motionRoot != null ? motionRoot : transform;
+
+    public void LookAt(Vector2 worldDirection)
+    {
+        if (worldDirection.sqrMagnitude < 0.0001f)
+            return;
+
+        if (Mathf.Abs(worldDirection.x) > Mathf.Abs(worldDirection.y))
+            direction = worldDirection.x > 0f ? 2 : 1;
+        else
+            direction = worldDirection.y > 0f ? 3 : 0;
+
+        animator.SetInteger(DirectionId, direction);
+        spriteRenderer.flipX = direction == 1;
+    }
+
     public void SetArma(int arma) => animator.SetInteger(ArmaId, arma);
 
     public bool IsDefeated => animator != null && animator.GetBool(DerrotadoId);
+
+    public bool IsActing => animator != null && animator.GetInteger(ActionId) != ActionNone;
+
+    public int CurrentArma => animator != null ? animator.GetInteger(ArmaId) : armaInicial;
 
     public void PlayDerrotado()
     {
@@ -76,26 +104,28 @@ public sealed class CampusQuestSecuazVisualDriver : MonoBehaviour
         animator.SetBool(DerrotadoId, true);
     }
 
-    public void PlayGolpe()
+    public bool PlayGolpe()
     {
         if (animator.GetBool(DerrotadoId))
-            return;
+            return false;
         if (animator.GetInteger(ActionId) != ActionNone)
-            return;
+            return false;
         if (animator.GetInteger(ArmaId) != ArmaTolete)
-            return;
+            return false;
         animator.SetInteger(ActionId, ActionMelee);
+        return true;
     }
 
-    public void PlayDisparo()
+    public bool PlayDisparo()
     {
         if (animator.GetBool(DerrotadoId))
-            return;
+            return false;
         if (animator.GetInteger(ActionId) != ActionNone)
-            return;
+            return false;
         if (animator.GetInteger(ArmaId) != ArmaPistola)
-            return;
+            return false;
         animator.SetInteger(ActionId, ActionShoot);
+        return true;
     }
 
     bool IsCurrentActionStateFinished()

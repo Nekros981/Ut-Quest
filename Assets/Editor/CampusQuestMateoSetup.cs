@@ -18,6 +18,9 @@ public static class CampusQuestMateoSetup
     private const float ActionFrameRate = 18f;
     private const int ActionFrameCount = 9;
 
+    const string DefeatedSheetPath = ActionRoot + "/Derrotado/Derrotado.png";
+    const int DefeatedFrameCount = 12;
+
     static readonly (string clipSuffix, string sheetFile)[] ActionSheets =
     {
         ("Disparo_Down", "Disparo/Disparo_Abajo.png"),
@@ -172,6 +175,48 @@ public static class CampusQuestMateoSetup
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
         Debug.Log("[Campus Quest] Mateo: disparo y golpe en " + Anim);
+    }
+
+    [MenuItem("Campus Quest/Mateo/5 - Derrotado")]
+    public static void GenerateDefeatedAndWire()
+    {
+        var controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
+        if (controller == null)
+        {
+            EditorUtility.DisplayDialog("Falta Mateo", "Ejecuta primero el menú 1 para crear Mateo.controller.", "Aceptar");
+            return;
+        }
+
+        if (!File.Exists(DefeatedSheetPath))
+        {
+            EditorUtility.DisplayDialog("Faltan sprites", "No existe: " + DefeatedSheetPath, "Aceptar");
+            return;
+        }
+
+        Directory.CreateDirectory(Anim);
+        ApplyActionSheetImport(DefeatedSheetPath);
+        var sprites = LoadOrderedSheetSprites(DefeatedSheetPath);
+        if (sprites.Length < DefeatedFrameCount)
+        {
+            EditorUtility.DisplayDialog("Sprites incompletos",
+                $"En Derrotado hay {sprites.Length} sprites; se necesitan {DefeatedFrameCount}.", "Aceptar");
+            return;
+        }
+
+        var clipPath = $"{Anim}/Mateo_Derrotado.anim";
+        var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(clipPath);
+        if (clip == null)
+        {
+            clip = new AnimationClip();
+            AssetDatabase.CreateAsset(clip, clipPath);
+        }
+
+        WriteSpriteClip(clip, sprites, ActionFrameRate, false);
+        WireMateoDefeated(controller);
+        EnsureDerrotadoGuards(controller);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("[Campus Quest] Mateo: Derrotado en " + Anim);
     }
 
     static void ApplyActionSheetImport(string assetPath)
@@ -437,6 +482,7 @@ public static class CampusQuestMateoSetup
                 enter.duration = 0f;
                 enter.canTransitionToSelf = false;
                 enter.AddCondition(AnimatorConditionMode.Equals, actionValue, "Action");
+                enter.AddCondition(AnimatorConditionMode.IfNot, 0, "Derrotado");
                 enter.AddCondition(AnimatorConditionMode.Equals, dir, "Direction");
             }
 
@@ -453,7 +499,71 @@ public static class CampusQuestMateoSetup
             }
         }
 
+        EnsureDerrotadoGuards(controller);
         EditorUtility.SetDirty(controller);
+    }
+
+    static void WireMateoDefeated(AnimatorController controller)
+    {
+        var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>($"{Anim}/Mateo_Derrotado.anim");
+        if (clip == null)
+            return;
+
+        EnsureParameter(controller, "Derrotado", AnimatorControllerParameterType.Bool);
+        var sm = controller.layers[0].stateMachine;
+
+        AnimatorState defeated = null;
+        foreach (var child in sm.states)
+        {
+            if (child.state.name == "Derrotado")
+            {
+                defeated = child.state;
+                break;
+            }
+        }
+
+        if (defeated == null)
+        {
+            defeated = sm.AddState("Derrotado");
+            defeated.motion = clip;
+        }
+        else
+            defeated.motion = clip;
+
+        foreach (var transition in sm.anyStateTransitions)
+        {
+            if (transition?.destinationState == defeated)
+                return;
+        }
+
+        var enter = sm.AddAnyStateTransition(defeated);
+        enter.hasExitTime = false;
+        enter.duration = 0f;
+        enter.canTransitionToSelf = false;
+        enter.AddCondition(AnimatorConditionMode.If, 0, "Derrotado");
+    }
+
+    static void EnsureDerrotadoGuards(AnimatorController controller)
+    {
+        EnsureParameter(controller, "Derrotado", AnimatorControllerParameterType.Bool);
+        var sm = controller.layers[0].stateMachine;
+
+        foreach (var transition in sm.anyStateTransitions)
+        {
+            if (transition == null || transition.destinationState == null)
+                continue;
+            var dstName = transition.destinationState.name;
+            if (dstName == "Derrotado")
+                continue;
+            if (!dstName.StartsWith("Idle_", StringComparison.Ordinal) &&
+                !dstName.StartsWith("Walk_", StringComparison.Ordinal) &&
+                !dstName.StartsWith("Disparo_", StringComparison.Ordinal) &&
+                !dstName.StartsWith("Golpe_", StringComparison.Ordinal))
+                continue;
+            if (HasCondition(transition, "Derrotado", AnimatorConditionMode.IfNot, 0))
+                continue;
+            transition.AddCondition(AnimatorConditionMode.IfNot, 0, "Derrotado");
+        }
     }
 
     static void EnsureParameter(AnimatorController controller, string name, AnimatorControllerParameterType type)

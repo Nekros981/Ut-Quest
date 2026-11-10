@@ -12,6 +12,7 @@ public static class SpBosqueAnimationTestSetup
     const string MateoController = "Assets/Animations/Player/Mateo/Mateo.controller";
     const string MateoIdleSprite = "Assets/Sprites/Characters/Mateo/Frames/caminataA1.png";
     const string SecuazController = "Assets/Animations/Secuaces/Secuaz.controller";
+    const string BulletSheet = "Assets/Sprites/Enviroment/Sp/Armas/Bala.png";
 
     [MenuItem("Campus Quest/SP/Preparar prueba de animaciones")]
     public static void SetupTest()
@@ -168,6 +169,14 @@ public static class SpBosqueAnimationTestSetup
         if (inputAsset != null)
             playerInput.Configure(inputAsset, driver, prompt);
 
+        var bullet = LoadBulletSprite();
+        if (bullet != null)
+        {
+            var playerSo = new SerializedObject(playerInput);
+            playerSo.FindProperty("bulletSprite").objectReferenceValue = bullet;
+            playerSo.ApplyModifiedPropertiesWithoutUndo();
+        }
+
         var squareRenderer = go.GetComponent<SpriteRenderer>();
         if (squareRenderer != null)
             squareRenderer.enabled = false;
@@ -185,6 +194,7 @@ public static class SpBosqueAnimationTestSetup
         }
 
         go.transform.position = position;
+        SpBosqueCollisionSetup.EnsureSecuazPhysics(go);
 
         var visual = go.transform.Find("Secuaz_Visual");
         if (visual == null)
@@ -204,18 +214,23 @@ public static class SpBosqueAnimationTestSetup
         var driver = EnsureComponent<CampusQuestSecuazVisualDriver>(visual.gameObject);
         driver.motionRoot = go.transform;
 
+        var brain = EnsureComponent<CampusQuestSecuazBrain>(go);
+        var brainSo = new SerializedObject(brain);
+        brainSo.FindProperty("visual").objectReferenceValue = driver;
+        var bullet = LoadBulletSprite();
+        if (bullet != null)
+            brainSo.FindProperty("bulletSprite").objectReferenceValue = bullet;
+        brainSo.ApplyModifiedPropertiesWithoutUndo();
+
         var sheet = AssetDatabase.LoadAllAssetsAtPath("Assets/Sprites/Characters/Secuaces/Secueces.png").OfType<Sprite>()
             .FirstOrDefault(s => s.name == "Secueces_0");
         if (renderer.sprite == null && sheet != null)
             renderer.sprite = sheet;
 
-        if (name == "Secuaz_Izq")
-        {
-            var loot = EnsureComponent<CampusQuestSecuazLoot>(go);
-            var so = new SerializedObject(loot);
-            so.FindProperty("secuaz").objectReferenceValue = driver;
-            so.ApplyModifiedPropertiesWithoutUndo();
-        }
+        var loot = EnsureComponent<CampusQuestSecuazLoot>(go);
+        var lootSo = new SerializedObject(loot);
+        lootSo.FindProperty("secuaz").objectReferenceValue = driver;
+        lootSo.ApplyModifiedPropertiesWithoutUndo();
 
         return go;
     }
@@ -229,6 +244,12 @@ public static class SpBosqueAnimationTestSetup
         c = go.AddComponent<T>();
         Undo.RegisterCreatedObjectUndo(c, typeof(T).Name);
         return c;
+    }
+
+    static Sprite LoadBulletSprite()
+    {
+        return AssetDatabase.LoadAllAssetsAtPath(BulletSheet).OfType<Sprite>()
+            .FirstOrDefault(s => s.name == "Bala_0");
     }
 }
 #endif

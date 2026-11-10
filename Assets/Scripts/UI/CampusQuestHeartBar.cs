@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public sealed class CampusQuestHeartBar : MonoBehaviour
 {
-    const int DefaultHearts = 4;
+    const int DefaultHearts = 6;
 
     [SerializeField] int maxHearts = DefaultHearts;
     [SerializeField] Sprite heartFull;
@@ -30,6 +30,13 @@ public sealed class CampusQuestHeartBar : MonoBehaviour
 
         currentHearts = Mathf.Max(0, currentHearts - amount);
         Refresh();
+
+        if (currentHearts <= 0)
+        {
+            var mateo = FindAnyObjectByType<CampusQuestMateoPlayerInput>();
+            if (mateo != null)
+                mateo.Defeat();
+        }
     }
 
     public void SetHearts(int hearts)

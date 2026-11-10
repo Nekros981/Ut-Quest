@@ -13,7 +13,7 @@ public static class CampusQuestHeartBarSetup
     const string UiBarsSheet =
         "Assets/Sprites/Enviroment/Sp/Top-Down RPG 32x32 by Mixel v1.7/User Interface v1.0/Topdown RPG 32x32 - UI Bars.PNG";
     const string HeartFullName = "Topdown RPG 32x32 - UI Bars_448";
-    const string HeartEmptyName = "Topdown RPG 32x32 - UI Bars_127";
+    const string HeartEmptyName = "Topdown RPG 32x32 - UI Bars_396";
     const string RootName = "CampusQuest_HUD";
     const string HeartsName = "Corazones";
 
@@ -66,7 +66,7 @@ public static class CampusQuestHeartBarSetup
         heartsRect.anchorMax = new Vector2(0f, 1f);
         heartsRect.pivot = new Vector2(0f, 1f);
         heartsRect.anchoredPosition = new Vector2(16f, -16f);
-        heartsRect.sizeDelta = new Vector2(220f, 56f);
+        heartsRect.sizeDelta = new Vector2(320f, 56f);
 
         var layout = heartsRoot.GetComponent<HorizontalLayoutGroup>() ??
                      Undo.AddComponent<HorizontalLayoutGroup>(heartsRoot);
@@ -85,8 +85,9 @@ public static class CampusQuestHeartBarSetup
             return;
         }
 
-        var images = new Image[4];
-        for (int i = 0; i < 4; i++)
+        const int heartCount = 6;
+        var images = new Image[heartCount];
+        for (int i = 0; i < heartCount; i++)
         {
             var childName = "Corazon_" + (i + 1);
             var child = heartsRoot.transform.Find(childName)?.gameObject;
@@ -114,17 +115,17 @@ public static class CampusQuestHeartBarSetup
 
         var bar = heartsRoot.GetComponent<CampusQuestHeartBar>() ?? Undo.AddComponent<CampusQuestHeartBar>(heartsRoot);
         var so = new SerializedObject(bar);
-        so.FindProperty("maxHearts").intValue = 4;
+        so.FindProperty("maxHearts").intValue = heartCount;
         so.FindProperty("heartFull").objectReferenceValue = heartFull;
         so.FindProperty("heartEmpty").objectReferenceValue = heartEmpty;
-        so.FindProperty("heartImages").arraySize = 4;
-        for (int i = 0; i < 4; i++)
+        so.FindProperty("heartImages").arraySize = heartCount;
+        for (int i = 0; i < heartCount; i++)
             so.FindProperty("heartImages").GetArrayElementAtIndex(i).objectReferenceValue = images[i];
         so.ApplyModifiedPropertiesWithoutUndo();
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
-        Debug.Log("[Campus Quest] Cuatro corazones en Sp_Bosque (HUD arriba izquierda).");
+        Debug.Log("[Campus Quest] Seis corazones en Sp_Bosque (HUD arriba izquierda).");
     }
 
     static void EnsureEventSystem()

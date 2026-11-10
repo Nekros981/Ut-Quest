@@ -117,6 +117,25 @@ public static class SpBosqueCollisionSetup
         return new BoundsInt(xMin, yMin, 0, xMax - xMin, yMax - yMin, 1);
     }
 
+    public static void EnsureSecuazPhysics(GameObject secuaz)
+    {
+        var body = secuaz.GetComponent<Rigidbody2D>();
+        if (body == null)
+            body = Undo.AddComponent<Rigidbody2D>(secuaz);
+
+        body.bodyType = RigidbodyType2D.Dynamic;
+        body.gravityScale = 0f;
+        body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        body.interpolation = RigidbodyInterpolation2D.Interpolate;
+
+        var circle = secuaz.GetComponent<CircleCollider2D>();
+        if (circle == null)
+            circle = Undo.AddComponent<CircleCollider2D>(secuaz);
+        circle.radius = 0.28f;
+        circle.offset = new Vector2(0f, -0.12f);
+    }
+
     public static void EnsureMateoPhysics(GameObject mateo)
     {
         var body = mateo.GetComponent<Rigidbody2D>();
