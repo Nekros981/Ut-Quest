@@ -5,8 +5,8 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
 {
     const float StopDistance = 0.7f;
     const float PistolHoldDistance = 2.5f;
-    const float MeleeAttackRange = 0.9f;
-    const float MeleeHitRange = 0.9f;
+    const float MeleeAttackRange =1.25f;
+    const float MeleeHitRange = 1.25f;
     const float SprintDistance = 4f;
     const float WalkSpeed = 2.2f;
     const float SprintSpeed = 3.6f;

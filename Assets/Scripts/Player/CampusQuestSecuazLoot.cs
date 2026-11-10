@@ -12,6 +12,12 @@ public sealed class CampusQuestSecuazLoot : CampusQuestInteractable
         usado = false;
     }
 
+    public static void ResetForRestart()
+    {
+        dueño = null;
+        usado = false;
+    }
+
     [SerializeField] CampusQuestSecuazVisualDriver secuaz;
 
     public override string PromptText => "Interactuar";

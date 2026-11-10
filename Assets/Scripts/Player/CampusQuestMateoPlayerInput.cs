@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
@@ -12,6 +13,8 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
     const float MeleeDamageRange = 1.5f;
     [SerializeField] CampusQuestInteractPrompt interactPrompt;
     [SerializeField] Sprite bulletSprite;
+
+    static bool gameOverLoaded;
 
     Rigidbody2D body;
     InputAction moveAction;
@@ -68,6 +71,8 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         }
     }
 
+    public static void ResetGameOverFlag() => gameOverLoaded = false;
+
     public void Defeat()
     {
         if (visualDriver != null)
@@ -82,6 +87,11 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         var circle = GetComponent<CircleCollider2D>();
         if (circle != null)
             circle.enabled = false;
+
+        if (gameOverLoaded)
+            return;
+        gameOverLoaded = true;
+        SceneManager.LoadScene("GameOver");
     }
 
     void Update()

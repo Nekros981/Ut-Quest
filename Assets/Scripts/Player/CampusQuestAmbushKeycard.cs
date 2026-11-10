@@ -9,6 +9,8 @@ public sealed class CampusQuestAmbushKeycard : CampusQuestInteractable
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetForPlay() => reclamada = false;
 
+    public static void ResetForRestart() => reclamada = false;
+
     [SerializeField] CampusQuestSecuazVisualDriver secuaz;
 
     public override string PromptText => "Interactuar";
