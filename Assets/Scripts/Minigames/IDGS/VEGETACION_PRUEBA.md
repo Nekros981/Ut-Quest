@@ -1,5 +1,23 @@
 # Prueba independiente de vegetación IDGS
 
+## Comparación ampliada
+
+La escena incluye cuatro árboles completos de `arbolotes.png` en la fila superior,
+los tres pequeños originales, dos arbustos y las hierbas. Todos mantienen escala 1.
+Los grandes miden 105–112 px de alto (3.28–3.5 unidades a 32 PPU) y utilizan
+un solo sprite por árbol, pivote al pie y collider de tronco de 14–22 × 10 px.
+Reutilizan `IDGSVegetationYSort` y el material existente.
+Procedencia y rectángulos exactos: `arbolotes_SOURCE.md` junto al PNG.
+
+Validación explícita mediante Unity-MCP en Play Mode:
+`CampusQuest.EditorTools.IDGSVegetationValidation.BeginLargeTrees()` para grandes;
+`Begin()` para regresión de pequeños. `Status` informa el resultado; los reportes
+y capturas se escriben en `tmp/idgs-large-trees` y `tmp/idgs-vegetation`, fuera de Assets.
+Ambas pruebas usan entrada y física reales, además de comparar píxeles renderizados
+para comprobar la ocultación. No acceden a partidas ni a PlayerPrefs.
+
+El mapa exterior sigue pendiente de aprobación: `Docs/IDGS/Propuesta_Exterior_v01.md`.
+
 Abrir `Assets/Scenes/IDGS_Prueba_Vegetacion.unity` y pulsar Play.
 WASD/flechas caminan; ambos Shift corren; R vuelve al punto de inicio.
 Es una escena pequeña de evaluación, no el mapa de IDGS ni el controlador definitivo.

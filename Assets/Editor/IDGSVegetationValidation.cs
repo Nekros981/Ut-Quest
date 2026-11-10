@@ -27,6 +27,9 @@ namespace CampusQuest.EditorTools
         private static Keyboard previousKeyboard;
         private static bool originalBackground;
         private static IDGSVegetationYSort[] trees;
+        private static bool largeTrees;
+
+        public static void BeginLargeTrees() { largeTrees = true; Begin(); }
 
         public static void Begin()
         {
@@ -34,7 +37,8 @@ namespace CampusQuest.EditorTools
                 throw new InvalidOperationException("Run only in the independent IDGS vegetation test scene in Play Mode.");
             results.Clear(); Status = "Running"; frame = -1;
             player = UnityEngine.Object.FindFirstObjectByType<IDGSVegetationTestPlayer>(); body = player.GetComponent<Rigidbody2D>();
-            trees = UnityEngine.Object.FindObjectsByType<IDGSVegetationYSort>(FindObjectsSortMode.None).Where(s => s.name.StartsWith("Arbol_", StringComparison.Ordinal)).OrderBy(t => t.transform.position.x).ToArray();
+            trees = UnityEngine.Object.FindObjectsByType<IDGSVegetationYSort>(FindObjectsSortMode.None).Where(s => s.name.StartsWith("Arbol_", StringComparison.Ordinal) && !s.name.StartsWith("Arbol_Grande_", StringComparison.Ordinal)).OrderBy(t => t.transform.position.x).ToArray();
+            if (largeTrees) trees = UnityEngine.Object.FindObjectsByType<IDGSVegetationYSort>(FindObjectsSortMode.None).Where(s => s.name.StartsWith("Arbol_Grande_", StringComparison.Ordinal)).OrderBy(t => t.transform.position.x).ToArray();
             previousKeyboard = Keyboard.current; keyboard = InputSystem.AddDevice<Keyboard>("IDGSVegetationValidationKeyboard"); keyboard.MakeCurrent();
             originalBackground = Application.runInBackground; Application.runInBackground = true; EditorApplication.isPaused = false;
             var gameViewType = typeof(EditorWindow).Assembly.GetType("UnityEditor.GameView");
@@ -56,7 +60,8 @@ namespace CampusQuest.EditorTools
             if (keyboard != null && keyboard.added) InputSystem.RemoveDevice(keyboard);
             if (previousKeyboard != null && previousKeyboard.added) previousKeyboard.MakeCurrent();
             Application.runInBackground = originalBackground;
-            Directory.CreateDirectory("tmp/idgs-vegetation"); File.WriteAllText("tmp/idgs-vegetation/results.txt", string.Join("\n", results) + "\n" + status);
+            string folder = largeTrees ? "tmp/idgs-large-trees" : "tmp/idgs-vegetation";
+            Directory.CreateDirectory(folder); File.WriteAllText(folder + "/results.txt", string.Join("\n", results) + "\n" + status); largeTrees = false;
         }
         private static void Check(bool condition, string message)
         {
@@ -96,7 +101,7 @@ namespace CampusQuest.EditorTools
 
         private static IEnumerator Validate()
         {
-            var importer = (TextureImporter)AssetImporter.GetAtPath(IDGSVegetationSetup.SpritePath);
+            var importer = (TextureImporter)AssetImporter.GetAtPath(largeTrees ? IDGSLargeVegetationSetup.SheetPath : IDGSVegetationSetup.SpritePath);
             Check(importer.spriteImportMode == SpriteImportMode.Multiple && importer.spritePixelsPerUnit == 32
                 && importer.filterMode == FilterMode.Point && !importer.mipmapEnabled && importer.textureCompression == TextureImporterCompression.Uncompressed,
                 "Import uses Multiple, 32 PPU, Point, no mipmaps, no compression");
@@ -105,19 +110,24 @@ namespace CampusQuest.EditorTools
             Check(sprites.Count(s => s.name.EndsWith("_Vacia", StringComparison.Ordinal)) == 1
                 && UnityEngine.Object.FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None).All(r => r.sprite == null || !r.sprite.name.EndsWith("_Vacia", StringComparison.Ordinal)),
                 "Last empty slice remains in asset and creates no scene object");
-            Check(AssetDatabase.FindAssets("t:Prefab", new[] { IDGSVegetationSetup.PrefabsPath }).Length == 6, "Exactly six vegetation prefabs: three trees, two bushes, one decorative set");
+            Check(AssetDatabase.FindAssets("t:Prefab", new[] { IDGSVegetationSetup.PrefabsPath }).Count(g => !AssetDatabase.GUIDToAssetPath(g).Contains("/ArbolesGrandes/")) == 6, "Original six vegetation prefabs remain intact");
             foreach (var guid in AssetDatabase.FindAssets("t:Prefab", new[] { IDGSVegetationSetup.PrefabsPath }))
             {
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(AssetDatabase.GUIDToAssetPath(guid));
                 Check(prefab.GetComponentsInChildren<Transform>(true).All(t => t.localScale == Vector3.one), prefab.name + " preserves original scale on every transform");
             }
-            Check(trees.Length == 3 && trees.All(t => t.GetComponent<BoxCollider2D>() != null), "Three tree roots have independent small base colliders");
+            Check(trees.Length == (largeTrees ? 4 : 3) && trees.All(t => t.GetComponent<BoxCollider2D>() != null), "Every tree root has an independent small base collider");
+            if (largeTrees) {
+                var bigSprites = AssetDatabase.LoadAllAssetsAtPath(IDGSLargeVegetationSetup.SheetPath).OfType<Sprite>().OrderBy(s=>s.name).ToArray();
+                Check(bigSprites.Length == 4 && bigSprites.All(s=>s.rect.height >=105 && s.rect.width>=96 && s.pixelsPerUnit==32 && s.pivot.y==0), "Four complete native-scale trees with foot pivots and no canopy cuts");
+            }
             foreach (var tree in trees)
             {
                 var colliders = tree.GetComponentsInChildren<Collider2D>(); var box = tree.GetComponent<BoxCollider2D>();
-                Check(colliders.Length == 1 && box.size == new Vector2(8f / 32, 6f / 32) && box.offset == new Vector2(0, 3f / 32), tree.name + " collision occupies only the 8x6-pixel trunk base");
-                Check(tree.transform.Find("Copa").GetComponent<Collider2D>() == null, tree.name + " canopy has no collider");
-                Vector2 crownCenter = tree.transform.Find("Copa").GetComponent<SpriteRenderer>().bounds.center;
+                Check(colliders.Length == 1 && (largeTrees ? box.size.x <=22f/32 && box.size.y==10f/32 && box.offset==new Vector2(0,5f/32) : box.size == new Vector2(8f / 32, 6f / 32) && box.offset == new Vector2(0, 3f / 32)), tree.name + " collision occupies only the trunk base");
+                var canopy = tree.transform.Find(largeTrees ? "Arbol_Completo" : "Copa");
+                Check(canopy.GetComponent<Collider2D>() == null, tree.name + " canopy has no collider");
+                Vector2 crownCenter = canopy.GetComponent<SpriteRenderer>().bounds.center;
                 Check(Physics2D.OverlapPoint(crownCenter) == null, tree.name + " canopy center is physically free");
                 var root = (Vector2)tree.transform.position;
                 Teleport(root + new Vector2(0, -.65f)); yield return null;
@@ -140,7 +150,7 @@ namespace CampusQuest.EditorTools
             InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.D)); InputSystem.Update(); player.SendMessage("Update");
             Check(Mathf.Abs(player.RequestedVelocity.magnitude - 4) < .001f, "Releasing Shift returns test movement to 4 units"); Release();
             yield return null;
-            RenderOcclusionProof(trees[1]);
+            foreach (var tree in largeTrees ? trees : new[]{trees[1]}) RenderOcclusionProof(tree);
             Teleport(new Vector2(-2, -.5f)); yield return null;
             Capture(Camera.main, "tmp/idgs-vegetation/overview.png", 1280, 720);
             var renderers = trees[1].GetComponentsInChildren<SpriteRenderer>();
@@ -165,12 +175,12 @@ namespace CampusQuest.EditorTools
             try
             {
                 player.enabled = false; body.simulated = false; canvas.enabled = false;
-                camera.transform.position = new Vector3(tree.transform.position.x, tree.transform.position.y + .65f, -10); camera.orthographicSize = 1.35f;
+                camera.transform.position = new Vector3(tree.transform.position.x, tree.transform.position.y + (largeTrees ? 1.4f : .65f), -10); camera.orthographicSize = largeTrees ? 2.3f : 1.35f;
                 animator.SetBool("IsMoving", false); player.GetComponentInChildren<CampusQuestMateoVisualDriver>().Face(Vector2Int.down); animator.Play("Idle_Down", 0, 0); animator.Update(0);
                 tree.Refresh();
                 foreach (bool behind in new[] { true, false })
                 {
-                    player.transform.position = tree.transform.position + new Vector3(0, behind ? .35f : -.35f, 0); actorSort.Refresh();
+                    player.transform.position = tree.transform.position + new Vector3(0, behind ? (largeTrees ? 1.4f : .35f) : -.35f, 0); actorSort.Refresh();
                     bool order = behind ? actorSort.GetComponent<SortingGroup>().sortingOrder < tree.GetComponent<SortingGroup>().sortingOrder
                         : actorSort.GetComponent<SortingGroup>().sortingOrder > tree.GetComponent<SortingGroup>().sortingOrder;
                     Check(order, behind ? "Actor group sorts behind tree by feet Y" : "Actor group sorts in front of tree by feet Y");
@@ -178,7 +188,7 @@ namespace CampusQuest.EditorTools
                     var background = Capture(camera, null, 640, 640); actorRenderer.enabled = true;
                     var actorOnly = Capture(camera, null, 640, 640); foreach (var r in treeRenderers) r.enabled = true; actorRenderer.enabled = false;
                     var treeOnly = Capture(camera, null, 640, 640); actorRenderer.enabled = true;
-                    var combined = Capture(camera, "tmp/idgs-vegetation/" + (behind ? "mateo-detras.png" : "mateo-delante.png"), 640, 640);
+                    var combined = Capture(camera, (largeTrees ? "tmp/idgs-large-trees/" + tree.name + "-" : "tmp/idgs-vegetation/") + (behind ? "mateo-detras.png" : "mateo-delante.png"), 640, 640);
                     int full = Difference(actorOnly, background), visible = Difference(combined, treeOnly);
                     float fraction = full == 0 ? 0 : (float)visible / full;
                     Check(full > 100 && (behind ? fraction < .8f : fraction > .95f), (behind ? "Rendered canopy hides Mateo" : "Rendered Mateo appears over vegetation")
