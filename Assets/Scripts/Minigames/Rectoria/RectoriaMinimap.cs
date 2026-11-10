@@ -19,6 +19,8 @@ namespace CampusQuest.Rectoria
         public RectTransform[] markers;
         public RectoriaScenePoint[] destinations;
 
+        public void RefreshMap() { SetVerticesDirty(); }
+
         public MinimapCell KindAt(Vector3Int cell)
         {
             if (map == null) return MinimapCell.Empty;

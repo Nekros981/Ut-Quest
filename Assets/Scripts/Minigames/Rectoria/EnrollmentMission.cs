@@ -15,6 +15,21 @@ namespace CampusQuest.Rectoria
         public const string BirthEvent = "rectoria.document.birth_certificate";
         public const string CardEvent = "rectoria.document.student_card";
         public const string PaymentEvent = "rectoria.document.payment_receipt";
+#if UNITY_EDITOR
+        public const string EditorTestStorageSetting = "CampusQuest.Progress.EditorTestKey";
+#endif
+        /// <summary>Production always uses SaveKey. Editor tests may use a separate, named test slot.</summary>
+        public string ProgressStorageKey
+        {
+            get
+            {
+#if UNITY_EDITOR
+                string testKey = UnityEditor.SessionState.GetString(EditorTestStorageSetting, "");
+                if (testKey.StartsWith("CampusQuest.Test.", StringComparison.Ordinal)) return testKey;
+#endif
+                return SaveKey;
+            }
+        }
         public DialogueSession session;
         public GameObject hud;
         public TMP_Text objectiveLabel;
@@ -33,7 +48,9 @@ namespace CampusQuest.Rectoria
         public int DocumentCount => (HasDocument(EnrollmentDocument.BirthCertificate) ? 1 : 0)
             + (HasDocument(EnrollmentDocument.StudentCard) ? 1 : 0)
             + (HasDocument(EnrollmentDocument.PaymentReceipt) ? 1 : 0);
-        public string Objective => DocumentCount == 3 ? "Dirígete a la Puerta de Bloques" : "Reúne tus documentos de inscripción";
+        public string Objective => session != null && session.HasCompleted(RockyGateReview.UnlockId)
+            ? "Puerta de Bloques abierta"
+            : DocumentCount == 3 ? "Dirígete a la Puerta de Bloques" : "Reúne tus documentos de inscripción";
 
         private static string EventId(EnrollmentDocument document)
         {
@@ -78,7 +95,7 @@ namespace CampusQuest.Rectoria
         public void SaveProgress()
         {
             if (session == null) return;
-            PlayerPrefs.SetString(SaveKey, JsonUtility.ToJson(new SaveData { events = session.CaptureCompletedIds() }));
+            PlayerPrefs.SetString(ProgressStorageKey, JsonUtility.ToJson(new SaveData { events = session.CaptureCompletedIds() }));
             PlayerPrefs.Save();
         }
 
@@ -86,11 +103,11 @@ namespace CampusQuest.Rectoria
         {
             if (session == null || session.IsOpen) return false;
             string[] events = Array.Empty<string>();
-            if (PlayerPrefs.HasKey(SaveKey))
+            if (PlayerPrefs.HasKey(ProgressStorageKey))
             {
                 try
                 {
-                    var data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(SaveKey));
+                    var data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(ProgressStorageKey));
                     if (data == null || data.version != 1 || data.events == null)
                         throw new FormatException("Unsupported or incomplete progress save.");
                     events = data.events;
