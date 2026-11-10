@@ -1,0 +1,1838 @@
+fileFormatVersion: 2
+guid: 8a0ffc205a6c4a9499793e8e7ad61ad2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4350402024902197669
+    second: tierraymas_0
+  - first:
+      213: 6586828350177804636
+    second: tierraymas_1
+  - first:
+      213: 3375342393312028638
+    second: tierraymas_2
+  - first:
+      213: -5164388869537879130
+    second: tierraymas_3
+  - first:
+      213: 5374585051645764728
+    second: tierraymas_4
+  - first:
+      213: -4924622744810334577
+    second: tierraymas_5
+  - first:
+      213: 9097361072923275444
+    second: tierraymas_6
+  - first:
+      213: -7611647215703420001
+    second: tierraymas_7
+  - first:
+      213: 3749176121685391692
+    second: tierraymas_8
+  - first:
+      213: 7746154215817650704
+    second: tierraymas_9
+  - first:
+      213: -3894623143229451911
+    second: tierraymas_10
+  - first:
+      213: 2032295005095658675
+    second: tierraymas_11
+  - first:
+      213: -2154229625436973260
+    second: tierraymas_12
+  - first:
+      213: -6992437293925123048
+    second: tierraymas_13
+  - first:
+      213: 412872925320076338
+    second: tierraymas_14
+  - first:
+      213: 5156276113452276185
+    second: tierraymas_15
+  - first:
+      213: 4825506015678071102
+    second: tierraymas_16
+  - first:
+      213: 4664164090767787864
+    second: tierraymas_17
+  - first:
+      213: 5517085294166697686
+    second: tierraymas_18
+  - first:
+      213: 2330311200299015776
+    second: tierraymas_19
+  - first:
+      213: -1114000450759787267
+    second: tierraymas_20
+  - first:
+      213: 6216482588846042579
+    second: tierraymas_21
+  - first:
+      213: -6987037767639132772
+    second: tierraymas_22
+  - first:
+      213: -4739501742564560493
+    second: tierraymas_23
+  - first:
+      213: -784129641717824430
+    second: tierraymas_24
+  - first:
+      213: 7519173003225996215
+    second: tierraymas_25
+  - first:
+      213: 5215609588545080276
+    second: tierraymas_26
+  - first:
+      213: -2948082550312166865
+    second: tierraymas_27
+  - first:
+      213: 4021746763205396483
+    second: tierraymas_28
+  - first:
+      213: 2807866564892350124
+    second: tierraymas_29
+  - first:
+      213: 969654494363569584
+    second: tierraymas_30
+  - first:
+      213: -3469997301557759979
+    second: tierraymas_31
+  - first:
+      213: -7388253316990000121
+    second: tierraymas_32
+  - first:
+      213: -870531240453760293
+    second: tierraymas_33
+  - first:
+      213: -4458131636004897191
+    second: tierraymas_34
+  - first:
+      213: 1897927380434172871
+    second: tierraymas_35
+  - first:
+      213: -6281124923843160436
+    second: tierraymas_36
+  - first:
+      213: 3219092233511586133
+    second: tierraymas_37
+  - first:
+      213: 910871438870269887
+    second: tierraymas_38
+  - first:
+      213: 9037673243194140585
+    second: tierraymas_39
+  - first:
+      213: 764574912066271671
+    second: tierraymas_40
+  - first:
+      213: 4853259700251221188
+    second: tierraymas_41
+  - first:
+      213: -7258890502520312758
+    second: tierraymas_42
+  - first:
+      213: 3797897162082609030
+    second: tierraymas_43
+  - first:
+      213: -1476074477597418452
+    second: tierraymas_44
+  - first:
+      213: 6411995028023680682
+    second: tierraymas_45
+  - first:
+      213: -6464601541899128484
+    second: tierraymas_46
+  - first:
+      213: 137362658729472040
+    second: tierraymas_47
+  - first:
+      213: 1127503061279166477
+    second: tierraymas_48
+  - first:
+      213: 7714736758471380492
+    second: tierraymas_49
+  - first:
+      213: 1566111436588675901
+    second: tierraymas_50
+  - first:
+      213: -4517518243545758675
+    second: tierraymas_51
+  - first:
+      213: -9170218759818931560
+    second: tierraymas_52
+  - first:
+      213: 7954330123858039435
+    second: tierraymas_53
+  - first:
+      213: -5190051983148948723
+    second: tierraymas_54
+  - first:
+      213: 3387230200950551344
+    second: tierraymas_55
+  - first:
+      213: 4827302042635557450
+    second: tierraymas_56
+  - first:
+      213: 1192788153445491811
+    second: tierraymas_57
+  - first:
+      213: 7467827288213412158
+    second: tierraymas_58
+  - first:
+      213: 658216127580095874
+    second: tierraymas_59
+  - first:
+      213: -5921009949811157379
+    second: tierraymas_60
+  - first:
+      213: -752310266376525696
+    second: tierraymas_61
+  - first:
+      213: -2384207335808797517
+    second: tierraymas_62
+  - first:
+      213: 2064145719287114823
+    second: tierraymas_63
+  - first:
+      213: -1552492275084395303
+    second: tierraymas_64
+  - first:
+      213: -5183626079937087101
+    second: tierraymas_65
+  - first:
+      213: 6838766672739924900
+    second: tierraymas_66
+  - first:
+      213: 4769657808868107104
+    second: tierraymas_67
+  - first:
+      213: -622839226737248536
+    second: tierraymas_68
+  - first:
+      213: -7994836097744678662
+    second: tierraymas_69
+  - first:
+      213: 7151151006015792473
+    second: tierraymas_70
+  - first:
+      213: -8818562045639298002
+    second: tierraymas_71
+  - first:
+      213: -5664569612760617059
+    second: tierraymas_72
+  - first:
+      213: -2075416690629426422
+    second: tierraymas_73
+  - first:
+      213: 5047830064977105401
+    second: tierraymas_74
+  - first:
+      213: 3627917754471181481
+    second: tierraymas_75
+  - first:
+      213: -3965320132835314819
+    second: tierraymas_76
+  - first:
+      213: 6787006239012975678
+    second: tierraymas_77
+  - first:
+      213: -2095040924754647205
+    second: tierraymas_78
+  - first:
+      213: -5954954539188848323
+    second: tierraymas_79
+  - first:
+      213: -7029853593580151555
+    second: tierraymas_80
+  - first:
+      213: 3042701865564595009
+    second: tierraymas_81
+  - first:
+      213: 1175026293831597468
+    second: tierraymas_82
+  - first:
+      213: -3097398807863461921
+    second: tierraymas_83
+  - first:
+      213: -421175005710738517
+    second: tierraymas_84
+  - first:
+      213: -2572982856474063617
+    second: tierraymas_85
+  - first:
+      213: -7844941346479782095
+    second: tierraymas_86
+  - first:
+      213: -2791562251542901782
+    second: tierraymas_87
+  - first:
+      213: 3141603539442519042
+    second: tierraymas_88
+  - first:
+      213: 2858881629895182369
+    second: tierraymas_89
+  - first:
+      213: 4366019099144758813
+    second: tierraymas_90
+  - first:
+      213: -1274134529676501121
+    second: tierraymas_91
+  - first:
+      213: -5986900208144341609
+    second: tierraymas_92
+  - first:
+      213: 8674518253651798925
+    second: tierraymas_93
+  - first:
+      213: -6918038170657215907
+    second: tierraymas_94
+  - first:
+      213: 4627228763576936753
+    second: tierraymas_95
+  - first:
+      213: -6302459073589565369
+    second: tierraymas_96
+  - first:
+      213: -5921377847875028559
+    second: tierraymas_97
+  - first:
+      213: 6785665828638804352
+    second: tierraymas_98
+  - first:
+      213: -8895855931838711708
+    second: tierraymas_99
+  - first:
+      213: -5369169515040734273
+    second: tierraymas_100
+  - first:
+      213: 812154113982717266
+    second: tierraymas_101
+  - first:
+      213: -2272096567629857965
+    second: tierraymas_102
+  - first:
+      213: 3295947233247922729
+    second: tierraymas_103
+  - first:
+      213: 1875476437607105284
+    second: tierraymas_104
+  - first:
+      213: -2409369103956718188
+    second: tierraymas_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: F1C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cad9458f2a4364985e191e9c69d248
+      internalID: 837501845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eabed11b88ec0a42b7d14c7f997e38b
+      internalID: 1975900751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2a74ea109452648986787fd80f0d2b
+      internalID: -1701306282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36004200d42ea104cb566f66b95fb73d
+      internalID: -1423444099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0907140e93eba49875e45dd16ecd43
+      internalID: 1085832032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74918b2742f1f241977609d1a2b7b26
+      internalID: 792635437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a252d85353f1d46459df0753b78532bf
+      internalID: -1495206563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C1_Concreto_Liso
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2215c418cb213943854f536927a5f5f
+      internalID: -1593362155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f4c64920f12774491ea91195392e34
+      internalID: 563457610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12131ec756e7f954e976594ba5edb769
+      internalID: 1941353444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C4_Concreto_Junta
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75b6d43a026af540a1a0e8d402ca409
+      internalID: 1722346031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C5_Concreto_Desgastado
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8187b9b2216b1449ce750eae7a6534
+      internalID: 126706578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01c53defe65f814c98c6eb02c1a0083
+      internalID: -229886962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3676566a551c45749b43d8dbca007a11
+      internalID: -1420093477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a579efeb391c948b7f128edc1864c3
+      internalID: -1393335162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab23cf09c0c69804684be7f8e379923d
+      internalID: -959943842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9959cd849957ff44a8d4563f3a9a7c46
+      internalID: -297549875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C5_Tierra_Dispersa
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d4de30401c67045967f00200833104
+      internalID: 814818514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C6_Tierra_Mancha
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a18c17fd821c46974802483b8d719
+      internalID: 1037691251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d84e2c22b408d84e9881f950cf8763f
+      internalID: 276132128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe17a5aeee092a41a62d9b070698810
+      internalID: -404084968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C1_Pasto_Concreto
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6493484e0e71742867c9b7f57f5f2a
+      internalID: 196209224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f1814bb3a46c0408b83cc55970d7c8
+      internalID: 156129953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a95626e8a21c744db4bf66dda84a8aa
+      internalID: 25719866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc802281f62cc04383d5a5713297c00
+      internalID: -1760837033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d481d0875476a67489dcf2d53e504edf
+      internalID: 1455402679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8947fe545be6942ad78a4c350c0052
+      internalID: 1329449575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f482adf6e777344a8bb9344ab97a6b
+      internalID: -2095227029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c0b0f257a55ae47b0d21e0bf1338b1
+      internalID: -2011783858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea89eb962579314b8f4ba18c5694f96
+      internalID: 284498764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134431f0eb76ac04d88fe94fabd4cde1
+      internalID: -1887776040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5a57f371a9a0644b3919ea31ab911d
+      internalID: -2025560481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe636bbc7d550e449392dcd7f686db8
+      internalID: -2018271702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0125bc6a236b350429bfdc0b43c1ed24
+      internalID: 1960890620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68746998e9bddf5459a2bd33634ec8ee
+      internalID: -1700306569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046c37ef139627649af7a4e9b4a8f007
+      internalID: 418912207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138152345db9a8942a36c00410d905f8
+      internalID: -1235614301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba3b2bc7d2141341bd58a41f2c34bff
+      internalID: -737410311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7355367aab7bd0449a12bddab268bd6
+      internalID: -2129919621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be4cee16300bf74ca517caf5acf2aea
+      internalID: -505805272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4d37c4ae867894983df5c435b09562
+      internalID: 165334429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e235dbc69c85bc34782b19f9e5a60d06
+      internalID: -1481336998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6C8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7100dd91fa1ef4cb8caf53777ba282
+      internalID: 2093810910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634a321efa5cf094b9bf62afc21208ef
+      internalID: 1900017442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37213a8962db2f64d85aaf1f4d514023
+      internalID: -2078629852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a1bbbb1b0e6124a88ec23cd6371611
+      internalID: 1258861985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa3bc86c8aa1144481931a9711f6c40
+      internalID: -955778551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6250e1992e77caf4089865d37341eabe
+      internalID: -1111674277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae58ac0764dcb04f8e6f28619e6b4b7
+      internalID: -837507720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886228da8d4f10745ad21a49f25e8693
+      internalID: 1988646014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cb2ccc09cd91a43bfb0ca63063ee93
+      internalID: 1317091920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaec892c6940174dbf21a09d13a71e7
+      internalID: -1798318113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64af105d257fa6a40b6960fc3d4ce945
+      internalID: -354535105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2531e86740e13be4fb4b411dcfcb4130
+      internalID: 1348195497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C5_Tierra_Pedregosa
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472a91968a1acb9418b91e95e79e5546
+      internalID: 1540700999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79e26d60c556c240805bcaa17317b6b
+      internalID: -690833552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d07d000bcd0789428dbef5466e0708e
+      internalID: 1636461073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4C4_Esquina_Pasto_Concreto
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85220063d22a504da5c85a0513391d1
+      internalID: -1496984603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5C1_Borde_Pasto_Tierra
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae35566fd1629b43ab4d7a7ef35bcd4
+      internalID: 1822704393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F7C8_Diagonal_Pasto_Concreto_Tierra
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc888c0a4ed231c41ba80641cf024d76
+      internalID: -1252701884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F8C8_Esquina_Tierra
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597ca8396682cfe418bc66ea6a511330
+      internalID: -1486030556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6fc4e94a83c74c4409a96b64ec24ce74
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      F1C2: 837501845
+      F1C3: 1975900751
+      F1C4: -1701306282
+      F1C5: -1423444099
+      F1C6: 1085832032
+      F1C7: 792635437
+      F1C8: -1495206563
+      F2C1_Concreto_Liso: -1593362155
+      F2C2: 563457610
+      F2C3: 1941353444
+      F2C4_Concreto_Junta: 1722346031
+      F2C5_Concreto_Desgastado: 126706578
+      F2C6: -229886962
+      F2C7: -1420093477
+      F2C8: -1393335162
+      F3C2: -959943842
+      F3C3: -297549875
+      F3C5_Tierra_Dispersa: 814818514
+      F3C6_Tierra_Mancha: 1037691251
+      F3C7: 276132128
+      F3C8: -404084968
+      F4C1_Pasto_Concreto: 196209224
+      F4C2: 156129953
+      F4C3: 25719866
+      F4C4_Esquina_Pasto_Concreto: -1496984603
+      F4C5: -1760837033
+      F4C6: 1455402679
+      F4C7: 1329449575
+      F4C8: -2095227029
+      F5C1_Borde_Pasto_Tierra: 1822704393
+      F5C2: -2011783858
+      F5C3: 284498764
+      F5C4: -1887776040
+      F5C5: -2025560481
+      F5C6: -2018271702
+      F5C7: 1960890620
+      F5C8: -1700306569
+      F6C1: 418912207
+      F6C2: -1235614301
+      F6C3: -737410311
+      F6C4: -2129919621
+      F6C5: -505805272
+      F6C6: 165334429
+      F6C7: -1481336998
+      F6C8: 2093810910
+      F7C1: 1900017442
+      F7C2: -2078629852
+      F7C3: 1258861985
+      F7C4: -955778551
+      F7C5: -1111674277
+      F7C6: -837507720
+      F7C7: 1988646014
+      F7C8_Diagonal_Pasto_Concreto_Tierra: -1252701884
+      F8C1: 1317091920
+      F8C2: -1798318113
+      F8C3: -354535105
+      F8C4: 1348195497
+      F8C5_Tierra_Pedregosa: 1540700999
+      F8C6: -690833552
+      F8C7: 1636461073
+      F8C8_Esquina_Tierra: -1486030556
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
