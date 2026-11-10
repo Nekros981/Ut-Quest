@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab75097a03ca5949a4a575720fbd9bc, type: 3}
+  m_Name: Beto_Recibos
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
+  dialogueId: rectoria.cashier.beto_intro
+  defaultSpeaker: Cajero Beto
+  defaultPortrait: {fileID: 575421303, guid: 1ec23a5c4a3256142b46ca42b6597a1a, type: 3}
+  lines:
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Tu inscripci\xF3n cuesta $1,850. Busca en la mesa los recibos que sumen
+      exactamente esa cantidad."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Hay un recibo de cada cantidad: $300, $450, $600, $700, $850 y $1,000.
+      Ac\xE9rcate a la mesa y presiona E o Enter para comenzar."

@@ -1,0 +1,1804 @@
+fileFormatVersion: 2
+guid: 1ec23a5c4a3256142b46ca42b6597a1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4938542440540513964
+    second: cajerobeto_0
+  - first:
+      213: -1153090801832317161
+    second: cajerobeto_1
+  - first:
+      213: 3152874792891285993
+    second: cajerobeto_2
+  - first:
+      213: 8718092370774252686
+    second: cajerobeto_3
+  - first:
+      213: -3896286677606609914
+    second: cajerobeto_4
+  - first:
+      213: 7938417409591640811
+    second: cajerobeto_5
+  - first:
+      213: 2715099399864970127
+    second: cajerobeto_6
+  - first:
+      213: -989777670263506098
+    second: cajerobeto_7
+  - first:
+      213: -4783961649417762810
+    second: cajerobeto_8
+  - first:
+      213: 7954572329715879584
+    second: cajerobeto_9
+  - first:
+      213: 5455621556277668730
+    second: cajerobeto_10
+  - first:
+      213: 5038158127233759957
+    second: cajerobeto_11
+  - first:
+      213: -2318508460479144816
+    second: cajerobeto_12
+  - first:
+      213: -2353276634017006953
+    second: cajerobeto_13
+  - first:
+      213: 2962866733314707837
+    second: cajerobeto_14
+  - first:
+      213: 9118791719655776582
+    second: cajerobeto_15
+  - first:
+      213: 3281915041273335208
+    second: cajerobeto_16
+  - first:
+      213: 8791504442109359949
+    second: cajerobeto_17
+  - first:
+      213: -801806314824156204
+    second: cajerobeto_18
+  - first:
+      213: -8870332848901711655
+    second: cajerobeto_19
+  - first:
+      213: -1611627724352188864
+    second: cajerobeto_20
+  - first:
+      213: 6487283956578453572
+    second: cajerobeto_21
+  - first:
+      213: 2306213373939948611
+    second: cajerobeto_22
+  - first:
+      213: 6016847311938653730
+    second: cajerobeto_23
+  - first:
+      213: 1838153010302441738
+    second: cajerobeto_24
+  - first:
+      213: -2440699958970633834
+    second: cajerobeto_25
+  - first:
+      213: -7179830172814442405
+    second: cajerobeto_26
+  - first:
+      213: -7785800358444195618
+    second: cajerobeto_27
+  - first:
+      213: -4670853203823442243
+    second: cajerobeto_28
+  - first:
+      213: 5651426594443992144
+    second: cajerobeto_29
+  - first:
+      213: 1373080657015735930
+    second: cajerobeto_30
+  - first:
+      213: 4726450438221577951
+    second: cajerobeto_31
+  - first:
+      213: 3796021668872138553
+    second: cajerobeto_32
+  - first:
+      213: 4499374291071429857
+    second: cajerobeto_33
+  - first:
+      213: 5828498537113728669
+    second: cajerobeto_34
+  - first:
+      213: -4299219719142129642
+    second: cajerobeto_35
+  - first:
+      213: -3377962563426535612
+    second: cajerobeto_36
+  - first:
+      213: -8638355201402266191
+    second: cajerobeto_37
+  - first:
+      213: 4893424164884621102
+    second: cajerobeto_38
+  - first:
+      213: 5243623140211932660
+    second: cajerobeto_39
+  - first:
+      213: 2010791097526001201
+    second: cajerobeto_40
+  - first:
+      213: -8393773148458898396
+    second: cajerobeto_41
+  - first:
+      213: -2600206700874719439
+    second: cajerobeto_42
+  - first:
+      213: -2750442594907604169
+    second: cajerobeto_43
+  - first:
+      213: 2969509847987295712
+    second: cajerobeto_44
+  - first:
+      213: 5008908334556135549
+    second: cajerobeto_45
+  - first:
+      213: 5863537070159737766
+    second: cajerobeto_46
+  - first:
+      213: -1258229168295254703
+    second: cajerobeto_47
+  - first:
+      213: -6575129943227892245
+    second: cajerobeto_48
+  - first:
+      213: 7047250802566866583
+    second: cajerobeto_49
+  - first:
+      213: -8680269297910738896
+    second: cajerobeto_50
+  - first:
+      213: 1863358436711906930
+    second: cajerobeto_51
+  - first:
+      213: 5678367009855394555
+    second: cajerobeto_52
+  - first:
+      213: -5752946440638551250
+    second: cajerobeto_53
+  - first:
+      213: -8518263025616593391
+    second: cajerobeto_54
+  - first:
+      213: -7213992051492858725
+    second: cajerobeto_55
+  - first:
+      213: 1517861843586793391
+    second: cajerobeto_56
+  - first:
+      213: 4685442780608813674
+    second: cajerobeto_57
+  - first:
+      213: 1641622592317145284
+    second: cajerobeto_58
+  - first:
+      213: 7577912259458103959
+    second: cajerobeto_59
+  - first:
+      213: -8620874611282227768
+    second: cajerobeto_60
+  - first:
+      213: 6740915820890749891
+    second: cajerobeto_61
+  - first:
+      213: -6672723694762270182
+    second: cajerobeto_62
+  - first:
+      213: 3018698267510105591
+    second: cajerobeto_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cajerobeto_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 225
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459546bd0d5c67bb0800000000000000
+      internalID: -4938542440540513964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 225
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fa30b66066fffe0800000000000000
+      internalID: -1153090801832317161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 225
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e181936be241cb20800000000000000
+      internalID: 3152874792891285993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cda0f12d2ecf870800000000000000
+      internalID: 8718092370774252686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 225
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ccb2ef8eb9de9c0800000000000000
+      internalID: -3896286677606609914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 225
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be28c71139cea2e60800000000000000
+      internalID: 7938417409591640811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 225
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8be3dad488fda520800000000000000
+      internalID: 2715099399864970127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 225
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b7455f37a9342f0800000000000000
+      internalID: -989777670263506098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 193
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608cc53f934fb9db0800000000000000
+      internalID: -4783961649417762810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 193
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aecdd48361546e60800000000000000
+      internalID: 7954572329715879584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 193
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7be4ea76e246bb40800000000000000
+      internalID: 5455621556277668730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 193
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5daf3089f122be540800000000000000
+      internalID: 5038158127233759957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 193
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c1764d6d003dfd0800000000000000
+      internalID: -2318508460479144816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_13
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 193
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a703b9e5b775fd0800000000000000
+      internalID: -2353276634017006953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 193
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d719b0498973e1920800000000000000
+      internalID: 2962866733314707837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 193
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6412bde61c47c8e70800000000000000
+      internalID: 9118791719655776582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 161
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adcb1a7754bb8d20800000000000000
+      internalID: 3281915041273335208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 161
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d477231f5b2b10a70800000000000000
+      internalID: 8791504442109359949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 161
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbbd32a7696fd4f0800000000000000
+      internalID: -801806314824156204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 161
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d81cbd554f36e480800000000000000
+      internalID: -8870332848901711655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_20
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 161
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e01db9f1952a9e0800000000000000
+      internalID: -1611627724352188864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_21
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44803fc2366770a50800000000000000
+      internalID: 6487283956578453572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_22
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 161
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c12f148d0510020800000000000000
+      internalID: 2306213373939948611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 161
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e0ed760c2208350800000000000000
+      internalID: 6016847311938653730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 129
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0954e58c6e628910800000000000000
+      internalID: 1838153010302441738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 129
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691be369154e02ed0800000000000000
+      internalID: -2440699958970633834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 129
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5083c98f7e1c5c90800000000000000
+      internalID: -7179830172814442405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 129
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed023de23d743f390800000000000000
+      internalID: -7785800358444195618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 129
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6cb1422cbcd2fb0800000000000000
+      internalID: -4670853203823442243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_29
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 129
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c970c8b86ed6e40800000000000000
+      internalID: 5651426594443992144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 129
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76026925992e0310800000000000000
+      internalID: 1373080657015735930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 129
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdebfaab1a9b79140800000000000000
+      internalID: 4726450438221577951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 97
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f2fcc789d2ea430800000000000000
+      internalID: 3796021668872138553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 97
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec66da341df07e30800000000000000
+      internalID: 4499374291071429857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_34
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 97
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d963c8ee98cf2e050800000000000000
+      internalID: 5828498537113728669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610cd25917a1654c0800000000000000
+      internalID: -4299219719142129642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_36
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 97
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447b46e12f01f11d0800000000000000
+      internalID: -3377962563426535612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_37
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 97
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd15c856b56e1880800000000000000
+      internalID: -8638355201402266191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 97
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27a24bf95fe8e340800000000000000
+      internalID: 4893424164884621102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_39
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 97
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdb950d67715c840800000000000000
+      internalID: 5243623140211932660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 65
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e1e8d79d3c7eb10800000000000000
+      internalID: 2010791097526001201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 65
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c25e82bc3538b80800000000000000
+      internalID: -8393773148458898396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_42
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f95c338c53aebd0800000000000000
+      internalID: -2600206700874719439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 65
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bbd6b480774d9d0800000000000000
+      internalID: -2750442594907604169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_44
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 65
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e59e4e3971d53920800000000000000
+      internalID: 2969509847987295712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_45
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 65
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7046b98797338540800000000000000
+      internalID: 5008908334556135549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_46
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 65
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3b43226e77f5150800000000000000
+      internalID: 5863537070159737766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_47
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 65
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155e9b1ec3fd98ee0800000000000000
+      internalID: -1258229168295254703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_48
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedfdd5372270c4a0800000000000000
+      internalID: -6575129943227892245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_49
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796a51a544ddcc160800000000000000
+      internalID: 7047250802566866583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_50
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 33
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0301d47401d798780800000000000000
+      internalID: -8680269297910738896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 33
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eb07d20aafbd910800000000000000
+      internalID: 1863358436711906930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_52
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 33
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf25abec5bc9dce40800000000000000
+      internalID: 5678367009855394555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_53
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 33
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b24e151bd6920b0800000000000000
+      internalID: -5752946440638551250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_54
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 33
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e57cee8ec09c980800000000000000
+      internalID: -8518263025616593391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 33
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d6465370c2eb90800000000000000
+      internalID: -7213992051492858725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_56
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf3c150e47801510800000000000000
+      internalID: 1517861843586793391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_57
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a5b996269060140800000000000000
+      internalID: 4685442780608813674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_58
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0c15ecc0738c610800000000000000
+      internalID: 1641622592317145284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79af31cec072a2960800000000000000
+      internalID: 7577912259458103959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_60
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdc65567308c5880800000000000000
+      internalID: -8620874611282227768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_61
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbf005693b8c8d50800000000000000
+      internalID: 6740915820890749891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_62
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12ec593729b563a0800000000000000
+      internalID: -6672723694762270182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cajerobeto_63
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5e60f941294e920800000000000000
+      internalID: 3018698267510105591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beto_Frente
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b15391ad6d5c849963f72ee1447de9
+      internalID: 575421303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 118fbe49419574d4a879f1acd7e2bf35
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      beto_Frente: 575421303
+      cajerobeto_0: -4938542440540513964
+      cajerobeto_1: -1153090801832317161
+      cajerobeto_10: 5455621556277668730
+      cajerobeto_11: 5038158127233759957
+      cajerobeto_12: -2318508460479144816
+      cajerobeto_13: -2353276634017006953
+      cajerobeto_14: 2962866733314707837
+      cajerobeto_15: 9118791719655776582
+      cajerobeto_16: 3281915041273335208
+      cajerobeto_17: 8791504442109359949
+      cajerobeto_18: -801806314824156204
+      cajerobeto_19: -8870332848901711655
+      cajerobeto_2: 3152874792891285993
+      cajerobeto_20: -1611627724352188864
+      cajerobeto_21: 6487283956578453572
+      cajerobeto_22: 2306213373939948611
+      cajerobeto_23: 6016847311938653730
+      cajerobeto_24: 1838153010302441738
+      cajerobeto_25: -2440699958970633834
+      cajerobeto_26: -7179830172814442405
+      cajerobeto_27: -7785800358444195618
+      cajerobeto_28: -4670853203823442243
+      cajerobeto_29: 5651426594443992144
+      cajerobeto_3: 8718092370774252686
+      cajerobeto_30: 1373080657015735930
+      cajerobeto_31: 4726450438221577951
+      cajerobeto_32: 3796021668872138553
+      cajerobeto_33: 4499374291071429857
+      cajerobeto_34: 5828498537113728669
+      cajerobeto_35: -4299219719142129642
+      cajerobeto_36: -3377962563426535612
+      cajerobeto_37: -8638355201402266191
+      cajerobeto_38: 4893424164884621102
+      cajerobeto_39: 5243623140211932660
+      cajerobeto_4: -3896286677606609914
+      cajerobeto_40: 2010791097526001201
+      cajerobeto_41: -8393773148458898396
+      cajerobeto_42: -2600206700874719439
+      cajerobeto_43: -2750442594907604169
+      cajerobeto_44: 2969509847987295712
+      cajerobeto_45: 5008908334556135549
+      cajerobeto_46: 5863537070159737766
+      cajerobeto_47: -1258229168295254703
+      cajerobeto_48: -6575129943227892245
+      cajerobeto_49: 7047250802566866583
+      cajerobeto_5: 7938417409591640811
+      cajerobeto_50: -8680269297910738896
+      cajerobeto_51: 1863358436711906930
+      cajerobeto_52: 5678367009855394555
+      cajerobeto_53: -5752946440638551250
+      cajerobeto_54: -8518263025616593391
+      cajerobeto_55: -7213992051492858725
+      cajerobeto_56: 1517861843586793391
+      cajerobeto_57: 4685442780608813674
+      cajerobeto_58: 1641622592317145284
+      cajerobeto_59: 7577912259458103959
+      cajerobeto_6: 2715099399864970127
+      cajerobeto_60: -8620874611282227768
+      cajerobeto_61: 6740915820890749891
+      cajerobeto_62: -6672723694762270182
+      cajerobeto_63: 3018698267510105591
+      cajerobeto_7: -989777670263506098
+      cajerobeto_8: -4783961649417762810
+      cajerobeto_9: 7954572329715879584
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

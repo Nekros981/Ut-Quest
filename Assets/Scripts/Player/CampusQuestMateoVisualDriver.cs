@@ -31,6 +31,15 @@ public sealed class CampusQuestMateoVisualDriver : MonoBehaviour
         lastPosition = motionRoot != null ? motionRoot.position : transform.position;
     }
 
+    // Turning toward a blocked cell (an NPC or a counter) must also turn the idle sprite.
+    public void Face(Vector2Int facing)
+    {
+        if (facing == Vector2Int.zero) return;
+        if (Mathf.Abs(facing.x) > Mathf.Abs(facing.y)) direction = facing.x > 0 ? 2 : 1;
+        else direction = facing.y > 0 ? 3 : 0;
+        if (animator != null) animator.SetInteger("Direction", direction);
+    }
+
     private void LateUpdate()
     {
         Vector3 current = motionRoot != null ? motionRoot.position : transform.position;

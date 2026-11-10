@@ -1,0 +1,1804 @@
+fileFormatVersion: 2
+guid: 4b438f418061f0d4990d2746af888cbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4307720178204934134
+    second: don chuy_0
+  - first:
+      213: 8004440824149674730
+    second: don chuy_1
+  - first:
+      213: -4017660980106018198
+    second: don chuy_2
+  - first:
+      213: 8653041714175731067
+    second: don chuy_3
+  - first:
+      213: 5977830286703819504
+    second: don chuy_4
+  - first:
+      213: -2206889828297912607
+    second: don chuy_5
+  - first:
+      213: 7677133689262154011
+    second: don chuy_6
+  - first:
+      213: 8455949933241909451
+    second: don chuy_7
+  - first:
+      213: -6132031839595268140
+    second: don chuy_8
+  - first:
+      213: 685470308490948061
+    second: don chuy_9
+  - first:
+      213: -7978242698046957033
+    second: don chuy_10
+  - first:
+      213: 8507425749669630655
+    second: don chuy_11
+  - first:
+      213: 4528753141957180440
+    second: don chuy_12
+  - first:
+      213: -5689888969691273156
+    second: don chuy_13
+  - first:
+      213: 7088396155618775710
+    second: don chuy_14
+  - first:
+      213: -6884147383347936169
+    second: don chuy_15
+  - first:
+      213: 4943484342016819078
+    second: don chuy_16
+  - first:
+      213: 6465769105470195538
+    second: don chuy_17
+  - first:
+      213: -5996915577230634421
+    second: don chuy_18
+  - first:
+      213: 7988844696368520358
+    second: don chuy_19
+  - first:
+      213: 5389633774757268770
+    second: don chuy_20
+  - first:
+      213: -6334126462525326594
+    second: don chuy_21
+  - first:
+      213: 6165349946032660665
+    second: don chuy_22
+  - first:
+      213: 4420046206986948993
+    second: don chuy_23
+  - first:
+      213: -2372609453348510953
+    second: don chuy_24
+  - first:
+      213: -8909858932479774685
+    second: don chuy_25
+  - first:
+      213: -9201766875756032475
+    second: don chuy_26
+  - first:
+      213: 7918231710567721253
+    second: don chuy_27
+  - first:
+      213: 4902956224127931407
+    second: don chuy_28
+  - first:
+      213: -6061185681394394747
+    second: don chuy_29
+  - first:
+      213: 3654346413636068794
+    second: don chuy_30
+  - first:
+      213: -384021900272795164
+    second: don chuy_31
+  - first:
+      213: -5149826757779755032
+    second: don chuy_32
+  - first:
+      213: -235261216267481754
+    second: don chuy_33
+  - first:
+      213: 7983092903629065672
+    second: don chuy_34
+  - first:
+      213: 7467524200258350526
+    second: don chuy_35
+  - first:
+      213: 184778641314026843
+    second: don chuy_36
+  - first:
+      213: -8429410271192141431
+    second: don chuy_37
+  - first:
+      213: -4899690885496032364
+    second: don chuy_38
+  - first:
+      213: -8316996711720730463
+    second: don chuy_39
+  - first:
+      213: 180080360518119871
+    second: don chuy_40
+  - first:
+      213: -1611207398842701858
+    second: don chuy_41
+  - first:
+      213: 6812987861825684040
+    second: don chuy_42
+  - first:
+      213: 3347967938862831232
+    second: don chuy_43
+  - first:
+      213: -4975688965055086269
+    second: don chuy_44
+  - first:
+      213: 5806066524079497232
+    second: don chuy_45
+  - first:
+      213: -749432179547499277
+    second: don chuy_46
+  - first:
+      213: 9155199373034060419
+    second: don chuy_47
+  - first:
+      213: -5738773885289575377
+    second: don chuy_48
+  - first:
+      213: -86356506748878456
+    second: don chuy_49
+  - first:
+      213: 3525563834392845955
+    second: don chuy_50
+  - first:
+      213: -268905812414949612
+    second: don chuy_51
+  - first:
+      213: -7064270075735207318
+    second: don chuy_52
+  - first:
+      213: -6251104749603840841
+    second: don chuy_53
+  - first:
+      213: 922039575307213923
+    second: don chuy_54
+  - first:
+      213: -4353300883934190628
+    second: don chuy_55
+  - first:
+      213: 4390051251998653700
+    second: don chuy_56
+  - first:
+      213: -8237446518705021174
+    second: don chuy_57
+  - first:
+      213: 4388421752111889223
+    second: don chuy_58
+  - first:
+      213: 4918121856063767065
+    second: don chuy_59
+  - first:
+      213: -1956585962867775914
+    second: don chuy_60
+  - first:
+      213: 787009577147266624
+    second: don chuy_61
+  - first:
+      213: -7912308193495369027
+    second: don chuy_62
+  - first:
+      213: 7643425448306217515
+    second: don chuy_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: don chuy_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 223
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffffa5cda818cb30800000000000000
+      internalID: 4307720178204934134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea831d258c751f60800000000000000
+      internalID: 8004440824149674730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 223
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6245d400a66e38c0800000000000000
+      internalID: -4017660980106018198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 191
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75e410e797c51870800000000000000
+      internalID: 8653041714175731067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa7d8e49f485f250800000000000000
+      internalID: 5977830286703819504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 191
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee41edc46d8f51e0800000000000000
+      internalID: -2206889828297912607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11a7a94a68aa8a60800000000000000
+      internalID: 7677133689262154011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_7
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc04f59a9a1995570800000000000000
+      internalID: 8455949933241909451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 191
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7f981e785a6eaa0800000000000000
+      internalID: -6132031839595268140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 223
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd2ea12d97438900800000000000000
+      internalID: 685470308490948061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 191
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a9e036986974190800000000000000
+      internalID: -7978242698046957033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2d11225a2701670800000000000000
+      internalID: 8507425749669630655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cbacdfcfc59de30800000000000000
+      internalID: 4528753141957180440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 159
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38632ed0247901b0800000000000000
+      internalID: -5689888969691273156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_14
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 159
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92d6e26fba0f5260800000000000000
+      internalID: 7088396155618775710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_15
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 159
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7548c1abd689670a0800000000000000
+      internalID: -6884147383347936169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 191
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f3e9e31d8ca9440800000000000000
+      internalID: 4943484342016819078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 159
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2570f3b8eb60bb950800000000000000
+      internalID: 6465769105470195538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_18
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 191
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4259273e0da6cca0800000000000000
+      internalID: -5996915577230634421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_19
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 191
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac1fc4bce31ede60800000000000000
+      internalID: 7988844696368520358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_20
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 159
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22dcad5dc53dbca40800000000000000
+      internalID: 5389633774757268770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_21
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 159
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efab6ceba89a818a0800000000000000
+      internalID: -6334126462525326594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 160
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b020494c19bf8550800000000000000
+      internalID: 6165349946032660665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_23
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 160
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181154a5b98275d30800000000000000
+      internalID: 4420046206986948993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 127
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713ad66d54cc21fd0800000000000000
+      internalID: -2372609453348510953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 127
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320b3b2e182d95480800000000000000
+      internalID: -8909858932479774685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 127
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e0b9097c1cc4080800000000000000
+      internalID: -9201766875756032475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 127
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296f95c9c533ed60800000000000000
+      internalID: 7918231710567721253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 127
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f049f6875bcca0440800000000000000
+      internalID: 4902956224127931407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 127
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5899dce7cb752eba0800000000000000
+      internalID: -6061185681394394747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 128
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5200f93b8d6b230800000000000000
+      internalID: 3654346413636068794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 128
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e10548cd1eabaaf0800000000000000
+      internalID: -384021900272795164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef6cb749d32888b0800000000000000
+      internalID: -5149826757779755032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d43f69b2f2cbcf0800000000000000
+      internalID: -235261216267481754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_34
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 96
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd80c913b4a9ce60800000000000000
+      internalID: 7983092903629065672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 96
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd280c02b9f1a760800000000000000
+      internalID: 7467524200258350526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_36
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b551a9df137709200800000000000000
+      internalID: 184778641314026843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 95
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981309fe408b40b80800000000000000
+      internalID: -8429410271192141431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_38
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 95
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4933acc691dc00cb0800000000000000
+      internalID: -4899690885496032364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_39
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 95
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a04bc75e87149c80800000000000000
+      internalID: -8316996711720730463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 63
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1f4bf3226cf7200800000000000000
+      internalID: 180080360518119871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_41
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7ef744867d3a9e0800000000000000
+      internalID: -1611207398842701858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_42
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8420b231d589c8e50800000000000000
+      internalID: 6812987861825684040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_43
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086d0532a1f567e20800000000000000
+      internalID: 3347967938862831232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3418f05af3dc2fab0800000000000000
+      internalID: -4975688965055086269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 63
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010ab06edba439050800000000000000
+      internalID: 5806066524079497232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_46
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 63
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f413d2476b7995f0800000000000000
+      internalID: -749432179547499277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_47
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 63
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38af29dc25dcd0f70800000000000000
+      internalID: 9155199373034060419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cc6018e87cb50b0800000000000000
+      internalID: -5738773885289575377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_49
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 31
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8818033f6333dcef0800000000000000
+      internalID: -86356506748878456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_50
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 31
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e13fdc0a15de030800000000000000
+      internalID: 3525563834392845955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_51
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 32
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41718fc9697a44cf0800000000000000
+      internalID: -268905812414949612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_52
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 31
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6291625bcba6fd90800000000000000
+      internalID: -7064270075735207318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_53
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 31
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc1b1a995d9f39a0800000000000000
+      internalID: -6251104749603840841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_54
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 32
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cd90bcb1ebbcc00800000000000000
+      internalID: 922039575307213923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_55
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 32
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd365bc29e7f593c0800000000000000
+      internalID: -4353300883934190628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_56
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d732daa589cec30800000000000000
+      internalID: 4390051251998653700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f1f4cf806bead80800000000000000
+      internalID: -8237446518705021174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_58
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bf93b255ec6ec30800000000000000
+      internalID: 4388421752111889223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91204c055cda04440800000000000000
+      internalID: 4918121856063767065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_60
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65620c6ee6fc8d4e0800000000000000
+      internalID: -1956585962867775914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_61
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04671b86a050cea00800000000000000
+      internalID: 787009577147266624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_62
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbabb458e95d13290800000000000000
+      internalID: -7912308193495369027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don chuy_63
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 0
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b221979d2f6e21a60800000000000000
+      internalID: 7643425448306217515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_chuy_Frente
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819ab0d0a5b292d48a131f4b9c782977
+      internalID: -2045802525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aac320197138a0940821d3d5b104ebca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      don chuy_0: 4307720178204934134
+      don chuy_1: 8004440824149674730
+      don chuy_10: -7978242698046957033
+      don chuy_11: 8507425749669630655
+      don chuy_12: 4528753141957180440
+      don chuy_13: -5689888969691273156
+      don chuy_14: 7088396155618775710
+      don chuy_15: -6884147383347936169
+      don chuy_16: 4943484342016819078
+      don chuy_17: 6465769105470195538
+      don chuy_18: -5996915577230634421
+      don chuy_19: 7988844696368520358
+      don chuy_2: -4017660980106018198
+      don chuy_20: 5389633774757268770
+      don chuy_21: -6334126462525326594
+      don chuy_22: 6165349946032660665
+      don chuy_23: 4420046206986948993
+      don chuy_24: -2372609453348510953
+      don chuy_25: -8909858932479774685
+      don chuy_26: -9201766875756032475
+      don chuy_27: 7918231710567721253
+      don chuy_28: 4902956224127931407
+      don chuy_29: -6061185681394394747
+      don chuy_3: 8653041714175731067
+      don chuy_30: 3654346413636068794
+      don chuy_31: -384021900272795164
+      don chuy_32: -5149826757779755032
+      don chuy_33: -235261216267481754
+      don chuy_34: 7983092903629065672
+      don chuy_35: 7467524200258350526
+      don chuy_36: 184778641314026843
+      don chuy_37: -8429410271192141431
+      don chuy_38: -4899690885496032364
+      don chuy_39: -8316996711720730463
+      don chuy_4: 5977830286703819504
+      don chuy_40: 180080360518119871
+      don chuy_41: -1611207398842701858
+      don chuy_42: 6812987861825684040
+      don chuy_43: 3347967938862831232
+      don chuy_44: -4975688965055086269
+      don chuy_45: 5806066524079497232
+      don chuy_46: -749432179547499277
+      don chuy_47: 9155199373034060419
+      don chuy_48: -5738773885289575377
+      don chuy_49: -86356506748878456
+      don chuy_5: -2206889828297912607
+      don chuy_50: 3525563834392845955
+      don chuy_51: -268905812414949612
+      don chuy_52: -7064270075735207318
+      don chuy_53: -6251104749603840841
+      don chuy_54: 922039575307213923
+      don chuy_55: -4353300883934190628
+      don chuy_56: 4390051251998653700
+      don chuy_57: -8237446518705021174
+      don chuy_58: 4388421752111889223
+      don chuy_59: 4918121856063767065
+      don chuy_6: 7677133689262154011
+      don chuy_60: -1956585962867775914
+      don chuy_61: 787009577147266624
+      don chuy_62: -7912308193495369027
+      don chuy_63: 7643425448306217515
+      don chuy_7: 8455949933241909451
+      don chuy_8: -6132031839595268140
+      don chuy_9: 685470308490948061
+      don_chuy_Frente: -2045802525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
