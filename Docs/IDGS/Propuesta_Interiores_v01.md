@@ -1,7 +1,8 @@
 # IDGS · propuesta de interiores y progreso
 
-Estado de diseño para revisión. Las distribuciones, nombres de escenas e
-identificadores de este documento son propuestas pendientes de implementación.
+Las salas de 16×12 y sus seis estaciones ya tienen una primera versión jugable.
+Ver Assets/Scripts/Minigames/IDGS/INTERIORES.md para accesos y validación.
+Las actividades quedan pendientes de implementación.
 
 El objetivo de IDGS será completar seis actividades, en cualquier orden,
 obtener automáticamente el sello de la carrera y marcar el nivel completado.
@@ -209,5 +210,5 @@ temporal de Editor existente y una copia segura del guardado.
 5. Cargar un progreso con seis actividades y sin sello, y recuperar el cierre.
 6. Iniciar una partida temporal nueva y comprobar el reinicio del progreso.
 
-La construcción de las escenas y las actividades comenzaría después de
-revisar esta propuesta.
+Las escenas están conectadas al exterior. Las actividades se implementarán
+en la siguiente etapa mediante los puntos de interacción preparados.

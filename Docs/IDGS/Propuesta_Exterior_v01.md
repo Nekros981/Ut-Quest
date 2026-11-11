@@ -43,9 +43,19 @@ Ver `Propuesta_Exterior_v01.svg` para el esquema de referencia.
 ## Primera versión en Unity
 
 Abrir `IDGS_Exterior` y entrar en Play Mode. Mateo aparece frente a Docencia.
-WASD o flechas para caminar, Shift para correr y R para regresar al inicio.
+WASD o flechas para caminar por casillas y Shift para correr.
 La cámara sigue a Mateo dentro de las 64 × 52 casillas. Los Tilemaps de pasto,
 rutas y estacionamiento se pueden editar por separado.
+
+El acceso actual del CMD está en el frente sur, con la fachada `cmd.png` a
+escala 2 y el ancla `idgs.cmd` en (43,24.15). Un ramal de concreto de
+tres casillas lo une al camino este-oeste. Sustituye el acceso oeste previsto
+en el esquema inicial. La camioneta permanece a la izquierda de esta entrada.
+
+Docencia también tiene acceso sur, con `doce.png` a escala 2 y el ancla
+`idgs.docencia` en (34.5,3.15). Mateo inicia en (34.5,2.5). El camino pasa
+por el este del edificio, a lo largo de X=46.5, y enlaza con el tramo Y=20.5.
+Los rótulos provisionales de ambos edificios se encuentran desactivados.
 
 Los grupos `DOCENCIA` y `CMD` tienen un volumen visual reemplazable, una huella
 de colisión y un objeto independiente de acceso con su identificador. Para

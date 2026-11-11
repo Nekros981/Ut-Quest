@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: d9df3b39ec52bc64783e28d5d9d2080f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -715898173944498485
+    second: objetos_campus_0
+  - first:
+      213: -8248395010219211346
+    second: objetos_campus_1
+  - first:
+      213: 5651874679522968400
+    second: objetos_campus_2
+  - first:
+      213: -5876387990699120760
+    second: objetos_campus_3
+  - first:
+      213: 8670270985421605571
+    second: objetos_campus_4
+  - first:
+      213: 3762240273846974159
+    second: objetos_campus_5
+  - first:
+      213: 8183513934694830794
+    second: objetos_campus_6
+  - first:
+      213: -4296673095045883688
+    second: objetos_campus_7
+  - first:
+      213: 373810804380575359
+    second: objetos_campus_8
+  - first:
+      213: -148548600354335888
+    second: objetos_campus_9
+  - first:
+      213: 7716257989337166483
+    second: objetos_campus_10
+  - first:
+      213: 1093368437661741781
+    second: objetos_campus_11
+  - first:
+      213: 3104453559588186300
+    second: objetos_campus_12
+  - first:
+      213: -5137814520165484354
+    second: objetos_campus_13
+  - first:
+      213: 8752878684118048141
+    second: objetos_campus_14
+  - first:
+      213: 5490102725777417859
+    second: objetos_campus_15
+  - first:
+      213: 5463945701233683315
+    second: objetos_campus_16
+  - first:
+      213: -7119259160188509526
+    second: objetos_campus_17
+  - first:
+      213: -6157857013973097163
+    second: objetos_campus_18
+  - first:
+      213: 7256428001775397499
+    second: objetos_campus_19
+  - first:
+      213: 6317468175042694348
+    second: objetos_campus_20
+  - first:
+      213: 4020267597785816737
+    second: objetos_campus_21
+  - first:
+      213: -1972103639435131839
+    second: objetos_campus_22
+  - first:
+      213: -318736111187480912
+    second: objetos_campus_23
+  - first:
+      213: 416792603582486359
+    second: objetos_campus_24
+  - first:
+      213: 1862204822821931020
+    second: objetos_campus_25
+  - first:
+      213: -8491512357348327408
+    second: objetos_campus_26
+  - first:
+      213: 5632965014448704299
+    second: objetos_campus_27
+  - first:
+      213: -1720213235713744831
+    second: objetos_campus_28
+  - first:
+      213: -2462270496431783403
+    second: objetos_campus_29
+  - first:
+      213: -435222217002681632
+    second: objetos_campus_30
+  - first:
+      213: -2019056850795877817
+    second: objetos_campus_31
+  - first:
+      213: 6515947414205942833
+    second: objetos_campus_32
+  - first:
+      213: 6049788854004528438
+    second: objetos_campus_33
+  - first:
+      213: -8303180058561221384
+    second: objetos_campus_34
+  - first:
+      213: 5742218249374006672
+    second: objetos_campus_35
+  - first:
+      213: -3672918268846349640
+    second: objetos_campus_36
+  - first:
+      213: 6148339654947050409
+    second: objetos_campus_37
+  - first:
+      213: -2914346595139154777
+    second: objetos_campus_38
+  - first:
+      213: -2994645300713946779
+    second: objetos_campus_39
+  - first:
+      213: 5982002855364273871
+    second: objetos_campus_40
+  - first:
+      213: -7248677451556791125
+    second: objetos_campus_41
+  - first:
+      213: 3609524776428401354
+    second: objetos_campus_42
+  - first:
+      213: 1027298324051862579
+    second: objetos_campus_43
+  - first:
+      213: -3863140457849966813
+    second: objetos_campus_44
+  - first:
+      213: 6324693875758669168
+    second: objetos_campus_45
+  - first:
+      213: -6393529741957133512
+    second: objetos_campus_46
+  - first:
+      213: 6923221245680944763
+    second: objetos_campus_47
+  - first:
+      213: -6547291981423853587
+    second: objetos_campus_48
+  - first:
+      213: -8499377752902621144
+    second: objetos_campus_49
+  - first:
+      213: 8759378916494540614
+    second: objetos_campus_50
+  - first:
+      213: -8907657841347454336
+    second: objetos_campus_51
+  - first:
+      213: 8489667182008369841
+    second: objetos_campus_52
+  - first:
+      213: 5803241180930522375
+    second: objetos_campus_53
+  - first:
+      213: 6447829115312750166
+    second: objetos_campus_54
+  - first:
+      213: -2623487286348932300
+    second: objetos_campus_55
+  - first:
+      213: 4039093525733099617
+    second: objetos_campus_56
+  - first:
+      213: -8972335099712664659
+    second: objetos_campus_57
+  - first:
+      213: 4467041367226411136
+    second: objetos_campus_58
+  - first:
+      213: 2401284514672220541
+    second: objetos_campus_59
+  - first:
+      213: 2078484687287884374
+    second: objetos_campus_60
+  - first:
+      213: -6588794260783697267
+    second: objetos_campus_61
+  - first:
+      213: 6462288039410573198
+    second: objetos_campus_62
+  - first:
+      213: 2783924166578558433
+    second: objetos_campus_63
+  - first:
+      213: -2183304457368064578
+    second: objetos_campus_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Banca
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf0a717c5ff9364eb33501ef49edebc
+      internalID: 45011550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papelera
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd39bd7aa680bc4691d3082ac94e6ec
+      internalID: -1587973284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maceta
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d9091c0ff63ba418733bfec2c0c17e
+      internalID: -1909930173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ea3a2f4c928203e44bf4a6d7d73ebbbd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Banca: 45011550
+      Maceta: -1909930173
+      Papelera: -1587973284
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

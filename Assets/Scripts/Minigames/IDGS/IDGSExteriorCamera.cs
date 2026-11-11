@@ -7,6 +7,7 @@ namespace CampusQuest.IDGS
     {
         [SerializeField] private Transform target;
         [SerializeField] private Rect mapBounds = new Rect(0, 0, 64, 52);
+        [SerializeField] private float preferredOrthographicSize = 5.625f;
         private Camera view;
 
         private void Awake() => view = GetComponent<Camera>();
@@ -15,6 +16,8 @@ namespace CampusQuest.IDGS
         {
             if (target == null) return;
 
+            view.orthographicSize = Mathf.Min(preferredOrthographicSize, mapBounds.height * .5f,
+                mapBounds.width / (2 * view.aspect));
             float halfHeight = view.orthographicSize;
             float halfWidth = halfHeight * view.aspect;
             Vector3 position = transform.position;
