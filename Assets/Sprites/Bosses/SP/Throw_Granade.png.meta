@@ -106,8 +106,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -173,12 +173,12 @@ TextureImporter:
       name: Throw_Granade_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 198
-        width: 37
-        height: 47
+        x: 15
+        y: 199
+        width: 35
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Throw_Granade_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 197
-        width: 42
-        height: 49
+        x: 77
+        y: 198
+        width: 40
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Throw_Granade_2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 208
-        width: 8
-        height: 8
+        x: 121
+        y: 209
+        width: 6
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Throw_Granade_3
       rect:
         serializedVersion: 2
-        x: 143
-        y: 197
-        width: 36
-        height: 47
+        x: 144
+        y: 198
+        width: 34
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Throw_Granade_4
       rect:
         serializedVersion: 2
-        x: 205
-        y: 198
-        width: 37
-        height: 48
+        x: 206
+        y: 199
+        width: 35
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Throw_Granade_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 133
-        width: 38
-        height: 50
+        x: 107
+        y: 184
+        width: 5
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: Throw_Granade_6
       rect:
         serializedVersion: 2
-        x: 106
-        y: 183
-        width: 7
-        height: 9
+        x: 16
+        y: 134
+        width: 36
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: Throw_Granade_7
       rect:
         serializedVersion: 2
-        x: 144
+        x: 80
         y: 132
-        width: 36
-        height: 51
+        width: 34
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Throw_Granade_8
       rect:
         serializedVersion: 2
-        x: 207
-        y: 132
+        x: 145
+        y: 133
         width: 34
-        height: 51
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: Throw_Granade_9
       rect:
         serializedVersion: 2
-        x: 79
-        y: 131
-        width: 36
-        height: 50
+        x: 208
+        y: 133
+        width: 32
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: Throw_Granade_10
       rect:
         serializedVersion: 2
-        x: 14
-        y: 68
-        width: 36
-        height: 53
+        x: 15
+        y: 69
+        width: 34
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Throw_Granade_11
       rect:
         serializedVersion: 2
-        x: 72
-        y: 69
-        width: 45
-        height: 52
+        x: 73
+        y: 70
+        width: 43
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: Throw_Granade_12
       rect:
         serializedVersion: 2
-        x: 119
-        y: 102
-        width: 10
-        height: 8
+        x: 120
+        y: 103
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Throw_Granade_13
       rect:
         serializedVersion: 2
-        x: 137
-        y: 68
-        width: 44
-        height: 53
+        x: 138
+        y: 69
+        width: 42
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: Throw_Granade_14
       rect:
         serializedVersion: 2
-        x: 207
-        y: 68
-        width: 35
-        height: 53
+        x: 208
+        y: 69
+        width: 33
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: Throw_Granade_15
       rect:
         serializedVersion: 2
-        x: 18
-        y: 4
-        width: 34
-        height: 54
+        x: 19
+        y: 5
+        width: 32
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,12 +525,12 @@ TextureImporter:
       name: Throw_Granade_16
       rect:
         serializedVersion: 2
-        x: 76
-        y: 5
-        width: 43
-        height: 53
+        x: 77
+        y: 6
+        width: 41
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: Throw_Granade_17
       rect:
         serializedVersion: 2
-        x: 121
-        y: 35
-        width: 10
-        height: 8
+        x: 122
+        y: 36
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -569,12 +569,12 @@ TextureImporter:
       name: Throw_Granade_18
       rect:
         serializedVersion: 2
-        x: 138
-        y: 4
-        width: 44
-        height: 53
+        x: 139
+        y: 5
+        width: 42
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -591,12 +591,12 @@ TextureImporter:
       name: Throw_Granade_19
       rect:
         serializedVersion: 2
-        x: 207
-        y: 5
-        width: 35
-        height: 52
+        x: 208
+        y: 6
+        width: 33
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -613,7 +613,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ffaad24d4e5e13dd8aeb35a473b57aea
     internalID: 0
     vertices: []
     indices: 
@@ -621,7 +621,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Throw_Granade_0: -7507912941968897137
       Throw_Granade_1: 5838568770408172123

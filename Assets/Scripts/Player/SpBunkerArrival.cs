@@ -20,10 +20,7 @@ public sealed class SpBunkerArrival : MonoBehaviour
             counter?.SetCount(defeats);
         }
         else
-        {
             FindAnyObjectByType<CampusQuestHeartBar>()?.SetHearts(DefaultHearts);
-            FindAnyObjectByType<CampusQuestDefeatCounter>()?.SetCount(0);
-        }
 
         CampusQuestObjectives.Instance?.NotifyEnteredBunker();
     }

@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
@@ -16,11 +17,15 @@ public static class SpBunkerEntranceSetup
     const string TilesRoot = "Assets/Sprites/Enviroment/Sp/Tiles";
     const string BunkerRetroSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/objetos-bunker-retro.png";
     const string BunkerPropsSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/Sprites_Bunker01.png";
+    const string CellBarsSheet = "Assets/Sprites/Enviroment/Sp/PixelLab/Celdas.png";
     const string DoorName = "Puerta_Bunker";
     const string DecorRootName = "SP_BunkerEntrance_Decor";
     const string CellShadeRootName = "SP_BunkerEntrance_Shade";
     const string ArrivalName = "CampusQuest_BunkerArrival";
     const string MateoPrefabPath = "Assets/Prefabs/Characters/Mateo/Mateo_Provisional.prefab";
+    const string BunkerMusicClipPath = "Assets/Audio/Musica/Iron_Decree.wav";
+    const string MixerPath = "Assets/Audio/MainMixer.mixer";
+    const string BunkerMusicObjectName = "SP_BunkerMusic";
 
     const int MapW = 17;
     const int MapH = 14;
@@ -33,11 +38,14 @@ public static class SpBunkerEntranceSetup
     const int MidDividerY = 7;
 
     const int WallSpriteIndex = 5;
-    const int BarSpriteIndex = 28;
     const int RedLightIndex = 36;
+    const float LeftBarX = 6.5f;
+    const float RightBarX = 10.5f;
 
     static readonly int[] PathFloorIndices = { 0, 1, 2, 3, 6 };
     static readonly int[] CellFloorIndices = { 0, 1, 2 };
+    static readonly float[] BottomCellBarY = { 1.5f, 2.5f, 3.5f, 4.5f, 5.5f, 6.5f };
+    static readonly float[] TopCellBarY = { 8.5f, 9.5f, 10.5f, 11.5f, 12.5f };
 
     static Sprite cachedCellShadeSprite;
 
@@ -75,6 +83,10 @@ public static class SpBunkerEntranceSetup
         if (oldArrival != null)
             Undo.DestroyObjectImmediate(oldArrival);
 
+        var oldMusic = GameObject.Find(BunkerMusicObjectName);
+        if (oldMusic != null)
+            Undo.DestroyObjectImmediate(oldMusic);
+
         var oldMateo = GameObject.Find("Mateo_Provisional");
         if (oldMateo != null)
             Undo.DestroyObjectImmediate(oldMateo);
@@ -109,6 +121,7 @@ public static class SpBunkerEntranceSetup
         EnsureBunkerArrival();
         ConfigureCamera(mateo);
         EnsureGlobalLight();
+        EnsureBunkerMusic();
         SpBunkerBuildSettings.EnsureSpBunkerInBuild();
 
         EditorSceneManager.MarkSceneDirty(scene);
@@ -133,10 +146,10 @@ public static class SpBunkerEntranceSetup
         public Tile[] PathFloors;
         public Tile[] CellFloors;
         public Tile Wall;
-        public Tile Bar;
         public Sprite RedLight;
         public Sprite PipeHorizontal;
         public Sprite PipeElbow;
+        public Sprite PipeVertical;
         public Sprite ClosedDoorSprite;
     }
 
@@ -182,10 +195,10 @@ public static class SpBunkerEntranceSetup
             PathFloors = PathFloorIndices.Select(Floor).ToArray(),
             CellFloors = CellFloorIndices.Select(Floor).ToArray(),
             Wall = EnsureTile(RequireRetro(WallSpriteIndex), "SP_Bunker_Wall_" + WallSpriteIndex, Tile.ColliderType.Sprite),
-            Bar = EnsureTile(RequireRetro(BarSpriteIndex), "SP_Bunker_Bar_" + BarSpriteIndex, Tile.ColliderType.Sprite),
             RedLight = RequireRetro(RedLightIndex),
             PipeHorizontal = RequireProp("Sprites_Bunker01_0"),
             PipeElbow = RequireProp("Sprites_Bunker01_16"),
+            PipeVertical = RequireProp("Sprites_Bunker01_2"),
             ClosedDoorSprite = closedDoor
         };
     }
@@ -197,15 +210,12 @@ public static class SpBunkerEntranceSetup
         {
             var cell = new Vector3Int(x, y, 0);
             bool onPath = x >= PathLeft && x <= PathRight;
-            bool southEntry = y == 0 && onPath;
             bool northDoorGap = y == MapH - 1 && onPath;
 
-            if (IsPerimeterWall(x, y) && !southEntry && !northDoorGap)
+            if (IsPerimeterWall(x, y) && !northDoorGap)
                 walls.SetTile(cell, palette.Wall);
             else if (y == MidDividerY && !onPath)
                 walls.SetTile(cell, palette.Wall);
-            else if (IsBarColumn(x, y))
-                walls.SetTile(cell, palette.Bar);
             else
                 walls.SetTile(cell, null);
 
@@ -238,15 +248,6 @@ public static class SpBunkerEntranceSetup
     static bool IsRightCell(int x, int y) =>
         x >= CellRightMin && x <= CellRightMax && ((y >= 1 && y < MidDividerY) || (y > MidDividerY && y < MapH - 1));
 
-    static bool IsBarColumn(int x, int y)
-    {
-        if (x != CellLeftMax + 1 && x != CellRightMin - 1)
-            return false;
-        if (y == 0 || y == MapH - 1 || y == MidDividerY)
-            return false;
-        return IsLeftCell(x - 1, y) || IsRightCell(x + 1, y);
-    }
-
     static void PlaceCellShadeOverlays(Transform root)
     {
         var sprite = EnsureCellShadeSprite();
@@ -275,6 +276,8 @@ public static class SpBunkerEntranceSetup
 
     static void PlaceCellDecor(Transform root, EntrancePalette palette)
     {
+        PlaceVerticalCellBars(root);
+
         foreach (var cell in BuildCellLayouts())
         {
             float pipeY = cell.Center.y + 2.15f;
@@ -301,6 +304,35 @@ public static class SpBunkerEntranceSetup
                 SpawnPointLight(lightGo.transform, new Vector3(0.55f, -0.15f, 0f));
             }
         }
+    }
+
+    static Sprite LoadCellBarSprite() =>
+        AssetDatabase.LoadAllAssetsAtPath(CellBarsSheet).OfType<Sprite>()
+            .FirstOrDefault(s => s.name == "Celdas_1");
+
+    static void PlaceVerticalCellBars(Transform root)
+    {
+        var barSprite = LoadCellBarSprite();
+        if (barSprite == null)
+            throw new InvalidOperationException("Celdas.png sin sprite Celdas_1");
+
+        foreach (var cell in BuildCellLayouts())
+        {
+            float barX = cell.IsLeft ? LeftBarX : RightBarX;
+            bool topCell = cell.Id.EndsWith("Top", StringComparison.Ordinal);
+            var ys = topCell ? TopCellBarY : BottomCellBarY;
+            for (int i = 0; i < ys.Length; i++)
+                SpawnCellBarSegment(root, barSprite, new Vector3(barX, ys[i], 0f), "Bar_" + cell.Id + "_" + i, cell.IsLeft);
+        }
+    }
+
+    static void SpawnCellBarSegment(Transform parent, Sprite sprite, Vector3 pos, string name, bool flipTowardCorridor)
+    {
+        var go = SpawnSprite(parent, sprite, pos, 3, name);
+        if (flipTowardCorridor)
+            go.transform.localScale = new Vector3(-1f, 1f, 1f);
+        var box = go.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(0.7f, 0.95f);
     }
 
     static void SpawnPointLight(Transform parent, Vector3 localPos)
@@ -423,6 +455,40 @@ public static class SpBunkerEntranceSetup
         }
 
         cam.transform.position = new Vector3(8f, 6.5f, -10f);
+    }
+
+    static void EnsureBunkerMusic()
+    {
+        var go = GameObject.Find(BunkerMusicObjectName);
+        if (go == null)
+        {
+            go = new GameObject(BunkerMusicObjectName);
+            Undo.RegisterCreatedObjectUndo(go, BunkerMusicObjectName);
+        }
+
+        var source = go.GetComponent<AudioSource>();
+        if (source == null)
+            source = Undo.AddComponent<AudioSource>(go);
+
+        var clip = AssetDatabase.LoadAssetAtPath<AudioClip>(BunkerMusicClipPath);
+        source.clip = clip;
+        source.loop = true;
+        source.playOnAwake = true;
+        source.spatialBlend = 0f;
+        source.volume = 0.65f;
+
+        var mixer = AssetDatabase.LoadAssetAtPath<AudioMixer>(MixerPath);
+        if (mixer != null)
+        {
+            foreach (var group in mixer.FindMatchingGroups("Music"))
+            {
+                if (group != null && group.name == "Music")
+                {
+                    source.outputAudioMixerGroup = group;
+                    break;
+                }
+            }
+        }
     }
 
     static void EnsureGlobalLight()

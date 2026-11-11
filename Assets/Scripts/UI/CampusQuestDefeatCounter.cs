@@ -14,7 +14,7 @@ public sealed class CampusQuestDefeatCounter : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        count = 0;
+        count = CampusQuestRunState.HasPendingTransfer ? CampusQuestRunState.PendingDefeats : 0;
         Refresh();
     }
 

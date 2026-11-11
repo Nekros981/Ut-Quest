@@ -10,7 +10,7 @@ public static class CampusQuestRunState
     public static void CaptureFromScene()
     {
         var bar = Object.FindAnyObjectByType<CampusQuestHeartBar>();
-        var counter = Object.FindAnyObjectByType<CampusQuestDefeatCounter>();
+        var counter = CampusQuestDefeatCounter.Instance;
 
         PendingHearts = bar != null ? bar.CurrentHearts : 6;
         PendingDefeats = counter != null ? counter.Count : 0;
