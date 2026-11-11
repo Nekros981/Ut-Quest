@@ -21,11 +21,11 @@ antes de activar otro acceso para evitar transiciones repetidas.
 
 Las estaciones usan las aproximaciones (3,7), (8,8) y (12,7), mirando al norte.
 IDGSInteractionPoint ofrece un identificador y onInteracted para conectar cada
-actividad. Cables registra idgs.docencia.cables y Circuito registra
-idgs.docencia.circuito. Las otras cuatro estaciones muestran «Próximamente».
-Una victoria futura registrará
-pointId + ".completed" mediante GameProgress.RegisterEvent. La interacción de
-esta etapa no registra éxitos ni premios.
+actividad. Las tres estaciones de Docencia est?n activas: Cables registra
+idgs.docencia.cables, Circuito registra idgs.docencia.circuito y Memoria
+registra idgs.docencia.memoria. Las tres estaciones de CMD contin?an mostrando
+?Pr?ximamente?. Cada actividad registra su evento ?nico mediante
+GameProgress.RegisterEvent; repetirla no entrega recompensas adicionales.
 
 Cada escena separa Cuadrícula, Colisiones, Estaciones y mobiliario auxiliar.
 Se reutilizan objetos de Rectoría mediante copias propias de IDGS. Los objetos

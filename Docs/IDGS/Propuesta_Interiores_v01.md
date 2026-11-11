@@ -122,7 +122,7 @@ mirando al puesto. El movimiento quedaría suspendido mientras está abierta.
 |---|---|
 | Reconecta los cables | Cuatro parejas de igual color. Añadir símbolos a los extremos para distinguirlas además del color. |
 | Repara el circuito | Piezas giratorias 3×3, con entrada y salida identificadas. Tablero inicial generado a partir de una conexión válida. |
-| Secuencia de memoria | Propuesta inicial de tres rondas con patrones de 3, 4 y 5 luces. Un error permite repetir la ronda. |
+| Secuencia de memoria | Cinco rondas con una secuencia creciente de una a cinco luces. Un error repite la ronda actual sin perder las anteriores. |
 | Organiza los archivos | Seis archivos con extensión visible, dos por cada categoría Imágenes, Documentos y Audio. |
 | Calibrar servidor | Detener tres indicadores. Los aciertos se mantienen al repetir un indicador fallado. |
 | Elimina el virus | Tablero 4×4. Cada pulsación cambia su casilla y las vecinas ortogonales. Generar desde el estado resuelto mediante pulsaciones legales. |
@@ -169,7 +169,7 @@ registro compartido, con `idgs.*` para diferenciarlos de `rectoria.*`.
 |---|---|
 | Cables | `idgs.docencia.cables` |
 | Circuito | `idgs.docencia.circuito` |
-| Memoria | `idgs.docencia.memory.completed` |
+| Memoria | `idgs.docencia.memoria` |
 | Archivos | `idgs.cmd.files.completed` |
 | Servidor | `idgs.cmd.server.completed` |
 | Virus | `idgs.cmd.virus.completed` |
