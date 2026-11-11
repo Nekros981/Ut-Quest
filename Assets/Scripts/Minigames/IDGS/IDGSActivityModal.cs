@@ -29,8 +29,14 @@ namespace CampusQuest.IDGS
 
         public bool TryOpen(IDGSInteractionPoint station)
         {
+            if (station == null || !station.IsAvailable(player)) return false;
+            return TryOpenArrival();
+        }
+
+        public bool TryOpenArrival()
+        {
             if (IsOpen || IDGSSceneTravel.IsChanging || DialogueSession.IsAnyOpen
-                || player == null || !player.enabled || !station.IsAvailable(player)) return false;
+                || player == null || !player.enabled || CampusQuestPauseMenu.BlocksInput) return false;
             playerWasEnabled = player.enabled;
             interactorWasEnabled = interactor.enabled;
             hudWasActive = hud.activeSelf;

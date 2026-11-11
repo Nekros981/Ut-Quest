@@ -21,6 +21,7 @@ public sealed class CampusQuestBossGrenade : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         var position = transform.position;
         var next = Vector3.MoveTowards(position, target, Speed * Time.deltaTime);
         transform.position = next;

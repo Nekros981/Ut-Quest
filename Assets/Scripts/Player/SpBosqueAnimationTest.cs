@@ -9,6 +9,7 @@ public sealed class SpBosqueAnimationTest : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         var keyboard = Keyboard.current;
         if (keyboard == null)
             return;

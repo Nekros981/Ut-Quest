@@ -89,7 +89,7 @@ namespace CampusQuest.IDGS
                 return;
             }
             IsSolved = true;
-            restoredAt = Time.unscaledTime;
+            restoredAt = CampusQuestGameClock.Now;
             status.text = "¡Circuito reparado!";
             completionState.text = RewardGrantedThisRun ? "ACTIVIDAD COMPLETADA" : "REPETICIÓN COMPLETADA";
             finishLabel.text = "VOLVER A DOCENCIA";
@@ -103,10 +103,11 @@ namespace CampusQuest.IDGS
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
             if (IsSolved)
             {
-                float elapsed = Time.unscaledTime - restoredAt;
+                float elapsed = CampusQuestGameClock.Now - restoredAt;
                 Electricity = elapsed < .8f ? Mathf.PingPong(elapsed * 7, 1) : 0;
                 RefreshBoard();
             }
@@ -116,7 +117,7 @@ namespace CampusQuest.IDGS
             if (keyboard.escapeKey.wasPressedThisFrame) { Close(); return; }
             if (IsSolved)
             {
-                if (Time.unscaledTime - restoredAt > .8f && DialogueSession.ConfirmPressedThisFrame()) Close();
+                if (CampusQuestGameClock.Now - restoredAt > .8f && DialogueSession.ConfirmPressedThisFrame()) Close();
                 return;
             }
             int x = SelectedIndex % 3, y = SelectedIndex / 3;

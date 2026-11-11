@@ -33,7 +33,7 @@ namespace CampusQuest.IDGS
         public bool HasCompleted => GameProgress.HasEvent(EventId);
         public bool IsSolved => Phase == IDGSServerPhase.Solved;
         public bool CanCalibrate => IsOpen && Phase == IDGSServerPhase.Running;
-        public float IndicatorPosition => CanCalibrate ? Mathf.Repeat((Time.unscaledTime - startedAt) * ModuleSpeed(CalibratedCount), 1) : CalibratedCount < 3 ? positions[CalibratedCount] : positions[2];
+        public float IndicatorPosition => CanCalibrate ? Mathf.Repeat((CampusQuestGameClock.Now - startedAt) * ModuleSpeed(CalibratedCount), 1) : CalibratedCount < 3 ? positions[CalibratedCount] : positions[2];
         public static float ModuleSpeed(int module) => .26f + .06f * Mathf.Clamp(module, 0, 2);
         public static bool IsInZone(float position) => position >= ZoneStart && position <= ZoneEnd;
         readonly float[] positions = new float[3];
@@ -61,7 +61,7 @@ namespace CampusQuest.IDGS
         void PrepareModule()
         {
             Phase = IDGSServerPhase.Preparing; positions[CalibratedCount] = 0;
-            deadline = Time.unscaledTime + .55f; RefreshView();
+            deadline = CampusQuestGameClock.Now + .55f; RefreshView();
         }
         public void CalibrateFromButton() { TryCalibrate(); }
         public bool TryCalibrate()
@@ -71,7 +71,7 @@ namespace CampusQuest.IDGS
             float position = IndicatorPosition; positions[CalibratedCount] = position; Attempts++;
             if (!IsInZone(position))
             {
-                Phase = IDGSServerPhase.Retry; deadline = Time.unscaledTime + .7f;
+                Phase = IDGSServerPhase.Retry; deadline = CampusQuestGameClock.Now + .7f;
                 Status.text = "Fuera de rango. Este módulo vuelve a empezar.";
             }
             else
@@ -93,7 +93,7 @@ namespace CampusQuest.IDGS
                 Phase = IDGSServerPhase.SaveRetry; Status.text = "No se pudo guardar. Puedes reintentar.";
                 finishLabel.text = "REINTENTAR GUARDADO"; return;
             }
-            Phase = IDGSServerPhase.Solved; solvedAt = Time.unscaledTime;
+            Phase = IDGSServerPhase.Solved; solvedAt = CampusQuestGameClock.Now;
             Status.text = "¡Servidor calibrado!"; finishLabel.text = "VOLVER AL CMD";
             completion.text = RewardGrantedThisRun ? "SISTEMA RESTAURADO" : "REPETICIÓN COMPLETADA";
         }
@@ -101,17 +101,18 @@ namespace CampusQuest.IDGS
         public void Close() { modal?.Close(); Phase = IDGSServerPhase.Closed; }
         void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
-            if (Phase == IDGSServerPhase.Preparing && Time.unscaledTime >= deadline)
+            if (Phase == IDGSServerPhase.Preparing && CampusQuestGameClock.Now >= deadline)
             {
-                startedAt = Time.unscaledTime; Phase = IDGSServerPhase.Running;
+                startedAt = CampusQuestGameClock.Now; Phase = IDGSServerPhase.Running;
                 Status.text = "Módulo " + (CalibratedCount + 1) + ": pulsa Espacio o Calibrar en la zona verde.";
             }
-            else if (Phase == IDGSServerPhase.Retry && Time.unscaledTime >= deadline) PrepareModule();
+            else if (Phase == IDGSServerPhase.Retry && CampusQuestGameClock.Now >= deadline) PrepareModule();
             RefreshView();
             if (Time.frameCount == modal.OpenedFrame) return;
             if (CampusQuestActiveControls.CancelPressedThisFrame()) { Close(); return; }
-            if (IsSolved && Time.unscaledTime - solvedAt > 1 && DialogueSession.ConfirmPressedThisFrame()) { Close(); return; }
+            if (IsSolved && CampusQuestGameClock.Now - solvedAt > 1 && DialogueSession.ConfirmPressedThisFrame()) { Close(); return; }
             var keyboard = UnityEngine.InputSystem.Keyboard.current;
             if (keyboard != null && keyboard.spaceKey.wasPressedThisFrame) TryCalibrate();
         }
@@ -120,7 +121,7 @@ namespace CampusQuest.IDGS
             if (CanCalibrate) positions[CalibratedCount] = IndicatorPosition;
             counter.text = "MÓDULOS CALIBRADOS " + CalibratedCount + "/3";
             CalibrateButton.interactable = CanCalibrate;
-            float pulse = IsSolved && Time.unscaledTime - solvedAt < .9f ? Mathf.PingPong((Time.unscaledTime - solvedAt) * 5, 1) : 0;
+            float pulse = IsSolved && CampusQuestGameClock.Now - solvedAt < .9f ? Mathf.PingPong((CampusQuestGameClock.Now - solvedAt) * 5, 1) : 0;
             for (int i = 0; i < 3; i++)
             {
                 bool complete = i < CalibratedCount, active = i == CalibratedCount;

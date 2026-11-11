@@ -92,6 +92,7 @@ namespace CampusQuest.IDGS
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             requestedDirection = Vector2Int.zero;
             if (IDGSSceneTravel.IsChanging || CampusQuest.Dialogue.DialogueSession.IsAnyOpen)
                 return;

@@ -102,6 +102,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         if (visualDriver != null && visualDriver.IsDefeated)
         {
             if (interactPrompt != null)

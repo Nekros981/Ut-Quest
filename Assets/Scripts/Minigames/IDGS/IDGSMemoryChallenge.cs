@@ -87,7 +87,7 @@ namespace CampusQuest.IDGS
             PlaybackStep = 0;
             LitIndex = -1;
             inputArmed = false;
-            deadline = Time.unscaledTime + delay;
+            deadline = CampusQuestGameClock.Now + delay;
             status.text = "Observa la secuencia y después repítela.";
             RefreshView();
         }
@@ -96,7 +96,7 @@ namespace CampusQuest.IDGS
             Phase = IDGSMemoryPhase.Showing;
             PlaybackStep = 0;
             LitIndex = sequence[0];
-            deadline = Time.unscaledTime + .5f;
+            deadline = CampusQuestGameClock.Now + .5f;
             RefreshView();
         }
         private void AdvancePlayback()
@@ -104,7 +104,7 @@ namespace CampusQuest.IDGS
             if (LitIndex >= 0)
             {
                 LitIndex = -1;
-                deadline = Time.unscaledTime + .22f;
+                deadline = CampusQuestGameClock.Now + .22f;
             }
             else
             {
@@ -118,7 +118,7 @@ namespace CampusQuest.IDGS
                 else
                 {
                     LitIndex = sequence[PlaybackStep];
-                    deadline = Time.unscaledTime + .5f;
+                    deadline = CampusQuestGameClock.Now + .5f;
                 }
             }
             RefreshView();
@@ -130,12 +130,12 @@ namespace CampusQuest.IDGS
             if (!CanAcceptInput || index < 0 || index >= 4 || lastInputFrame == Time.frameCount) return false;
             lastInputFrame = Time.frameCount;
             LitIndex = index;
-            litUntil = Time.unscaledTime + .18f;
+            litUntil = CampusQuestGameClock.Now + .18f;
             if (index != sequence[InputIndex])
             {
                 InputIndex = 0;
                 Phase = IDGSMemoryPhase.Retry;
-                deadline = Time.unscaledTime + .9f;
+                deadline = CampusQuestGameClock.Now + .9f;
                 status.text = "Inténtalo de nuevo. Repetimos esta ronda.";
             }
             else
@@ -147,7 +147,7 @@ namespace CampusQuest.IDGS
                     else
                     {
                         Phase = IDGSMemoryPhase.RoundPassed;
-                        deadline = Time.unscaledTime + .65f;
+                        deadline = CampusQuestGameClock.Now + .65f;
                         status.text = "¡Bien! Ronda completada.";
                     }
                 }
@@ -170,7 +170,7 @@ namespace CampusQuest.IDGS
                 return;
             }
             Phase = IDGSMemoryPhase.Solved;
-            solvedAt = Time.unscaledTime;
+            solvedAt = CampusQuestGameClock.Now;
             status.text = "¡Secuencia restaurada!";
             finishLabel.text = "VOLVER A DOCENCIA";
         }
@@ -182,8 +182,9 @@ namespace CampusQuest.IDGS
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
-            float now = Time.unscaledTime;
+            float now = CampusQuestGameClock.Now;
             if (Phase == IDGSMemoryPhase.Preparing && now >= deadline) StartPlayback();
             else if (Phase == IDGSMemoryPhase.Showing && now >= deadline) AdvancePlayback();
             else if (Phase == IDGSMemoryPhase.RoundPassed && now >= deadline) { Round++; PrepareRound(.45f); }
@@ -228,8 +229,8 @@ namespace CampusQuest.IDGS
             else if (Phase == IDGSMemoryPhase.Retry) phaseLabel.text = "OTRA VEZ";
             else if (Phase == IDGSMemoryPhase.RoundPassed) phaseLabel.text = "¡CORRECTO!";
             else phaseLabel.text = IsSolved ? "¡COMPLETADO!" : "GUARDANDO";
-            float glow = IsSolved && Time.unscaledTime - solvedAt < .8f
-                ? Mathf.PingPong((Time.unscaledTime - solvedAt) * 6, 1) : 0;
+            float glow = IsSolved && CampusQuestGameClock.Now - solvedAt < .8f
+                ? Mathf.PingPong((CampusQuestGameClock.Now - solvedAt) * 6, 1) : 0;
             for (int i = 0; i < 4; i++)
             {
                 bool lit = LitIndex == i;

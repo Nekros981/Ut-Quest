@@ -27,14 +27,14 @@ al abrir cualquier actividad. Cuenta directamente estos eventos:
 | Memoria | idgs.docencia.memoria |
 | Archivos | idgs.cmd.archivos |
 | Servidor | idgs.cmd.servidor |
-| Virus (reservado) | idgs.cmd.virus.completed |
+| Virus | idgs.cmd.virus |
 
 No guarda un contador independiente. GameProgress.Changed refresca texto e
 indicadores; al cargar se calcula nuevamente. Los eventos antiguos de prueba
 como idgs.cmd.files.completed se conservan, pero no cuentan como el nuevo
 acierto. Servidor usa su identificador definitivo idgs.cmd.servidor; el
 identificador reservado anterior tampoco se convierte en una victoria.
-Virus conserva su identificador previsto. Este cambio no otorga todavía el sello.
+Virus usa idgs.cmd.virus. Este cambio no otorga todavía el sello.
 
 IDGSFilesValidation usa el perfil aislado respaldado por IDGSInteriorValidation,
 mouse/teclado reales del Input System y la ruta EventSystem de arrastre. Prueba

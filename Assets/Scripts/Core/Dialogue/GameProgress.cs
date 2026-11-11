@@ -75,6 +75,23 @@ namespace CampusQuest.Dialogue
             return Commit(next, playerName);
         }
 
+        /// <summary>Commits related completion events together using the same save and backup.</summary>
+        public static bool RegisterEvents(params string[] ids)
+        {
+            if (ids == null || !EnsureLoaded()) return false;
+            var next = new HashSet<string>(completedIds, StringComparer.Ordinal);
+            foreach (string id in ids) if (!string.IsNullOrWhiteSpace(id)) next.Add(id);
+            return !next.SetEquals(completedIds) && Commit(next, playerName);
+        }
+
+        public static bool ResetLevel(string level)
+        {
+            if ((level != "rectoria" && level != "idgs" && level != "sp") || !EnsureLoaded()) return false;
+            var next = new HashSet<string>(completedIds, StringComparer.Ordinal);
+            next.RemoveWhere(id => id.StartsWith(level + ".", StringComparison.Ordinal));
+            return Commit(next, playerName);
+        }
+
         public static string[] CaptureCompletedIds()
         {
             EnsureLoaded();

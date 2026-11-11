@@ -144,7 +144,7 @@ namespace CampusQuest.IDGS
                 return;
             }
             IsSolved = true;
-            restoredAt = Time.unscaledTime;
+            restoredAt = CampusQuestGameClock.Now;
             status.text = "¡Conexión restablecida!";
             finishLabel.text = "VOLVER A DOCENCIA";
             completionState.text = RewardGrantedThisRun ? "ACTIVIDAD COMPLETADA" : "REPETICIÓN COMPLETADA";
@@ -158,17 +158,18 @@ namespace CampusQuest.IDGS
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
             if (IsSolved)
             {
-                float elapsed = Time.unscaledTime - restoredAt;
+                float elapsed = CampusQuestGameClock.Now - restoredAt;
                 Electricity = elapsed < .8f ? Mathf.PingPong(elapsed * 7, 1) : 0;
                 wires.SetVerticesDirty();
             }
             if (Time.frameCount == modal.OpenedFrame) return;
             var keyboard = UnityEngine.InputSystem.Keyboard.current;
             if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame) Close();
-            else if (IsSolved && Time.unscaledTime - restoredAt > .8f && DialogueSession.ConfirmPressedThisFrame()) Close();
+            else if (IsSolved && CampusQuestGameClock.Now - restoredAt > .8f && DialogueSession.ConfirmPressedThisFrame()) Close();
         }
 
         private void RefreshBoard()

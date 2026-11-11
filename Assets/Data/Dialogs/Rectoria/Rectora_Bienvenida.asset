@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
   dialogueId: rectoria.rector_welcome
   defaultSpeaker: Rectora
-  defaultPortrait: {fileID: 0}
+  defaultPortrait: {fileID: 434378145, guid: 5411a148823d9844293dfadbefb651cb, type: 3}
   lines:
   - speaker: 
     portrait: {fileID: 0}

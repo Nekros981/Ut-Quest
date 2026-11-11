@@ -60,7 +60,7 @@ namespace CampusQuest.IDGS
                 if (point.onInteracted.GetPersistentEventCount() == 0)
                 {
                     if (notice != null) notice.text = point.displayName + " · Próximamente";
-                    noticeUntil = Time.unscaledTime + 2;
+                    noticeUntil = CampusQuestGameClock.Now + 2;
                 }
                 point.onInteracted.Invoke();
             }
@@ -70,6 +70,7 @@ namespace CampusQuest.IDGS
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             var point = AvailablePoint();
             if (prompt != null)
             {
@@ -78,7 +79,7 @@ namespace CampusQuest.IDGS
             }
 
             var walkHint = WalkControlsHint();
-            if (notice != null && Time.unscaledTime > noticeUntil && walkHint != lastWalkHint)
+            if (notice != null && CampusQuestGameClock.Now > noticeUntil && walkHint != lastWalkHint)
             {
                 notice.text = walkHint;
                 lastWalkHint = walkHint;

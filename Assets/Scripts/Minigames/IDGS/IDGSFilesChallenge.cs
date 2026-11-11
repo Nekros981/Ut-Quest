@@ -89,7 +89,7 @@ namespace CampusQuest.IDGS
             }
             else
             {
-                wrongFolder = folder; feedbackUntil = Time.unscaledTime + 1.2f;
+                wrongFolder = folder; feedbackUntil = CampusQuestGameClock.Now + 1.2f;
                 Status.text = folder < 0 ? "Suelta el archivo dentro de una carpeta." : "Esa carpeta no corresponde. Inténtalo de nuevo.";
             }
             RefreshBoard();
@@ -105,7 +105,7 @@ namespace CampusQuest.IDGS
                 Status.text = "No se pudo guardar. Puedes reintentar.";
                 finishLabel.text = "REINTENTAR GUARDADO"; return;
             }
-            IsSolved = true; solvedAt = Time.unscaledTime; Status.text = "¡Archivos organizados!";
+            IsSolved = true; solvedAt = CampusQuestGameClock.Now; Status.text = "¡Archivos organizados!";
             completion.text = RewardGrantedThisRun ? "SISTEMA RESTAURADO" : "REPETICIÓN COMPLETADA";
             finishLabel.text = "VOLVER AL CMD";
         }
@@ -117,18 +117,19 @@ namespace CampusQuest.IDGS
         }
         void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
-            if (wrongFolder >= 0 && Time.unscaledTime > feedbackUntil) { wrongFolder = -1; RefreshBoard(); }
-            if (IsSolved && Time.unscaledTime - solvedAt < 1) RefreshBoard();
+            if (wrongFolder >= 0 && CampusQuestGameClock.Now > feedbackUntil) { wrongFolder = -1; RefreshBoard(); }
+            if (IsSolved && CampusQuestGameClock.Now - solvedAt < 1) RefreshBoard();
             if (Time.frameCount == modal.OpenedFrame) return;
             var k = UnityEngine.InputSystem.Keyboard.current;
             if (k != null && k.escapeKey.wasPressedThisFrame) Close();
-            else if (IsSolved && Time.unscaledTime - solvedAt > 1 && DialogueSession.ConfirmPressedThisFrame()) Close();
+            else if (IsSolved && CampusQuestGameClock.Now - solvedAt > 1 && DialogueSession.ConfirmPressedThisFrame()) Close();
         }
         void RefreshBoard()
         {
             counter.text = "ARCHIVOS CLASIFICADOS " + SortedCount + "/6";
-            float pulse = IsSolved && Time.unscaledTime - solvedAt < .9f ? Mathf.PingPong((Time.unscaledTime - solvedAt) * 5, 1) : 0;
+            float pulse = IsSolved && CampusQuestGameClock.Now - solvedAt < .9f ? Mathf.PingPong((CampusQuestGameClock.Now - solvedAt) * 5, 1) : 0;
             for (int i = 0; i < 3; i++)
             {
                 folderCounts[i].text = (sorted[i * 2] ? 1 : 0) + (sorted[i * 2 + 1] ? 1 : 0) + "/2";

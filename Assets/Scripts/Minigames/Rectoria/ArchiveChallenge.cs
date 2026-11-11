@@ -22,6 +22,7 @@ namespace CampusQuest.Rectoria
         public DialogueDefinition missingCluesDialogue;
         public DialogueDefinition readyDialogue;
         public DialogueDefinition missingTableDialogue;
+        public DialogueDefinition successDialogue;
         public GameObject panel;
         public TMP_Text statusLabel;
         public TMP_Text instructionsLabel;
@@ -177,10 +178,11 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
             if (RewardGrantedThisRun && rewardBanner != null)
             {
-                rewardTime += Time.unscaledDeltaTime;
+                rewardTime += CampusQuestGameClock.Delta;
                 rewardBanner.localScale = Vector3.one * (1f + .04f * Mathf.Sin(Mathf.Min(1, rewardTime / .6f) * Mathf.PI));
             }
             if (lastInputFrame == Time.frameCount) return;
@@ -239,12 +241,14 @@ namespace CampusQuest.Rectoria
         public void Close()
         {
             if (!IsOpen) return;
+            bool speak = IsSolved && RewardGrantedThisRun && isActiveAndEnabled;
             IsOpen = false; lastInputFrame = Time.frameCount;
             if (panel != null) panel.SetActive(false);
             if (rewardBanner != null) { rewardBanner.gameObject.SetActive(false); rewardBanner.localScale = Vector3.one; }
             foreach (var state in behaviours) if (state.Key != null) state.Key.enabled = state.Value;
             foreach (var state in objects) if (state.Key != null) state.Key.SetActive(state.Value);
             behaviours.Clear(); objects.Clear();
+            if (speak && successDialogue != null && session != null) session.TryBegin(successDialogue);
         }
         public bool ConsumedInputThisFrame => lastInputFrame == Time.frameCount;
     }

@@ -15,6 +15,7 @@ namespace CampusQuest.Dialogue
         public TMP_Text continueHint;
         public GameObject promptRoot;
         public Image portraitImage;
+        [System.NonSerialized] public System.Func<string> nextStepHint;
 
         bool dialogueVisible;
 
@@ -61,14 +62,21 @@ namespace CampusQuest.Dialogue
 
         public void ShowLine(string speaker, string text, Sprite portrait, int page, int total)
         {
+            if (page == total && nextStepHint != null)
+            {
+                string hint = nextStepHint();
+                if (!string.IsNullOrEmpty(hint)) text += "\n\nSiguiente paso: " + hint;
+            }
             speakerLabel.richText = false; speakerLabel.text = speaker;
             bodyLabel.richText = false; bodyLabel.text = text;
+            bodyLabel.enableAutoSizing = true;
+            bodyLabel.fontSizeMin = 18;
+            bodyLabel.fontSizeMax = 26;
             if (pageLabel != null) pageLabel.text = page + " / " + total;
-            if (portraitImage != null) { portraitImage.sprite = portrait; portraitImage.enabled = portrait != null; }
+            if (portraitImage != null) { portraitImage.sprite = portrait; portraitImage.enabled = portrait != null; portraitImage.preserveAspect = true; }
             if (portraitPlaceholder != null)
             {
-                portraitPlaceholder.text = "RETRATO\nPROVISIONAL";
-                portraitPlaceholder.gameObject.SetActive(portrait == null);
+                portraitPlaceholder.gameObject.SetActive(false);
             }
 
             RefreshContinueHint();

@@ -73,6 +73,7 @@ public sealed class CampusQuestBossExplosion : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         if (explosionFrames == null || explosionFrames.Length == 0)
         {
             Destroy(gameObject);

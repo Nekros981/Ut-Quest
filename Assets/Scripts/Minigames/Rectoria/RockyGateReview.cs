@@ -123,12 +123,13 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpening)
             {
                 TryDepartForSp();
                 return;
             }
-            elapsed += Time.unscaledDeltaTime;
+            elapsed += CampusQuestGameClock.Delta;
             for (int i = 0; i < 3; i++)
             {
                 float t = Mathf.Clamp01((elapsed - i * .45f) / .4f);

@@ -126,10 +126,11 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsOpen) return;
             if (IsSolved && RewardGrantedThisRun)
             {
-                stampSeconds += Time.unscaledDeltaTime;
+                stampSeconds += CampusQuestGameClock.Delta;
                 float t = Mathf.Clamp01(stampSeconds / .28f);
                 stamp.localScale = Vector3.one * Mathf.Lerp(1.4f, 1, t);
                 stamp.anchoredPosition = new Vector2(300, -159 + (1 - t) * 26);

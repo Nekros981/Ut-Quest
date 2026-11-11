@@ -95,6 +95,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         if (visual == null || mateo == null)
             return;
 

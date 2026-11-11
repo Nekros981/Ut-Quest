@@ -49,6 +49,7 @@ namespace CampusQuest.Dialogue
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (IsOpen && ConfirmPressedThisFrame()) Advance();
         }
 

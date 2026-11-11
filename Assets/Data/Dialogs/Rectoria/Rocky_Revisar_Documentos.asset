@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
   dialogueId: rectoria.rocky.review_dialogue
   defaultSpeaker: Guardia Rocky
-  defaultPortrait: {fileID: -1322469957008288497, guid: 53cd3e634a2de76439f1f4ed75e40d99, type: 3}
+  defaultPortrait: {fileID: -1373019789, guid: 53cd3e634a2de76439f1f4ed75e40d99, type: 3}
   lines:
   - speaker: 
     portrait: {fileID: 0}

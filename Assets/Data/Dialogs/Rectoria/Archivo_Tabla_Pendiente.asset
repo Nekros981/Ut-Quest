@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
   dialogueId: rectoria.archive.table_pending
   defaultSpeaker: Don Chuy
-  defaultPortrait: {fileID: 4307720178204934134, guid: 4b438f418061f0d4990d2746af888cbc, type: 3}
+  defaultPortrait: {fileID: -2045802525, guid: 4b438f418061f0d4990d2746af888cbc, type: 3}
   lines:
   - speaker: 
     portrait: {fileID: 0}

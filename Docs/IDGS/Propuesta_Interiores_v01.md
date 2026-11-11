@@ -172,7 +172,7 @@ registro compartido, con `idgs.*` para diferenciarlos de `rectoria.*`.
 | Memoria | `idgs.docencia.memoria` |
 | Archivos | `idgs.cmd.archivos` |
 | Servidor | `idgs.cmd.servidor` |
-| Virus | `idgs.cmd.virus.completed` |
+| Virus | `idgs.cmd.virus` |
 | Sello | `idgs.seal.awarded` |
 | Nivel completado | `idgs.level.completed` |
 

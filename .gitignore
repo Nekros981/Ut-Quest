@@ -121,3 +121,6 @@ Assets/Plugins/NuGet/
 
 # Unity MCP regenerates Cursor skills from the editor
 .cursor/skills/
+
+# Custom ignores
+/CampusQuest_Beta_Windows/

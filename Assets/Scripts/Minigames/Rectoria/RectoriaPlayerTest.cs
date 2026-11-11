@@ -55,6 +55,7 @@ namespace CampusQuest.Rectoria
 
         void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (moving || map == null)
                 return;
 

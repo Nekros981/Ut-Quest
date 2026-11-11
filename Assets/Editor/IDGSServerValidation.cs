@@ -101,7 +101,9 @@ namespace CampusQuest.EditorTools
         static IEnumerable<object> Click(RectTransform rect, Canvas canvas)
         {
             Canvas.ForceUpdateCanvases(); Vector2 p = Screen(rect, canvas);
-            Pointer(p, false); yield return null; Pointer(p, true); yield return null; Pointer(p, false); yield return null; yield return null;
+            Pointer(p, false); yield return null; yield return null;
+            Pointer(p, true); yield return null; yield return null;
+            Pointer(p, false); yield return null; yield return null; yield return null;
         }
         static IEnumerable<object> Drag(RectTransform from, RectTransform to, Canvas canvas)
         {
@@ -238,6 +240,7 @@ namespace CampusQuest.EditorTools
                     int color = memory.SequenceStepForValidation(i);
                     if (i % 2 == 0) foreach (var s in Press(new[] { Key.Digit1, Key.Digit2, Key.Digit3, Key.Digit4 }[color])) yield return s;
                     else foreach (var s in Click(memory.pads[color].GetComponent<RectTransform>(), memory.canvas)) yield return s;
+                    Check(memory.InputIndex == i + 1, "Memory receives each expected keyboard/mouse answer " + (i + 1) + " in round " + round);
                 }
                 Check(round == 5 ? memory.IsSolved : memory.Phase == IDGSMemoryPhase.RoundPassed, "Memory accepts round " + round + " with real keyboard and mouse");
             }

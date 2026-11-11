@@ -63,14 +63,7 @@ namespace CampusQuest.Rectoria
 
         public static void ClearSavedProgress()
         {
-            PlayerPrefs.DeleteKey(SaveKey);
-            PlayerPrefs.Save();
-        }
-
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        static void ClearSavedProgressOnPlay()
-        {
-            ClearSavedProgress();
+            GameProgress.ResetLevel("rectoria");
         }
 
         private void Awake()

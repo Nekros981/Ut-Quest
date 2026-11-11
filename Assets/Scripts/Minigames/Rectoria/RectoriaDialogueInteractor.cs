@@ -66,6 +66,7 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (session == null || session.view == null) return;
             if (DialogueSession.IsAnyOpen) { session.view.SetPrompt(string.Empty); return; }
             var point = AvailableSpeaker();

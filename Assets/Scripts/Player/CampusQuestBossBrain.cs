@@ -113,6 +113,7 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
 
     void Update()
     {
+            if (CampusQuestPauseMenu.BlocksInput) return;
         if (visual == null || mateo == null || visual.IsDefeated)
         {
             body.linearVelocity = Vector2.zero;

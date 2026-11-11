@@ -20,11 +20,17 @@ namespace CampusQuest.IDGS
             pendingScene = null;
         }
 
+        public static void ClearPending() { IsChanging = false; pendingScene = null; }
+
         public static bool TryTravel(IDGSInteractionPoint portal)
         {
             if (!Application.isPlaying || IsChanging || portal == null || string.IsNullOrEmpty(portal.destinationScene)
                 || !Application.CanStreamedLevelBeLoaded(portal.destinationScene)) return false;
             GameProgress.EnsureLoaded();
+            if (portal.pointId == "idgs.cmd.exit" && IDGSCompletion.AllActivitiesCompleted && !GameProgress.HasEvent(IDGSCompletion.SealEvent))
+            {
+                if (!GameProgress.HasEvent(IDGSCompletion.RequestEvent) && !GameProgress.RegisterEvent(IDGSCompletion.RequestEvent)) return false;
+            }
             pendingScene = portal.destinationScene;
             pendingCell = portal.destinationCell;
             pendingFacing = portal.destinationFacing;

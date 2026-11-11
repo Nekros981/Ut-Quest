@@ -1,0 +1,2405 @@
+fileFormatVersion: 2
+guid: 35e191244bfaac548a1d855bd5649428
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3833895849690059128
+    second: flechas_0
+  - first:
+      213: 8180256446945823853
+    second: flechas_1
+  - first:
+      213: -1669216093427929785
+    second: flechas_2
+  - first:
+      213: -7950089591994213770
+    second: flechas_3
+  - first:
+      213: 9213760595360568169
+    second: flechas_4
+  - first:
+      213: 7555188529241886854
+    second: flechas_5
+  - first:
+      213: -8287900770676031808
+    second: flechas_6
+  - first:
+      213: 6386678152801872821
+    second: flechas_7
+  - first:
+      213: 4275677870178583146
+    second: flechas_8
+  - first:
+      213: -3289233045178678195
+    second: flechas_9
+  - first:
+      213: -5850976173866928056
+    second: flechas_10
+  - first:
+      213: 1187141067200783045
+    second: flechas_11
+  - first:
+      213: -911216361025404720
+    second: flechas_12
+  - first:
+      213: -7171029084373749266
+    second: flechas_13
+  - first:
+      213: -2193094952152269979
+    second: flechas_14
+  - first:
+      213: 5912111474714812831
+    second: flechas_15
+  - first:
+      213: -2810343627878868875
+    second: flechas_16
+  - first:
+      213: -6687040612697261520
+    second: flechas_17
+  - first:
+      213: 3450216623944188734
+    second: flechas_18
+  - first:
+      213: -2348328902400293534
+    second: flechas_19
+  - first:
+      213: -7125230551515760511
+    second: flechas_20
+  - first:
+      213: 7424158714383744441
+    second: flechas_21
+  - first:
+      213: -3977019961921085643
+    second: flechas_22
+  - first:
+      213: -7571414088708721392
+    second: flechas_23
+  - first:
+      213: -3138442623642476711
+    second: flechas_24
+  - first:
+      213: -8190529482175453086
+    second: flechas_25
+  - first:
+      213: -5025418645271716842
+    second: flechas_26
+  - first:
+      213: -6754833845253083417
+    second: flechas_27
+  - first:
+      213: -1242367808436893234
+    second: flechas_28
+  - first:
+      213: -4403347710706408753
+    second: flechas_29
+  - first:
+      213: -5496838153622148825
+    second: flechas_30
+  - first:
+      213: -4169297323026619760
+    second: flechas_31
+  - first:
+      213: 8646868420848393385
+    second: flechas_32
+  - first:
+      213: -6157894599910111067
+    second: flechas_33
+  - first:
+      213: 3343454723548957435
+    second: flechas_34
+  - first:
+      213: 6996557627284760889
+    second: flechas_35
+  - first:
+      213: -8637595134638630533
+    second: flechas_36
+  - first:
+      213: 4231758483387606433
+    second: flechas_37
+  - first:
+      213: 469891460956450924
+    second: flechas_38
+  - first:
+      213: 3549232646110999483
+    second: flechas_39
+  - first:
+      213: 119632114158678225
+    second: flechas_40
+  - first:
+      213: -2833134652369621192
+    second: flechas_41
+  - first:
+      213: -4162811722916694187
+    second: flechas_42
+  - first:
+      213: 9178823170921505566
+    second: flechas_43
+  - first:
+      213: 1593248595751907799
+    second: flechas_44
+  - first:
+      213: 726078123168187041
+    second: flechas_45
+  - first:
+      213: 8650193878090355562
+    second: flechas_46
+  - first:
+      213: 8174150873585889826
+    second: flechas_47
+  - first:
+      213: -2397950526375616464
+    second: flechas_48
+  - first:
+      213: -2238513976932330083
+    second: flechas_49
+  - first:
+      213: 512485722483384047
+    second: flechas_50
+  - first:
+      213: -5574364557083756259
+    second: flechas_51
+  - first:
+      213: -6440407094822272881
+    second: flechas_52
+  - first:
+      213: 1451540861625718075
+    second: flechas_53
+  - first:
+      213: -3998677478830175337
+    second: flechas_54
+  - first:
+      213: 1811295009773375549
+    second: flechas_55
+  - first:
+      213: 3078103443694911162
+    second: flechas_56
+  - first:
+      213: 569007748469498159
+    second: flechas_57
+  - first:
+      213: -115197679638814879
+    second: flechas_58
+  - first:
+      213: -5254437426297789681
+    second: flechas_59
+  - first:
+      213: -6610642348704065975
+    second: flechas_60
+  - first:
+      213: -6405284339888995157
+    second: flechas_61
+  - first:
+      213: -5130562563391330781
+    second: flechas_62
+  - first:
+      213: 8263611402826894145
+    second: flechas_63
+  - first:
+      213: -1443631532712234540
+    second: flechas_64
+  - first:
+      213: -2675141048531276350
+    second: flechas_65
+  - first:
+      213: -992150073697835235
+    second: flechas_66
+  - first:
+      213: -2601216417560573545
+    second: flechas_67
+  - first:
+      213: 6408572090998392616
+    second: flechas_68
+  - first:
+      213: -7434153299483834095
+    second: flechas_69
+  - first:
+      213: 2137010797627548007
+    second: flechas_70
+  - first:
+      213: 6248515314821761143
+    second: flechas_71
+  - first:
+      213: -50569264685803991
+    second: flechas_72
+  - first:
+      213: -4512320937382491470
+    second: flechas_73
+  - first:
+      213: -1946201519533533494
+    second: flechas_74
+  - first:
+      213: -4866815335978037409
+    second: flechas_75
+  - first:
+      213: 249505881916415035
+    second: flechas_76
+  - first:
+      213: 8748212800849050965
+    second: flechas_77
+  - first:
+      213: 3898199443627832405
+    second: flechas_78
+  - first:
+      213: 936220934148989453
+    second: flechas_79
+  - first:
+      213: -739357774806393746
+    second: flechas_80
+  - first:
+      213: 5175056636550125005
+    second: flechas_81
+  - first:
+      213: -1001432894864003347
+    second: flechas_82
+  - first:
+      213: 2643584221045685159
+    second: flechas_83
+  - first:
+      213: 1654122206179155692
+    second: flechas_84
+  - first:
+      213: 7452204254382880864
+    second: flechas_85
+  - first:
+      213: -6221232354529399664
+    second: flechas_86
+  - first:
+      213: 7258238757278158039
+    second: flechas_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flechas_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 229
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871de9266fbb43530800000000000000
+      internalID: 3833895849690059128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 228
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c0ecbc5eb168170800000000000000
+      internalID: 8180256446945823853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 228
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74decd19ec0c5d8e0800000000000000
+      internalID: -1669216093427929785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a97a033ab9ba190800000000000000
+      internalID: -7950089591994213770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 229
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96355f3e17adddf70800000000000000
+      internalID: 9213760595360568169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 228
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680919030fb69d860800000000000000
+      internalID: 7555188529241886854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 229
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce3b2609267bfc80800000000000000
+      internalID: -8287900770676031808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 228
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbe08021f902a850800000000000000
+      internalID: 6386678152801872821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 196
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a624ef19e52465b30800000000000000
+      internalID: 4275677870178583146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 196
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4406a6f8fb4a52d0800000000000000
+      internalID: -3289233045178678195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 196
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848336f6b282dcea0800000000000000
+      internalID: -5850976173866928056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 197
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2e7c8c282997010800000000000000
+      internalID: 1187141067200783045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 196
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d08e872c85ba53f0800000000000000
+      internalID: -911216361025404720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 196
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee178ef9a036b7c90800000000000000
+      internalID: -7171029084373749266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_14
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 199
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bf242b2cf8091e0800000000000000
+      internalID: -2193094952152269979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 199
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9123e2001a0c0250800000000000000
+      internalID: 5912111474714812831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5785f7b3c57aff8d0800000000000000
+      internalID: -2810343627878868875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ab1910efbd233a0800000000000000
+      internalID: -6687040612697261520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33475c4db1a1ef20800000000000000
+      internalID: 3450216623944188734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 166
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265c5a42e4f096fd0800000000000000
+      internalID: -2348328902400293534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 166
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188742280981e1d90800000000000000
+      internalID: -7125230551515760511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 166
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdb6fe0409e70760800000000000000
+      internalID: 7424158714383744441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f5e017a69cec8c0800000000000000
+      internalID: -3977019961921085643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 169
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015f02b500fece690800000000000000
+      internalID: -7571414088708721392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_24
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 168
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f58dddf030274d0800000000000000
+      internalID: -3138442623642476711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_25
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 168
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268619cc4d4655e80800000000000000
+      internalID: -8190529482175453086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 168
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c54f03e50224ab0800000000000000
+      internalID: -5025418645271716842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_27
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 168
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee67e808620242a0800000000000000
+      internalID: -6754833845253083417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_28
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 168
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec90db18f0932cee0800000000000000
+      internalID: -1242367808436893234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 168
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2a0d8469a24e2c0800000000000000
+      internalID: -4403347710706408753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_30
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 166
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729a981a2de47b3b0800000000000000
+      internalID: -5496838153622148825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_31
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 166
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092e202bc2ea326c0800000000000000
+      internalID: -4169297323026619760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 168
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac16340409dff770800000000000000
+      internalID: 8646868420848393385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_33
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 166
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8cf00cc73ca8aa0800000000000000
+      internalID: -6157894599910111067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_34
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaccbf4b56566e20800000000000000
+      internalID: 3343454723548957435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_35
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 168
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939abd8b714c81160800000000000000
+      internalID: 6996557627284760889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 168
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79d83e2df8112880800000000000000
+      internalID: -8637595134638630533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 135
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a560997be93aba30800000000000000
+      internalID: 4231758483387606433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 140
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c607c4d4bc3658600800000000000000
+      internalID: 469891460956450924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 135
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb37aa87948614130800000000000000
+      internalID: 3549232646110999483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_40
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 135
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0382426c409a100800000000000000
+      internalID: 119632114158678225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 134
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fa8a45b0faea8d0800000000000000
+      internalID: -2833134652369621192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 134
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557f7b42bc8ba36c0800000000000000
+      internalID: -4162811722916694187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 134
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13a6eeda0bb16f70800000000000000
+      internalID: 9178823170921505566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_44
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 134
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1beac082b5c1610800000000000000
+      internalID: 1593248595751907799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_45
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 134
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a24f92c43c831a00800000000000000
+      internalID: 726078123168187041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_46
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 97
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6395dd5089ab0870800000000000000
+      internalID: 8650193878090355562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222398839ea607170800000000000000
+      internalID: 8174150873585889826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030ab6e73b4c8bed0800000000000000
+      internalID: -2397950526375616464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95933ce5633fe0e0800000000000000
+      internalID: -2238513976932330083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 97
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed411ac07bc1700800000000000000
+      internalID: 512485722483384047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 98
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19be7638f0e3a2b0800000000000000
+      internalID: -5574364557083756259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_52
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 99
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f808638bed31f96a0800000000000000
+      internalID: -6440407094822272881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_53
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 97
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b355a2a19b8e42410800000000000000
+      internalID: 1451540861625718075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 70
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b09f6d408d188c0800000000000000
+      internalID: -3998677478830175337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 70
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30daf8f633032910800000000000000
+      internalID: 1811295009773375549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_56
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe775706ce97ba20800000000000000
+      internalID: 3078103443694911162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_57
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 68
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2128f1588585e700800000000000000
+      internalID: 569007748469498159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_58
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 67
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fdd2a125cb66ef0800000000000000
+      internalID: -115197679638814879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 68
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03a00ffffc7417b0800000000000000
+      internalID: -5254437426297789681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_60
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 68
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946175cfec74244a0800000000000000
+      internalID: -6610642348704065975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_61
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 70
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba44b8b54dbdb17a0800000000000000
+      internalID: -6405284339888995157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_62
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 70
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326642f08849cc8b0800000000000000
+      internalID: -5130562563391330781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_63
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 75
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b4d53d9ce3ea270800000000000000
+      internalID: 8263611402826894145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 75
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1722a05c037fbe0800000000000000
+      internalID: -1443631532712234540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_65
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 70
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd2a3ec36dffdad0800000000000000
+      internalID: -2675141048531276350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 71
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17ec5db3cc2b32f0800000000000000
+      internalID: -992150073697835235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_67
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 41
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7994367337f96ebd0800000000000000
+      internalID: -2601216417560573545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_68
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 37
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8270179dc52dfe850800000000000000
+      internalID: 6408572090998392616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_69
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 41
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119c77246f494d890800000000000000
+      internalID: -7434153299483834095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_70
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 37
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761a3c18fff28ad10800000000000000
+      internalID: 2137010797627548007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_71
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 39
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7780a81a29f27b650800000000000000
+      internalID: 6248515314821761143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_72
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 37
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92699dd85875c4ff0800000000000000
+      internalID: -50569264685803991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_73
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 37
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba42c6c3040161c0800000000000000
+      internalID: -4512320937382491470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_74
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 36
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6d0e68704bdf4e0800000000000000
+      internalID: -1946201519533533494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_75
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f0b97cc39957cb0800000000000000
+      internalID: -4866815335978037409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_76
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 5
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c9ff4174c667300800000000000000
+      internalID: 249505881916415035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_77
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55df12e3135e76970800000000000000
+      internalID: 8748212800849050965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_78
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554ff0d8dbf291630800000000000000
+      internalID: 3898199443627832405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_79
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d022c33baff1efc00800000000000000
+      internalID: 936220934148989453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_80
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 10
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cddb665064db5f0800000000000000
+      internalID: -739357774806393746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_81
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc51912a79e71d740800000000000000
+      internalID: 5175056636550125005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_82
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee6d3386123a12f0800000000000000
+      internalID: -1001432894864003347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_83
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 8
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab714db7d5efa420800000000000000
+      internalID: 2643584221045685159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_84
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 4
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceed462f16f94f610800000000000000
+      internalID: 1654122206179155692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_85
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 5
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0687520394c8b6760800000000000000
+      internalID: 7452204254382880864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cab13922eb9a9a0800000000000000
+      internalID: -6221232354529399664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flechas_87
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc8986a1b17ab460800000000000000
+      internalID: 7258238757278158039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flechas_0: 3833895849690059128
+      flechas_1: 8180256446945823853
+      flechas_10: -5850976173866928056
+      flechas_11: 1187141067200783045
+      flechas_12: -911216361025404720
+      flechas_13: -7171029084373749266
+      flechas_14: -2193094952152269979
+      flechas_15: 5912111474714812831
+      flechas_16: -2810343627878868875
+      flechas_17: -6687040612697261520
+      flechas_18: 3450216623944188734
+      flechas_19: -2348328902400293534
+      flechas_2: -1669216093427929785
+      flechas_20: -7125230551515760511
+      flechas_21: 7424158714383744441
+      flechas_22: -3977019961921085643
+      flechas_23: -7571414088708721392
+      flechas_24: -3138442623642476711
+      flechas_25: -8190529482175453086
+      flechas_26: -5025418645271716842
+      flechas_27: -6754833845253083417
+      flechas_28: -1242367808436893234
+      flechas_29: -4403347710706408753
+      flechas_3: -7950089591994213770
+      flechas_30: -5496838153622148825
+      flechas_31: -4169297323026619760
+      flechas_32: 8646868420848393385
+      flechas_33: -6157894599910111067
+      flechas_34: 3343454723548957435
+      flechas_35: 6996557627284760889
+      flechas_36: -8637595134638630533
+      flechas_37: 4231758483387606433
+      flechas_38: 469891460956450924
+      flechas_39: 3549232646110999483
+      flechas_4: 9213760595360568169
+      flechas_40: 119632114158678225
+      flechas_41: -2833134652369621192
+      flechas_42: -4162811722916694187
+      flechas_43: 9178823170921505566
+      flechas_44: 1593248595751907799
+      flechas_45: 726078123168187041
+      flechas_46: 8650193878090355562
+      flechas_47: 8174150873585889826
+      flechas_48: -2397950526375616464
+      flechas_49: -2238513976932330083
+      flechas_5: 7555188529241886854
+      flechas_50: 512485722483384047
+      flechas_51: -5574364557083756259
+      flechas_52: -6440407094822272881
+      flechas_53: 1451540861625718075
+      flechas_54: -3998677478830175337
+      flechas_55: 1811295009773375549
+      flechas_56: 3078103443694911162
+      flechas_57: 569007748469498159
+      flechas_58: -115197679638814879
+      flechas_59: -5254437426297789681
+      flechas_6: -8287900770676031808
+      flechas_60: -6610642348704065975
+      flechas_61: -6405284339888995157
+      flechas_62: -5130562563391330781
+      flechas_63: 8263611402826894145
+      flechas_64: -1443631532712234540
+      flechas_65: -2675141048531276350
+      flechas_66: -992150073697835235
+      flechas_67: -2601216417560573545
+      flechas_68: 6408572090998392616
+      flechas_69: -7434153299483834095
+      flechas_7: 6386678152801872821
+      flechas_70: 2137010797627548007
+      flechas_71: 6248515314821761143
+      flechas_72: -50569264685803991
+      flechas_73: -4512320937382491470
+      flechas_74: -1946201519533533494
+      flechas_75: -4866815335978037409
+      flechas_76: 249505881916415035
+      flechas_77: 8748212800849050965
+      flechas_78: 3898199443627832405
+      flechas_79: 936220934148989453
+      flechas_8: 4275677870178583146
+      flechas_80: -739357774806393746
+      flechas_81: 5175056636550125005
+      flechas_82: -1001432894864003347
+      flechas_83: 2643584221045685159
+      flechas_84: 1654122206179155692
+      flechas_85: 7452204254382880864
+      flechas_86: -6221232354529399664
+      flechas_87: 7258238757278158039
+      flechas_9: -3289233045178678195
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

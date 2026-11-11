@@ -110,7 +110,7 @@ namespace CampusQuest.Rectoria
                 }
                 else if (Eligible && stationary && !mustLeaveMark)
                 {
-                    StillSeconds += Time.unscaledDeltaTime;
+                    StillSeconds += CampusQuestGameClock.Delta;
                     capturePanel.SetActive(true);
                     countdownLabel.text = "FOTO · Quédate quieto\n" + Mathf.Min(1.5f, StillSeconds).ToString("0.0") + " / 1.5 s";
                     if (StillSeconds >= 1.5f) StartCapture();
@@ -124,7 +124,7 @@ namespace CampusQuest.Rectoria
             }
             else if (Stage == CredentialStage.Countdown)
             {
-                stageSeconds += Time.unscaledDeltaTime;
+                stageSeconds += CampusQuestGameClock.Delta;
                 CountdownNumber = Mathf.Clamp(3 - Mathf.FloorToInt(stageSeconds), 1, 3);
                 countdownLabel.text = "Mira a la cámara\n" + CountdownNumber;
                 if (stageSeconds >= 3)
@@ -136,7 +136,7 @@ namespace CampusQuest.Rectoria
             }
             else if (Stage == CredentialStage.Flash)
             {
-                stageSeconds += Time.unscaledDeltaTime;
+                stageSeconds += CampusQuestGameClock.Delta;
                 flash.color = new Color(1, 1, 1, 1 - Mathf.Clamp01(stageSeconds / .22f));
                 if (stageSeconds >= .22f)
                 {
@@ -147,7 +147,7 @@ namespace CampusQuest.Rectoria
             }
             else if (Stage == CredentialStage.Success && RewardGrantedThisRun)
             {
-                stageSeconds += Time.unscaledDeltaTime;
+                stageSeconds += CampusQuestGameClock.Delta;
                 rewardLabel.rectTransform.localScale = Vector3.one * (1 + .04f * Mathf.Sin(Mathf.Clamp01(stageSeconds / .6f) * Mathf.PI));
             }
             lastPosition = player.transform.position;
@@ -196,6 +196,7 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
+            if (CampusQuestPauseMenu.BlocksInput) return;
             if (!IsBusy || ConsumedInputThisFrame) return;
             if (CampusQuestActiveControls.CancelPressedThisFrame()) { Close(false); return; }
             if (Stage != CredentialStage.Puzzle && Stage != CredentialStage.Success) return;
