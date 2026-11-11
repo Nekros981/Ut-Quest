@@ -1,6 +1,6 @@
 # Exterior IDGS — propuesta para revisión
 
-Estado: distribución propuesta; no se ha construido una escena exterior.
+La primera versión jugable está en `Assets/Scenes/IDGS_Exterior.unity`.
 Referencias: plano1 (funciones y accesos) y plano2 (relaciones espaciales).
 No es un levantamiento a escala: se compactan distancias para el recorrido.
 
@@ -38,8 +38,27 @@ función o interior que todavía no conocemos.
 - El recorrido principal ronda 20–30 casillas entre entradas: unos 5–8 segundos
   caminando a 4 unidades/s, más exploración. No se atribuyen metros reales.
 
-Ver `Propuesta_Exterior_v01.svg`. La aprobación de esta distribución precede
-a cualquier construcción del exterior en Unity.
+Ver `Propuesta_Exterior_v01.svg` para el esquema de referencia.
+
+## Primera versión en Unity
+
+Abrir `IDGS_Exterior` y entrar en Play Mode. Mateo aparece frente a Docencia.
+WASD o flechas para caminar, Shift para correr y R para regresar al inicio.
+La cámara sigue a Mateo dentro de las 64 × 52 casillas. Los Tilemaps de pasto,
+rutas y estacionamiento se pueden editar por separado.
+
+Los grupos `DOCENCIA` y `CMD` tienen un volumen visual reemplazable, una huella
+de colisión y un objeto independiente de acceso con su identificador. Para
+incorporar la fachada futura, sustituir el volumen visual y ajustar la huella
+si cambia el perímetro. El acceso marca la llegada exterior para conectar los
+interiores después. El espacio suroeste queda como pasto libre.
+
+`IDGS_Superficies_32.png` deriva de las piezas F1C5, F2C1 y F8C8 de
+`tierraymas.png`. Usa sus píxeles interiores, completa las celdas opacas de
+32 × 32 y empareja los bordes opuestos. Cuatro variantes de pasto comparten
+el mismo borde. El asfalto provisional usa el concreto con un tinte oscuro.
+Los cambios de superficie siguen la cuadrícula. El PNG original y la escena
+de comparación conservan las piezas de PixelLab.
 
 ## Recursos pendientes de PixelLab
 
