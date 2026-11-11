@@ -216,6 +216,8 @@ public static class SpBunkerEntranceSetup
                 walls.SetTile(cell, palette.Wall);
             else if (y == MidDividerY && !onPath)
                 walls.SetTile(cell, palette.Wall);
+            else if (IsCellBarWall(x, y))
+                walls.SetTile(cell, palette.Wall);
             else
                 walls.SetTile(cell, null);
 
@@ -247,6 +249,15 @@ public static class SpBunkerEntranceSetup
 
     static bool IsRightCell(int x, int y) =>
         x >= CellRightMin && x <= CellRightMax && ((y >= 1 && y < MidDividerY) || (y > MidDividerY && y < MapH - 1));
+
+    static bool IsCellBarWall(int x, int y)
+    {
+        if (x != CellLeftMax + 1 && x != CellRightMin - 1)
+            return false;
+        if (y <= 0 || y >= MapH - 1 || y == MidDividerY)
+            return false;
+        return true;
+    }
 
     static void PlaceCellShadeOverlays(Transform root)
     {
@@ -332,7 +343,7 @@ public static class SpBunkerEntranceSetup
         if (flipTowardCorridor)
             go.transform.localScale = new Vector3(-1f, 1f, 1f);
         var box = go.AddComponent<BoxCollider2D>();
-        box.size = new Vector2(0.7f, 0.95f);
+        box.size = new Vector2(1f, 1f);
     }
 
     static void SpawnPointLight(Transform parent, Vector3 localPos)
