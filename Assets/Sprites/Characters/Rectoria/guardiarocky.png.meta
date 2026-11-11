@@ -1,0 +1,1804 @@
+fileFormatVersion: 2
+guid: 53cd3e634a2de76439f1f4ed75e40d99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1322469957008288497
+    second: guardiarocky_0
+  - first:
+      213: 7315273125573329723
+    second: guardiarocky_1
+  - first:
+      213: -5601989082436620699
+    second: guardiarocky_2
+  - first:
+      213: -2763467651174423534
+    second: guardiarocky_3
+  - first:
+      213: -2613284891708613843
+    second: guardiarocky_4
+  - first:
+      213: -6077408179728341776
+    second: guardiarocky_5
+  - first:
+      213: -910187472320523587
+    second: guardiarocky_6
+  - first:
+      213: -7080871362466930973
+    second: guardiarocky_7
+  - first:
+      213: 4393009097578399134
+    second: guardiarocky_8
+  - first:
+      213: -131540033898713488
+    second: guardiarocky_9
+  - first:
+      213: -68711197393096116
+    second: guardiarocky_10
+  - first:
+      213: -3224266726554873674
+    second: guardiarocky_11
+  - first:
+      213: -6458059189847604172
+    second: guardiarocky_12
+  - first:
+      213: -4498927076742468664
+    second: guardiarocky_13
+  - first:
+      213: 4579231811003305519
+    second: guardiarocky_14
+  - first:
+      213: 7267500370470924902
+    second: guardiarocky_15
+  - first:
+      213: 2922692503309669874
+    second: guardiarocky_16
+  - first:
+      213: 6791716813984823646
+    second: guardiarocky_17
+  - first:
+      213: 91003037119047896
+    second: guardiarocky_18
+  - first:
+      213: 6867977378884641469
+    second: guardiarocky_19
+  - first:
+      213: 648963656564427425
+    second: guardiarocky_20
+  - first:
+      213: 5701393040898352621
+    second: guardiarocky_21
+  - first:
+      213: -4934639244099993763
+    second: guardiarocky_22
+  - first:
+      213: -6996674966714981230
+    second: guardiarocky_23
+  - first:
+      213: -6630817760495959545
+    second: guardiarocky_24
+  - first:
+      213: -3769335199569309497
+    second: guardiarocky_25
+  - first:
+      213: 4636407113982719069
+    second: guardiarocky_26
+  - first:
+      213: 5961011008899135322
+    second: guardiarocky_27
+  - first:
+      213: 1021459884459016695
+    second: guardiarocky_28
+  - first:
+      213: -3199317469023297343
+    second: guardiarocky_29
+  - first:
+      213: 6799940298015906268
+    second: guardiarocky_30
+  - first:
+      213: -4102012516625754009
+    second: guardiarocky_31
+  - first:
+      213: 3467289720537012539
+    second: guardiarocky_32
+  - first:
+      213: -8069857431545319838
+    second: guardiarocky_33
+  - first:
+      213: -2086160944422825214
+    second: guardiarocky_34
+  - first:
+      213: 3944926304544178951
+    second: guardiarocky_35
+  - first:
+      213: -3288795727906471585
+    second: guardiarocky_36
+  - first:
+      213: 4232492054612894757
+    second: guardiarocky_37
+  - first:
+      213: 1261841664122487842
+    second: guardiarocky_38
+  - first:
+      213: 5887690692218846003
+    second: guardiarocky_39
+  - first:
+      213: -7724116608782049795
+    second: guardiarocky_40
+  - first:
+      213: 5994013993399020675
+    second: guardiarocky_41
+  - first:
+      213: -4774381801061034749
+    second: guardiarocky_42
+  - first:
+      213: -3314168655066559846
+    second: guardiarocky_43
+  - first:
+      213: -1668685558432192508
+    second: guardiarocky_44
+  - first:
+      213: -8294393772343718707
+    second: guardiarocky_45
+  - first:
+      213: 5163546104070086242
+    second: guardiarocky_46
+  - first:
+      213: 168684085816875912
+    second: guardiarocky_47
+  - first:
+      213: 291349475986523597
+    second: guardiarocky_48
+  - first:
+      213: -1854632915047513562
+    second: guardiarocky_49
+  - first:
+      213: 7806289119095948063
+    second: guardiarocky_50
+  - first:
+      213: -6962885469621280506
+    second: guardiarocky_51
+  - first:
+      213: 7205439854731432050
+    second: guardiarocky_52
+  - first:
+      213: 1729633031113510583
+    second: guardiarocky_53
+  - first:
+      213: -6527650657045793501
+    second: guardiarocky_54
+  - first:
+      213: -4653457778611919608
+    second: guardiarocky_55
+  - first:
+      213: -4596356113285516367
+    second: guardiarocky_56
+  - first:
+      213: 879331150579066610
+    second: guardiarocky_57
+  - first:
+      213: 648365209301881966
+    second: guardiarocky_58
+  - first:
+      213: 386326011879527547
+    second: guardiarocky_59
+  - first:
+      213: 3793352756783988611
+    second: guardiarocky_60
+  - first:
+      213: -8361912837977766165
+    second: guardiarocky_61
+  - first:
+      213: -6324024209295426899
+    second: guardiarocky_62
+  - first:
+      213: 3540150872315618392
+    second: guardiarocky_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guardiarocky_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f051562b494a5ade0800000000000000
+      internalID: -1322469957008288497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3382c45622158560800000000000000
+      internalID: 7315273125573329723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56eafb13c9cb142b0800000000000000
+      internalID: -5601989082436620699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214277f00d036a9d0800000000000000
+      internalID: -2763467651174423534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b10dc9c3fbbbbd0800000000000000
+      internalID: -2613284891708613843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f42d34c575b8aba0800000000000000
+      internalID: -6077408179728341776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 225
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db21359f05d5e53f0800000000000000
+      internalID: -910187472320523587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee1ceb0301bbbd90800000000000000
+      internalID: -7080871362466930973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e954834cf7a17fc30800000000000000
+      internalID: 4393009097578399134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e69bd390dac2ef0800000000000000
+      internalID: -131540033898713488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42fa4fa783eb0ff0800000000000000
+      internalID: -68711197393096116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0d59ebe7a1143d0800000000000000
+      internalID: -3224266726554873674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 193
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434cfa2126d5066a0800000000000000
+      internalID: -6458059189847604172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbe068f8a99091c0800000000000000
+      internalID: -4498927076742468664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 193
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e450ff113bc8f30800000000000000
+      internalID: 4579231811003305519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_15
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 193
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66270f205195bd460800000000000000
+      internalID: 7267500370470924902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 161
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5587fb85d7f8820800000000000000
+      internalID: 2922692503309669874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 161
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59fc905576014e50800000000000000
+      internalID: 6791716813984823646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d866f4b7ce434100800000000000000
+      internalID: 91003037119047896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 161
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db266d9b905ff4f50800000000000000
+      internalID: 6867977378884641469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 161
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa49add105910900800000000000000
+      internalID: 648963656564427425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 161
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de561af63ca6f1f40800000000000000
+      internalID: 5701393040898352621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_22
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 161
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fb7b890c3a48bb0800000000000000
+      internalID: -4934639244099993763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_23
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 161
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294e5101031d6ee90800000000000000
+      internalID: -6996674966714981230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 129
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702894fd06a9af3a0800000000000000
+      internalID: -6630817760495959545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_25
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 129
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c09b465b91a0bbc0800000000000000
+      internalID: -3769335199569309497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 129
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54b80794b3d75040800000000000000
+      internalID: 4636407113982719069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 129
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5730a70ee3c9b250800000000000000
+      internalID: 5961011008899135322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 129
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1cd7d5a54fc2e00800000000000000
+      internalID: 1021459884459016695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 129
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c02a2f66bdb993d0800000000000000
+      internalID: -3199317469023297343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 129
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd91a156cad3e5e50800000000000000
+      internalID: 6799940298015906268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_31
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 129
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768d05a7959b217c0800000000000000
+      internalID: -4102012516625754009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39d8fd51a94e1030800000000000000
+      internalID: 3467289720537012539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_33
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ee1b40c6b120090800000000000000
+      internalID: -8069857431545319838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203526b8ca77c03e0800000000000000
+      internalID: -2086160944422825214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7034377a2913fb630800000000000000
+      internalID: 3944926304544178951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_36
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f510053d5b9db52d0800000000000000
+      internalID: -3288795727906471585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5246dd55915dcba30800000000000000
+      internalID: 4232492054612894757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2240fc8de46f28110800000000000000
+      internalID: 1261841664122487842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 97
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33bf3118d7745b150800000000000000
+      internalID: 5887690692218846003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdd9d15edc6ec490800000000000000
+      internalID: -7724116608782049795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 65
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ce44728f30f2350800000000000000
+      internalID: 5994013993399020675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_42
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305daa53c0dfdbdb0800000000000000
+      internalID: -4774381801061034749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a060dda25b102d0800000000000000
+      internalID: -3314168655066559846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 65
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40823df5353a7d8e0800000000000000
+      internalID: -1668685558432192508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 65
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc8d344fc464ec80800000000000000
+      internalID: -8294393772343718707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_46
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e1372f2d998a740800000000000000
+      internalID: 5163546104070086242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_47
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 65
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b50664849475200800000000000000
+      internalID: 168684085816875912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_48
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc54ca50ec41b0400800000000000000
+      internalID: 291349475986523597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_49
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62288d5a0350346e0800000000000000
+      internalID: -1854632915047513562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_50
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 33
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1306b52892855c60800000000000000
+      internalID: 7806289119095948063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_51
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601ae7b6e8cde5f90800000000000000
+      internalID: -6962885469621280506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_52
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27095bf2f5ddef360800000000000000
+      internalID: 7205439854731432050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_53
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be8d4be314e00810800000000000000
+      internalID: 1729633031113510583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_54
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 33
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325b0f8ff402965a0800000000000000
+      internalID: -6527650657045793501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_55
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 33
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805ee803ec89b6fb0800000000000000
+      internalID: -4653457778611919608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3fb6ea7767630c0800000000000000
+      internalID: -4596356113285516367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_57
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f66336c503043c00800000000000000
+      internalID: 879331150579066610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_58
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64192109b47ff800800000000000000
+      internalID: 648365209301881966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74929106718c5500800000000000000
+      internalID: 386326011879527547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_60
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fbbd7fb32b4a430800000000000000
+      internalID: 3793352756783988611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_61
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be68e81c39484fb80800000000000000
+      internalID: -8361912837977766165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_62
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daab9fddc7d8c38a0800000000000000
+      internalID: -6324024209295426899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardiarocky_63
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85469ab3674212130800000000000000
+      internalID: 3540150872315618392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocky_Frente
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4458f62a9b2c5a428350480863e5eec
+      internalID: -1373019789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4c88a1d291e524e4fa9ce4db1d0a9658
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      guardiarocky_0: -1322469957008288497
+      guardiarocky_1: 7315273125573329723
+      guardiarocky_10: -68711197393096116
+      guardiarocky_11: -3224266726554873674
+      guardiarocky_12: -6458059189847604172
+      guardiarocky_13: -4498927076742468664
+      guardiarocky_14: 4579231811003305519
+      guardiarocky_15: 7267500370470924902
+      guardiarocky_16: 2922692503309669874
+      guardiarocky_17: 6791716813984823646
+      guardiarocky_18: 91003037119047896
+      guardiarocky_19: 6867977378884641469
+      guardiarocky_2: -5601989082436620699
+      guardiarocky_20: 648963656564427425
+      guardiarocky_21: 5701393040898352621
+      guardiarocky_22: -4934639244099993763
+      guardiarocky_23: -6996674966714981230
+      guardiarocky_24: -6630817760495959545
+      guardiarocky_25: -3769335199569309497
+      guardiarocky_26: 4636407113982719069
+      guardiarocky_27: 5961011008899135322
+      guardiarocky_28: 1021459884459016695
+      guardiarocky_29: -3199317469023297343
+      guardiarocky_3: -2763467651174423534
+      guardiarocky_30: 6799940298015906268
+      guardiarocky_31: -4102012516625754009
+      guardiarocky_32: 3467289720537012539
+      guardiarocky_33: -8069857431545319838
+      guardiarocky_34: -2086160944422825214
+      guardiarocky_35: 3944926304544178951
+      guardiarocky_36: -3288795727906471585
+      guardiarocky_37: 4232492054612894757
+      guardiarocky_38: 1261841664122487842
+      guardiarocky_39: 5887690692218846003
+      guardiarocky_4: -2613284891708613843
+      guardiarocky_40: -7724116608782049795
+      guardiarocky_41: 5994013993399020675
+      guardiarocky_42: -4774381801061034749
+      guardiarocky_43: -3314168655066559846
+      guardiarocky_44: -1668685558432192508
+      guardiarocky_45: -8294393772343718707
+      guardiarocky_46: 5163546104070086242
+      guardiarocky_47: 168684085816875912
+      guardiarocky_48: 291349475986523597
+      guardiarocky_49: -1854632915047513562
+      guardiarocky_5: -6077408179728341776
+      guardiarocky_50: 7806289119095948063
+      guardiarocky_51: -6962885469621280506
+      guardiarocky_52: 7205439854731432050
+      guardiarocky_53: 1729633031113510583
+      guardiarocky_54: -6527650657045793501
+      guardiarocky_55: -4653457778611919608
+      guardiarocky_56: -4596356113285516367
+      guardiarocky_57: 879331150579066610
+      guardiarocky_58: 648365209301881966
+      guardiarocky_59: 386326011879527547
+      guardiarocky_6: -910187472320523587
+      guardiarocky_60: 3793352756783988611
+      guardiarocky_61: -8361912837977766165
+      guardiarocky_62: -6324024209295426899
+      guardiarocky_63: 3540150872315618392
+      guardiarocky_7: -7080871362466930973
+      guardiarocky_8: 4393009097578399134
+      guardiarocky_9: -131540033898713488
+      rocky_Frente: -1373019789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

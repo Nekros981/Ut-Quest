@@ -1,0 +1,657 @@
+fileFormatVersion: 2
+guid: 93cad6d4bb49d014bb180e66225846a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6349520027531120541
+    second: objetos_0
+  - first:
+      213: 2527720842142326344
+    second: objetos_1
+  - first:
+      213: 2115978897144711606
+    second: objetos_2
+  - first:
+      213: -465773058034396076
+    second: objetos_3
+  - first:
+      213: 7692122196500718559
+    second: objetos_4
+  - first:
+      213: 2471942499591305465
+    second: objetos_5
+  - first:
+      213: 6251317240380822215
+    second: objetos_6
+  - first:
+      213: 6690336577493327282
+    second: objetos_7
+  - first:
+      213: 5176650414004985109
+    second: objetos_8
+  - first:
+      213: 2670259267694285440
+    second: objetos_9
+  - first:
+      213: 1057412959539810505
+    second: objetos_10
+  - first:
+      213: 97396962454713660
+    second: objetos_11
+  - first:
+      213: -4674163616115389058
+    second: objetos_12
+  - first:
+      213: 7835677096521862129
+    second: objetos_13
+  - first:
+      213: 6323713305874762540
+    second: objetos_14
+  - first:
+      213: -6595282731174843859
+    second: objetos_15
+  - first:
+      213: 656764543531043711
+    second: objetos_16
+  - first:
+      213: -4228951412368671501
+    second: objetos_17
+  - first:
+      213: -4057381125437080101
+    second: objetos_18
+  - first:
+      213: 769550700161315685
+    second: objetos_19
+  - first:
+      213: -7215241748175322464
+    second: objetos_20
+  - first:
+      213: -7654162200626293763
+    second: objetos_21
+  - first:
+      213: -8736990262203012882
+    second: objetos_22
+  - first:
+      213: 1370831418095792599
+    second: objetos_23
+  - first:
+      213: 1394111166246070356
+    second: objetos_24
+  - first:
+      213: -387427377452629246
+    second: objetos_25
+  - first:
+      213: 3446529820246000609
+    second: objetos_26
+  - first:
+      213: -5682156546173295621
+    second: objetos_27
+  - first:
+      213: 1370271593927200359
+    second: objetos_28
+  - first:
+      213: -4040986738272662477
+    second: objetos_29
+  - first:
+      213: 7307713102467467198
+    second: objetos_30
+  - first:
+      213: 6400552958110180426
+    second: objetos_31
+  - first:
+      213: -592317421226713315
+    second: objetos_32
+  - first:
+      213: -4182386728571719168
+    second: objetos_33
+  - first:
+      213: 6509483892204740340
+    second: objetos_34
+  - first:
+      213: -5227518787944122266
+    second: objetos_35
+  - first:
+      213: 5610366978898218499
+    second: objetos_36
+  - first:
+      213: -6946164511136334583
+    second: objetos_37
+  - first:
+      213: -1876099170344269823
+    second: objetos_38
+  - first:
+      213: 2630548463216981077
+    second: objetos_39
+  - first:
+      213: 3398578813689335390
+    second: objetos_40
+  - first:
+      213: 4448632233664351797
+    second: objetos_41
+  - first:
+      213: 6049427897477597926
+    second: objetos_42
+  - first:
+      213: -8592026994639134062
+    second: objetos_43
+  - first:
+      213: -2688415835126651521
+    second: objetos_44
+  - first:
+      213: 2464975198373904534
+    second: objetos_45
+  - first:
+      213: 4641916706580090270
+    second: objetos_46
+  - first:
+      213: -5653405764361414143
+    second: objetos_47
+  - first:
+      213: -7376994668367673698
+    second: objetos_48
+  - first:
+      213: -8297435664609591057
+    second: objetos_49
+  - first:
+      213: -4902969943856657234
+    second: objetos_50
+  - first:
+      213: 5816944762790152577
+    second: objetos_51
+  - first:
+      213: -4348120044789660601
+    second: objetos_52
+  - first:
+      213: 9072211571507347864
+    second: objetos_53
+  - first:
+      213: 5100109881885404477
+    second: objetos_54
+  - first:
+      213: -8303647685528671110
+    second: objetos_55
+  - first:
+      213: 5863556540131616167
+    second: objetos_56
+  - first:
+      213: -1284128966074996787
+    second: objetos_57
+  - first:
+      213: -6625789321553914177
+    second: objetos_58
+  - first:
+      213: -5005816220526114401
+    second: objetos_59
+  - first:
+      213: -8756259474086849491
+    second: objetos_60
+  - first:
+      213: 3948480608420212492
+    second: objetos_61
+  - first:
+      213: -2240516282260536168
+    second: objetos_62
+  - first:
+      213: 284611634836520566
+    second: objetos_63
+  - first:
+      213: 114166506419332811
+    second: objetos_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mesa_Madera
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69d2b8dee40baa41a6c512a034667fc
+      internalID: -1403691735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mesa_Gris
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f84f34081a2224fafdb062ca12a8ce
+      internalID: -2015373012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silla
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a7c1d74a85f22489cad4ae033ce9ab
+      internalID: 2110798448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computadora
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98433856777ceae448f83e44d5701660
+      internalID: 1294064987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teclado
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272e0458a161bcf4c922ee45f9aeb287
+      internalID: -1633131517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabinete
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4508453bf0ec47e4b98be2f0e1b8fb6f
+      internalID: 898636762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servidor
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426a1ac1b2de87142a375a56b93f5ab1
+      internalID: -1092388986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Libros
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3bc29911e048947af3ff0b3deb7fae
+      internalID: 245057140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archivo
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5306c270ed5894ab63daac699fade9
+      internalID: 612373950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cd56fc90b9b1548993cd17e130561c
+      internalID: -692633471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Herramientas
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be72b44e1171034fa7afb629c81bf54
+      internalID: -1882712101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lampara
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f13f5a5983a6a54385cbddf365fd482
+      internalID: 837220599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maceta
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f508b945ae739dc4c80560664a9771ec
+      internalID: -1521244815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papelera
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e466b3ac6a47cb44ea5ed417383841fe
+      internalID: -272560603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monitor
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96589d5fae75bf4fac213fc844a86d7
+      internalID: -1764836645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e92894ecc5ba5fa458802f0842607f57
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Archivo: 612373950
+      Computadora: 1294064987
+      Gabinete: 898636762
+      Herramientas: -1882712101
+      Lampara: 837220599
+      Libros: 245057140
+      Maceta: -1521244815
+      Mesa_Gris: -2015373012
+      Mesa_Madera: -1403691735
+      Monitor: -1764836645
+      Papelera: -272560603
+      Papeles: -692633471
+      Servidor: -1092388986
+      Silla: 2110798448
+      Teclado: -1633131517
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

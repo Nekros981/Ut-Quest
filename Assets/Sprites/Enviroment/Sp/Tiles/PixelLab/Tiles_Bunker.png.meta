@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 6c1cc4a25f962833ab15f334abbc643f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6630490187964529970
+    second: Tiles_Bunker_0
+  - first:
+      213: -1038923123370184971
+    second: Tiles_Bunker_1
+  - first:
+      213: -6022103142240189613
+    second: Tiles_Bunker_2
+  - first:
+      213: -8730398679688829232
+    second: Tiles_Bunker_3
+  - first:
+      213: -7976676319235225440
+    second: Tiles_Bunker_4
+  - first:
+      213: -2497164024189958829
+    second: Tiles_Bunker_5
+  - first:
+      213: -4130375873708167034
+    second: Tiles_Bunker_6
+  - first:
+      213: 2767242362477662980
+    second: Tiles_Bunker_7
+  - first:
+      213: 7532227462251455531
+    second: Tiles_Bunker_8
+  - first:
+      213: -4958838833541146659
+    second: Tiles_Bunker_9
+  - first:
+      213: 4469973656910852333
+    second: Tiles_Bunker_10
+  - first:
+      213: -5343237081006668832
+    second: Tiles_Bunker_11
+  - first:
+      213: 6837456469539666542
+    second: Tiles_Bunker_12
+  - first:
+      213: 1140882514438549797
+    second: Tiles_Bunker_13
+  - first:
+      213: 7199275077965906846
+    second: Tiles_Bunker_14
+  - first:
+      213: -4296081312877637246
+    second: Tiles_Bunker_15
+  - first:
+      213: 1103907594561288478
+    second: Tiles_Bunker_16
+  - first:
+      213: -3617066700368008121
+    second: Tiles_Bunker_17
+  - first:
+      213: -770935379377811181
+    second: Tiles_Bunker_18
+  - first:
+      213: -5565671455436014202
+    second: Tiles_Bunker_19
+  - first:
+      213: -9190931424630245114
+    second: Tiles_Bunker_20
+  - first:
+      213: 2744488629835737250
+    second: Tiles_Bunker_21
+  - first:
+      213: 736615354031110837
+    second: Tiles_Bunker_22
+  - first:
+      213: 1230564425387701090
+    second: Tiles_Bunker_23
+  - first:
+      213: -252928705260775948
+    second: Tiles_Bunker_24
+  - first:
+      213: -4308897943726218174
+    second: Tiles_Bunker_25
+  - first:
+      213: -3475274713725489836
+    second: Tiles_Bunker_26
+  - first:
+      213: -4966043928545510724
+    second: Tiles_Bunker_27
+  - first:
+      213: 137211984361661825
+    second: Tiles_Bunker_28
+  - first:
+      213: 6501269800571158094
+    second: Tiles_Bunker_29
+  - first:
+      213: -3601787059095226795
+    second: Tiles_Bunker_30
+  - first:
+      213: 5847087427723196516
+    second: Tiles_Bunker_31
+  - first:
+      213: 1762308023596679061
+    second: Tiles_Bunker_32
+  - first:
+      213: 619005740936088750
+    second: Tiles_Bunker_33
+  - first:
+      213: 1501650255952954596
+    second: Tiles_Bunker_34
+  - first:
+      213: -3142449922150768304
+    second: Tiles_Bunker_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiles_Bunker_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec249abcd44cbf3a0800000000000000
+      internalID: -6630490187964529970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fea49a7ce00591f0800000000000000
+      internalID: -1038923123370184971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353820e39113d6ca0800000000000000
+      internalID: -6022103142240189613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6ab9d08a467d680800000000000000
+      internalID: -8730398679688829232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8c6bf56272d4190800000000000000
+      internalID: -7976676319235225440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355c540fc8a485dd0800000000000000
+      internalID: -2497164024189958829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680f7cac605fda6c0800000000000000
+      internalID: -4130375873708167034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403d4e66448376620800000000000000
+      internalID: 2767242362477662980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24a0fe28f8d78860800000000000000
+      internalID: 7532227462251455531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd71e5c9a5aae2bb0800000000000000
+      internalID: -4958838833541146659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de07687ab59880e30800000000000000
+      internalID: 4469973656910852333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 173
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e307eb3f2209d5b0800000000000000
+      internalID: -5343237081006668832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6abb12ce6683ee50800000000000000
+      internalID: 6837456469539666542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521709b2a9a35df00800000000000000
+      internalID: 1140882514438549797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e930b7e3a86f8e360800000000000000
+      internalID: 7199275077965906846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2811cbbbec04164c0800000000000000
+      internalID: -4296081312877637246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_16
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e197ea6cb1ed15f00800000000000000
+      internalID: 1103907594561288478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 135
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74caba300099dcdc0800000000000000
+      internalID: -3617066700368008121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31197676b561d45f0800000000000000
+      internalID: -770935379377811181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_19
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d743aac43c2c2b0800000000000000
+      internalID: -5565671455436014202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_20
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60970ff9090437080800000000000000
+      internalID: -9190931424630245114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_21
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8257f2ed1661620800000000000000
+      internalID: 2744488629835737250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_22
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba7f1103cbf83a00800000000000000
+      internalID: 736615354031110837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 84
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263777833d7d31110800000000000000
+      internalID: 1230564425387701090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f59e61ceaa6d7cf0800000000000000
+      internalID: -252928705260775948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_25
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244a9c25628b334c0800000000000000
+      internalID: -4308897943726218174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45dae778f0855cfc0800000000000000
+      internalID: -3475274713725489836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_27
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba3f04bb51151bb0800000000000000
+      internalID: -4966043928545510724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_28
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185adc2a29977e100800000000000000
+      internalID: 137211984361661825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 45
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4eb40c3076293a50800000000000000
+      internalID: 6501269800571158094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556b70ab0c1e30ec0800000000000000
+      internalID: -3601787059095226795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_31
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468f71c4907052150800000000000000
+      internalID: 5847087427723196516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_32
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ffc437fc9f47810800000000000000
+      internalID: 1762308023596679061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_33
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac4c661176279800800000000000000
+      internalID: 619005740936088750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_34
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e443f2a3fee6d410800000000000000
+      internalID: 1501650255952954596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Bunker_35
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 7
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051efb9f176c364d0800000000000000
+      internalID: -3142449922150768304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63ca7c41b7dbdb31fa5262ae07e38f89
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Tiles_Bunker_0: -6630490187964529970
+      Tiles_Bunker_1: -1038923123370184971
+      Tiles_Bunker_10: 4469973656910852333
+      Tiles_Bunker_11: -5343237081006668832
+      Tiles_Bunker_12: 6837456469539666542
+      Tiles_Bunker_13: 1140882514438549797
+      Tiles_Bunker_14: 7199275077965906846
+      Tiles_Bunker_15: -4296081312877637246
+      Tiles_Bunker_16: 1103907594561288478
+      Tiles_Bunker_17: -3617066700368008121
+      Tiles_Bunker_18: -770935379377811181
+      Tiles_Bunker_19: -5565671455436014202
+      Tiles_Bunker_2: -6022103142240189613
+      Tiles_Bunker_20: -9190931424630245114
+      Tiles_Bunker_21: 2744488629835737250
+      Tiles_Bunker_22: 736615354031110837
+      Tiles_Bunker_23: 1230564425387701090
+      Tiles_Bunker_24: -252928705260775948
+      Tiles_Bunker_25: -4308897943726218174
+      Tiles_Bunker_26: -3475274713725489836
+      Tiles_Bunker_27: -4966043928545510724
+      Tiles_Bunker_28: 137211984361661825
+      Tiles_Bunker_29: 6501269800571158094
+      Tiles_Bunker_3: -8730398679688829232
+      Tiles_Bunker_30: -3601787059095226795
+      Tiles_Bunker_31: 5847087427723196516
+      Tiles_Bunker_32: 1762308023596679061
+      Tiles_Bunker_33: 619005740936088750
+      Tiles_Bunker_34: 1501650255952954596
+      Tiles_Bunker_35: -3142449922150768304
+      Tiles_Bunker_4: -7976676319235225440
+      Tiles_Bunker_5: -2497164024189958829
+      Tiles_Bunker_6: -4130375873708167034
+      Tiles_Bunker_7: 2767242362477662980
+      Tiles_Bunker_8: 7532227462251455531
+      Tiles_Bunker_9: -4958838833541146659
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 3b795be9e5150b88eb4630ff842737d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1286469103021804190
+    second: Golpe_Arriba_0
+  - first:
+      213: 1755818890521334819
+    second: Golpe_Arriba_1
+  - first:
+      213: 2179614923474329463
+    second: Golpe_Arriba_2
+  - first:
+      213: 5221730513348971054
+    second: Golpe_Arriba_3
+  - first:
+      213: -9043677969760405470
+    second: Golpe_Arriba_4
+  - first:
+      213: 623902544174233956
+    second: Golpe_Arriba_5
+  - first:
+      213: -3107271198106748399
+    second: Golpe_Arriba_6
+  - first:
+      213: -6969284821254200019
+    second: Golpe_Arriba_7
+  - first:
+      213: 631173515329121399
+    second: Golpe_Arriba_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0, y: 0}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golpe_Arriba_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 211
+        width: 73
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.009615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265bed3ba2b852ee0800000000000000
+      internalID: -1286469103021804190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 212
+        width: 70
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5285714, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324d17b6afbed5810800000000000000
+      internalID: 1755818890521334819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 212
+        width: 71
+        height: 102
+      alignment: 9
+      pivot: {x: 0.45774648, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fd3dc893c8f3e10800000000000000
+      internalID: 2179614923474329463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 107
+        width: 71
+        height: 100
+      alignment: 9
+      pivot: {x: 0.45070422, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2acbf86c30577840800000000000000
+      internalID: 5221730513348971054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 107
+        width: 71
+        height: 97
+      alignment: 9
+      pivot: {x: 0.42957747, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228b76d4dc66e7280800000000000000
+      internalID: -9043677969760405470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 107
+        width: 70
+        height: 98
+      alignment: 9
+      pivot: {x: 0.41428572, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469b7ffee0c88a800800000000000000
+      internalID: 623902544174233956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 72
+        height: 100
+      alignment: 9
+      pivot: {x: 0.4722222, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a7b00fe41c0e4d0800000000000000
+      internalID: -3107271198106748399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2
+        width: 72
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5694444, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d252f924160284f90800000000000000
+      internalID: -6969284821254200019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golpe_Arriba_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2
+        width: 72
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5694444, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ca3d4d7f062c800800000000000000
+      internalID: 631173515329121399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b03eb883c1f7737118a38e6f023194de
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Golpe_Arriba_0: -1286469103021804190
+      Golpe_Arriba_1: 1755818890521334819
+      Golpe_Arriba_2: 2179614923474329463
+      Golpe_Arriba_3: 5221730513348971054
+      Golpe_Arriba_4: -9043677969760405470
+      Golpe_Arriba_5: 623902544174233956
+      Golpe_Arriba_6: -3107271198106748399
+      Golpe_Arriba_7: -6969284821254200019
+      Golpe_Arriba_8: 631173515329121399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: b045e74d4a69820e3813fa92e4b71113
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2286606634117293870
+    second: Derrotado_0
+  - first:
+      213: -2598773194338398129
+    second: Derrotado_1
+  - first:
+      213: -2647679521637281592
+    second: Derrotado_2
+  - first:
+      213: -4109112258973912129
+    second: Derrotado_3
+  - first:
+      213: -6364239774110142095
+    second: Derrotado_4
+  - first:
+      213: 7877193675382487492
+    second: Derrotado_5
+  - first:
+      213: -4942494936878946553
+    second: Derrotado_6
+  - first:
+      213: 8346464702609238962
+    second: Derrotado_7
+  - first:
+      213: 3952740722547594917
+    second: Derrotado_8
+  - first:
+      213: 4720109474594008353
+    second: Derrotado_9
+  - first:
+      213: 5231357472260836846
+    second: Derrotado_10
+  - first:
+      213: 4261326667157167071
+    second: Derrotado_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Derrotado_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 220
+        width: 72
+        height: 105
+      alignment: 9
+      pivot: {x: 0.4861111, y: 0.00952381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8136891675440e0800000000000000
+      internalID: -2286606634117293870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 223
+        width: 69
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4017a37c8d4febd0800000000000000
+      internalID: -2598773194338398129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 221
+        width: 69
+        height: 107
+      alignment: 9
+      pivot: {x: 0.49275362, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0dbb9c08d814bd0800000000000000
+      internalID: -2647679521637281592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 113
+        width: 73
+        height: 101
+      alignment: 9
+      pivot: {x: 0.49315068, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb338a5eb2089f6c0800000000000000
+      internalID: -4109112258973912129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 115
+        width: 78
+        height: 89
+      alignment: 9
+      pivot: {x: 0.4871795, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171b0c605adada7a0800000000000000
+      internalID: -6364239774110142095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 118
+        width: 80
+        height: 72
+      alignment: 9
+      pivot: {x: 0.49375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c97020a9e9615d60800000000000000
+      internalID: 7877193675382487492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 8
+        height: 15
+      alignment: 9
+      pivot: {x: 0.6875, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707e9279a0bb86bb0800000000000000
+      internalID: -4942494936878946553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 11
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb2c51fc6994d370800000000000000
+      internalID: 8346464702609238962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 78
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a69ba0aeb4fad630800000000000000
+      internalID: 3952740722547594917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 86
+        height: 74
+      alignment: 9
+      pivot: {x: 0.49418604, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12da1261f82318140800000000000000
+      internalID: 4720109474594008353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_10
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1
+        width: 82
+        height: 66
+      alignment: 9
+      pivot: {x: 0.50609756, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed413377e3899840800000000000000
+      internalID: 5231357472260836846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derrotado_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1
+        width: 80
+        height: 56
+      alignment: 9
+      pivot: {x: 0.49375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb5dcbb606432b30800000000000000
+      internalID: 4261326667157167071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0f5a49e6a33a0ba54a4c094a111351a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Derrotado_0: -2286606634117293870
+      Derrotado_1: -2598773194338398129
+      Derrotado_10: 5231357472260836846
+      Derrotado_11: 4261326667157167071
+      Derrotado_2: -2647679521637281592
+      Derrotado_3: -4109112258973912129
+      Derrotado_4: -6364239774110142095
+      Derrotado_5: 7877193675382487492
+      Derrotado_6: -4942494936878946553
+      Derrotado_7: 8346464702609238962
+      Derrotado_8: 3952740722547594917
+      Derrotado_9: 4720109474594008353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: a70d4d7c85d92b1f589bed3f597bd363
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1193049504985526546
+    second: Disparo_Arriba_0
+  - first:
+      213: -3539640426540667836
+    second: Disparo_Arriba_1
+  - first:
+      213: 958165985117695555
+    second: Disparo_Arriba_2
+  - first:
+      213: -5210823522747423056
+    second: Disparo_Arriba_3
+  - first:
+      213: -2241569762344124259
+    second: Disparo_Arriba_4
+  - first:
+      213: 450548338827025515
+    second: Disparo_Arriba_5
+  - first:
+      213: 6671610307245346605
+    second: Disparo_Arriba_6
+  - first:
+      213: 4782936550519213288
+    second: Disparo_Arriba_7
+  - first:
+      213: 7726824510632236018
+    second: Disparo_Arriba_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0, y: 0}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Disparo_Arriba_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 211
+        width: 73
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.009615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2113e1824309e8010800000000000000
+      internalID: 1193049504985526546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 212
+        width: 70
+        height: 97
+      alignment: 9
+      pivot: {x: 0.49285713, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c6e6f29cba0eec0800000000000000
+      internalID: -3539640426540667836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 213
+        width: 70
+        height: 96
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e6dca03e61c4d00800000000000000
+      internalID: 958165985117695555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 107
+        width: 70
+        height: 98
+      alignment: 9
+      pivot: {x: 0.49285713, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6e36b3d9f6fa7b0800000000000000
+      internalID: -5210823522747423056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 107
+        width: 71
+        height: 99
+      alignment: 9
+      pivot: {x: 0.48591548, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90c8307d2854e0e0800000000000000
+      internalID: -2241569762344124259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 107
+        width: 70
+        height: 100
+      alignment: 9
+      pivot: {x: 0.49285713, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c5de9b35ba04600800000000000000
+      internalID: 450548338827025515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 69
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f813b0a32569c50800000000000000
+      internalID: 6671610307245346605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 71
+        height: 98
+      alignment: 9
+      pivot: {x: 0.49295774, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec0eec9377606240800000000000000
+      internalID: 4782936550519213288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disparo_Arriba_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3
+        width: 71
+        height: 96
+      alignment: 9
+      pivot: {x: 0.47887325, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3140634f13b3b60800000000000000
+      internalID: 7726824510632236018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2abc10efb787c29e5b3cf1423d1d27f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Disparo_Arriba_0: 1193049504985526546
+      Disparo_Arriba_1: -3539640426540667836
+      Disparo_Arriba_2: 958165985117695555
+      Disparo_Arriba_3: -5210823522747423056
+      Disparo_Arriba_4: -2241569762344124259
+      Disparo_Arriba_5: 450548338827025515
+      Disparo_Arriba_6: 6671610307245346605
+      Disparo_Arriba_7: 4782936550519213288
+      Disparo_Arriba_8: 7726824510632236018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

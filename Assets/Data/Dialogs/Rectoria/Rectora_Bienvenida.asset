@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab75097a03ca5949a4a575720fbd9bc, type: 3}
+  m_Name: Rectora_Bienvenida
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.Dialogue.DialogueDefinition
+  dialogueId: rectoria.rector_welcome
+  defaultSpeaker: Rectora
+  defaultPortrait: {fileID: 434378145, guid: 5411a148823d9844293dfadbefb651cb, type: 3}
+  lines:
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "\xA1Bienvenido a la Universidad Tecnol\xF3gica! Qu\xE9 gusto verte por
+      aqu\xED."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Antes de entrar a tu carrera necesito que completes tu inscripci\xF3n."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: 'Debes reunir 3 documentos: tu acta de nacimiento, tu credencial de estudiante
+      y tu comprobante de pago.'
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "El Archivo est\xE1 a la izquierda, Credencializaci\xF3n a la derecha y
+      la Caja al fondo."
+  - speaker: 
+    portrait: {fileID: 0}
+    text: "Cuando los tengas todos, el guardia te dejar\xE1 pasar a los bloques.
+      \xA1Mucha suerte!"

@@ -115,3 +115,12 @@ InitTestScene*.unity*
 
 # Cursor MCP config holds a local project key
 .cursor/mcp.json
+
+# Unity MCP auto-restored NuGet binaries (version lives in Packages/manifest.json)
+Assets/Plugins/NuGet/
+
+# Unity MCP regenerates Cursor skills from the editor
+.cursor/skills/
+
+# Custom ignores
+/CampusQuest_Beta_Windows/

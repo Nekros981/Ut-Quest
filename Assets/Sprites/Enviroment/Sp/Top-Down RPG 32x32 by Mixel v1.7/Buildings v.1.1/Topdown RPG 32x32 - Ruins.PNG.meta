@@ -1,0 +1,2054 @@
+fileFormatVersion: 2
+guid: db951053d6e8ae0afb2c800fdfdbf7c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6554167268667798747
+    second: Topdown RPG 32x32 - Ruins_0
+  - first:
+      213: -7283581902024213384
+    second: Topdown RPG 32x32 - Ruins_1
+  - first:
+      213: -6929306950504547236
+    second: Topdown RPG 32x32 - Ruins_2
+  - first:
+      213: 5797418864654279978
+    second: Topdown RPG 32x32 - Ruins_3
+  - first:
+      213: 7231297069960483422
+    second: Topdown RPG 32x32 - Ruins_4
+  - first:
+      213: 5053640755867382208
+    second: Topdown RPG 32x32 - Ruins_5
+  - first:
+      213: -1501037212537197356
+    second: Topdown RPG 32x32 - Ruins_6
+  - first:
+      213: 629338646949158277
+    second: Topdown RPG 32x32 - Ruins_7
+  - first:
+      213: -7951869660905563569
+    second: Topdown RPG 32x32 - Ruins_8
+  - first:
+      213: 3723443237107336834
+    second: Topdown RPG 32x32 - Ruins_9
+  - first:
+      213: 6290472092163485841
+    second: Topdown RPG 32x32 - Ruins_10
+  - first:
+      213: -4189860209344225861
+    second: Topdown RPG 32x32 - Ruins_11
+  - first:
+      213: -7405155698044228299
+    second: Topdown RPG 32x32 - Ruins_12
+  - first:
+      213: -2885674784444760499
+    second: Topdown RPG 32x32 - Ruins_13
+  - first:
+      213: 3040224035576768217
+    second: Topdown RPG 32x32 - Ruins_14
+  - first:
+      213: -1756421340847889902
+    second: Topdown RPG 32x32 - Ruins_15
+  - first:
+      213: 7810869475258784996
+    second: Topdown RPG 32x32 - Ruins_16
+  - first:
+      213: -5033708984545657223
+    second: Topdown RPG 32x32 - Ruins_17
+  - first:
+      213: 6421235662004695535
+    second: Topdown RPG 32x32 - Ruins_18
+  - first:
+      213: 6657497499397836965
+    second: Topdown RPG 32x32 - Ruins_19
+  - first:
+      213: -1181601078376395779
+    second: Topdown RPG 32x32 - Ruins_20
+  - first:
+      213: 487471502791068425
+    second: Topdown RPG 32x32 - Ruins_21
+  - first:
+      213: -6570820876469839968
+    second: Topdown RPG 32x32 - Ruins_22
+  - first:
+      213: 8335276001475521163
+    second: Topdown RPG 32x32 - Ruins_23
+  - first:
+      213: -4821702173677444972
+    second: Topdown RPG 32x32 - Ruins_24
+  - first:
+      213: 8747860322973317743
+    second: Topdown RPG 32x32 - Ruins_25
+  - first:
+      213: 816741388226470629
+    second: Topdown RPG 32x32 - Ruins_26
+  - first:
+      213: 6917574056734265511
+    second: Topdown RPG 32x32 - Ruins_27
+  - first:
+      213: -681263424132813083
+    second: Topdown RPG 32x32 - Ruins_28
+  - first:
+      213: -1670805151386557898
+    second: Topdown RPG 32x32 - Ruins_29
+  - first:
+      213: 673268112178607238
+    second: Topdown RPG 32x32 - Ruins_30
+  - first:
+      213: -4239509896457726522
+    second: Topdown RPG 32x32 - Ruins_31
+  - first:
+      213: 1714529462336874054
+    second: Topdown RPG 32x32 - Ruins_32
+  - first:
+      213: -5587684551466564624
+    second: Topdown RPG 32x32 - Ruins_33
+  - first:
+      213: 9146565352896979060
+    second: Topdown RPG 32x32 - Ruins_34
+  - first:
+      213: -1489030959102176074
+    second: Topdown RPG 32x32 - Ruins_35
+  - first:
+      213: -2638601739476172901
+    second: Topdown RPG 32x32 - Ruins_36
+  - first:
+      213: 3264107261631604778
+    second: Topdown RPG 32x32 - Ruins_37
+  - first:
+      213: -3493206309424596525
+    second: Topdown RPG 32x32 - Ruins_38
+  - first:
+      213: -4726383450829132994
+    second: Topdown RPG 32x32 - Ruins_39
+  - first:
+      213: 9177638168024778777
+    second: Topdown RPG 32x32 - Ruins_40
+  - first:
+      213: 53843582774628137
+    second: Topdown RPG 32x32 - Ruins_41
+  - first:
+      213: 3250897645991146371
+    second: Topdown RPG 32x32 - Ruins_42
+  - first:
+      213: 8856386290522451914
+    second: Topdown RPG 32x32 - Ruins_43
+  - first:
+      213: -3617276381642324019
+    second: Topdown RPG 32x32 - Ruins_44
+  - first:
+      213: -1400968179221232781
+    second: Topdown RPG 32x32 - Ruins_45
+  - first:
+      213: 2312011384203836166
+    second: Topdown RPG 32x32 - Ruins_46
+  - first:
+      213: -5870176017521939766
+    second: Topdown RPG 32x32 - Ruins_47
+  - first:
+      213: 5420229346924148158
+    second: Topdown RPG 32x32 - Ruins_48
+  - first:
+      213: -3806008299601319073
+    second: Topdown RPG 32x32 - Ruins_49
+  - first:
+      213: 4654313585366609720
+    second: Topdown RPG 32x32 - Ruins_50
+  - first:
+      213: 6667355170875442661
+    second: Topdown RPG 32x32 - Ruins_51
+  - first:
+      213: 3069017652696044263
+    second: Topdown RPG 32x32 - Ruins_52
+  - first:
+      213: -545658294346011369
+    second: Topdown RPG 32x32 - Ruins_53
+  - first:
+      213: -3565103103683620760
+    second: Topdown RPG 32x32 - Ruins_54
+  - first:
+      213: 4279963472981381450
+    second: Topdown RPG 32x32 - Ruins_55
+  - first:
+      213: 7939508422057765906
+    second: Topdown RPG 32x32 - Ruins_56
+  - first:
+      213: 7494253433885578113
+    second: Topdown RPG 32x32 - Ruins_57
+  - first:
+      213: 2319396600497390857
+    second: Topdown RPG 32x32 - Ruins_58
+  - first:
+      213: -5552265480442671768
+    second: Topdown RPG 32x32 - Ruins_59
+  - first:
+      213: -7567076032628721317
+    second: Topdown RPG 32x32 - Ruins_60
+  - first:
+      213: -373255210166891465
+    second: Topdown RPG 32x32 - Ruins_61
+  - first:
+      213: 2310497082501971405
+    second: Topdown RPG 32x32 - Ruins_62
+  - first:
+      213: 5079725891547476217
+    second: Topdown RPG 32x32 - Ruins_63
+  - first:
+      213: -7767300857220158577
+    second: Topdown RPG 32x32 - Ruins_64
+  - first:
+      213: -5518150621634780096
+    second: Topdown RPG 32x32 - Ruins_65
+  - first:
+      213: 999003547042500278
+    second: Topdown RPG 32x32 - Ruins_66
+  - first:
+      213: 164035551756536593
+    second: Topdown RPG 32x32 - Ruins_67
+  - first:
+      213: 3058017781502566649
+    second: Topdown RPG 32x32 - Ruins_68
+  - first:
+      213: 4302626217124020909
+    second: Topdown RPG 32x32 - Ruins_69
+  - first:
+      213: -6916683845314887698
+    second: Topdown RPG 32x32 - Ruins_70
+  - first:
+      213: 5553195354411014494
+    second: Topdown RPG 32x32 - Ruins_71
+  - first:
+      213: -6287420152503263467
+    second: Topdown RPG 32x32 - Ruins_72
+  - first:
+      213: -6820588244104817966
+    second: Topdown RPG 32x32 - Ruins_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b4098389bea05a0800000000000000
+      internalID: -6554167268667798747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87cf165a9d48bea90800000000000000
+      internalID: -7283581902024213384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cf783aa0826df90800000000000000
+      internalID: -6929306950504547236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25edd9cdb1947050800000000000000
+      internalID: 5797418864654279978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5251504f5aba5460800000000000000
+      internalID: 7231297069960483422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c179ebfd73222640800000000000000
+      internalID: 5053640755867382208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dce318ab9e3b2be0800000000000000
+      internalID: -1501037212537197356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d54de3a2cdbb800800000000000000
+      internalID: 629338646949158277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a94899ca845a190800000000000000
+      internalID: -7951869660905563569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2860d1185e35ca330800000000000000
+      internalID: 3723443237107336834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190b9ea1a0f3c4750800000000000000
+      internalID: 6290472092163485841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd5e73a650aad5c0800000000000000
+      internalID: -4189860209344225861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d2d97702a9b3990800000000000000
+      internalID: -7405155698044228299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e3edf821604f7d0800000000000000
+      internalID: -2885674784444760499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6682e07ab013a20800000000000000
+      internalID: 3040224035576768217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212a8dea810ff97e0800000000000000
+      internalID: -1756421340847889902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_16
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecddbb6768c56c60800000000000000
+      internalID: 7810869475258784996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97eb679295ca42ab0800000000000000
+      internalID: -5033708984545657223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe13cdc30dfcc1950800000000000000
+      internalID: 6421235662004695535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0d8a8e3be246c50800000000000000
+      internalID: 6657497499397836965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_20
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb0821641c1a9fe0800000000000000
+      internalID: -1181601078376395779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bccf1cfb8d3c600800000000000000
+      internalID: 487471502791068425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a75b4ff931cfc4a0800000000000000
+      internalID: -6570820876469839968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_23
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a69c47c59dca370800000000000000
+      internalID: 8335276001475521163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_24
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4902a356b6fd51db0800000000000000
+      internalID: -4821702173677444972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_25
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6afe879d94a66970800000000000000
+      internalID: 8747860322973317743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_26
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2299e17f5a55b00800000000000000
+      internalID: 816741388226470629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a09a1724f8200060800000000000000
+      internalID: 6917574056734265511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eee816768aab86f0800000000000000
+      internalID: -681263424132813083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 65
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63226be219b10d8e0800000000000000
+      internalID: -1670805151386557898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684f009e7cde75900800000000000000
+      internalID: 673268112178607238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c552e7063c3a25c0800000000000000
+      internalID: -4239509896457726522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_32
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646e787467b3bc710800000000000000
+      internalID: 1714529462336874054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_33
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3c5e8518e8472b0800000000000000
+      internalID: -5587684551466564624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 351
+        width: 65
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470e1565ab02fee70800000000000000
+      internalID: 9146565352896979060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_35
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4d72f5b36e55be0800000000000000
+      internalID: -1489030959102176074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_36
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f7bc6a2bdc16bd0800000000000000
+      internalID: -2638601739476172901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 287
+        width: 130
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28235ea2407c4d20800000000000000
+      internalID: 3264107261631604778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_38
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9f79f8e53a58fc0800000000000000
+      internalID: -3493206309424596525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_39
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b6b0dfa43886eb0800000000000000
+      internalID: -4726383450829132994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_40
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9180f22e9458d5f70800000000000000
+      internalID: 9177638168024778777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_41
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f47b8047a4fb000800000000000000
+      internalID: 53843582774628137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_42
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383b47e5f228d1d20800000000000000
+      internalID: 3250897645991146371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_43
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfea38786438ea70800000000000000
+      internalID: 8856386290522451914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_44
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 463
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc78cc9cb4adccdc0800000000000000
+      internalID: -3617276381642324019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_45
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 447
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37384e71dd2ce8ce0800000000000000
+      internalID: -1400968179221232781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_46
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 447
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bf028ba1ae51020800000000000000
+      internalID: 2312011384203836166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_47
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 351
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca669a7302f88ea0800000000000000
+      internalID: -5870176017521939766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 388
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5bf889fd5883b40800000000000000
+      internalID: 5420229346924148158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_49
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 428
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b231add975e2bc0800000000000000
+      internalID: -3806008299601319073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_50
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 422
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f2d09db81779040800000000000000
+      internalID: 4654313585366609720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_51
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 388
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e50567e334378c50800000000000000
+      internalID: 6667355170875442661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_52
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 390
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2d9567b47579a20800000000000000
+      internalID: 3069017652696044263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_53
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 287
+        width: 141
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71da2cc1cae6d68f0800000000000000
+      internalID: -545658294346011369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_54
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8609b4dad95368ec0800000000000000
+      internalID: -3565103103683620760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_55
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 351
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41d3ba3a1c756b30800000000000000
+      internalID: 4279963472981381450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_56
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 353
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ca9f338dcce2e60800000000000000
+      internalID: 7939508422057765906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1835087bacfe00860800000000000000
+      internalID: 7494253433885578113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_58
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 301
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90545e16be6203020800000000000000
+      internalID: 2319396600497390857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 233
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d0d8376f362f2b0800000000000000
+      internalID: -5552265480442671768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_60
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 191
+        width: 134
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59faceb0785cf690800000000000000
+      internalID: -7567076032628721317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_61
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 251
+        width: 62
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c407b2d5ee1daf0800000000000000
+      internalID: -373255210166891465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 133
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd3b11ead8801020800000000000000
+      internalID: 2310497082501971405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_63
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 133
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0ba0ae8cfce7640800000000000000
+      internalID: 5079725891547476217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_64
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 157
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2ec5f501053490800000000000000
+      internalID: -7767300857220158577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_65
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 157
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044ab5cfe379b63b0800000000000000
+      internalID: -5518150621634780096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_66
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 150
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bec2dede6c2ddd00800000000000000
+      internalID: 999003547042500278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_67
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 150
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bcbf81775c64200800000000000000
+      internalID: 164035551756536593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0e94f58f2407a20800000000000000
+      internalID: 3058017781502566649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_69
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 93
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2c5f88fbff5bb30800000000000000
+      internalID: 4302626217124020909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_70
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 93
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefb25850b00300a0800000000000000
+      internalID: -6916683845314887698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_71
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 93
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e599404b0c9e01d40800000000000000
+      internalID: 5553195354411014494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_72
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 45
+        width: 100
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f1968fea89eb8a0800000000000000
+      internalID: -6287420152503263467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topdown RPG 32x32 - Ruins_73
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 38
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d25de601276851a0800000000000000
+      internalID: -6820588244104817966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Topdown RPG 32x32 - Ruins_0: -6554167268667798747
+      Topdown RPG 32x32 - Ruins_1: -7283581902024213384
+      Topdown RPG 32x32 - Ruins_10: 6290472092163485841
+      Topdown RPG 32x32 - Ruins_11: -4189860209344225861
+      Topdown RPG 32x32 - Ruins_12: -7405155698044228299
+      Topdown RPG 32x32 - Ruins_13: -2885674784444760499
+      Topdown RPG 32x32 - Ruins_14: 3040224035576768217
+      Topdown RPG 32x32 - Ruins_15: -1756421340847889902
+      Topdown RPG 32x32 - Ruins_16: 7810869475258784996
+      Topdown RPG 32x32 - Ruins_17: -5033708984545657223
+      Topdown RPG 32x32 - Ruins_18: 6421235662004695535
+      Topdown RPG 32x32 - Ruins_19: 6657497499397836965
+      Topdown RPG 32x32 - Ruins_2: -6929306950504547236
+      Topdown RPG 32x32 - Ruins_20: -1181601078376395779
+      Topdown RPG 32x32 - Ruins_21: 487471502791068425
+      Topdown RPG 32x32 - Ruins_22: -6570820876469839968
+      Topdown RPG 32x32 - Ruins_23: 8335276001475521163
+      Topdown RPG 32x32 - Ruins_24: -4821702173677444972
+      Topdown RPG 32x32 - Ruins_25: 8747860322973317743
+      Topdown RPG 32x32 - Ruins_26: 816741388226470629
+      Topdown RPG 32x32 - Ruins_27: 6917574056734265511
+      Topdown RPG 32x32 - Ruins_28: -681263424132813083
+      Topdown RPG 32x32 - Ruins_29: -1670805151386557898
+      Topdown RPG 32x32 - Ruins_3: 5797418864654279978
+      Topdown RPG 32x32 - Ruins_30: 673268112178607238
+      Topdown RPG 32x32 - Ruins_31: -4239509896457726522
+      Topdown RPG 32x32 - Ruins_32: 1714529462336874054
+      Topdown RPG 32x32 - Ruins_33: -5587684551466564624
+      Topdown RPG 32x32 - Ruins_34: 9146565352896979060
+      Topdown RPG 32x32 - Ruins_35: -1489030959102176074
+      Topdown RPG 32x32 - Ruins_36: -2638601739476172901
+      Topdown RPG 32x32 - Ruins_37: 3264107261631604778
+      Topdown RPG 32x32 - Ruins_38: -3493206309424596525
+      Topdown RPG 32x32 - Ruins_39: -4726383450829132994
+      Topdown RPG 32x32 - Ruins_4: 7231297069960483422
+      Topdown RPG 32x32 - Ruins_40: 9177638168024778777
+      Topdown RPG 32x32 - Ruins_41: 53843582774628137
+      Topdown RPG 32x32 - Ruins_42: 3250897645991146371
+      Topdown RPG 32x32 - Ruins_43: 8856386290522451914
+      Topdown RPG 32x32 - Ruins_44: -3617276381642324019
+      Topdown RPG 32x32 - Ruins_45: -1400968179221232781
+      Topdown RPG 32x32 - Ruins_46: 2312011384203836166
+      Topdown RPG 32x32 - Ruins_47: -5870176017521939766
+      Topdown RPG 32x32 - Ruins_48: 5420229346924148158
+      Topdown RPG 32x32 - Ruins_49: -3806008299601319073
+      Topdown RPG 32x32 - Ruins_5: 5053640755867382208
+      Topdown RPG 32x32 - Ruins_50: 4654313585366609720
+      Topdown RPG 32x32 - Ruins_51: 6667355170875442661
+      Topdown RPG 32x32 - Ruins_52: 3069017652696044263
+      Topdown RPG 32x32 - Ruins_53: -545658294346011369
+      Topdown RPG 32x32 - Ruins_54: -3565103103683620760
+      Topdown RPG 32x32 - Ruins_55: 4279963472981381450
+      Topdown RPG 32x32 - Ruins_56: 7939508422057765906
+      Topdown RPG 32x32 - Ruins_57: 7494253433885578113
+      Topdown RPG 32x32 - Ruins_58: 2319396600497390857
+      Topdown RPG 32x32 - Ruins_59: -5552265480442671768
+      Topdown RPG 32x32 - Ruins_6: -1501037212537197356
+      Topdown RPG 32x32 - Ruins_60: -7567076032628721317
+      Topdown RPG 32x32 - Ruins_61: -373255210166891465
+      Topdown RPG 32x32 - Ruins_62: 2310497082501971405
+      Topdown RPG 32x32 - Ruins_63: 5079725891547476217
+      Topdown RPG 32x32 - Ruins_64: -7767300857220158577
+      Topdown RPG 32x32 - Ruins_65: -5518150621634780096
+      Topdown RPG 32x32 - Ruins_66: 999003547042500278
+      Topdown RPG 32x32 - Ruins_67: 164035551756536593
+      Topdown RPG 32x32 - Ruins_68: 3058017781502566649
+      Topdown RPG 32x32 - Ruins_69: 4302626217124020909
+      Topdown RPG 32x32 - Ruins_7: 629338646949158277
+      Topdown RPG 32x32 - Ruins_70: -6916683845314887698
+      Topdown RPG 32x32 - Ruins_71: 5553195354411014494
+      Topdown RPG 32x32 - Ruins_72: -6287420152503263467
+      Topdown RPG 32x32 - Ruins_73: -6820588244104817966
+      Topdown RPG 32x32 - Ruins_8: -7951869660905563569
+      Topdown RPG 32x32 - Ruins_9: 3723443237107336834
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

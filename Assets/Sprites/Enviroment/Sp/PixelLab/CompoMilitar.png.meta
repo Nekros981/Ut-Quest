@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 5dc4300da313855bb890fc08757ea821
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4355577653746338506
+    second: CompoMilitar_0
+  - first:
+      213: -7623440034228891859
+    second: CompoMilitar_1
+  - first:
+      213: 222297921323124345
+    second: CompoMilitar_2
+  - first:
+      213: -2728904102753060003
+    second: CompoMilitar_3
+  - first:
+      213: -4301214314749145480
+    second: CompoMilitar_4
+  - first:
+      213: -5948886980693616719
+    second: CompoMilitar_5
+  - first:
+      213: -7453592420429939234
+    second: CompoMilitar_6
+  - first:
+      213: -8169516739362299098
+    second: CompoMilitar_7
+  - first:
+      213: 8269674374314118592
+    second: CompoMilitar_8
+  - first:
+      213: -6536309001799140891
+    second: CompoMilitar_9
+  - first:
+      213: -2690516574207634260
+    second: CompoMilitar_10
+  - first:
+      213: 7789087656176170365
+    second: CompoMilitar_11
+  - first:
+      213: -774624275853429320
+    second: CompoMilitar_12
+  - first:
+      213: 8714143678124559087
+    second: CompoMilitar_13
+  - first:
+      213: 619352681567657925
+    second: CompoMilitar_14
+  - first:
+      213: 7317721121088610058
+    second: CompoMilitar_15
+  - first:
+      213: -3600077376461881623
+    second: CompoMilitar_16
+  - first:
+      213: -5781733969376153291
+    second: CompoMilitar_17
+  - first:
+      213: -223683245413395061
+    second: CompoMilitar_18
+  - first:
+      213: 2689022361701859333
+    second: CompoMilitar_19
+  - first:
+      213: 187467788529625880
+    second: CompoMilitar_20
+  - first:
+      213: 1757421141630302161
+    second: CompoMilitar_21
+  - first:
+      213: -6024593330823423004
+    second: CompoMilitar_22
+  - first:
+      213: 3805350060102083493
+    second: CompoMilitar_23
+  - first:
+      213: -4712080242923504892
+    second: CompoMilitar_24
+  - first:
+      213: 8831477606754414858
+    second: CompoMilitar_25
+  - first:
+      213: -173523531896511951
+    second: CompoMilitar_26
+  - first:
+      213: -2787236243460923192
+    second: CompoMilitar_27
+  - first:
+      213: -6573244636589142865
+    second: CompoMilitar_28
+  - first:
+      213: 5864675806459030328
+    second: CompoMilitar_29
+  - first:
+      213: -7475320323444244191
+    second: CompoMilitar_30
+  - first:
+      213: 9188483192623135566
+    second: CompoMilitar_31
+  - first:
+      213: 6116791409341839371
+    second: CompoMilitar_32
+  - first:
+      213: 6383612352477271720
+    second: CompoMilitar_33
+  - first:
+      213: 4973077304835047648
+    second: CompoMilitar_34
+  - first:
+      213: 5236669056497208785
+    second: CompoMilitar_35
+  - first:
+      213: -1088387053552077248
+    second: CompoMilitar_36
+  - first:
+      213: -891685637835813181
+    second: CompoMilitar_37
+  - first:
+      213: -3304899601284464603
+    second: CompoMilitar_38
+  - first:
+      213: 4376118025800987947
+    second: CompoMilitar_39
+  - first:
+      213: -1997623967266645641
+    second: CompoMilitar_40
+  - first:
+      213: -2793443454490300851
+    second: CompoMilitar_41
+  - first:
+      213: -1151021611895719945
+    second: CompoMilitar_42
+  - first:
+      213: -5073037292212632868
+    second: CompoMilitar_43
+  - first:
+      213: -2606086785038132277
+    second: CompoMilitar_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CompoMilitar_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 200
+        width: 89
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635f1d46331ed83c0800000000000000
+      internalID: -4355577653746338506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 174
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f8b49fda9143690800000000000000
+      internalID: -7623440034228891859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 202
+        width: 63
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976c5ca18c2c51300800000000000000
+      internalID: 222297921323124345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 167
+        width: 44
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b3c494d2cf02ad0800000000000000
+      internalID: -2728904102753060003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 198
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e4d8a9e540f44c0800000000000000
+      internalID: -4301214314749145480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 171
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b79fc24fce417da0800000000000000
+      internalID: -5948886980693616719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 140
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddbab73f258f8890800000000000000
+      internalID: -7453592420429939234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 166
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623e3bb3fcb00ae80800000000000000
+      internalID: -8169516739362299098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 148
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdc4216709c3c270800000000000000
+      internalID: 8269674374314118592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 144
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9f29df79d5a45a0800000000000000
+      internalID: -6536309001799140891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 142
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca49d044e6d59aad0800000000000000
+      internalID: -2690516574207634260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_11
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 142
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75b2c674f5681c60800000000000000
+      internalID: 7789087656176170365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 143
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5bc53435bff35f0800000000000000
+      internalID: -774624275853429320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 138
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea8458718bdee870800000000000000
+      internalID: 8714143678124559087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_14
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 141
+        width: 50
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf968f7bf1689800800000000000000
+      internalID: 619352681567657925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 145
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f1cd3b694cd8560800000000000000
+      internalID: 7317721121088610058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eeb11c33b4f90ec0800000000000000
+      internalID: -3600077376461881623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 100
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5317689769723cfa0800000000000000
+      internalID: -5781733969376153291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 101
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b859deef54155ecf0800000000000000
+      internalID: -223683245413395061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 100
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50042564793515520800000000000000
+      internalID: 2689022361701859333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 99
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81be22ed5f40a9200800000000000000
+      internalID: 187467788529625880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 100
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7b2a3973d936810800000000000000
+      internalID: 1757421141630302161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_22
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 99
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb15180948546ca0800000000000000
+      internalID: -6024593330823423004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_23
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 97
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a36562d7b15fc430800000000000000
+      internalID: 3805350060102083493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b78671cf35b9eb0800000000000000
+      internalID: -4712080242923504892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01f9689716bf8a70800000000000000
+      internalID: 8831477606754414858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 61
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13223216445879df0800000000000000
+      internalID: -173523531896511951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 62
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0ea6b676fb159d0800000000000000
+      internalID: -2787236243460923192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 57
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faccc5e54d427c4a0800000000000000
+      internalID: -6573244636589142865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_29
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 57
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b61d6d293836150800000000000000
+      internalID: 5864675806459030328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_30
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 59
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12109d295c3524890800000000000000
+      internalID: -7475320323444244191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bf2f0f7cc048f70800000000000000
+      internalID: 9188483192623135566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 25
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b083bfee06533e450800000000000000
+      internalID: 6116791409341839371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 29
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6143ddc95279850800000000000000
+      internalID: 6383612352477271720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_34
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 22
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e00043d57be30540800000000000000
+      internalID: 4973077304835047648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_35
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 27
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddcbc603c26ca840800000000000000
+      internalID: 5236669056497208785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046f4e6cdb545e0f0800000000000000
+      internalID: -1088387053552077248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_37
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce8a7103a810a3f0800000000000000
+      internalID: -891685637835813181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_38
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 35
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5200c1f9253a222d0800000000000000
+      internalID: -3304899601284464603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b253d07a8281bbc30800000000000000
+      internalID: 4376118025800987947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_40
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779d34ce5930744e0800000000000000
+      internalID: -1997623967266645641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_41
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 2
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e27fa7af1bb39d0800000000000000
+      internalID: -2793443454490300851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_42
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7782e31ffb600f0800000000000000
+      internalID: -1151021611895719945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd24b59f573f899b0800000000000000
+      internalID: -5073037292212632868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompoMilitar_44
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 2
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb56fb60e155dbd0800000000000000
+      internalID: -2606086785038132277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CompoMilitar_0: -4355577653746338506
+      CompoMilitar_1: -7623440034228891859
+      CompoMilitar_10: -2690516574207634260
+      CompoMilitar_11: 7789087656176170365
+      CompoMilitar_12: -774624275853429320
+      CompoMilitar_13: 8714143678124559087
+      CompoMilitar_14: 619352681567657925
+      CompoMilitar_15: 7317721121088610058
+      CompoMilitar_16: -3600077376461881623
+      CompoMilitar_17: -5781733969376153291
+      CompoMilitar_18: -223683245413395061
+      CompoMilitar_19: 2689022361701859333
+      CompoMilitar_2: 222297921323124345
+      CompoMilitar_20: 187467788529625880
+      CompoMilitar_21: 1757421141630302161
+      CompoMilitar_22: -6024593330823423004
+      CompoMilitar_23: 3805350060102083493
+      CompoMilitar_24: -4712080242923504892
+      CompoMilitar_25: 8831477606754414858
+      CompoMilitar_26: -173523531896511951
+      CompoMilitar_27: -2787236243460923192
+      CompoMilitar_28: -6573244636589142865
+      CompoMilitar_29: 5864675806459030328
+      CompoMilitar_3: -2728904102753060003
+      CompoMilitar_30: -7475320323444244191
+      CompoMilitar_31: 9188483192623135566
+      CompoMilitar_32: 6116791409341839371
+      CompoMilitar_33: 6383612352477271720
+      CompoMilitar_34: 4973077304835047648
+      CompoMilitar_35: 5236669056497208785
+      CompoMilitar_36: -1088387053552077248
+      CompoMilitar_37: -891685637835813181
+      CompoMilitar_38: -3304899601284464603
+      CompoMilitar_39: 4376118025800987947
+      CompoMilitar_4: -4301214314749145480
+      CompoMilitar_40: -1997623967266645641
+      CompoMilitar_41: -2793443454490300851
+      CompoMilitar_42: -1151021611895719945
+      CompoMilitar_43: -5073037292212632868
+      CompoMilitar_44: -2606086785038132277
+      CompoMilitar_5: -5948886980693616719
+      CompoMilitar_6: -7453592420429939234
+      CompoMilitar_7: -8169516739362299098
+      CompoMilitar_8: 8269674374314118592
+      CompoMilitar_9: -6536309001799140891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

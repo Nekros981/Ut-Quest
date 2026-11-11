@@ -1,0 +1,1804 @@
+fileFormatVersion: 2
+guid: 71e18e075ad2ccf4082a76b37cb6bbea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6814210124835771059
+    second: licmony_0
+  - first:
+      213: -3101814285990291063
+    second: licmony_1
+  - first:
+      213: -6419287948714499586
+    second: licmony_2
+  - first:
+      213: -5159430307979093508
+    second: licmony_3
+  - first:
+      213: -1998930314775703111
+    second: licmony_4
+  - first:
+      213: 4360439551299361578
+    second: licmony_5
+  - first:
+      213: -2784821019140206467
+    second: licmony_6
+  - first:
+      213: 44019228238999476
+    second: licmony_7
+  - first:
+      213: -7677267472411368644
+    second: licmony_8
+  - first:
+      213: -1631061482267602588
+    second: licmony_9
+  - first:
+      213: 896852709909688039
+    second: licmony_10
+  - first:
+      213: -955130357693011190
+    second: licmony_11
+  - first:
+      213: 3342986204300411289
+    second: licmony_12
+  - first:
+      213: -5012512048934357648
+    second: licmony_13
+  - first:
+      213: 7876678621575319229
+    second: licmony_14
+  - first:
+      213: -1882235507383520540
+    second: licmony_15
+  - first:
+      213: -3603400233663231850
+    second: licmony_16
+  - first:
+      213: -2562669004740101894
+    second: licmony_17
+  - first:
+      213: -1141492059033368589
+    second: licmony_18
+  - first:
+      213: 4846016434948774407
+    second: licmony_19
+  - first:
+      213: -1850691057547460174
+    second: licmony_20
+  - first:
+      213: -6198081069389560294
+    second: licmony_21
+  - first:
+      213: -3640955907486927314
+    second: licmony_22
+  - first:
+      213: 2639374734815462971
+    second: licmony_23
+  - first:
+      213: 4760861345372976345
+    second: licmony_24
+  - first:
+      213: -3534814249373867023
+    second: licmony_25
+  - first:
+      213: 6983491428501967211
+    second: licmony_26
+  - first:
+      213: -3778807570690061457
+    second: licmony_27
+  - first:
+      213: -171242045102099344
+    second: licmony_28
+  - first:
+      213: -691122337689965133
+    second: licmony_29
+  - first:
+      213: -1242772418038857791
+    second: licmony_30
+  - first:
+      213: -6999651841692434626
+    second: licmony_31
+  - first:
+      213: -2803008981959679948
+    second: licmony_32
+  - first:
+      213: 7992830816157237530
+    second: licmony_33
+  - first:
+      213: -5145527197383386610
+    second: licmony_34
+  - first:
+      213: -8898549212952077124
+    second: licmony_35
+  - first:
+      213: -7436595825870578113
+    second: licmony_36
+  - first:
+      213: 1774880217422666430
+    second: licmony_37
+  - first:
+      213: 1598458514506651203
+    second: licmony_38
+  - first:
+      213: 6422370760738052479
+    second: licmony_39
+  - first:
+      213: -3995691834014989140
+    second: licmony_40
+  - first:
+      213: 4995962820707430613
+    second: licmony_41
+  - first:
+      213: -8442267753149303394
+    second: licmony_42
+  - first:
+      213: -8247804077772809916
+    second: licmony_43
+  - first:
+      213: -3259682807259618214
+    second: licmony_44
+  - first:
+      213: -7772416582015625979
+    second: licmony_45
+  - first:
+      213: -1702576007790631312
+    second: licmony_46
+  - first:
+      213: 2307329361876860832
+    second: licmony_47
+  - first:
+      213: 6686044938846417996
+    second: licmony_48
+  - first:
+      213: 7870690694058776145
+    second: licmony_49
+  - first:
+      213: 7602653185697542293
+    second: licmony_50
+  - first:
+      213: -2090485207287159676
+    second: licmony_51
+  - first:
+      213: -8629487574421037862
+    second: licmony_52
+  - first:
+      213: -6916010403778176811
+    second: licmony_53
+  - first:
+      213: -2737381596522095787
+    second: licmony_54
+  - first:
+      213: 8495241532263461162
+    second: licmony_55
+  - first:
+      213: 757664737892200113
+    second: licmony_56
+  - first:
+      213: 4949938237077665485
+    second: licmony_57
+  - first:
+      213: -4523415637583639202
+    second: licmony_58
+  - first:
+      213: -6872996814967829373
+    second: licmony_59
+  - first:
+      213: 7695460376354331782
+    second: licmony_60
+  - first:
+      213: -7541977917655300081
+    second: licmony_61
+  - first:
+      213: 6976344547752114587
+    second: licmony_62
+  - first:
+      213: -7443489250462945501
+    second: licmony_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: licmony_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 225
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2d4bb5100f09e50800000000000000
+      internalID: 6814210124835771059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 225
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989115c475424f4d0800000000000000
+      internalID: -3101814285990291063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 225
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef12de91f9b1ae6a0800000000000000
+      internalID: -6419287948714499586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9958188750668b0800000000000000
+      internalID: -5159430307979093508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 225
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1d801387f5244e0800000000000000
+      internalID: -1998930314775703111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 225
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b13c75ba4638c30800000000000000
+      internalID: 4360439551299361578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d705b17a9045a59d0800000000000000
+      internalID: -2784821019140206467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfe87e31436c9000800000000000000
+      internalID: 44019228238999476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 193
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c336245e8edd47590800000000000000
+      internalID: -7677267472411368644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 193
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4611e9e393e4d59e0800000000000000
+      internalID: -1631061482267602588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 193
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee6306b9c2427c00800000000000000
+      internalID: 896852709909688039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 193
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b248b0002beb2f0800000000000000
+      internalID: -955130357693011190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9918b5cad3ca46e20800000000000000
+      internalID: 3342986204300411289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075f6e259daff6ab0800000000000000
+      internalID: -5012512048934357648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 193
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe09e059759f4d60800000000000000
+      internalID: 7876678621575319229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 193
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e237ce47c4f0e5e0800000000000000
+      internalID: -1882235507383520540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69881f044962efdc0800000000000000
+      internalID: -3603400233663231850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 161
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8ff872e129f6cd0800000000000000
+      internalID: -2562669004740101894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7036b250b9820f0800000000000000
+      internalID: -1141492059033368589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a93d4b542804340800000000000000
+      internalID: 4846016434948774407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 161
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b144edd9460156e0800000000000000
+      internalID: -1850691057547460174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 161
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1646f13b1efbf9a0800000000000000
+      internalID: -6198081069389560294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_22
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 161
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26b16b84e9b87dc0800000000000000
+      internalID: -3640955907486927314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 161
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3601d95651f0a420800000000000000
+      internalID: 2639374734815462971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d438d36b2af11240800000000000000
+      internalID: 4760861345372976345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 129
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3e41f1b21d1fec0800000000000000
+      internalID: -3534814249373867023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 129
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6158df34785ae060800000000000000
+      internalID: 6983491428501967211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 129
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b4672198afe8bc0800000000000000
+      internalID: -3778807570690061457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 129
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074f31b6440af9df0800000000000000
+      internalID: -171242045102099344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 129
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bde6a545e3a866f0800000000000000
+      internalID: -691122337689965133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 129
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cff32ef119c0cee0800000000000000
+      internalID: -1242772418038857791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_31
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 129
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f73885cbd3cde90800000000000000
+      internalID: -6999651841692434626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 97
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43060109e26b919d0800000000000000
+      internalID: -2803008981959679948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_33
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 97
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1109da874d3cee60800000000000000
+      internalID: 7992830816157237530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 97
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a1ad1b64a6798b0800000000000000
+      internalID: -5145527197383386610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcd8a923a0028480800000000000000
+      internalID: -8898549212952077124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_36
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 97
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ed4d44f77ebc890800000000000000
+      internalID: -7436595825870578113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 97
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba985e6724a1a810800000000000000
+      internalID: 1774880217422666430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3461e59cc8dde2610800000000000000
+      internalID: 1598458514506651203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 97
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7995a10e28d02950800000000000000
+      internalID: 6422370760738052479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_40
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 65
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca48b9172737c88c0800000000000000
+      internalID: -3995691834014989140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 65
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0335737b9355540800000000000000
+      internalID: 4995962820707430613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_42
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 65
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95fcc2253a07da80800000000000000
+      internalID: -8442267753149303394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_43
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 65
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4495557d3e9e98d80800000000000000
+      internalID: -8247804077772809916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 65
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54a7d0e1c743c2d0800000000000000
+      internalID: -3259682807259618214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_45
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 65
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5055a967c44d22490800000000000000
+      internalID: -7772416582015625979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 65
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076698c342c3f58e0800000000000000
+      internalID: -1702576007790631312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_47
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 65
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afbf7274d7450020800000000000000
+      internalID: 2307329361876860832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_48
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c443d3c927a99cc50800000000000000
+      internalID: 6686044938846417996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_49
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156985c4c7f4a3d60800000000000000
+      internalID: 7870690694058776145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5907ef3bacc028960800000000000000
+      internalID: 7602653185697542293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_51
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484a073a7ca1df2e0800000000000000
+      internalID: -2090485207287159676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_52
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 33
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc9cf4a5c6ed3880800000000000000
+      internalID: -8629487574421037862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_53
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 33
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d855eb2e256500a0800000000000000
+      internalID: -6916010403778176811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_54
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 33
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bdb94f0fdd20ad0800000000000000
+      internalID: -2737381596522095787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_55
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 33
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2175b3f92925e570800000000000000
+      internalID: 8495241532263461162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be67e89014c38a00800000000000000
+      internalID: 757664737892200113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_57
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc63329c996b1b440800000000000000
+      internalID: 4949938237077665485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_58
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d416691799931c0800000000000000
+      internalID: -4523415637583639202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c837dbfc53e90a0800000000000000
+      internalID: -6872996814967829373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_60
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c91b3a074cbca60800000000000000
+      internalID: 7695460376354331782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_61
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08c0520b03855790800000000000000
+      internalID: -7541977917655300081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_62
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b997f776764f0d060800000000000000
+      internalID: 6976344547752114587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: licmony_63
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fa7b8c6f963b890800000000000000
+      internalID: -7443489250462945501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lic_mony_Frente
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c510a816d0a9c40add27cd86c87403
+      internalID: -630952326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f863d0779522b14ca960de74a50a726
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lic_mony_Frente: -630952326
+      licmony_0: 6814210124835771059
+      licmony_1: -3101814285990291063
+      licmony_10: 896852709909688039
+      licmony_11: -955130357693011190
+      licmony_12: 3342986204300411289
+      licmony_13: -5012512048934357648
+      licmony_14: 7876678621575319229
+      licmony_15: -1882235507383520540
+      licmony_16: -3603400233663231850
+      licmony_17: -2562669004740101894
+      licmony_18: -1141492059033368589
+      licmony_19: 4846016434948774407
+      licmony_2: -6419287948714499586
+      licmony_20: -1850691057547460174
+      licmony_21: -6198081069389560294
+      licmony_22: -3640955907486927314
+      licmony_23: 2639374734815462971
+      licmony_24: 4760861345372976345
+      licmony_25: -3534814249373867023
+      licmony_26: 6983491428501967211
+      licmony_27: -3778807570690061457
+      licmony_28: -171242045102099344
+      licmony_29: -691122337689965133
+      licmony_3: -5159430307979093508
+      licmony_30: -1242772418038857791
+      licmony_31: -6999651841692434626
+      licmony_32: -2803008981959679948
+      licmony_33: 7992830816157237530
+      licmony_34: -5145527197383386610
+      licmony_35: -8898549212952077124
+      licmony_36: -7436595825870578113
+      licmony_37: 1774880217422666430
+      licmony_38: 1598458514506651203
+      licmony_39: 6422370760738052479
+      licmony_4: -1998930314775703111
+      licmony_40: -3995691834014989140
+      licmony_41: 4995962820707430613
+      licmony_42: -8442267753149303394
+      licmony_43: -8247804077772809916
+      licmony_44: -3259682807259618214
+      licmony_45: -7772416582015625979
+      licmony_46: -1702576007790631312
+      licmony_47: 2307329361876860832
+      licmony_48: 6686044938846417996
+      licmony_49: 7870690694058776145
+      licmony_5: 4360439551299361578
+      licmony_50: 7602653185697542293
+      licmony_51: -2090485207287159676
+      licmony_52: -8629487574421037862
+      licmony_53: -6916010403778176811
+      licmony_54: -2737381596522095787
+      licmony_55: 8495241532263461162
+      licmony_56: 757664737892200113
+      licmony_57: 4949938237077665485
+      licmony_58: -4523415637583639202
+      licmony_59: -6872996814967829373
+      licmony_6: -2784821019140206467
+      licmony_60: 7695460376354331782
+      licmony_61: -7541977917655300081
+      licmony_62: 6976344547752114587
+      licmony_63: -7443489250462945501
+      licmony_7: 44019228238999476
+      licmony_8: -7677267472411368644
+      licmony_9: -1631061482267602588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

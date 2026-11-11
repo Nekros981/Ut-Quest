@@ -8,6 +8,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Carga_Rectoria.unity
+    guid: a7c3e91b4d2f48e6b0c15a9d8e7f6b21
+  - enabled: 1
+    path: Assets/Scenes/Rectoria_Tutorial_Arte_v01.unity
+    guid: 8655615493c052743937dc922965eba3
+  - enabled: 1
+    path: Assets/Scenes/Carga_Sp.unity
+    guid: e6f7a8b9c0d1e2f3a4b5c6d7e8f90ab1
+  - enabled: 1
+    path: Assets/Scenes/Sp_Bosque.unity
+    guid: fc99fd13d353d082c85822dcb4fc9ea2
+  - enabled: 1
+    path: Assets/Scenes/Sp_Bunker.unity
+    guid: 978841349ff26441ea3e758f1acc775b
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6a1c329308d5de72084076ea4dea2101
+  - enabled: 1
+    path: Assets/Scenes/IDGS_Exterior.unity
+    guid: e158e4bb2d668b54d855cc9564097193
+  - enabled: 1
+    path: Assets/Scenes/IDGS_Docencia_Interior.unity
+    guid: 9b110695e49cc034392afed6f756bf84
+  - enabled: 1
+    path: Assets/Scenes/IDGS_CMD_Interior.unity
+    guid: 897d9e8ea832e7040a388387c1f4cbcc
+
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

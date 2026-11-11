@@ -1,0 +1,106 @@
+[
+  {
+    "name": "executive_desk",
+    "sheet": "A",
+    "x": 412,
+    "top": 411,
+    "width": 97,
+    "height": 54
+  },
+  {
+    "name": "filing_cabinet",
+    "sheet": "B",
+    "x": 513,
+    "top": 323,
+    "width": 29,
+    "height": 56
+  },
+  {
+    "name": "bookcase",
+    "sheet": "B",
+    "x": 641,
+    "top": 328,
+    "width": 39,
+    "height": 64
+  },
+  {
+    "name": "tall_plant",
+    "sheet": "B",
+    "x": 105,
+    "top": 451,
+    "width": 32,
+    "height": 56
+  },
+  {
+    "name": "round_plant",
+    "sheet": "B",
+    "x": 387,
+    "top": 602,
+    "width": 26,
+    "height": 38
+  },
+  {
+    "name": "water_cooler",
+    "sheet": "B",
+    "x": 645,
+    "top": 583,
+    "width": 22,
+    "height": 56
+  },
+  {
+    "name": "printer",
+    "sheet": "B",
+    "x": 579,
+    "top": 470,
+    "width": 38,
+    "height": 39
+  },
+  {
+    "name": "monitor",
+    "sheet": "B",
+    "x": 291,
+    "top": 455,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "name": "office_chair",
+    "sheet": "B",
+    "x": 873,
+    "top": 220,
+    "width": 24,
+    "height": 36
+  },
+  {
+    "name": "wall_clock",
+    "sheet": "B",
+    "x": 835,
+    "top": 513,
+    "width": 27,
+    "height": 28
+  },
+  {
+    "name": "window",
+    "sheet": "B",
+    "x": 577,
+    "top": 0,
+    "width": 105,
+    "height": 63
+  },
+  {
+    "name": "noticeboard",
+    "sheet": "B",
+    "x": 677,
+    "top": 514,
+    "width": 87,
+    "height": 45
+  },
+  {
+    "name": "receipt_table",
+    "sheet": "A",
+    "x": 358,
+    "top": 522,
+    "width": 50,
+    "height": 36
+  }
+]
