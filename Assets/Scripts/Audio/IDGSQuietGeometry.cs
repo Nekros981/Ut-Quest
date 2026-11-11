@@ -30,6 +30,7 @@ public sealed class IDGSQuietGeometry : MonoBehaviour
         ApplyConfigDefaults();
         instance = this;
         DontDestroyOnLoad(gameObject);
+        EnsureListener();
         EnsureSource();
         SceneManager.sceneLoaded += OnSceneLoaded;
         PlayIfNeeded();
@@ -57,6 +58,12 @@ public sealed class IDGSQuietGeometry : MonoBehaviour
             musicClip = config.musicClip;
         if (audioMixer == null)
             audioMixer = config.audioMixer;
+    }
+
+    void EnsureListener()
+    {
+        if (GetComponent<AudioListener>() == null)
+            gameObject.AddComponent<AudioListener>();
     }
 
     void EnsureSource()
