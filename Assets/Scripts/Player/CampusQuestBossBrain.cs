@@ -119,6 +119,12 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
             return;
         }
 
+        if (CampusQuestCombatHold.EnemiesHeld)
+        {
+            body.linearVelocity = Vector2.zero;
+            return;
+        }
+
         attackCooldown -= Time.deltaTime;
         grenadeCooldown -= Time.deltaTime;
         TickPendingMeleeHit();
@@ -187,6 +193,12 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
     void FixedUpdate()
     {
         if (visual == null || mateo == null || visual.IsDefeated)
+        {
+            body.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (CampusQuestCombatHold.EnemiesHeld)
         {
             body.linearVelocity = Vector2.zero;
             return;

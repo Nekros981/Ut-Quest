@@ -98,6 +98,12 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
         if (visual == null || mateo == null)
             return;
 
+        if (CampusQuestCombatHold.EnemiesHeld)
+        {
+            body.linearVelocity = Vector2.zero;
+            return;
+        }
+
         cooldown -= Time.deltaTime;
         TickPendingMeleeHit();
 
@@ -147,6 +153,12 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
         {
             if (body != null)
                 body.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (CampusQuestCombatHold.EnemiesHeld)
+        {
+            body.linearVelocity = Vector2.zero;
             return;
         }
 

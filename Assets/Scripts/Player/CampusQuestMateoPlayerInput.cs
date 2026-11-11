@@ -11,6 +11,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
     [SerializeField] float sprintSpeed = 6.5f;
     [SerializeField] float interactRadius = 1.2f;
     const float MeleeDamageRange = 1.5f;
+    const float HoldReleaseDeadzoneSq = 0.2f * 0.2f;
     [SerializeField] CampusQuestInteractPrompt interactPrompt;
     [SerializeField] Sprite bulletSprite;
 
@@ -131,6 +132,9 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
             return;
 
         var move = moveAction.ReadValue<Vector2>();
+        if (move.sqrMagnitude > HoldReleaseDeadzoneSq)
+            CampusQuestCombatHold.Release();
+
         if (move.sqrMagnitude < 0.0001f)
         {
             body.linearVelocity = Vector2.zero;
