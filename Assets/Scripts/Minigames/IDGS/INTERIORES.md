@@ -21,10 +21,11 @@ antes de activar otro acceso para evitar transiciones repetidas.
 
 Las estaciones usan las aproximaciones (3,7), (8,8) y (12,7), mirando al norte.
 IDGSInteractionPoint ofrece un identificador y onInteracted para conectar cada
-actividad. Las tres estaciones de Docencia est?n activas: Cables registra
+actividad. Las tres estaciones de Docencia están activas: Cables registra
 idgs.docencia.cables, Circuito registra idgs.docencia.circuito y Memoria
-registra idgs.docencia.memoria. Las tres estaciones de CMD contin?an mostrando
-?Pr?ximamente?. Cada actividad registra su evento ?nico mediante
+registra idgs.docencia.memoria. La estación oeste de CMD registra
+idgs.cmd.archivos; Servidor y Virus continúan mostrando «Próximamente».
+Cada actividad registra su evento único mediante
 GameProgress.RegisterEvent; repetirla no entrega recompensas adicionales.
 
 Cada escena separa Cuadrícula, Colisiones, Estaciones y mobiliario auxiliar.
@@ -44,3 +45,6 @@ continúa perteneciendo exclusivamente a GameProgress.
 IDGSInteriorValidation prueba el ciclo completo mediante teclado y física en
 un slot aislado, y comprueba estaciones, carrera, colisiones, orientación,
 cámara y conservación del perfil. Los reportes quedan en tmp/idgs-interiors.
+
+El HUD de IDGS muestra Sistemas restaurados: X/6 a partir de los seis eventos
+registrados o reservados. Ver ARCHIVOS.md para la tabla y la validación.

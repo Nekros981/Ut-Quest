@@ -86,7 +86,7 @@ namespace CampusQuest.IDGS
 
             if (!IsInteractHeld())
                 confirmArmed = true;
-            if (confirmArmed && CampusQuestActiveControls.InteractPressedThisFrame())
+            if (confirmArmed && CampusQuestActiveControls.PuzzleConfirmPressedThisFrame())
             {
                 confirmArmed = false;
                 TryInteract();
@@ -96,7 +96,7 @@ namespace CampusQuest.IDGS
         static bool IsInteractHeld()
         {
             var keyboard = UnityEngine.InputSystem.Keyboard.current;
-            return keyboard != null && keyboard.eKey.isPressed;
+            return keyboard != null && (keyboard.eKey.isPressed || keyboard.enterKey.isPressed || keyboard.numpadEnterKey.isPressed);
         }
     }
 }

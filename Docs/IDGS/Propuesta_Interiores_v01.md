@@ -170,7 +170,7 @@ registro compartido, con `idgs.*` para diferenciarlos de `rectoria.*`.
 | Cables | `idgs.docencia.cables` |
 | Circuito | `idgs.docencia.circuito` |
 | Memoria | `idgs.docencia.memoria` |
-| Archivos | `idgs.cmd.files.completed` |
+| Archivos | `idgs.cmd.archivos` |
 | Servidor | `idgs.cmd.server.completed` |
 | Virus | `idgs.cmd.virus.completed` |
 | Sello | `idgs.seal.awarded` |
