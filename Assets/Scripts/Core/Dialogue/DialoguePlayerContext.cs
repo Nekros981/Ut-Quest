@@ -2,15 +2,17 @@ using UnityEngine;
 
 namespace CampusQuest.Dialogue
 {
-    /// <summary>Bind the chosen game-profile name here when the new-game screen is implemented.</summary>
+    /// <summary>Resolves the shared profile name; the serialized field imports older scene data.</summary>
     public sealed class DialoguePlayerContext : MonoBehaviour
     {
         [SerializeField] private string playerName;
-        public string PlayerName => string.IsNullOrWhiteSpace(playerName) ? "Estudiante" : playerName;
+        public string PlayerName => string.IsNullOrWhiteSpace(GameProgress.PlayerName) ? "Estudiante" : GameProgress.PlayerName;
+
+        private void OnEnable() { GameProgress.ImportLegacyPlayerName(playerName); }
 
         public void SetPlayerName(string value)
         {
-            playerName = value == null ? string.Empty : value.Trim();
+            GameProgress.SetPlayerName(value);
         }
 
         public string Resolve(string text)
