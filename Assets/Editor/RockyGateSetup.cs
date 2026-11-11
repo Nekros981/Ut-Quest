@@ -33,6 +33,7 @@ namespace CampusQuest.EditorTools
                 throw new InvalidOperationException("La puerta existente debe tener dos celdas bloqueadas, suelo y TilemapCollider2D.");
             var controller = Undo.AddComponent<RockyGateReview>(interactor.session.gameObject);
             controller.session = interactor.session; controller.mission = interactor.session.GetComponent<EnrollmentMission>();
+            controller.player = interactor.player;
             controller.map = map; controller.minimap = UnityEngine.Object.FindFirstObjectByType<RectoriaMinimap>(); controller.gateCells = cells.ToArray();
             controller.missingDialogue = Dialogue("Rocky_Faltan_Documentos", "rectoria.rocky.missing_documents", "Aún te faltan documentos. Revisa la barra de arriba");
             controller.reviewDialogue = Dialogue("Rocky_Revisar_Documentos", RockyGateReview.ReviewId,

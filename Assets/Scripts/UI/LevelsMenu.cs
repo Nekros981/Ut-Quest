@@ -8,6 +8,7 @@ public sealed class LevelsMenu : MonoBehaviour
 {
     const string SceneRectoria = "Carga_Rectoria";
     const string SceneSp = "Sp_Bosque";
+    const string SceneIdgs = "IDGS_Exterior";
 
     [SerializeField] CanvasGroup windowGroup;
     [SerializeField] CanvasGroup mainMenuContentGroup;
@@ -114,6 +115,7 @@ public sealed class LevelsMenu : MonoBehaviour
 
     public void LoadIdgs()
     {
+        SceneManager.LoadScene(SceneIdgs);
     }
 
     void CacheUiRefs()

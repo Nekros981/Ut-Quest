@@ -69,14 +69,21 @@ namespace CampusQuest.Rectoria
         }
         private void OnEnable()
         {
+            CampusQuestActiveControls.Changed += OnActiveControlsChanged;
             if (session == null) return;
             session.Completed += OnDialogueCompleted;
             session.ProgressChanged += OnProgressChanged;
         }
         private void OnDisable()
         {
+            CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
             if (session != null) { session.Completed -= OnDialogueCompleted; session.ProgressChanged -= OnProgressChanged; }
             Close();
+        }
+
+        private void OnActiveControlsChanged()
+        {
+            if (IsOpen) Refresh(null);
         }
 
         public DialogueDefinition DialogueFor(RectoriaScenePoint point)
@@ -177,25 +184,30 @@ namespace CampusQuest.Rectoria
                 rewardBanner.localScale = Vector3.one * (1f + .04f * Mathf.Sin(Mathf.Min(1, rewardTime / .6f) * Mathf.PI));
             }
             if (lastInputFrame == Time.frameCount) return;
-            var keyboard = Keyboard.current;
-            if (keyboard == null) return;
-            if (keyboard.escapeKey.wasPressedThisFrame) { Close(); return; }
-            if (DialogueSession.ConfirmPressedThisFrame())
+            if (CampusQuestActiveControls.CancelPressedThisFrame()) { Close(); return; }
+            if (CampusQuestActiveControls.PuzzleConfirmPressedThisFrame())
             {
                 lastInputFrame = Time.frameCount;
                 if (IsSolved) Close(); else ConfirmSelection();
                 return;
             }
-            if (keyboard.leftArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.left);
-            else if (keyboard.rightArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.right);
-            else if (keyboard.upArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.up);
-            else if (keyboard.downArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.down);
+            if (CampusQuestActiveControls.MenuDirectionThisFrame(out var direction))
+                MoveSelection(direction);
         }
 
         private void Refresh(string message)
         {
             if (statusLabel != null && message != null) statusLabel.text = message;
-            if (instructionsLabel != null) instructionsLabel.text = IsSolved ? "E / Enter · Volver al Archivo" : "Flechas · Elegir    E / Enter · Confirmar    Esc · Volver\nIntentos: " + AttemptsRemaining + "/3    Ronda: " + Round;
+            if (instructionsLabel != null)
+            {
+                var move = CampusQuestActiveControls.BindingLabel("Player", "Move");
+                var interact = CampusQuestActiveControls.BindingLabel("Player", "Interact");
+                var cancel = CampusQuestActiveControls.BindingLabel("UI", "Cancel");
+                instructionsLabel.text = IsSolved
+                    ? interact + " · Volver al Archivo"
+                    : move + " · Elegir    " + interact + " · Confirmar    " + cancel + " · Volver\nIntentos: "
+                        + AttemptsRemaining + "/3    Ronda: " + Round;
+            }
             if (clueLabel != null) clueLabel.text = "PISTAS · " + CluesRead + "/4\n\n" + string.Join("\n\n", Clues);
             if (rewardLabel != null) rewardLabel.text = "ACTA DE NACIMIENTO CONSEGUIDA";
             for (int i = 0; i < 9; i++)

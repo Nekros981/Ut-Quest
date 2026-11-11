@@ -1,14 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public sealed class CampusQuestBunkerSealOverlay : MonoBehaviour
 {
+    const string TargetScene = "IDGS_Exterior";
+
     [SerializeField] Animator sealAnimator;
     [SerializeField] CampusQuestMateoPlayerInput mateoInput;
     [SerializeField] TextMeshProUGUI continueHint;
     [SerializeField] string playStateName = "Sellar";
 
     bool shown;
+    bool departing;
     bool mateoWasEnabled;
     bool hintVisible;
 
@@ -123,9 +127,12 @@ public sealed class CampusQuestBunkerSealOverlay : MonoBehaviour
 
     void Dismiss()
     {
+        if (departing)
+            return;
+
+        departing = true;
         HideContinueHint();
-        gameObject.SetActive(false);
-        ResumeMateo();
+        SceneManager.LoadScene(TargetScene);
     }
 
     void SuspendMateo()

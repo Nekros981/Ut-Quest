@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CampusQuest.Dialogue;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 namespace CampusQuest.Rectoria
@@ -15,8 +16,10 @@ namespace CampusQuest.Rectoria
         public const string ResumeId = "rectoria.rocky.resume_review";
         public const string UnlockId = "rectoria.blocks_gate.unlocked";
         public const string CompletionSignal = "rectoria.rocky.review_complete";
+        public const string SceneCargaSp = "Carga_Sp";
         public DialogueSession session;
         public EnrollmentMission mission;
+        public RectoriaPlayerTest player;
         public RectoriaGridMap map;
         public RectoriaMinimap minimap;
         public DialogueDefinition missingDialogue;
@@ -44,6 +47,7 @@ namespace CampusQuest.Rectoria
         private Vector3[] documentTargets;
         private float elapsed;
         private int lastInputFrame = -1;
+        private bool departing;
         private readonly Dictionary<Behaviour, bool> behaviours = new Dictionary<Behaviour, bool>();
         private readonly Dictionary<GameObject, bool> objects = new Dictionary<GameObject, bool>();
         private static readonly Color Gold = new Color32(233, 216, 166, 255);
@@ -54,6 +58,12 @@ namespace CampusQuest.Rectoria
             if (session == null || mission == null || map == null || map.doors == null || gateCells == null
                 || gateCells.Length == 0 || slots == null || slots.Length != 3 || documents == null || documents.Length != 3)
             { Debug.LogError("RockyGateReview has incomplete gate references.", this); enabled = false; return; }
+            if (player == null)
+            {
+                var interactor = FindAnyObjectByType<RectoriaDialogueInteractor>();
+                if (interactor != null)
+                    player = interactor.player;
+            }
             closedTiles = new TileBase[gateCells.Length]; closedFlags = new TileFlags[gateCells.Length];
             closedColors = new Color[gateCells.Length]; closedMatrices = new Matrix4x4[gateCells.Length];
             for (int i = 0; i < gateCells.Length; i++)
@@ -113,7 +123,11 @@ namespace CampusQuest.Rectoria
 
         private void Update()
         {
-            if (!IsOpening) return;
+            if (!IsOpening)
+            {
+                TryDepartForSp();
+                return;
+            }
             elapsed += Time.unscaledDeltaTime;
             for (int i = 0; i < 3; i++)
             {
@@ -170,6 +184,23 @@ namespace CampusQuest.Rectoria
         {
             if (!IsOpening) return;
             IsOpening = false; ReleaseControls(); ApplyGate(IsOpen); lastInputFrame = Time.frameCount;
+        }
+
+        private void TryDepartForSp()
+        {
+            if (departing || !IsOpen || player == null || !player.isActiveAndEnabled
+                || map == null || map.grid == null || gateCells == null)
+                return;
+
+            var cell = map.grid.WorldToCell(player.transform.position);
+            for (int i = 0; i < gateCells.Length; i++)
+            {
+                if (gateCells[i] != cell)
+                    continue;
+                departing = true;
+                SceneManager.LoadScene(SceneCargaSp);
+                return;
+            }
         }
     }
 }

@@ -45,8 +45,22 @@ namespace CampusQuest.Rectoria
         private static readonly Color Muted = new Color32(67, 73, 91, 255);
 
         private void Awake() { panel.SetActive(false); stamp.gameObject.SetActive(false); }
-        private void OnEnable() { if (session != null) session.ProgressChanged += OnProgressChanged; }
-        private void OnDisable() { if (session != null) session.ProgressChanged -= OnProgressChanged; Close(false); }
+        private void OnEnable()
+        {
+            CampusQuestActiveControls.Changed += OnActiveControlsChanged;
+            if (session != null) session.ProgressChanged += OnProgressChanged;
+        }
+        private void OnDisable()
+        {
+            CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
+            if (session != null) session.ProgressChanged -= OnProgressChanged;
+            Close(false);
+        }
+
+        private void OnActiveControlsChanged()
+        {
+            if (IsOpen) Refresh(null);
+        }
         private void OnProgressChanged() { if (IsOpen && !CanStart) Close(false); }
         public DialogueDefinition DialogueForBeto() => mission != null && mission.IsActive ? introDialogue : prerequisiteDialogue;
         public DialogueDefinition DialogueForTable() => mission != null && mission.IsActive ? talkFirstDialogue : prerequisiteDialogue;
@@ -122,29 +136,25 @@ namespace CampusQuest.Rectoria
                 stampVisibility.alpha = Mathf.Clamp01(t * 3);
             }
             if (ConsumedInputThisFrame) return;
-            var keyboard = Keyboard.current;
-            if (keyboard != null)
+            if (CampusQuestActiveControls.CancelPressedThisFrame()) { Close(IsSolved); return; }
+            if (CampusQuestActiveControls.PuzzleConfirmPressedThisFrame())
             {
-                if (keyboard.escapeKey.wasPressedThisFrame) { Close(IsSolved); return; }
-                if (DialogueSession.ConfirmPressedThisFrame())
-                {
-                    lastInputFrame = Time.frameCount;
-                    if (IsSolved) Close(true);
-                    else if (SelectedIndex == ReceiptSelection.Count) ConfirmPayment(); else ToggleReceipt(SelectedIndex);
-                    return;
-                }
-                if (!IsSolved)
-                {
-                    if (keyboard.cKey.wasPressedThisFrame) { ConfirmPayment(); return; }
-                    if (keyboard.spaceKey.wasPressedThisFrame && SelectedIndex < ReceiptSelection.Count) { ToggleReceipt(SelectedIndex); return; }
-                    if (keyboard.rKey.wasPressedThisFrame) ClearSelection();
-                    else if (keyboard.tabKey.wasPressedThisFrame) { SelectedIndex = (SelectedIndex + 1) % 7; Refresh(null); }
-                    else if (keyboard.leftArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.left);
-                    else if (keyboard.rightArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.right);
-                    else if (keyboard.upArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.up);
-                    else if (keyboard.downArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.down);
-                }
+                lastInputFrame = Time.frameCount;
+                if (IsSolved) Close(true);
+                else if (SelectedIndex == ReceiptSelection.Count) ConfirmPayment();
+                else ToggleReceipt(SelectedIndex);
+                return;
             }
+            var keyboard = Keyboard.current;
+            if (!IsSolved && keyboard != null)
+            {
+                if (keyboard.cKey.wasPressedThisFrame) { ConfirmPayment(); return; }
+                if (keyboard.spaceKey.wasPressedThisFrame && SelectedIndex < ReceiptSelection.Count) { ToggleReceipt(SelectedIndex); return; }
+                if (keyboard.rKey.wasPressedThisFrame) ClearSelection();
+                else if (keyboard.tabKey.wasPressedThisFrame) { SelectedIndex = (SelectedIndex + 1) % 7; Refresh(null); }
+            }
+            if (!IsSolved && CampusQuestActiveControls.MenuDirectionThisFrame(out var direction))
+                MoveSelection(direction);
             var mouse = Mouse.current;
             if (mouse == null || !mouse.leftButton.wasPressedThisFrame) return;
             Vector2 position = mouse.position.ReadValue();
@@ -166,8 +176,13 @@ namespace CampusQuest.Rectoria
                 ? "Faltan: $" + difference.ToString("N0", System.Globalization.CultureInfo.InvariantCulture)
                 : "Te excedes por: $" + (-difference).ToString("N0", System.Globalization.CultureInfo.InvariantCulture);
             differenceLabel.color = difference < 0 ? new Color32(231, 148, 129, 255) : Gold;
-            controlsLabel.text = IsSolved ? "E / Enter o clic en Continuar · Hablar con Beto"
-                : "Flechas / Tab · Elegir   E / Enter / Espacio o clic · Marcar\nC o Confirmar · Revisar pago   R / Limpiar · Vaciar   Esc · Volver";
+            var move = CampusQuestActiveControls.BindingLabel("Player", "Move");
+            var interact = CampusQuestActiveControls.BindingLabel("Player", "Interact");
+            var cancel = CampusQuestActiveControls.BindingLabel("UI", "Cancel");
+            controlsLabel.text = IsSolved
+                ? interact + " o clic en Continuar · Hablar con Beto"
+                : move + " / Tab · Elegir   " + interact + " / Espacio o clic · Marcar\nC o Confirmar · Revisar pago   R / Limpiar · Vaciar   "
+                    + cancel + " · Volver";
             for (int i = 0; i < ReceiptSelection.Count; i++)
             {
                 receiptLabels[i].text = (Selection.IsSelected(i) ? "[X]" : "[ ]") + " RECIBO\n$" + ReceiptSelection.AmountAt(i).ToString("N0", System.Globalization.CultureInfo.InvariantCulture);

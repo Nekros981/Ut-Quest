@@ -1,7 +1,6 @@
 using CampusQuest.Dialogue;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace CampusQuest.IDGS
 {
@@ -12,10 +11,33 @@ namespace CampusQuest.IDGS
         public IDGSInteractionPoint[] points;
         public TMP_Text prompt;
         public TMP_Text notice;
-        private const string Controls = "WASD / Flechas · Caminar    Shift · Correr";
         public IDGSInteractionPoint LastInteraction { get; private set; }
-        private bool confirmArmed;
-        private float noticeUntil;
+        bool confirmArmed;
+        float noticeUntil;
+        string lastWalkHint;
+
+        static string WalkControlsHint()
+        {
+            var move = CampusQuestActiveControls.BindingLabel("Player", "Move");
+            var sprint = CampusQuestActiveControls.BindingLabel("Player", "Sprint");
+            return move + " · Caminar    " + sprint + " · Correr";
+        }
+
+        void OnEnable()
+        {
+            CampusQuestActiveControls.Changed += OnActiveControlsChanged;
+            lastWalkHint = null;
+        }
+
+        void OnDisable()
+        {
+            CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
+        }
+
+        void OnActiveControlsChanged()
+        {
+            lastWalkHint = null;
+        }
 
         public IDGSInteractionPoint AvailablePoint()
         {
@@ -49,16 +71,32 @@ namespace CampusQuest.IDGS
         private void Update()
         {
             var point = AvailablePoint();
-            if (prompt != null) prompt.text = point == null ? string.Empty : point.displayName + "   ·   E / Enter";
-            if (notice != null && Time.unscaledTime > noticeUntil) notice.text = Controls;
-            var keyboard = Keyboard.current;
-            bool held = keyboard != null && (keyboard.eKey.isPressed || keyboard.enterKey.isPressed || keyboard.numpadEnterKey.isPressed);
-            if (!held) confirmArmed = true;
-            if (confirmArmed && DialogueSession.ConfirmPressedThisFrame())
+            if (prompt != null)
+            {
+                string interact = CampusQuestActiveControls.BindingLabel("Player", "Interact");
+                prompt.text = point == null ? string.Empty : point.displayName + "   ·   " + interact;
+            }
+
+            var walkHint = WalkControlsHint();
+            if (notice != null && Time.unscaledTime > noticeUntil && walkHint != lastWalkHint)
+            {
+                notice.text = walkHint;
+                lastWalkHint = walkHint;
+            }
+
+            if (!IsInteractHeld())
+                confirmArmed = true;
+            if (confirmArmed && CampusQuestActiveControls.InteractPressedThisFrame())
             {
                 confirmArmed = false;
                 TryInteract();
             }
+        }
+
+        static bool IsInteractHeld()
+        {
+            var keyboard = UnityEngine.InputSystem.Keyboard.current;
+            return keyboard != null && keyboard.eKey.isPressed;
         }
     }
 }

@@ -18399,6 +18399,7 @@ MonoBehaviour:
   walkSpeed: 4
   runSpeed: 6
   initialFacing: {x: 0, y: 1}
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!1 &1793412469
 GameObject:
   m_ObjectHideFlags: 0

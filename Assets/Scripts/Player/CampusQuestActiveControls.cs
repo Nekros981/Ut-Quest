@@ -10,12 +10,17 @@ public static class CampusQuestActiveControls
     public const string GamepadScheme = "Gamepad";
 
     const float StickDeadzone = 0.2f;
+    const float MenuRepeatDelay = 0.18f;
 
     static string activeScheme = KeyboardMouse;
     static InputActionAsset asset;
     static InputAction submitAction;
     static InputAction interactAction;
+    static InputAction cancelAction;
+    static InputAction moveAction;
     static bool listening;
+    static Vector2Int lastMenuDirection;
+    static float menuHoldSeconds;
 
     public static string ActiveScheme => activeScheme;
     public static event Action Changed;
@@ -33,6 +38,10 @@ public static class CampusQuestActiveControls
         asset = null;
         submitAction = null;
         interactAction = null;
+        cancelAction = null;
+        moveAction = null;
+        lastMenuDirection = Vector2Int.zero;
+        menuHoldSeconds = 0f;
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -50,16 +59,17 @@ public static class CampusQuestActiveControls
             return;
 
         EnsureListening();
-        if (asset == actions)
-            return;
-
         asset = actions;
         var uiMap = actions.FindActionMap("UI", false);
         if (uiMap != null)
             uiMap.Enable();
         submitAction = uiMap?.FindAction("Submit", false);
+        cancelAction = uiMap?.FindAction("Cancel", false);
         var playerMap = actions.FindActionMap("Player", false);
+        if (playerMap != null)
+            playerMap.Enable();
         interactAction = playerMap?.FindAction("Interact", false);
+        moveAction = playerMap?.FindAction("Move", false);
     }
 
     public static bool InteractPressedThisFrame()
@@ -73,6 +83,69 @@ public static class CampusQuestActiveControls
 
         var pad = Gamepad.current;
         return pad != null && pad.buttonWest.wasPressedThisFrame;
+    }
+
+    public static bool PuzzleConfirmPressedThisFrame()
+    {
+        if (InteractPressedThisFrame())
+            return true;
+
+        var keyboard = Keyboard.current;
+        return keyboard != null
+            && (keyboard.enterKey.wasPressedThisFrame || keyboard.numpadEnterKey.wasPressedThisFrame);
+    }
+
+    public static bool CancelPressedThisFrame()
+    {
+        if (cancelAction != null && cancelAction.enabled && cancelAction.WasPressedThisFrame())
+            return true;
+
+        var keyboard = Keyboard.current;
+        if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)
+            return true;
+
+        var pad = Gamepad.current;
+        return pad != null && pad.buttonEast.wasPressedThisFrame;
+    }
+
+    public static bool MenuDirectionThisFrame(out Vector2Int direction)
+    {
+        direction = Vector2Int.zero;
+        var move = moveAction != null && moveAction.enabled ? moveAction.ReadValue<Vector2>() : Vector2.zero;
+        if (move.sqrMagnitude < StickDeadzone * StickDeadzone)
+        {
+            lastMenuDirection = Vector2Int.zero;
+            menuHoldSeconds = 0f;
+            return false;
+        }
+
+        var axis = DominantAxis(move);
+        if (axis == Vector2Int.zero)
+            return false;
+
+        if (axis != lastMenuDirection)
+        {
+            lastMenuDirection = axis;
+            menuHoldSeconds = 0f;
+            direction = axis;
+            return true;
+        }
+
+        menuHoldSeconds += Time.unscaledDeltaTime;
+        if (menuHoldSeconds < MenuRepeatDelay)
+            return false;
+
+        menuHoldSeconds = 0f;
+        direction = axis;
+        return true;
+    }
+
+    static Vector2Int DominantAxis(Vector2 move)
+    {
+        if (Mathf.Abs(move.x) > Mathf.Abs(move.y))
+            return move.x > 0f ? Vector2Int.right : Vector2Int.left;
+
+        return move.y > 0f ? Vector2Int.up : Vector2Int.down;
     }
 
     public static bool SubmitPressedThisFrame()

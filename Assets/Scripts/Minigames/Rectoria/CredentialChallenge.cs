@@ -56,8 +56,23 @@ namespace CampusQuest.Rectoria
             capturePanel.SetActive(false); puzzlePanel.SetActive(false); flash.gameObject.SetActive(false);
             lastPosition = player.transform.position;
         }
-        private void OnEnable() { if (session != null) session.ProgressChanged += OnProgressChanged; }
-        private void OnDisable() { if (session != null) session.ProgressChanged -= OnProgressChanged; Close(false); }
+        private void OnEnable()
+        {
+            CampusQuestActiveControls.Changed += OnActiveControlsChanged;
+            if (session != null) session.ProgressChanged += OnProgressChanged;
+        }
+        private void OnDisable()
+        {
+            CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
+            if (session != null) session.ProgressChanged -= OnProgressChanged;
+            Close(false);
+        }
+
+        private void OnActiveControlsChanged()
+        {
+            if (Stage == CredentialStage.Puzzle || Stage == CredentialStage.Success)
+                Refresh();
+        }
         private void OnProgressChanged()
         {
             if (!Eligible) { if (IsBusy) Close(false); mustLeaveMark = false; }
@@ -72,16 +87,40 @@ namespace CampusQuest.Rectoria
                 bool centered = photoMark != null && player.map != null
                     && (player.transform.position - player.map.CellCenter(photoMark.cell)).sqrMagnitude < .0001f;
                 bool stationary = (player.transform.position - lastPosition).sqrMagnitude < .000001f;
+                bool readyContext = centered && player.isActiveAndEnabled
+                    && !DialogueSession.IsAnyOpen && (archive == null || !archive.IsOpen);
                 if (!centered) mustLeaveMark = false;
-                if (Eligible && centered && stationary && !mustLeaveMark && player.isActiveAndEnabled
-                    && !DialogueSession.IsAnyOpen && (archive == null || !archive.IsOpen))
+
+                if (!readyContext)
+                {
+                    StillSeconds = 0;
+                    capturePanel.SetActive(false);
+                }
+                else if (mission == null || !mission.IsActive)
+                {
+                    StillSeconds = 0;
+                    capturePanel.SetActive(true);
+                    countdownLabel.text = "Primero habla con la rectora";
+                }
+                else if (session == null || !session.HasCompleted(IntroId))
+                {
+                    StillSeconds = 0;
+                    capturePanel.SetActive(true);
+                    countdownLabel.text = "Habla primero con Lic. Mony";
+                }
+                else if (Eligible && stationary && !mustLeaveMark)
                 {
                     StillSeconds += Time.unscaledDeltaTime;
                     capturePanel.SetActive(true);
                     countdownLabel.text = "FOTO · Quédate quieto\n" + Mathf.Min(1.5f, StillSeconds).ToString("0.0") + " / 1.5 s";
                     if (StillSeconds >= 1.5f) StartCapture();
                 }
-                else { StillSeconds = 0; capturePanel.SetActive(false); }
+                else
+                {
+                    StillSeconds = 0;
+                    capturePanel.SetActive(centered);
+                    countdownLabel.text = "FOTO · Quédate quieto\n0.0 / 1.5 s";
+                }
             }
             else if (Stage == CredentialStage.Countdown)
             {
@@ -158,24 +197,19 @@ namespace CampusQuest.Rectoria
         private void Update()
         {
             if (!IsBusy || ConsumedInputThisFrame) return;
-            var keyboard = Keyboard.current;
-            if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame) { Close(false); return; }
+            if (CampusQuestActiveControls.CancelPressedThisFrame()) { Close(false); return; }
             if (Stage != CredentialStage.Puzzle && Stage != CredentialStage.Success) return;
-            if (keyboard != null && DialogueSession.ConfirmPressedThisFrame())
+            if (CampusQuestActiveControls.PuzzleConfirmPressedThisFrame())
             {
                 lastInputFrame = Time.frameCount;
-                if (Stage == CredentialStage.Success) Close(true); else MoveSelected();
+                if (Stage == CredentialStage.Success) Close(true);
+                else MoveSelected();
                 return;
             }
             if (Stage != CredentialStage.Puzzle) return;
-            if (keyboard != null)
-            {
-                if (keyboard.rKey.wasPressedThisFrame) RestartPuzzle();
-                else if (keyboard.leftArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.left);
-                else if (keyboard.rightArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.right);
-                else if (keyboard.upArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.up);
-                else if (keyboard.downArrowKey.wasPressedThisFrame) MoveSelection(Vector2Int.down);
-            }
+            var keyboard = Keyboard.current;
+            if (keyboard != null && keyboard.rKey.wasPressedThisFrame) RestartPuzzle();
+            else if (CampusQuestActiveControls.MenuDirectionThisFrame(out var direction)) MoveSelection(direction);
             var mouse = Mouse.current;
             if (mouse == null || !mouse.leftButton.wasPressedThisFrame) return;
             Vector2 position = mouse.position.ReadValue();
@@ -189,7 +223,12 @@ namespace CampusQuest.Rectoria
         {
             bool solved = Stage == CredentialStage.Success;
             statusLabel.text = solved ? "Lic. Mony: ¡Listo! Ya eres oficialmente estudiante" : "Arma el marco de tu credencial";
-            movesLabel.text = "Movimientos: " + Board.Moves + "\n" + (solved ? "E / Enter · Hablar con Lic. Mony" : "Flechas · Elegir   E / Enter o clic · Mover\nR / Reiniciar · Empezar de nuevo   Esc · Volver");
+            var move = CampusQuestActiveControls.BindingLabel("Player", "Move");
+            var interact = CampusQuestActiveControls.BindingLabel("Player", "Interact");
+            var cancel = CampusQuestActiveControls.BindingLabel("UI", "Cancel");
+            movesLabel.text = "Movimientos: " + Board.Moves + "\n" + (solved
+                ? interact + " · Hablar con Lic. Mony"
+                : move + " · Elegir   " + interact + " o clic · Mover\nR / Reiniciar · Empezar de nuevo   " + cancel + " · Volver");
             rewardLabel.gameObject.SetActive(solved && RewardGrantedThisRun);
             rewardLabel.text = "CREDENCIAL DE ESTUDIANTE CONSEGUIDA";
             for (int i = 0; i < 9; i++)

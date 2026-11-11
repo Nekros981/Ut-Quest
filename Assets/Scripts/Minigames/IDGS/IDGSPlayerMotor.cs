@@ -6,6 +6,8 @@ namespace CampusQuest.IDGS
     [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
     public sealed class IDGSPlayerMotor : MonoBehaviour
     {
+        const float MoveDeadzone = 0.2f;
+
         public float walkSpeed = 4;
         public float runSpeed = 6;
         public Vector2Int initialFacing = Vector2Int.down;
@@ -15,6 +17,8 @@ namespace CampusQuest.IDGS
         public bool IsAtRest => !IsMoving && (body.position - Center(Cell)).sqrMagnitude < .0001f;
         public float CurrentSpeed { get; private set; }
 
+        [SerializeField] InputActionAsset inputActions;
+
         private Rigidbody2D body;
         private CampusQuestMateoVisualDriver visual;
         private Vector2Int requestedDirection;
@@ -22,14 +26,51 @@ namespace CampusQuest.IDGS
         private Vector2Int targetCell;
         private ContactFilter2D collisionFilter;
         private readonly RaycastHit2D[] hits = new RaycastHit2D[16];
+        private InputAction moveAction;
+        private InputAction sprintAction;
 
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
             visual = GetComponentInChildren<CampusQuestMateoVisualDriver>();
             collisionFilter = new ContactFilter2D { useTriggers = false };
+            TryBindDefaultInput();
             PlaceAtCell(Vector2Int.FloorToInt(body.position), initialFacing);
             IDGSSceneTravel.ApplyArrival(this);
+        }
+
+        public void TryBindDefaultInput()
+        {
+            if (inputActions != null)
+                return;
+
+            foreach (var asset in Resources.FindObjectsOfTypeAll<InputActionAsset>())
+            {
+                if (asset != null && asset.name == "InputSystem_Actions")
+                {
+                    inputActions = asset;
+                    break;
+                }
+            }
+        }
+
+        void OnEnable()
+        {
+            if (inputActions == null)
+                return;
+
+            CampusQuestActiveControls.Bind(inputActions);
+            var playerMap = inputActions.FindActionMap("Player", throwIfNotFound: false);
+            if (playerMap == null)
+                return;
+
+            playerMap.Enable();
+            moveAction = playerMap.FindAction("Move", throwIfNotFound: false);
+            sprintAction = playerMap.FindAction("Sprint", throwIfNotFound: false);
+            if (moveAction != null)
+                moveAction.Enable();
+            if (sprintAction != null)
+                sprintAction.Enable();
         }
 
         public static Vector2 Center(Vector2Int cell) => (Vector2)cell + Vector2.one * .5f;
@@ -52,20 +93,60 @@ namespace CampusQuest.IDGS
         private void Update()
         {
             requestedDirection = Vector2Int.zero;
-            var keyboard = Keyboard.current;
-            if (keyboard == null || IDGSSceneTravel.IsChanging || CampusQuest.Dialogue.DialogueSession.IsAnyOpen) return;
+            if (IDGSSceneTravel.IsChanging || CampusQuest.Dialogue.DialogueSession.IsAnyOpen)
+                return;
 
-            if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed) requestedDirection = Vector2Int.up;
-            else if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed) requestedDirection = Vector2Int.down;
-            else if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed) requestedDirection = Vector2Int.left;
-            else if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed) requestedDirection = Vector2Int.right;
-
-            CurrentSpeed = keyboard.leftShiftKey.isPressed || keyboard.rightShiftKey.isPressed ? runSpeed : walkSpeed;
+            requestedDirection = ReadMoveDirection();
+            CurrentSpeed = ReadSprint() ? runSpeed : walkSpeed;
             if (!IsMoving && requestedDirection != Vector2Int.zero)
             {
                 Facing = requestedDirection;
                 if (visual != null) visual.Face(Facing);
             }
+        }
+
+        Vector2Int ReadMoveDirection()
+        {
+            if (moveAction != null)
+            {
+                var fromStick = DirectionFromVector(moveAction.ReadValue<Vector2>());
+                if (fromStick != Vector2Int.zero)
+                    return fromStick;
+            }
+
+            var keyboard = Keyboard.current;
+            if (keyboard == null)
+                return Vector2Int.zero;
+
+            if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
+                return Vector2Int.up;
+            if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
+                return Vector2Int.down;
+            if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
+                return Vector2Int.left;
+            if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
+                return Vector2Int.right;
+            return Vector2Int.zero;
+        }
+
+        bool ReadSprint()
+        {
+            if (sprintAction != null && sprintAction.IsPressed())
+                return true;
+
+            var keyboard = Keyboard.current;
+            return keyboard != null && (keyboard.leftShiftKey.isPressed || keyboard.rightShiftKey.isPressed);
+        }
+
+        static Vector2Int DirectionFromVector(Vector2 move)
+        {
+            if (move.sqrMagnitude < MoveDeadzone * MoveDeadzone)
+                return Vector2Int.zero;
+
+            if (Mathf.Abs(move.x) > Mathf.Abs(move.y))
+                return move.x > 0f ? Vector2Int.right : Vector2Int.left;
+
+            return move.y > 0f ? Vector2Int.up : Vector2Int.down;
         }
 
         private void FixedUpdate()

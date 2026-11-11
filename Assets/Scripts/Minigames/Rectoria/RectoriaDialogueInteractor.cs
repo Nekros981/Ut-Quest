@@ -69,12 +69,13 @@ namespace CampusQuest.Rectoria
             if (session == null || session.view == null) return;
             if (DialogueSession.IsAnyOpen) { session.view.SetPrompt(string.Empty); return; }
             var point = AvailableSpeaker();
-            string submit = CampusQuestActiveControls.BindingLabel("UI", "Submit");
-            session.view.SetPrompt(point != null ? submit + " · "
+            string interact = CampusQuestActiveControls.BindingLabel("Player", "Interact");
+            session.view.SetPrompt(point != null ? interact + " · "
                 + (point.kind == RectoriaPointKind.Clue ? "Leer " : point.kind == RectoriaPointKind.ReceiptsTable ? "Revisar " : "Hablar con ") + point.displayName
                 + (point.kind == RectoriaPointKind.Clue && point.dialogue != null && session.HasCompleted(point.dialogue.dialogueId) ? " · Leída" : string.Empty)
                 : string.Empty);
-            if (DialogueSession.ConfirmPressedThisFrame()) TryInteract();
+            if (CampusQuestActiveControls.InteractPressedThisFrame())
+                TryInteract();
         }
 
         private void OnDisable()
