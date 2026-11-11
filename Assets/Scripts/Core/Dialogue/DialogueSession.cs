@@ -20,7 +20,6 @@ namespace CampusQuest.Dialogue
         public event Action ProgressChanged;
 
         private static DialogueSession active;
-        private readonly HashSet<string> completedIds = new HashSet<string>(StringComparer.Ordinal);
         private readonly Dictionary<Behaviour, bool> behaviourStates = new Dictionary<Behaviour, bool>();
         private readonly Dictionary<GameObject, bool> objectStates = new Dictionary<GameObject, bool>();
         private DialogueDefinition current;
@@ -35,6 +34,15 @@ namespace CampusQuest.Dialogue
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetActive() { active = null; }
+
+        private void OnEnable()
+        {
+            GameProgress.Changed += OnProgressChanged;
+            GameProgress.NewGameStarted += Abort;
+            GameProgress.EnsureLoaded();
+        }
+
+        private void OnProgressChanged() { ProgressChanged?.Invoke(); }
 
         public static bool ConfirmPressedThisFrame()
         {
@@ -86,34 +94,25 @@ namespace CampusQuest.Dialogue
 
         public bool HasCompleted(string dialogueId)
         {
-            return dialogueId != null && completedIds.Contains(dialogueId);
+            return GameProgress.HasEvent(dialogueId);
         }
 
         /// <summary>Shared idempotent story-event registry, also used by document rewards.</summary>
         public bool RegisterEvent(string id)
         {
-            if (string.IsNullOrWhiteSpace(id) || !completedIds.Add(id)) return false;
-            ProgressChanged?.Invoke();
-            return true;
+            return GameProgress.RegisterEvent(id);
         }
 
-        // These hooks let the future save/profile system own persistence and new-game resets.
+        // Compatibility hooks operate on the complete shared profile, across all scenes.
         public string[] CaptureCompletedIds()
         {
-            var result = new string[completedIds.Count];
-            completedIds.CopyTo(result);
-            Array.Sort(result, StringComparer.Ordinal);
-            return result;
+            return GameProgress.CaptureCompletedIds();
         }
 
         public bool RestoreCompletedIds(IEnumerable<string> ids)
         {
             if (IsOpen) return false;
-            completedIds.Clear();
-            if (ids != null)
-                foreach (var id in ids) if (!string.IsNullOrWhiteSpace(id)) completedIds.Add(id);
-            ProgressChanged?.Invoke();
-            return true;
+            return GameProgress.RestoreCompletedIds(ids);
         }
 
         public void Abort()
@@ -162,7 +161,12 @@ namespace CampusQuest.Dialogue
             behaviourStates.Clear(); objectStates.Clear();
         }
 
-        private void OnDisable() { Abort(); }
+        private void OnDisable()
+        {
+            GameProgress.Changed -= OnProgressChanged;
+            GameProgress.NewGameStarted -= Abort;
+            Abort();
+        }
         private void OnDestroy() { Abort(); }
     }
 }
