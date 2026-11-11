@@ -31,6 +31,7 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
     Vector3 grenadeTarget;
     bool grenadeSpawnedThisThrow;
     bool phaseTwoNotified;
+    bool phaseThreeNotified;
 
     public int HitsTaken => MaxVida - vida;
     public bool IsDefeated => visual != null && visual.IsDefeated;
@@ -80,6 +81,9 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
 
         if (before < 2 && HitsTaken >= 2)
             NotifyPhaseTwo();
+
+        if (before < 5 && HitsTaken >= 5)
+            NotifyPhaseThree();
     }
 
     void NotifyPhaseTwo()
@@ -89,6 +93,14 @@ public sealed class CampusQuestBossBrain : MonoBehaviour
         phaseTwoNotified = true;
         EnteredPhaseTwo?.Invoke();
         encounter?.SpawnPhaseTwoShooters();
+    }
+
+    void NotifyPhaseThree()
+    {
+        if (phaseThreeNotified)
+            return;
+        phaseThreeNotified = true;
+        encounter?.SpawnPhaseThreeMinions();
     }
 
     int CurrentPhase()

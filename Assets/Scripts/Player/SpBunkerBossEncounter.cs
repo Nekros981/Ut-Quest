@@ -1,9 +1,16 @@
+using System;
 using CampusQuest.Dialogue;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public sealed class SpBunkerBossEncounter : MonoBehaviour
 {
+    [Serializable]
+    struct PhaseThreeMinion
+    {
+        public Vector3 position;
+        public bool pistol;
+    }
     [SerializeField] CampusQuestBunkerDoor door;
     [SerializeField] DialogueSession session;
     [SerializeField] DialogueDefinition introDialogue;
@@ -21,8 +28,17 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
         new(12f, 18f, 0f)
     };
 
+    [SerializeField] PhaseThreeMinion[] phaseThreeMinions =
+    {
+        new() { position = new Vector3(6f, 16f, 0f), pistol = false },
+        new() { position = new Vector3(10f, 16f, 0f), pistol = false },
+        new() { position = new Vector3(3f, 20f, 0f), pistol = true },
+        new() { position = new Vector3(13f, 20f, 0f), pistol = true }
+    };
+
     bool triggered;
     bool phaseTwoSpawned;
+    bool phaseThreeSpawned;
 
     void Awake()
     {
@@ -89,23 +105,55 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
 
         phaseTwoSpawned = true;
         for (int i = 0; i < phaseTwoPositions.Length; i++)
+            SpawnBossMinion(phaseTwoPositions[i], pistol: true, "Secuaz_Bunker_Shooter_" + (i + 1));
+    }
+
+    public void SpawnPhaseThreeMinions()
+    {
+        if (phaseThreeSpawned || secuazPrefab == null || phaseThreeMinions == null || phaseThreeMinions.Length == 0)
+            return;
+
+        phaseThreeSpawned = true;
+        int meleeIndex = 0;
+        int shooterIndex = 0;
+        for (int i = 0; i < phaseThreeMinions.Length; i++)
         {
-            var instance = Instantiate(secuazPrefab, phaseTwoPositions[i], Quaternion.identity);
-            instance.name = "Secuaz_Bunker_Shooter_" + (i + 1);
+            var entry = phaseThreeMinions[i];
+            string name;
+            if (entry.pistol)
+            {
+                shooterIndex++;
+                name = "Secuaz_Bunker_Shooter_3_" + shooterIndex;
+            }
+            else
+            {
+                meleeIndex++;
+                name = "Secuaz_Bunker_Melee_3_" + meleeIndex;
+            }
 
-            var brain = instance.GetComponent<CampusQuestSecuazBrain>();
-            if (brain == null)
-                brain = instance.GetComponentInChildren<CampusQuestSecuazBrain>(true);
-            if (brain == null)
-                continue;
-
-            brain.ConfigureBossMinion(pistol: true);
-            var force = instance.GetComponent<CampusQuestSecuazForcePistol>();
-            if (force != null)
-                Destroy(force);
-
-            brain.enabled = true;
+            SpawnBossMinion(entry.position, entry.pistol, name);
         }
+    }
+
+    void SpawnBossMinion(Vector3 position, bool pistol, string objectName)
+    {
+        var instance = Instantiate(secuazPrefab, position, Quaternion.identity);
+        instance.name = objectName;
+
+        var brain = instance.GetComponent<CampusQuestSecuazBrain>();
+        if (brain == null)
+            brain = instance.GetComponentInChildren<CampusQuestSecuazBrain>(true);
+        if (brain == null)
+            return;
+
+        brain.ConfigureBossMinion(pistol);
+        var force = instance.GetComponent<CampusQuestSecuazForcePistol>();
+        if (force == null)
+            force = instance.GetComponentInChildren<CampusQuestSecuazForcePistol>(true);
+        if (force != null)
+            Destroy(force);
+
+        brain.enabled = true;
     }
 
     void CollectCombatBrains()

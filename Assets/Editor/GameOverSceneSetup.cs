@@ -4,6 +4,9 @@ using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,6 +17,7 @@ public static class GameOverSceneSetup
     const string MateoController = "Assets/Animations/Player/Mateo/Mateo.controller";
     const string MateoIdleSprite = "Assets/Sprites/Characters/Mateo/Frames/caminataA1.png";
     const string TitleFontPath = "Assets/Fonts/PixeloidSans SDF.asset";
+    const string InputActionsPath = "Assets/Settings/InputSystem_Actions.inputactions";
 
     [MenuItem("Campus Quest/SP/Crear escena Game Over")]
     public static void BuildGameOverScene()
@@ -76,6 +80,11 @@ public static class GameOverSceneSetup
         WireButton(btnSalir.GetComponent<Button>(), gameOver, nameof(CampusQuestGameOver.Quit));
 
         ApplyGameOverButtonHeights(panel.transform.Find("Btn_Reiniciar"), panel.transform.Find("Btn_Salir"));
+
+        var restartBtn = panel.transform.Find("Btn_Reiniciar")?.GetComponent<Button>();
+        var quitBtn = panel.transform.Find("Btn_Salir")?.GetComponent<Button>();
+        CampusQuestGameOver.ApplyGamepadNavigation(restartBtn, quitBtn);
+        WireGameOverInput(gameOver, restartBtn != null ? restartBtn.gameObject : null);
 
         EditorSceneManager.CloseScene(sampleScene, true);
 
@@ -278,6 +287,33 @@ public static class GameOverSceneSetup
         call0.FindPropertyRelative("m_Mode").enumValueIndex = 1;
         call0.FindPropertyRelative("m_CallState").enumValueIndex = 2;
         buttonSo.ApplyModifiedPropertiesWithoutUndo();
+    }
+
+    static void WireGameOverInput(CampusQuestGameOver gameOver, GameObject restartButton)
+    {
+        var inputActions = AssetDatabase.LoadAssetAtPath<InputActionAsset>(InputActionsPath);
+        if (inputActions == null)
+        {
+            Debug.LogWarning("GameOverSceneSetup: no se encontró " + InputActionsPath);
+            return;
+        }
+
+        var gameOverSo = new SerializedObject(gameOver);
+        gameOverSo.FindProperty("inputActions").objectReferenceValue = inputActions;
+        gameOverSo.FindProperty("restartButton").objectReferenceValue = restartButton;
+        gameOverSo.ApplyModifiedPropertiesWithoutUndo();
+
+        var es = Object.FindAnyObjectByType<EventSystem>();
+        if (es != null && restartButton != null)
+            es.firstSelectedGameObject = restartButton;
+
+        var uiModule = Object.FindAnyObjectByType<InputSystemUIInputModule>();
+        if (uiModule != null)
+        {
+            uiModule.actionsAsset = inputActions;
+            uiModule.AssignDefaultActions();
+            EditorUtility.SetDirty(uiModule);
+        }
     }
 
     static void EnsureBuildSettings()
