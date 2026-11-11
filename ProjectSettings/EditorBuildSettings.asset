@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Sp_Bosque.unity
     guid: fc99fd13d353d082c85822dcb4fc9ea2
   - enabled: 1
+    path: Assets/Scenes/Sp_Bunker.unity
+    guid: 978841349ff26441ea3e758f1acc775b
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 6a1c329308d5de72084076ea4dea2101
   m_configObjects:

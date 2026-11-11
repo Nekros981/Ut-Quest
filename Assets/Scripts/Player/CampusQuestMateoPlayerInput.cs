@@ -91,6 +91,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         if (gameOverLoaded)
             return;
         gameOverLoaded = true;
+        CampusQuestRunState.Clear();
         SceneManager.LoadScene("GameOver");
     }
 

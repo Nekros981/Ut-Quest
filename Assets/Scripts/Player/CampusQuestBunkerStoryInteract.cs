@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public sealed class CampusQuestBunkerStoryInteract : CampusQuestInteractable
 {
@@ -49,7 +50,8 @@ public sealed class CampusQuestBunkerStoryInteract : CampusQuestInteractable
                 break;
             case EnterStep:
                 entryUsed = true;
-                objectives.NotifyEnteredBunker();
+                CampusQuestRunState.CaptureFromScene();
+                SceneManager.LoadScene("Sp_Bunker");
                 break;
         }
     }

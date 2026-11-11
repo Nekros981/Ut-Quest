@@ -9,10 +9,18 @@ public sealed class CampusQuestDefeatCounter : MonoBehaviour
 
     int count;
 
+    public int Count => count;
+
     void Awake()
     {
         Instance = this;
         count = 0;
+        Refresh();
+    }
+
+    public void SetCount(int value)
+    {
+        count = Mathf.Max(0, value);
         Refresh();
     }
 

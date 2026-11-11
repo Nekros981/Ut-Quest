@@ -12,6 +12,7 @@ public sealed class CampusQuestGameOver : MonoBehaviour
         CampusQuestSecuazLoot.ResetForRestart();
         CampusQuestAmbushKeycard.ResetForRestart();
         CampusQuestMateoPlayerInput.ResetGameOverFlag();
+        CampusQuestRunState.Clear();
         SceneManager.LoadScene("Sp_Bosque");
     }
 
