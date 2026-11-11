@@ -57,7 +57,12 @@ public sealed class CampusQuestObjectives : MonoBehaviour
     {
         if (step < StepText.Length - 1)
             AdvanceTo(StepText.Length - 1);
-        Refresh();
+
+        if (label == null)
+            return;
+
+        label.text = string.Empty;
+        label.gameObject.SetActive(false);
     }
 
     void Refresh()

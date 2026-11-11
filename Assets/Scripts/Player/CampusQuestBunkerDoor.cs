@@ -5,10 +5,14 @@ using UnityEngine;
 public sealed class CampusQuestBunkerDoor : MonoBehaviour
 {
     static readonly int AbrirId = Animator.StringToHash("Abrir");
+    const string StateClose = "Cierra";
+    const string StateClosed = "Cerrada";
+    const string StateOpen = "Abre";
 
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Animator animator;
     [SerializeField] Collider2D passageBlocker;
+    [SerializeField] bool startHeldOpen;
 
     Vector3 anchorCenter;
     Sprite lastSprite;
@@ -31,6 +35,25 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
         lastSprite = spriteRenderer.sprite;
     }
 
+    void Start()
+    {
+        if (!startHeldOpen)
+            return;
+
+        animator.Play(StateOpen, 0, 0.99f);
+        animator.speed = 0f;
+        animator.Update(0f);
+        lastSprite = spriteRenderer.sprite;
+
+        HasOpened = true;
+        blockerCleared = true;
+        openRequested = false;
+        closing = false;
+
+        if (passageBlocker != null)
+            passageBlocker.enabled = false;
+    }
+
     public void Open()
     {
         if (HasOpened || openRequested || closing)
@@ -47,13 +70,27 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
         if (closing || !HasOpened)
             return;
 
+        BeginCloseAnimation();
+    }
+
+    public void CloseForBossEncounter()
+    {
+        if (closing || (!HasOpened && !IsOpening))
+            return;
+
+        BeginCloseAnimation();
+    }
+
+    void BeginCloseAnimation()
+    {
         openRequested = false;
         HasOpened = false;
         closing = true;
         blockerCleared = false;
+
         animator.SetBool(AbrirId, false);
-        animator.speed = -1f;
-        animator.Play("Abre", 0, 1f);
+        animator.speed = 1f;
+        animator.Play(StateClose, 0, 0f);
     }
 
     void LateUpdate()
@@ -68,11 +105,13 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
         if (closing)
         {
             var state = animator.GetCurrentAnimatorStateInfo(0);
-            if (state.IsName("Abre") && !animator.IsInTransition(0) && state.normalizedTime <= 0.02f)
+            if (state.IsName(StateClose)
+                && !animator.IsInTransition(0)
+                && state.normalizedTime >= 1f)
             {
                 closing = false;
                 animator.speed = 1f;
-                animator.Play("Cerrada", 0, 0f);
+                animator.Play(StateClosed, 0, 0f);
                 if (passageBlocker != null)
                     passageBlocker.enabled = true;
             }
@@ -84,7 +123,7 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
             return;
 
         var openState = animator.GetCurrentAnimatorStateInfo(0);
-        if (!openState.IsName("Abre") || openState.normalizedTime < 1f || animator.IsInTransition(0))
+        if (!openState.IsName(StateOpen) || openState.normalizedTime < 1f || animator.IsInTransition(0))
             return;
 
         HasOpened = true;

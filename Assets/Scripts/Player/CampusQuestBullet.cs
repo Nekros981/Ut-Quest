@@ -75,6 +75,14 @@ public sealed class CampusQuestBullet : MonoBehaviour
 
         if (fromMateo)
         {
+            var boss = other.GetComponentInParent<CampusQuestBossBrain>();
+            if (boss != null && !boss.IsDefeated)
+            {
+                boss.RecibirGolpe();
+                Destroy(gameObject);
+                return;
+            }
+
             var visual = other.GetComponentInParent<CampusQuestSecuazVisualDriver>();
             var brain = other.GetComponentInParent<CampusQuestSecuazBrain>();
             if (brain != null && (visual == null || !visual.IsDefeated))

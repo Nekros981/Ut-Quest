@@ -95,6 +95,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         if (gameOverLoaded)
             return;
         gameOverLoaded = true;
+        CampusQuestRunState.RememberSceneForGameOver(SceneManager.GetActiveScene().name);
         CampusQuestRunState.Clear();
         SceneManager.LoadScene("GameOver");
     }
@@ -167,8 +168,53 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
 
     void TryMeleeDamage()
     {
-        var target = FindClosestSecuaz(MeleeDamageRange);
-        target?.RecibirGolpe();
+        var origin = (Vector2)transform.position;
+        var secuaz = FindClosestSecuaz(MeleeDamageRange);
+        var boss = FindClosestBoss(MeleeDamageRange);
+
+        if (secuaz == null && boss == null)
+            return;
+
+        if (secuaz == null)
+        {
+            boss.RecibirGolpe();
+            return;
+        }
+
+        if (boss == null)
+        {
+            secuaz.RecibirGolpe();
+            return;
+        }
+
+        float distSecuaz = Vector2.Distance(origin, secuaz.transform.position);
+        float distBoss = Vector2.Distance(origin, boss.transform.position);
+        if (distSecuaz <= distBoss)
+            secuaz.RecibirGolpe();
+        else
+            boss.RecibirGolpe();
+    }
+
+    CampusQuestBossBrain FindClosestBoss(float maxRange)
+    {
+        CampusQuestBossBrain best = null;
+        float bestDistance = maxRange;
+        var origin = (Vector2)transform.position;
+
+        foreach (var boss in FindObjectsByType<CampusQuestBossBrain>(FindObjectsSortMode.None))
+        {
+            if (boss == null || !boss.isActiveAndEnabled || boss.IsDefeated)
+                continue;
+
+            float distance = Vector2.Distance(origin, boss.transform.position);
+            if (distance < bestDistance)
+            {
+                bestDistance = distance;
+                best = boss;
+            }
+        }
+
+        return best;
     }
 
     CampusQuestSecuazBrain FindClosestSecuaz(float maxRange)

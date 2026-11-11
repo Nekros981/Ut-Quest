@@ -16,6 +16,7 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
     [SerializeField] CampusQuestSecuazVisualDriver visual;
     [SerializeField] int maxVida = 2;
     [SerializeField] Sprite bulletSprite;
+    [SerializeField] bool omiteBotin;
 
     Rigidbody2D body;
     int vida;
@@ -48,9 +49,27 @@ public sealed class CampusQuestSecuazBrain : MonoBehaviour
         CampusQuestDefeatCounter.Instance?.NotifyDefeat();
         CampusQuestObjectives.Instance?.TryAdvanceAfterFirstDefeat();
 
+        if (omiteBotin)
+            return;
+
         var loot = GetComponent<CampusQuestSecuazLoot>();
         if (loot != null && CampusQuestSecuazLoot.TryClaimFirstDefeat(loot))
             NotifyOtherSecuazToUsePistol();
+    }
+
+    public void ConfigureBossMinion(bool pistol)
+    {
+        omiteBotin = true;
+        if (visual == null)
+            visual = GetComponentInChildren<CampusQuestSecuazVisualDriver>(true);
+
+        var loot = GetComponent<CampusQuestSecuazLoot>();
+        if (loot != null)
+            loot.enabled = false;
+
+        visual?.SetArma(pistol
+            ? CampusQuestSecuazVisualDriver.ArmaPistola
+            : CampusQuestSecuazVisualDriver.ArmaTolete);
     }
 
     void NotifyOtherSecuazToUsePistol()

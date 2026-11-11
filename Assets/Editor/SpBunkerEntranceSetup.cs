@@ -396,6 +396,7 @@ public static class SpBunkerEntranceSetup
         so.FindProperty("spriteRenderer").objectReferenceValue = sr;
         so.FindProperty("animator").objectReferenceValue = animator;
         so.FindProperty("passageBlocker").objectReferenceValue = box;
+        so.FindProperty("startHeldOpen").boolValue = false;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         var interactGo = new GameObject("Puerta_Interact");

@@ -14,6 +14,7 @@ public static class CampusQuestActiveControls
     static string activeScheme = KeyboardMouse;
     static InputActionAsset asset;
     static InputAction submitAction;
+    static InputAction interactAction;
     static bool listening;
 
     public static string ActiveScheme => activeScheme;
@@ -31,6 +32,7 @@ public static class CampusQuestActiveControls
         activeScheme = KeyboardMouse;
         asset = null;
         submitAction = null;
+        interactAction = null;
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -56,6 +58,21 @@ public static class CampusQuestActiveControls
         if (uiMap != null)
             uiMap.Enable();
         submitAction = uiMap?.FindAction("Submit", false);
+        var playerMap = actions.FindActionMap("Player", false);
+        interactAction = playerMap?.FindAction("Interact", false);
+    }
+
+    public static bool InteractPressedThisFrame()
+    {
+        if (interactAction != null && interactAction.enabled && interactAction.WasPressedThisFrame())
+            return true;
+
+        var keyboard = Keyboard.current;
+        if (keyboard != null && keyboard.eKey.wasPressedThisFrame)
+            return true;
+
+        var pad = Gamepad.current;
+        return pad != null && pad.buttonWest.wasPressedThisFrame;
     }
 
     public static bool SubmitPressedThisFrame()

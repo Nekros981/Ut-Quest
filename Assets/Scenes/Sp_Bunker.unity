@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 8588303}
   - component: {fileID: 8588302}
   - component: {fileID: 8588301}
+  - component: {fileID: 8588304}
   m_Layer: 0
   m_Name: Boss_Visual
   m_TagString: Untagged
@@ -246,6 +247,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8588304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b647884b3f9fc7f86c77eb6cb09e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBossVisualDriver
+  motionRoot: {fileID: 909262677}
 --- !u!1 &18520266
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +779,7 @@ MonoBehaviour:
   suspendWhileOpen:
   - {fileID: 1007139634}
   - {fileID: 8588301}
+  - {fileID: 909262678}
   - {fileID: 1091498409}
   - {fileID: 686387416}
   hideWhileOpen: []
@@ -802,6 +817,7 @@ MonoBehaviour:
   pageLabel: {fileID: 743114530}
   portraitPlaceholder: {fileID: 1742497084}
   interactionHint: {fileID: 0}
+  continueHint: {fileID: 0}
   promptRoot: {fileID: 0}
   portraitImage: {fileID: 2045943417}
 --- !u!4 &82990227
@@ -3755,6 +3771,7 @@ RectTransform:
   m_Children:
   - {fileID: 1105732358}
   - {fileID: 1031427360}
+  - {fileID: 1712305331}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4533,6 +4550,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1601132642901972952, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1724735220359790526, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11
@@ -4573,6 +4594,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: omiteBotin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
       propertyPath: m_Name
       value: Secuaz_Bunker_R
@@ -4580,40 +4609,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 686387418}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
 --- !u!114 &686387416 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
   m_PrefabInstance: {fileID: 686387415}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686387417}
-  m_Enabled: 1
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4807f26e1e2aecdbba74741618e6065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuestSecuazBrain
---- !u!1 &686387417 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
-  m_PrefabInstance: {fileID: 686387415}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &686387418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686387417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeba6a6f56672c5a9b5055f8bfcf74d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestSecuazForcePistol
-  visual: {fileID: 0}
 --- !u!1 &709143977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +5498,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 885983711}
   animator: {fileID: 885983710}
   passageBlocker: {fileID: 313271197}
+  startHeldOpen: 0
 --- !u!95 &885983710
 Animator:
   serializedVersion: 7
@@ -6059,6 +6068,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 909262677}
+  - component: {fileID: 909262680}
+  - component: {fileID: 909262679}
+  - component: {fileID: 909262678}
   m_Layer: 0
   m_Name: El_Chaka
   m_TagString: Untagged
@@ -6080,8 +6092,108 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8588300}
+  - {fileID: 1305857319}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909262678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909262676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62236edf07a077dc2a87b82740c18029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBossBrain
+  visual: {fileID: 8588304}
+  encounter: {fileID: 1517638348}
+  explosionFrames:
+  - {fileID: -3675699285358318716, guid: d4c778e2e55c46c01a4f14e1a7724ec0, type: 3}
+  - {fileID: -8270682667820493152, guid: 66e9164b3181c56008eacdd2aedc47ab, type: 3}
+  - {fileID: -9040920300506575328, guid: c66ee5204baf424ee90e44c21e363403, type: 3}
+  - {fileID: -3767567360587176848, guid: 30e8bd5c65d39e6058966ad0bbf51d62, type: 3}
+  - {fileID: 7663064044857235205, guid: 4f6636f33cfef20728a4bfe41e8eb72e, type: 3}
+  - {fileID: 3307892412983127663, guid: c966b06c968d559cb903a6d57b7eb606, type: 3}
+  - {fileID: -2442277756719496076, guid: 0a259cdf0eb483a949a5ed6976147b9a, type: 3}
+  - {fileID: 1767603455031742205, guid: 3aa5c5e13c5736641ab8b022efa44a13, type: 3}
+  - {fileID: -8969623267765275406, guid: b2781ddcf3e31409599f96eec9da98df, type: 3}
+  - {fileID: -3566277891263031481, guid: fb7549916ef20f335853102288913ff0, type: 3}
+  grenadeExplosionClip: {fileID: 8300000, guid: 4d342a0d0e50b8f43bfb85c69b0c4056, type: 3}
+--- !u!61 &909262679
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909262676}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.90625, y: 1.5625}
+    newSize: {x: 0.90625, y: 1.5625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.90625, y: 1.5625}
+  m_EdgeRadius: 0
+--- !u!50 &909262680
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909262676}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &975380665
 GameObject:
   m_ObjectHideFlags: 0
@@ -8182,6 +8294,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1601132642901972952, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1724735220359790526, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -8222,6 +8338,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+      propertyPath: omiteBotin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
       propertyPath: m_Name
       value: Secuaz_Bunker_L
@@ -8229,40 +8353,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1091498411}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
 --- !u!114 &1091498409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4475288547020908746, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
   m_PrefabInstance: {fileID: 1091498408}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091498410}
-  m_Enabled: 1
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4807f26e1e2aecdbba74741618e6065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuestSecuazBrain
---- !u!1 &1091498410 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
-  m_PrefabInstance: {fileID: 1091498408}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1091498411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091498410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeba6a6f56672c5a9b5055f8bfcf74d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestSecuazForcePistol
-  visual: {fileID: 0}
 --- !u!1 &1098973213
 GameObject:
   m_ObjectHideFlags: 0
@@ -9266,6 +9369,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1305857318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1305857319}
+  - component: {fileID: 1305857320}
+  m_Layer: 0
+  m_Name: Boss_Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1305857319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305857318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 909262677}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305857320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305857318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e4f2a19c3d5476a1b09e8f7c6d5e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBossThanksInteract
+  boss: {fileID: 909262678}
+  session: {fileID: 82990224}
+  thanksDialogue: {fileID: 11400000, guid: a4e8c91b2f3d4e5a9b0c1d2e3f4a5b6c, type: 2}
 --- !u!1 &1307168944
 GameObject:
   m_ObjectHideFlags: 0
@@ -10652,10 +10802,18 @@ MonoBehaviour:
   door: {fileID: 885983709}
   session: {fileID: 82990224}
   introDialogue: {fileID: 11400000, guid: 67dba2ddedd1c3e899a60c12f0aeb227, type: 2}
+  thanksDialogue: {fileID: 11400000, guid: a4e8c91b2f3d4e5a9b0c1d2e3f4a5b6c, type: 2}
+  sealOverlay: {fileID: 1712305330}
   combatBrains:
   - {fileID: 1091498409}
   - {fileID: 686387416}
+  - {fileID: 909262678}
   mateoInput: {fileID: 1007139634}
+  secuazPrefab: {fileID: 8715152360156512312, guid: 619b179db09c301edb0bb04c5eb0b338, type: 3}
+  bulletSprite: {fileID: 0}
+  phaseTwoPositions:
+  - {x: 4, y: 18, z: 0}
+  - {x: 12, y: 18, z: 0}
 --- !u!61 &1517638349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11030,6 +11188,104 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1545703650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545703654}
+  - component: {fileID: 1545703653}
+  - component: {fileID: 1545703652}
+  - component: {fileID: 1545703651}
+  m_Layer: 0
+  m_Name: Sello_Art
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1545703651
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545703650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb4b93a481a5abb45802f83e96ca568d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1545703652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545703650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 5115032636880845111, guid: c83932a37382b7ba2a64fb550e1edd1b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1545703653
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545703650}
+  m_CullTransparentMesh: 1
+--- !u!224 &1545703654
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545703650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1712305331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 640, y: 640}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1557723991
 GameObject:
   m_ObjectHideFlags: 0
@@ -11817,6 +12073,164 @@ Transform:
   - {fileID: 1295579333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1712305329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712305331}
+  - component: {fileID: 1712305336}
+  - component: {fileID: 1712305335}
+  - component: {fileID: 1712305334}
+  - component: {fileID: 1712305333}
+  - component: {fileID: 1712305332}
+  - component: {fileID: 1712305330}
+  m_Layer: 0
+  m_Name: CampusQuest_SealOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1712305330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c6b5a4938271605f4e3d2c1b0a9e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBunkerSealOverlay
+  sealAnimator: {fileID: 1545703651}
+  mateoInput: {fileID: 1007139634}
+  playStateName: Sellar
+--- !u!224 &1712305331
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1545703654}
+  m_Father: {fileID: 499490683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1712305332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1712305333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1712305334
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 200
+  m_TargetDisplay: 0
+--- !u!114 &1712305335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1712305336
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712305329}
+  m_CullTransparentMesh: 1
 --- !u!1 &1724199762
 GameObject:
   m_ObjectHideFlags: 0

@@ -87,7 +87,17 @@ public sealed class CampusQuestSecuazVisualDriver : MonoBehaviour
         spriteRenderer.flipX = direction == 1;
     }
 
-    public void SetArma(int arma) => animator.SetInteger(ArmaId, arma);
+    public void SetArma(int arma)
+    {
+        armaInicial = arma;
+        if (!Application.isPlaying)
+            return;
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
+        if (animator != null)
+            animator.SetInteger(ArmaId, arma);
+    }
 
     public bool IsDefeated => animator != null && animator.GetBool(DerrotadoId);
 

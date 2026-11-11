@@ -2,10 +2,23 @@ using UnityEngine;
 
 public static class CampusQuestRunState
 {
+    public static string LastSceneName { get; private set; }
+
     public static bool HasPendingTransfer { get; private set; }
 
     public static int PendingHearts { get; private set; } = 6;
     public static int PendingDefeats { get; private set; }
+
+    public static void RememberSceneForGameOver(string sceneName)
+    {
+        if (!string.IsNullOrWhiteSpace(sceneName))
+            LastSceneName = sceneName;
+    }
+
+    public static string SceneToReloadAfterGameOver()
+    {
+        return string.IsNullOrWhiteSpace(LastSceneName) ? "Sp_Bosque" : LastSceneName;
+    }
 
     public static void CaptureFromScene()
     {

@@ -7,10 +7,22 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
     [SerializeField] CampusQuestBunkerDoor door;
     [SerializeField] DialogueSession session;
     [SerializeField] DialogueDefinition introDialogue;
+    [SerializeField] DialogueDefinition thanksDialogue;
+    [SerializeField] CampusQuestBunkerSealOverlay sealOverlay;
     [SerializeField] Behaviour[] combatBrains = System.Array.Empty<Behaviour>();
+
+    public const string ThanksDialogueId = "bunker.chaka.gracias";
     [SerializeField] CampusQuestMateoPlayerInput mateoInput;
+    [SerializeField] GameObject secuazPrefab;
+    [SerializeField] Sprite bulletSprite;
+    [SerializeField] Vector3[] phaseTwoPositions =
+    {
+        new(4f, 18f, 0f),
+        new(12f, 18f, 0f)
+    };
 
     bool triggered;
+    bool phaseTwoSpawned;
 
     void Awake()
     {
@@ -47,7 +59,7 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
             return;
 
         triggered = true;
-        door?.CloseReverse();
+        door?.CloseForBossEncounter();
 
         if (session == null || introDialogue == null)
         {
@@ -63,6 +75,37 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
     {
         if (introDialogue != null && dialogueId == introDialogue.dialogueId)
             SetCombatActive(true);
+
+        if (thanksDialogue != null && dialogueId == thanksDialogue.dialogueId)
+            sealOverlay?.Show();
+        else if (dialogueId == ThanksDialogueId)
+            sealOverlay?.Show();
+    }
+
+    public void SpawnPhaseTwoShooters()
+    {
+        if (phaseTwoSpawned || secuazPrefab == null || phaseTwoPositions == null)
+            return;
+
+        phaseTwoSpawned = true;
+        for (int i = 0; i < phaseTwoPositions.Length; i++)
+        {
+            var instance = Instantiate(secuazPrefab, phaseTwoPositions[i], Quaternion.identity);
+            instance.name = "Secuaz_Bunker_Shooter_" + (i + 1);
+
+            var brain = instance.GetComponent<CampusQuestSecuazBrain>();
+            if (brain == null)
+                brain = instance.GetComponentInChildren<CampusQuestSecuazBrain>(true);
+            if (brain == null)
+                continue;
+
+            brain.ConfigureBossMinion(pistol: true);
+            var force = instance.GetComponent<CampusQuestSecuazForcePistol>();
+            if (force != null)
+                Destroy(force);
+
+            brain.enabled = true;
+        }
     }
 
     void CollectCombatBrains()
@@ -73,6 +116,10 @@ public sealed class SpBunkerBossEncounter : MonoBehaviour
             if (brain != null)
                 list.Add(brain);
         }
+
+        var boss = FindAnyObjectByType<CampusQuestBossBrain>();
+        if (boss != null)
+            list.Add(boss);
 
         combatBrains = list.ToArray();
     }
