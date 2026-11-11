@@ -35,8 +35,11 @@ namespace CampusQuest.IDGS
             }
             else
             {
-                if (notice != null) notice.text = point.displayName + " · Próximamente";
-                noticeUntil = Time.unscaledTime + 2;
+                if (point.onInteracted.GetPersistentEventCount() == 0)
+                {
+                    if (notice != null) notice.text = point.displayName + " · Próximamente";
+                    noticeUntil = Time.unscaledTime + 2;
+                }
                 point.onInteracted.Invoke();
             }
             LastInteraction = point;

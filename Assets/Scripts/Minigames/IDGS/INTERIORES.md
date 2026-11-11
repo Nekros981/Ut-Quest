@@ -21,7 +21,8 @@ antes de activar otro acceso para evitar transiciones repetidas.
 
 Las estaciones usan las aproximaciones (3,7), (8,8) y (12,7), mirando al norte.
 IDGSInteractionPoint ofrece un identificador y onInteracted para conectar cada
-actividad. Actualmente muestra «Próximamente». Una victoria futura registrará
+actividad. Cables ya abre su minijuego y registra idgs.docencia.cables. Las otras
+cinco estaciones muestran «Próximamente». Una victoria futura registrará
 pointId + ".completed" mediante GameProgress.RegisterEvent. La interacción de
 esta etapa no registra éxitos ni premios.
 

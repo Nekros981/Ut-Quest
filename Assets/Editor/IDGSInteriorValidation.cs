@@ -214,7 +214,13 @@ namespace CampusQuest.EditorTools
                 Hold();
                 Check(Player.Cell == before && Player.IsAtRest, point.pointId + ": workstation collision stops Mateo");
                 Hold(Key.E); Interactor.SendMessage("Update");
-                Check(Interactor.LastInteraction == point && Interactor.notice.text.Contains("Próximamente"), point.pointId + ": station activates its placeholder only");
+                if (point.onInteracted.GetPersistentEventCount() > 0)
+                {
+                    var cables = UnityEngine.Object.FindFirstObjectByType<IDGSCablesChallenge>();
+                    Check(cables != null && cables.IsOpen, point.pointId + ": configured activity opens");
+                    cables.Close();
+                }
+                else Check(Interactor.LastInteraction == point && Interactor.notice.text.Contains("Próximamente"), point.pointId + ": station activates its placeholder only");
                 Hold(); yield return null;
             }
             CheckProgress(name + " stations");
