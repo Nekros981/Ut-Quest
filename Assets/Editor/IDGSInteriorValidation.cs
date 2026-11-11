@@ -220,11 +220,13 @@ namespace CampusQuest.EditorTools
                     var circuit = UnityEngine.Object.FindFirstObjectByType<IDGSCircuitChallenge>();
                     var memory = UnityEngine.Object.FindFirstObjectByType<IDGSMemoryChallenge>();
                     var files = UnityEngine.Object.FindFirstObjectByType<IDGSFilesChallenge>();
-                    Check((cables != null && cables.IsOpen) || (circuit != null && circuit.IsOpen) || (memory != null && memory.IsOpen) || (files != null && files.IsOpen), point.pointId + ": configured activity opens");
+                    var server = UnityEngine.Object.FindFirstObjectByType<IDGSServerChallenge>();
+                    Check((cables != null && cables.IsOpen) || (circuit != null && circuit.IsOpen) || (memory != null && memory.IsOpen) || (files != null && files.IsOpen) || (server != null && server.IsOpen), point.pointId + ": configured activity opens");
                     if (cables != null && cables.IsOpen) cables.Close();
                     if (circuit != null && circuit.IsOpen) circuit.Close();
                     if (memory != null && memory.IsOpen) memory.Close();
                     if (files != null && files.IsOpen) files.Close();
+                    if (server != null && server.IsOpen) server.Close();
                 }
                 else Check(Interactor.LastInteraction == point && Interactor.notice.text.Contains("Próximamente"), point.pointId + ": station activates its placeholder only");
                 Hold(); yield return null;

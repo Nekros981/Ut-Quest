@@ -24,7 +24,8 @@ IDGSInteractionPoint ofrece un identificador y onInteracted para conectar cada
 actividad. Las tres estaciones de Docencia están activas: Cables registra
 idgs.docencia.cables, Circuito registra idgs.docencia.circuito y Memoria
 registra idgs.docencia.memoria. La estación oeste de CMD registra
-idgs.cmd.archivos; Servidor y Virus continúan mostrando «Próximamente».
+idgs.cmd.archivos y la central registra idgs.cmd.servidor. Virus continúa
+mostrando «Próximamente».
 Cada actividad registra su evento único mediante
 GameProgress.RegisterEvent; repetirla no entrega recompensas adicionales.
 

@@ -26,14 +26,15 @@ al abrir cualquier actividad. Cuenta directamente estos eventos:
 | Circuito | idgs.docencia.circuito |
 | Memoria | idgs.docencia.memoria |
 | Archivos | idgs.cmd.archivos |
-| Servidor (reservado) | idgs.cmd.server.completed |
+| Servidor | idgs.cmd.servidor |
 | Virus (reservado) | idgs.cmd.virus.completed |
 
 No guarda un contador independiente. GameProgress.Changed refresca texto e
 indicadores; al cargar se calcula nuevamente. Los eventos antiguos de prueba
 como idgs.cmd.files.completed se conservan, pero no cuentan como el nuevo
-acierto. Los dos eventos previstos conservan sus identificadores documentados
-hasta implementar sus estaciones. Este cambio no otorga todavía el sello.
+acierto. Servidor usa su identificador definitivo idgs.cmd.servidor; el
+identificador reservado anterior tampoco se convierte en una victoria.
+Virus conserva su identificador previsto. Este cambio no otorga todavía el sello.
 
 IDGSFilesValidation usa el perfil aislado respaldado por IDGSInteriorValidation,
 mouse/teclado reales del Input System y la ruta EventSystem de arrastre. Prueba

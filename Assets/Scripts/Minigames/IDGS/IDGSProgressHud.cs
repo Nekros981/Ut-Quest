@@ -10,10 +10,10 @@ namespace CampusQuest.IDGS
 {
     public sealed class IDGSProgressHud : MonoBehaviour
     {
-        // The last two retain the event IDs reserved in Propuesta_Interiores_v01.md.
+        // Virus retains its reserved event ID until that activity is implemented.
         public static readonly IReadOnlyList<string> EventIds = System.Array.AsReadOnly(new[] {
             IDGSCablesChallenge.EventId, IDGSCircuitChallenge.EventId, IDGSMemoryChallenge.EventId,
-            IDGSFilesChallenge.EventId, "idgs.cmd.server.completed", "idgs.cmd.virus.completed"
+            IDGSFilesChallenge.EventId, IDGSServerChallenge.EventId, "idgs.cmd.virus.completed"
         });
         public TMP_FontAsset font;
         public TMP_Text Label { get; private set; }
