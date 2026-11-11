@@ -36,12 +36,7 @@ namespace CampusQuest.Dialogue
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetActive() { active = null; }
 
-        public static bool ConfirmPressedThisFrame()
-        {
-            var keyboard = Keyboard.current;
-            return keyboard != null && (keyboard.eKey.wasPressedThisFrame
-                || keyboard.enterKey.wasPressedThisFrame || keyboard.numpadEnterKey.wasPressedThisFrame);
-        }
+        public static bool ConfirmPressedThisFrame() => CampusQuestActiveControls.SubmitPressedThisFrame();
 
         private void Update()
         {

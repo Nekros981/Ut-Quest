@@ -50,6 +50,7 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
         interactAction = map.FindAction("Interact", true);
 
         map.Enable();
+        CampusQuestActiveControls.Bind(inputActions);
         attackAction.performed += OnAttack;
         shootAction.performed += OnShoot;
         interactAction.performed += OnInteract;
@@ -63,6 +64,9 @@ public sealed class CampusQuestMateoPlayerInput : MonoBehaviour
             shootAction.performed -= OnShoot;
         if (interactAction != null)
             interactAction.performed -= OnInteract;
+
+        if (body != null)
+            body.linearVelocity = Vector2.zero;
 
         if (inputActions != null)
         {

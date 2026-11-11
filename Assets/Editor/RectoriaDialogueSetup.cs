@@ -8,6 +8,7 @@ using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace CampusQuest.EditorTools
@@ -67,6 +68,8 @@ namespace CampusQuest.EditorTools
             session.suspendWhileOpen = new Behaviour[] { player, guide };
             session.hideWhileOpen = new[] { guide.contextLabel.gameObject };
             interactor.player = player; interactor.session = session; interactor.points = guide.points;
+            interactor.inputActions = AssetDatabase.LoadAssetAtPath<InputActionAsset>(
+                "Assets/Settings/InputSystem_Actions.inputactions");
             BuildView(root, view);
             foreach (var component in new UnityEngine.Object[] { rector, session, context, view, interactor }) EditorUtility.SetDirty(component);
             AssetDatabase.SaveAssets();

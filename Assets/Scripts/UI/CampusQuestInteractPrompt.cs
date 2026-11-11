@@ -3,7 +3,6 @@ using UnityEngine;
 
 public sealed class CampusQuestInteractPrompt : MonoBehaviour
 {
-    const string DefaultKey = "E";
     const int CanvasSortingOrder = 60;
     static readonly Vector2 CanvasSize = new(180f, 56f);
     static readonly Vector2 ActionLabelSize = new(170f, 28f);
@@ -14,11 +13,16 @@ public sealed class CampusQuestInteractPrompt : MonoBehaviour
     [SerializeField] TMP_Text keyText;
     [SerializeField] TMP_Text actionText;
 
+    bool showing;
+
     void Awake()
     {
         EnsureUi();
         Hide();
     }
+
+    void OnEnable() => CampusQuestActiveControls.Changed += RefreshKeyLabel;
+    void OnDisable() => CampusQuestActiveControls.Changed -= RefreshKeyLabel;
 
     void EnsureUi()
     {
@@ -51,9 +55,14 @@ public sealed class CampusQuestInteractPrompt : MonoBehaviour
 
         ApplyKeyLayout(keyText);
         ApplyActionLayout(actionText);
+        RefreshKeyLabel();
+    }
 
-        if (keyText != null)
-            keyText.text = DefaultKey;
+    void RefreshKeyLabel()
+    {
+        if (!showing || keyText == null)
+            return;
+        keyText.text = CampusQuestActiveControls.BindingLabel("Player", "Interact");
     }
 
     static void ApplyKeyLayout(TMP_Text text)
@@ -122,9 +131,11 @@ public sealed class CampusQuestInteractPrompt : MonoBehaviour
         }
 
         EnsureUi();
+        showing = true;
         transform.position = target.transform.position + worldOffset;
         if (actionText != null)
             actionText.text = target.PromptText;
+        RefreshKeyLabel();
         if (canvas != null)
             canvas.enabled = true;
         gameObject.SetActive(true);
@@ -132,6 +143,7 @@ public sealed class CampusQuestInteractPrompt : MonoBehaviour
 
     public void Hide()
     {
+        showing = false;
         if (canvas != null)
             canvas.enabled = false;
     }

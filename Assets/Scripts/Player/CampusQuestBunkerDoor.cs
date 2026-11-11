@@ -14,9 +14,11 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
     Sprite lastSprite;
     bool openRequested;
     bool blockerCleared;
+    bool closing;
 
     public bool IsOpening => openRequested && !HasOpened;
     public bool HasOpened { get; private set; }
+    public bool IsClosing => closing;
 
     void Awake()
     {
@@ -31,11 +33,27 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
 
     public void Open()
     {
-        if (HasOpened || openRequested)
+        if (HasOpened || openRequested || closing)
             return;
 
         openRequested = true;
+        closing = false;
+        animator.speed = 1f;
         animator.SetBool(AbrirId, true);
+    }
+
+    public void CloseReverse()
+    {
+        if (closing || !HasOpened)
+            return;
+
+        openRequested = false;
+        HasOpened = false;
+        closing = true;
+        blockerCleared = false;
+        animator.SetBool(AbrirId, false);
+        animator.speed = -1f;
+        animator.Play("Abre", 0, 1f);
     }
 
     void LateUpdate()
@@ -47,11 +65,26 @@ public sealed class CampusQuestBunkerDoor : MonoBehaviour
             lastSprite = spriteRenderer.sprite;
         }
 
+        if (closing)
+        {
+            var state = animator.GetCurrentAnimatorStateInfo(0);
+            if (state.IsName("Abre") && !animator.IsInTransition(0) && state.normalizedTime <= 0.02f)
+            {
+                closing = false;
+                animator.speed = 1f;
+                animator.Play("Cerrada", 0, 0f);
+                if (passageBlocker != null)
+                    passageBlocker.enabled = true;
+            }
+
+            return;
+        }
+
         if (!openRequested || blockerCleared)
             return;
 
-        var state = animator.GetCurrentAnimatorStateInfo(0);
-        if (!state.IsName("Abre") || state.normalizedTime < 1f || animator.IsInTransition(0))
+        var openState = animator.GetCurrentAnimatorStateInfo(0);
+        if (!openState.IsName("Abre") || openState.normalizedTime < 1f || animator.IsInTransition(0))
             return;
 
         HasOpened = true;

@@ -1,5 +1,6 @@
 using CampusQuest.Dialogue;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace CampusQuest.Rectoria
 {
@@ -15,7 +16,14 @@ namespace CampusQuest.Rectoria
         public CredentialChallenge credential;
         public CashierChallenge cashier;
         public RockyGateReview rocky;
+        public InputActionAsset inputActions;
         public bool HasSpokenToRectora => session != null && session.HasCompleted(WelcomeId);
+
+        void OnEnable()
+        {
+            if (inputActions != null)
+                CampusQuestActiveControls.Bind(inputActions);
+        }
 
         public RectoriaScenePoint AvailableSpeaker()
         {
@@ -61,7 +69,8 @@ namespace CampusQuest.Rectoria
             if (session == null || session.view == null) return;
             if (DialogueSession.IsAnyOpen) { session.view.SetPrompt(string.Empty); return; }
             var point = AvailableSpeaker();
-            session.view.SetPrompt(point != null ? "E / Enter · "
+            string submit = CampusQuestActiveControls.BindingLabel("UI", "Submit");
+            session.view.SetPrompt(point != null ? submit + " · "
                 + (point.kind == RectoriaPointKind.Clue ? "Leer " : point.kind == RectoriaPointKind.ReceiptsTable ? "Revisar " : "Hablar con ") + point.displayName
                 + (point.kind == RectoriaPointKind.Clue && point.dialogue != null && session.HasCompleted(point.dialogue.dialogueId) ? " · Leída" : string.Empty)
                 : string.Empty);

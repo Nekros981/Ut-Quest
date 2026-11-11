@@ -56,11 +56,21 @@ public class OptionsMenu : MonoBehaviour
     void OnEnable()
     {
         InputSystem.onDeviceChange += OnDeviceChange;
+        CampusQuestActiveControls.Changed += OnActiveControlsChanged;
+        if (inputActions != null)
+            CampusQuestActiveControls.Bind(inputActions);
     }
 
     void OnDisable()
     {
         InputSystem.onDeviceChange -= OnDeviceChange;
+        CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
+    }
+
+    void OnActiveControlsChanged()
+    {
+        if (windowGroup != null && windowGroup.alpha > 0.5f && activeTab == OptionsTab.Controles)
+            RefreshControlsList();
     }
 
     void Awake()
@@ -167,13 +177,13 @@ public class OptionsMenu : MonoBehaviour
 
     static string ResolveControlSchemeGroup()
     {
-        if (Gamepad.current != null)
-            return "Gamepad";
+        if (CampusQuestActiveControls.ActiveScheme == CampusQuestActiveControls.GamepadScheme)
+            return CampusQuestActiveControls.GamepadScheme;
 
         if (Application.isMobilePlatform)
             return "Touch";
 
-        return "Keyboard&Mouse";
+        return CampusQuestActiveControls.KeyboardMouse;
     }
 
     void LoadSettings()
