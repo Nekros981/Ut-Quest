@@ -37,9 +37,21 @@ public static class SpBosqueMinimapSetup
     {
         var rt = AssetDatabase.LoadAssetAtPath<RenderTexture>(RenderTexturePath);
         if (rt != null)
-            return rt;
+        {
+            if (rt.width != 512 || rt.height != 512)
+            {
+                rt.Release();
+                rt.width = 512;
+                rt.height = 512;
+                rt.Create();
+                EditorUtility.SetDirty(rt);
+                AssetDatabase.SaveAssets();
+            }
 
-        rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32)
+            return rt;
+        }
+
+        rt = new RenderTexture(512, 512, 16, RenderTextureFormat.ARGB32)
         {
             name = "Minimap",
             filterMode = FilterMode.Bilinear,
@@ -108,7 +120,7 @@ public static class SpBosqueMinimapSetup
         panelRt.anchorMax = new Vector2(1f, 1f);
         panelRt.pivot = new Vector2(1f, 1f);
         panelRt.anchoredPosition = new Vector2(-16f, -16f);
-        panelRt.sizeDelta = new Vector2(260f, 330f);
+        panelRt.sizeDelta = new Vector2(370f, 480f);
 
         var frame = panel.transform.Find("MapFrame")?.gameObject;
         if (frame == null)
@@ -123,7 +135,7 @@ public static class SpBosqueMinimapSetup
         frameRt.anchorMax = new Vector2(0.5f, 1f);
         frameRt.pivot = new Vector2(0.5f, 1f);
         frameRt.anchoredPosition = new Vector2(0f, 0f);
-        frameRt.sizeDelta = new Vector2(220f, 220f);
+        frameRt.sizeDelta = new Vector2(330f, 330f);
         var frameImg = frame.GetComponent<Image>();
         frameImg.color = new Color32(20, 24, 28, 220);
         frameImg.raycastTarget = false;
@@ -171,11 +183,11 @@ public static class SpBosqueMinimapSetup
         objRt.anchorMin = new Vector2(0.5f, 1f);
         objRt.anchorMax = new Vector2(0.5f, 1f);
         objRt.pivot = new Vector2(0.5f, 1f);
-        objRt.anchoredPosition = new Vector2(0f, -236f);
-        objRt.sizeDelta = new Vector2(260f, 80f);
+        objRt.anchoredPosition = new Vector2(0f, -346f);
+        objRt.sizeDelta = new Vector2(370f, 110f);
 
         var tmp = objetivos.GetComponent<TextMeshProUGUI>();
-        tmp.fontSize = 20f;
+        tmp.fontSize = 30f;
         tmp.alignment = TextAlignmentOptions.TopLeft;
         tmp.enableWordWrapping = true;
         tmp.raycastTarget = false;
@@ -203,7 +215,7 @@ public static class SpBosqueMinimapSetup
             so.FindProperty("mapImage").objectReferenceValue = mapView.GetComponent<RawImage>();
         if (markers != null)
             so.FindProperty("markersRoot").objectReferenceValue = markers.GetComponent<RectTransform>();
-        so.FindProperty("mapPixels").floatValue = 220f;
+        so.FindProperty("mapPixels").floatValue = 330f;
         so.ApplyModifiedPropertiesWithoutUndo();
     }
 

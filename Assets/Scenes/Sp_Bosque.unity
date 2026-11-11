@@ -98090,31 +98090,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &281669755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281669751}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f9f6c99a90cddb9b15db5e60c6ff63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestMapMarker
-  dotColor: {r: 1, g: 0.85, b: 0.25, a: 1}
---- !u!114 &281669756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281669751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c4a91b2f3d5e4076b8c9d0a1e2f345, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBunkerMapMarker
 --- !u!114 &281669752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98179,6 +98154,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &281669755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281669751}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f9f6c99a90cddb9b15db5e60c6ff63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestMapMarker
+  dotColor: {r: 1, g: 0.85, b: 0.25, a: 1}
+--- !u!114 &281669756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281669751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c4a91b2f3d5e4076b8c9d0a1e2f345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestBunkerMapMarker
 --- !u!1 &283457337
 GameObject:
   m_ObjectHideFlags: 0
@@ -126023,7 +126023,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -16, y: -16}
-  m_SizeDelta: {x: 260, y: 330}
+  m_SizeDelta: {x: 370, y: 480}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &350539926
 MonoBehaviour:
@@ -126039,7 +126039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuestMinimapHud
   mapImage: {fileID: 1850012133}
   markersRoot: {fileID: 1854510022}
-  mapPixels: 220
+  mapPixels: 330
 --- !u!114 &350539927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131213,6 +131213,7 @@ GameObject:
   - component: {fileID: 372086174}
   - component: {fileID: 372086173}
   - component: {fileID: 372086175}
+  - component: {fileID: 372086176}
   m_Layer: 0
   m_Name: Corazones
   m_TagString: Untagged
@@ -131238,12 +131239,13 @@ RectTransform:
   - {fileID: 2105573796}
   - {fileID: 604171063}
   - {fileID: 1760735907}
+  - {fileID: 372086177}
   m_Father: {fileID: 1133365512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 16, y: -16}
-  m_SizeDelta: {x: 320, y: 56}
+  m_SizeDelta: {x: 420, y: 56}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &372086173
 MonoBehaviour:
@@ -131305,6 +131307,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652fd3f7fa4030eceb0d36e225d724bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CampusQuestHeartRegen
+--- !u!114 &372086176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372086171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a73ad93e9aa00663835b3f5a1aacd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuestDefeatCounter
+  label: {fileID: 372086179}
+--- !u!1 &372086178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372086177}
+  - component: {fileID: 372086179}
+  - component: {fileID: 372086180}
+  m_Layer: 0
+  m_Name: Derrotas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &372086177
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372086178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 372086172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 90, y: 48}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &372086179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372086178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_text: x00
+  m_fontSize: 32
+  m_fontAsset: {fileID: 11400000, guid: 72036d825a441c62988b0eccdeef9315, type: 2}
+  m_sharedMaterial: {fileID: -504959753949301631, guid: 72036d825a441c62988b0eccdeef9315, type: 2}
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+--- !u!114 &372086180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372086178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 90
+  m_PreferredHeight: 48
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &372384482
 GameObject:
   m_ObjectHideFlags: 0
@@ -198065,8 +198156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -236}
-  m_SizeDelta: {x: 260, y: 80}
+  m_AnchoredPosition: {x: 0, y: -346}
+  m_SizeDelta: {x: 370, y: 110}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &832341963
 MonoBehaviour:
@@ -198115,7 +198206,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 30
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -236571,7 +236662,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 220, y: 220}
+  m_SizeDelta: {x: 330, y: 330}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1091810738
 MonoBehaviour:

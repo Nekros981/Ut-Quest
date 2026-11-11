@@ -2,6 +2,7 @@
 using System.Linq;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
@@ -16,6 +17,8 @@ public static class CampusQuestHeartBarSetup
     const string HeartEmptyName = "Topdown RPG 32x32 - UI Bars_396";
     const string RootName = "CampusQuest_HUD";
     const string HeartsName = "Corazones";
+    const string DefeatLabelName = "Derrotas";
+    const string PixeloidFontPath = "Assets/Fonts/PixeloidSans SDF.asset";
 
     [MenuItem("Campus Quest/SP/Corazones arriba izquierda")]
     public static void SetupHeartBar()
@@ -66,7 +69,7 @@ public static class CampusQuestHeartBarSetup
         heartsRect.anchorMax = new Vector2(0f, 1f);
         heartsRect.pivot = new Vector2(0f, 1f);
         heartsRect.anchoredPosition = new Vector2(16f, -16f);
-        heartsRect.sizeDelta = new Vector2(320f, 56f);
+        heartsRect.sizeDelta = new Vector2(420f, 56f);
 
         var layout = heartsRoot.GetComponent<HorizontalLayoutGroup>() ??
                      Undo.AddComponent<HorizontalLayoutGroup>(heartsRoot);
@@ -113,6 +116,13 @@ public static class CampusQuestHeartBarSetup
             images[i] = image;
         }
 
+        var defeatLabel = EnsureDefeatLabel(heartsRoot.transform);
+        var counter = heartsRoot.GetComponent<CampusQuestDefeatCounter>() ??
+                      Undo.AddComponent<CampusQuestDefeatCounter>(heartsRoot);
+        var counterSo = new SerializedObject(counter);
+        counterSo.FindProperty("label").objectReferenceValue = defeatLabel;
+        counterSo.ApplyModifiedPropertiesWithoutUndo();
+
         var bar = heartsRoot.GetComponent<CampusQuestHeartBar>() ?? Undo.AddComponent<CampusQuestHeartBar>(heartsRoot);
         var so = new SerializedObject(bar);
         so.FindProperty("maxHearts").intValue = heartCount;
@@ -141,6 +151,37 @@ public static class CampusQuestHeartBarSetup
     {
         return AssetDatabase.LoadAllAssetsAtPath(UiBarsSheet).OfType<Sprite>()
             .FirstOrDefault(s => s.name == spriteName);
+    }
+
+    static TMP_Text EnsureDefeatLabel(Transform parent)
+    {
+        var child = parent.Find(DefeatLabelName)?.gameObject;
+        if (child == null)
+        {
+            child = new GameObject(DefeatLabelName, typeof(RectTransform), typeof(TextMeshProUGUI));
+            Undo.RegisterCreatedObjectUndo(child, DefeatLabelName);
+            child.transform.SetParent(parent, false);
+        }
+
+        var layout = child.GetComponent<LayoutElement>() ?? Undo.AddComponent<LayoutElement>(child);
+        layout.preferredWidth = 90f;
+        layout.preferredHeight = 48f;
+
+        var tmp = child.GetComponent<TextMeshProUGUI>();
+        tmp.text = "x00";
+        tmp.fontSize = 32f;
+        tmp.alignment = TextAlignmentOptions.MidlineLeft;
+        tmp.raycastTarget = false;
+        tmp.color = Color.white;
+        var font = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(PixeloidFontPath);
+        if (font != null)
+        {
+            tmp.font = font;
+            if (font.material != null)
+                tmp.fontSharedMaterial = font.material;
+        }
+
+        return tmp;
     }
 }
 #endif
