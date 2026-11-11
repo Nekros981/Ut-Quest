@@ -71,6 +71,26 @@ namespace CampusQuest.Rectoria
             return IsActive && EventId(document) != null && session.RegisterEvent(EventId(document));
         }
 
+        public const string SceneCargaRectoria = "Carga_Rectoria";
+        public const string SceneRectoriaPlay = "Rectoria_Tutorial_Arte_v01";
+
+        public static bool IsRectoriaEntryScene(string sceneName)
+        {
+            return sceneName == SceneCargaRectoria || sceneName == SceneRectoriaPlay;
+        }
+
+        public static void ClearSavedProgress()
+        {
+            PlayerPrefs.DeleteKey(SaveKey);
+            PlayerPrefs.Save();
+        }
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        static void ClearSavedProgressOnPlay()
+        {
+            ClearSavedProgress();
+        }
+
         private void Awake()
         {
             if (session == null) { Debug.LogError("EnrollmentMission requires a DialogueSession.", this); enabled = false; return; }

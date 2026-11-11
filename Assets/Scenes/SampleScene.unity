@@ -4037,7 +4037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1171886943}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &751246778
@@ -7264,6 +7264,9 @@ MonoBehaviour:
   studioSkippedFadeOutDuration: 0.2
   menuFadeInDuration: 0.4
   menuBackgroundMusic: {fileID: 938726438}
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  optionsMenu: {fileID: 348569250}
+  btnIniciar: {fileID: 1171886943}
 --- !u!1 &1767740391
 GameObject:
   m_ObjectHideFlags: 0

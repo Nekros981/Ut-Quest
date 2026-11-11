@@ -1,3 +1,4 @@
+using CampusQuest.Rectoria;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -36,6 +37,7 @@ public sealed class CampusQuestGameOver : MonoBehaviour
     void Start()
     {
         if (inputActions != null)
+            if (inputActions != null)
             CampusQuestActiveControls.Bind(inputActions);
 
         FocusRestart();
@@ -60,8 +62,7 @@ public sealed class CampusQuestGameOver : MonoBehaviour
         if (module == null)
             return;
 
-        module.actionsAsset = inputActions;
-        module.AssignDefaultActions();
+        CampusQuestUiGamepad.ConfigureUiInputModule(inputActions);
     }
 
     void FocusRestart()
@@ -83,7 +84,10 @@ public sealed class CampusQuestGameOver : MonoBehaviour
         CampusQuestAmbushKeycard.ResetForRestart();
         CampusQuestMateoPlayerInput.ResetGameOverFlag();
         CampusQuestRunState.Clear();
-        SceneManager.LoadScene(CampusQuestRunState.SceneToReloadAfterGameOver());
+        var scene = CampusQuestRunState.SceneToReloadAfterGameOver();
+        if (EnrollmentMission.IsRectoriaEntryScene(scene))
+            EnrollmentMission.ClearSavedProgress();
+        SceneManager.LoadScene(scene);
     }
 
     public void Quit()
@@ -112,18 +116,7 @@ public sealed class CampusQuestGameOver : MonoBehaviour
         navQuit.selectOnDown = null;
         quit.navigation = navQuit;
 
-        var selected = new Color(0.1764706f, 0.41568628f, 0.30980393f, 1f);
-        SetButtonSelectedColor(restart, selected);
-        SetButtonSelectedColor(quit, selected);
-    }
-
-    static void SetButtonSelectedColor(Button button, Color selected)
-    {
-        if (button == null)
-            return;
-
-        var colors = button.colors;
-        colors.selectedColor = selected;
-        button.colors = colors;
+        CampusQuestUiGamepad.SetSelectedColor(restart);
+        CampusQuestUiGamepad.SetSelectedColor(quit);
     }
 }

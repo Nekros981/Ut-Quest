@@ -2,6 +2,7 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -43,7 +44,20 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField] Light2D globalLight;
     [SerializeField] Slider lightingSlider;
 
+    Button btnControles;
+    Button btnAudio;
+    Button btnPantalla;
+    Button btnIluminacion;
+    Button btnVolver;
+    Button btnOpcionesMainMenu;
+
+    InputAction cancelAction;
     OptionsTab activeTab = OptionsTab.Controles;
+
+    public bool IsWindowOpen =>
+        windowGroup != null && windowGroup.alpha > 0.5f && windowGroup.interactable;
+
+    public InputActionAsset InputActions => inputActions;
 
     enum OptionsTab
     {
@@ -59,23 +73,43 @@ public class OptionsMenu : MonoBehaviour
         CampusQuestActiveControls.Changed += OnActiveControlsChanged;
         if (inputActions != null)
             CampusQuestActiveControls.Bind(inputActions);
+
+        cancelAction = inputActions != null ? inputActions.FindAction("UI/Cancel", false) : null;
+        if (cancelAction != null)
+        {
+            cancelAction.performed += OnCancelPerformed;
+            if (!cancelAction.enabled)
+                cancelAction.Enable();
+        }
     }
 
     void OnDisable()
     {
         InputSystem.onDeviceChange -= OnDeviceChange;
         CampusQuestActiveControls.Changed -= OnActiveControlsChanged;
+
+        if (cancelAction != null)
+            cancelAction.performed -= OnCancelPerformed;
+    }
+
+    void OnCancelPerformed(InputAction.CallbackContext _)
+    {
+        if (IsWindowOpen)
+            Close();
     }
 
     void OnActiveControlsChanged()
     {
-        if (windowGroup != null && windowGroup.alpha > 0.5f && activeTab == OptionsTab.Controles)
+        if (IsWindowOpen && activeTab == OptionsTab.Controles)
             RefreshControlsList();
     }
 
     void Awake()
     {
         LoadSettings();
+        CacheOptionsUiRefs();
+        ApplyTabRowNavigation();
+        ApplySelectableColors();
     }
 
     void Start()
@@ -86,7 +120,7 @@ public class OptionsMenu : MonoBehaviour
 
     void OnDeviceChange(InputDevice device, InputDeviceChange change)
     {
-        if (windowGroup != null && windowGroup.alpha > 0.5f && activeTab == OptionsTab.Controles)
+        if (IsWindowOpen && activeTab == OptionsTab.Controles)
             RefreshControlsList();
     }
 
@@ -106,6 +140,7 @@ public class OptionsMenu : MonoBehaviour
         }
 
         ShowTab(OptionsTab.Controles);
+        CampusQuestUiGamepad.Focus(btnControles != null ? btnControles.gameObject : null);
     }
 
     public void Close()
@@ -117,6 +152,9 @@ public class OptionsMenu : MonoBehaviour
             mainMenuContentGroup.interactable = true;
             mainMenuContentGroup.blocksRaycasts = true;
         }
+
+        if (btnOpcionesMainMenu != null)
+            CampusQuestUiGamepad.Focus(btnOpcionesMainMenu.gameObject);
     }
 
     public void ShowTabControles() => ShowTab(OptionsTab.Controles);
@@ -139,6 +177,162 @@ public class OptionsMenu : MonoBehaviour
 
         if (tab == OptionsTab.Controles)
             RefreshControlsList();
+
+        RefreshActiveTabNavigation();
+
+        var es = EventSystem.current;
+        if (es == null || !IsWindowOpen)
+            return;
+
+        var selected = es.currentSelectedGameObject;
+        if (selected == null || !selected.activeInHierarchy)
+            FocusTab(tab);
+    }
+
+    void FocusTab(OptionsTab tab)
+    {
+        switch (tab)
+        {
+            case OptionsTab.Controles:
+                CampusQuestUiGamepad.Focus(btnControles != null ? btnControles.gameObject : null);
+                break;
+            case OptionsTab.Audio:
+                CampusQuestUiGamepad.Focus(
+                    musicSlider != null ? musicSlider.gameObject
+                        : btnAudio != null ? btnAudio.gameObject : null);
+                break;
+            case OptionsTab.Pantalla:
+                CampusQuestUiGamepad.Focus(
+                    fullscreenToggle != null ? fullscreenToggle.gameObject
+                        : btnPantalla != null ? btnPantalla.gameObject : null);
+                break;
+            case OptionsTab.Iluminacion:
+                CampusQuestUiGamepad.Focus(
+                    lightingSlider != null ? lightingSlider.gameObject
+                        : btnIluminacion != null ? btnIluminacion.gameObject : null);
+                break;
+        }
+    }
+
+    void CacheOptionsUiRefs()
+    {
+        var root = transform.Find("OptionsFrame/Fondo_Oscuro");
+        if (root == null)
+            return;
+
+        btnControles = root.Find("TabRow/Btn_Controles")?.GetComponent<Button>();
+        btnAudio = root.Find("TabRow/Btn_Audio")?.GetComponent<Button>();
+        btnPantalla = root.Find("TabRow/Btn_Pantalla")?.GetComponent<Button>();
+        btnIluminacion = root.Find("TabRow/Btn_Iluminacion")?.GetComponent<Button>();
+        btnVolver = root.Find("Btn_Volver")?.GetComponent<Button>();
+        btnOpcionesMainMenu = GameObject.Find("Btn_Opciones")?.GetComponent<Button>();
+    }
+
+    public static void ApplyTabRowNavigation(
+        Button controles,
+        Button audio,
+        Button pantalla,
+        Button iluminacion)
+    {
+        if (controles == null || audio == null || pantalla == null || iluminacion == null)
+            return;
+
+        CampusQuestUiGamepad.SetExplicitHorizontal(controles, audio);
+        CampusQuestUiGamepad.SetExplicitHorizontal(audio, pantalla);
+        CampusQuestUiGamepad.SetExplicitHorizontal(pantalla, iluminacion);
+
+        var navControles = controles.navigation;
+        navControles.selectOnLeft = iluminacion;
+        controles.navigation = navControles;
+
+        var navIluminacion = iluminacion.navigation;
+        navIluminacion.selectOnRight = controles;
+        iluminacion.navigation = navIluminacion;
+    }
+
+    void ApplyTabRowNavigation()
+    {
+        ApplyTabRowNavigation(btnControles, btnAudio, btnPantalla, btnIluminacion);
+    }
+
+    void ApplySelectableColors()
+    {
+        CampusQuestUiGamepad.SetSelectedColor(btnControles);
+        CampusQuestUiGamepad.SetSelectedColor(btnAudio);
+        CampusQuestUiGamepad.SetSelectedColor(btnPantalla);
+        CampusQuestUiGamepad.SetSelectedColor(btnIluminacion);
+        CampusQuestUiGamepad.SetSelectedColor(btnVolver);
+        CampusQuestUiGamepad.SetSelectedColor(musicSlider);
+        CampusQuestUiGamepad.SetSelectedColor(sfxSlider);
+        CampusQuestUiGamepad.SetSelectedColor(fullscreenToggle);
+        CampusQuestUiGamepad.SetSelectedColor(lightingSlider);
+    }
+
+    void RefreshActiveTabNavigation()
+    {
+        if (btnVolver == null)
+            return;
+
+        Button activeTabButton = activeTab switch
+        {
+            OptionsTab.Controles => btnControles,
+            OptionsTab.Audio => btnAudio,
+            OptionsTab.Pantalla => btnPantalla,
+            OptionsTab.Iluminacion => btnIluminacion,
+            _ => btnControles
+        };
+
+        Selectable firstControl = activeTab switch
+        {
+            OptionsTab.Controles => btnControles,
+            OptionsTab.Audio => musicSlider,
+            OptionsTab.Pantalla => fullscreenToggle,
+            OptionsTab.Iluminacion => lightingSlider,
+            _ => btnControles
+        };
+
+        if (activeTabButton != null)
+        {
+            var tabNav = activeTabButton.navigation;
+            tabNav.mode = Navigation.Mode.Explicit;
+            tabNav.selectOnDown = firstControl != activeTabButton ? firstControl : btnVolver;
+            activeTabButton.navigation = tabNav;
+        }
+
+        switch (activeTab)
+        {
+            case OptionsTab.Controles:
+                if (btnControles != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(btnControles, btnVolver);
+                break;
+
+            case OptionsTab.Audio:
+                if (btnAudio != null && musicSlider != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(btnAudio, musicSlider);
+                if (musicSlider != null && sfxSlider != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(musicSlider, sfxSlider);
+                if (sfxSlider != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(sfxSlider, btnVolver);
+                CampusQuestUiGamepad.ClearHorizontal(musicSlider);
+                CampusQuestUiGamepad.ClearHorizontal(sfxSlider);
+                break;
+
+            case OptionsTab.Pantalla:
+                if (btnPantalla != null && fullscreenToggle != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(btnPantalla, fullscreenToggle);
+                if (fullscreenToggle != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(fullscreenToggle, btnVolver);
+                CampusQuestUiGamepad.ClearHorizontal(fullscreenToggle);
+                break;
+
+            case OptionsTab.Iluminacion:
+                if (btnIluminacion != null && lightingSlider != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(btnIluminacion, lightingSlider);
+                if (lightingSlider != null)
+                    CampusQuestUiGamepad.SetExplicitVertical(lightingSlider, btnVolver);
+                CampusQuestUiGamepad.ClearHorizontal(lightingSlider);
+                break;
+        }
     }
 
     void RefreshControlsList()

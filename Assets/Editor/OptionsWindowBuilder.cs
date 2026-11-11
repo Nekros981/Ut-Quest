@@ -163,6 +163,12 @@ public static class OptionsWindowBuilder
         WireButton(btnVolver.GetComponent<Button>(), optionsMenu, nameof(OptionsMenu.Close));
         WireButton(templateBtn.GetComponent<Button>(), optionsMenu, nameof(OptionsMenu.Open));
 
+        OptionsMenu.ApplyTabRowNavigation(
+            btnControles.GetComponent<Button>(),
+            btnAudio.GetComponent<Button>(),
+            btnPantalla.GetComponent<Button>(),
+            btnIluminacion.GetComponent<Button>());
+
         EnsureMenuMusic(mixer);
 
         EditorUtility.SetDirty(optionsWindow);
