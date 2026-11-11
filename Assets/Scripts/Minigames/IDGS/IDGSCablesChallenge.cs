@@ -35,7 +35,7 @@ namespace CampusQuest.IDGS
         public Button finishButton;
         public TMP_Text finishLabel;
 
-        public bool IsOpen { get; private set; }
+        public bool IsOpen => modal != null && modal.IsOpen;
         public bool IsSolved { get; private set; }
         public bool RewardGrantedThisRun { get; private set; }
         public int DraggingIndex { get; private set; } = -1;
@@ -45,15 +45,10 @@ namespace CampusQuest.IDGS
         public float Electricity { get; private set; }
         private readonly bool[] connected = new bool[4];
         private readonly int[] rightOrder = { 0, 1, 2, 3 };
-        private bool motorWasEnabled;
-        private bool interactorWasEnabled;
-        private bool hudWasActive;
-        private int openedFrame;
+        private IDGSActivityModal modal;
         private float restoredAt;
-        private bool savedCursorVisible;
-        private CursorLockMode savedCursorLock;
 
-        private void Awake() { panel.SetActive(false); }
+        private void Awake() { modal = new IDGSActivityModal(player, interactor, gameplayHud, panel); }
         private void OnEnable()
         {
             GameProgress.Changed += RefreshStation;
@@ -73,27 +68,13 @@ namespace CampusQuest.IDGS
 
         public bool TryOpen()
         {
-            if (!isActiveAndEnabled || IsOpen || IDGSSceneTravel.IsChanging || DialogueSession.IsAnyOpen
-                || player == null || !player.enabled || !station.IsAvailable(player)) return false;
+            if (!isActiveAndEnabled || modal == null || !modal.TryOpen(station)) return false;
             Array.Clear(connected, 0, connected.Length);
             ShuffleTargets();
             IsSolved = false;
             RewardGrantedThisRun = false;
             DraggingIndex = -1;
             Electricity = 0;
-            motorWasEnabled = player.enabled;
-            interactorWasEnabled = interactor.enabled;
-            hudWasActive = gameplayHud.activeSelf;
-            savedCursorVisible = Cursor.visible;
-            savedCursorLock = Cursor.lockState;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            player.enabled = false;
-            interactor.enabled = false;
-            gameplayHud.SetActive(false);
-            IsOpen = true;
-            openedFrame = Time.frameCount;
-            panel.SetActive(true);
             finishButton.gameObject.SetActive(false);
             status.text = "Arrastra cada cable al conector con el mismo número y color.";
             completionState.text = HasCompleted ? "ACTIVIDAD COMPLETADA · REPETICIÓN" : "REPARACIÓN DE ENERGÍA";
@@ -184,7 +165,7 @@ namespace CampusQuest.IDGS
                 Electricity = elapsed < .8f ? Mathf.PingPong(elapsed * 7, 1) : 0;
                 wires.SetVerticesDirty();
             }
-            if (Time.frameCount == openedFrame) return;
+            if (Time.frameCount == modal.OpenedFrame) return;
             var keyboard = UnityEngine.InputSystem.Keyboard.current;
             if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame) Close();
             else if (IsSolved && Time.unscaledTime - restoredAt > .8f && DialogueSession.ConfirmPressedThisFrame()) Close();
@@ -216,14 +197,8 @@ namespace CampusQuest.IDGS
         public void Close()
         {
             if (!IsOpen) return;
-            IsOpen = false;
             DraggingIndex = -1;
-            if (panel != null) panel.SetActive(false);
-            if (player != null) player.enabled = motorWasEnabled;
-            if (interactor != null) interactor.enabled = interactorWasEnabled;
-            if (gameplayHud != null) gameplayHud.SetActive(hudWasActive);
-            Cursor.visible = savedCursorVisible;
-            Cursor.lockState = savedCursorLock;
+            modal.Close();
         }
     }
 }

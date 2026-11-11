@@ -168,7 +168,7 @@ registro compartido, con `idgs.*` para diferenciarlos de `rectoria.*`.
 | Finalización | Evento propuesto |
 |---|---|
 | Cables | `idgs.docencia.cables` |
-| Circuito | `idgs.docencia.circuit.completed` |
+| Circuito | `idgs.docencia.circuito` |
 | Memoria | `idgs.docencia.memory.completed` |
 | Archivos | `idgs.cmd.files.completed` |
 | Servidor | `idgs.cmd.server.completed` |

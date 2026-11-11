@@ -217,8 +217,10 @@ namespace CampusQuest.EditorTools
                 if (point.onInteracted.GetPersistentEventCount() > 0)
                 {
                     var cables = UnityEngine.Object.FindFirstObjectByType<IDGSCablesChallenge>();
-                    Check(cables != null && cables.IsOpen, point.pointId + ": configured activity opens");
-                    cables.Close();
+                    var circuit = UnityEngine.Object.FindFirstObjectByType<IDGSCircuitChallenge>();
+                    Check((cables != null && cables.IsOpen) || (circuit != null && circuit.IsOpen), point.pointId + ": configured activity opens");
+                    if (cables != null && cables.IsOpen) cables.Close();
+                    if (circuit != null && circuit.IsOpen) circuit.Close();
                 }
                 else Check(Interactor.LastInteraction == point && Interactor.notice.text.Contains("Próximamente"), point.pointId + ": station activates its placeholder only");
                 Hold(); yield return null;
